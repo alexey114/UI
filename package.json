@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "devDependencies": {
+    "@teamsupercell/typings-for-css-modules-loader": "2.5.1",
+    "@types/cors": "2.8.12",
+    "@types/express": "4.17.13",
+    "@types/jsdom": "16.2.13",
+    "@types/node": "16.10.2",
+    "copy-webpack-plugin": "9.0.1",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "css-loader": "6.3.0",
+    "express": "4.17.1",
+    "file-loader": "6.2.0",
+    "mini-css-extract-plugin": "2.3.0",
+    "npm-run-all": "4.1.5",
+    "sass": "1.42.1",
+    "sass-loader": "12.1.0",
+    "ts-loader": "9.2.6",
+    "ts-node": "10.2.1",
+    "typescript": "4.4.3",
+    "typescript-plugin-css-modules": "3.4.0",
+    "webpack": "5.56.1",
+    "webpack-cli": "4.8.0",
+    "webpack-dev-server": "4.3.1"
+  },
+  "scripts": {
+    "watchbacksrc": "tsc -w -p tsconfig.back.json",
+    "buildback": "npm-run-all -p buildbacksrc",
+    "watch": "npm-run-all -p watchsrc",
+    "watchback": "npm-run-all -p watchbacksrc",
+    "watchserv": "webpack-dev-server",
+    "buildsrc": "webpack",
+    "build": "npm-run-all -p buildsrc",
+    "watchsrc": "webpack -w",
+    "server": "node dest/back/index.js",
+    "buildbacksrc": "tsc -p tsconfig.back.json"
+  },
+  "dependencies": {
+    "nouislider": "^15.5.1"
+  }
+}

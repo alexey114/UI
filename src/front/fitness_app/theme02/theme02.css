@@ -1,0 +1,988 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fitness_app/theme01/font/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fitness_app/theme01/font/Montserrat/Montserrat-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("../fitness_app/theme01/font/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+.body {
+  background-color: #26282a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form_title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.form_input {
+  background: -webkit-gradient(linear, left top, right top, from(#212325), to(#16181b));
+  background: linear-gradient(90deg, #212325 0%, #16181b 100%);
+  -webkit-box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+          box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  height: 48px;
+  border: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(163, 163, 163, 0.7);
+  padding-left: 20px;
+}
+
+.form_input::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #767676;
+}
+
+.form_input:-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #767676;
+}
+
+.form_input::-ms-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #767676;
+}
+
+.form_input::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #767676;
+}
+
+.form_button {
+  width: 221px;
+  height: 60px;
+  color: #f3f3f4;
+  background: -webkit-gradient(linear, left top, right top, from(#904bc5), to(#4a0f79)), -webkit-gradient(linear, left top, right top, from(#212325), to(#16181b));
+  background: linear-gradient(90deg, #904bc5 0%, #4a0f79 100%), linear-gradient(90deg, #212325 0%, #16181b 100%);
+  -webkit-box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.75), -5px -5px 16px rgba(255, 255, 255, 0.13);
+          box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.75), -5px -5px 16px rgba(255, 255, 255, 0.13);
+  border-radius: 20px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.socialnet_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #767676;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.socialnet_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 258px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 78px;
+}
+
+.google {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #26282a;
+  background-image: url(../fitness_app/theme02/images/google_dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ok {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #26282a;
+  background-image: url(../fitness_app/theme02/images/ok_dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #26282a;
+  background-image: url(../fitness_app/theme02/images/facebook_dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.telegram {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #26282a;
+  background-image: url(../fitness_app/theme02/images/telegram_dark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login {
+  position: relative;
+}
+
+.login::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-color: inherit;
+  background-image: url(../fitness_app/theme02/images/person.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50px;
+  right: 20px;
+}
+
+.password {
+  position: relative;
+}
+
+.password::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-color: inherit;
+  background-image: url(../fitness_app/theme02/images/lock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50px;
+  right: 20px;
+}
+
+.profile_button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: inherit;
+  background-image: url("../fitness_app/theme02/images/profile_button_light.svg");
+  margin-left: auto;
+  margin-right: 0;
+  background-position: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#904bc5), to(#4a0f79)), -webkit-gradient(linear, left top, left bottom, from(#26282a), to(rgba(38, 40, 42, 0)));
+  background: linear-gradient(90deg, #904bc5 0%, #4a0f79 100%), linear-gradient(180deg, #26282a 0%, rgba(38, 40, 42, 0) 100%);
+  -webkit-box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.75), -5px -5px 16px rgba(255, 255, 255, 0.13);
+          box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.75), -5px -5px 16px rgba(255, 255, 255, 0.13);
+  border-radius: 20px;
+}
+
+.name_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px auto;
+}
+
+.name_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.name_edit_button {
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-image: url("../fitness_app/theme01/images/pen.svg");
+  background-position: center;
+}
+
+.calories_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calories_text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.calories_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.nutrients_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.nutrients_subcontainer {
+  width: 70px;
+}
+
+.nutrients_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.progress {
+  font: 12px Arial, Tahoma, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress progress {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: -777px;
+}
+
+.progress-value {
+  color: linear-gradient(0deg, rgba(0, 128, 230, 0.2), rgba(0, 128, 230, 0.2)), linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.38) 100%);
+  display: block;
+  line-height: 21px;
+  text-align: center;
+}
+
+.progress-bg {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 128, 230, 0.2)), to(rgba(0, 128, 230, 0.2))), -webkit-gradient(linear, left top, right top, from(#ffffff), to(rgba(255, 255, 255, 0.38)));
+  background: linear-gradient(0deg, rgba(0, 128, 230, 0.2), rgba(0, 128, 230, 0.2)), linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.38) 100%);
+  position: relative;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@-webkit-keyframes progress_bar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -40px 0;
+  }
+}
+
+@keyframes progress_bar {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -40px 0;
+  }
+}
+
+.bar_thin {
+  height: 5px;
+}
+
+.progress-bar {
+  overflow: hidden;
+  background: white;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  -webkit-transition: width 1s linear;
+  transition: width 1s linear;
+}
+
+.progress-bar:after {
+  -webkit-animation: progress_bar 0.8s linear infinite;
+  animation: progress_bar 0.8s linear infinite;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.date_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #767676;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.dish_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dish_subcontainer {
+  margin: 7.5px;
+  height: 85px;
+  width: 160px;
+  background: -webkit-gradient(linear, left top, right top, from(#212325), to(#16181b));
+  background: linear-gradient(90deg, #212325 0%, #16181b 100%);
+  -webkit-box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+          box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.dish_name_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #904bc5;
+  margin: 0;
+}
+
+.dish_calories_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #767676;
+  margin: 0;
+}
+
+.dish_button {
+  margin: 10px;
+  width: 160px;
+  height: 85px;
+  border: none;
+  background-position: center;
+  background: -webkit-gradient(linear, left top, right top, from(#212325), to(#16181b));
+  background: linear-gradient(90deg, #212325 0%, #16181b 100%);
+  -webkit-box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+          box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-image: url("../fitness_app/theme02/images/plus_button.svg");
+  border-radius: 20px;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url("../fitness_app/theme02/images/calendar.svg") no-repeat center;
+  background-size: contain;
+  margin-right: 18px;
+  width: 12px;
+  height: 12px;
+}
+
+.name {
+  position: relative;
+}
+
+.name::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-color: inherit;
+  background-image: url(../fitness_app/theme02/images/person.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50px;
+  right: 20px;
+}
+
+.weight {
+  position: relative;
+}
+
+.weight::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 17px;
+  border: none;
+  border-color: inherit;
+  background-image: url(../fitness_app/theme02/images/weight.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50px;
+  right: 20px;
+}
+
+.form_radio_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto 0px auto;
+}
+
+.form_radio input[type="radio"] {
+  display: none;
+}
+
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+  margin-right: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #767676;
+}
+
+.form_radio label:before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  position: absolute;
+  left: -10px;
+  bottom: -9px;
+  background: url("../fitness_app/theme02/images/radio.png") 0 0 no-repeat;
+  background-position: center;
+}
+
+/* Checked */
+.form_radio input[type="radio"]:checked + label:before {
+  background: url("../fitness_app/theme02/images/radio_checked.svg") 0 0 no-repeat;
+  background-position: bottom;
+}
+
+.form_radio {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.goal_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 89%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 270px;
+}
+
+.goal_button {
+  width: 335px;
+  height: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(#212325), to(#16181b));
+  background: linear-gradient(90deg, #212325 0%, #16181b 100%);
+  -webkit-box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+          box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #e6c9c9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+}
+
+.goal_button:last-child {
+  margin-bottom: 0;
+}
+
+.goal_button:hover {
+  background: linear-gradient(94.11deg, #ec1f5a 3.35%, #b18bca 62.37%, #43d9f3 120.18%);
+  color: white;
+}
+
+.goal_button:active {
+  background: linear-gradient(94.11deg, #ec1f5a 3.35%, #b18bca 62.37%, #43d9f3 120.18%);
+  color: white;
+}
+
+.looseweight::before {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 42px;
+  border: none;
+  background-position: center;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-image: url("../fitness_app/theme02/images/looseweight.svg");
+  top: 15px;
+  left: 265px;
+}
+
+.saveweight::before {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 42px;
+  border: none;
+  background-position: center;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-image: url("../fitness_app/theme02/images/saveweight.svg");
+  top: 15px;
+  left: 265px;
+}
+
+.addweight::before {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 42px;
+  border: none;
+  background-position: center;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-image: url("../fitness_app/theme02/images/addweight.svg");
+  top: 15px;
+  left: 265px;
+}
+
+.today_header_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 45px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.today_container {
+  display: -ms-grid;
+  display: grid;
+  width: 95%;
+  max-width: 375px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 20px;
+  -ms-grid-columns: (120px)[2];
+      grid-template-columns: repeat(2, 120px);
+  margin-bottom: 25px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.today_subcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.today_number_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 0;
+  padding-right: 5px;
+}
+
+.today_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.eat_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 15px;
+}
+
+.eat_flex_container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#26282a), to(rgba(38, 40, 42, 0)));
+  background: linear-gradient(180deg, #26282a 0%, rgba(38, 40, 42, 0) 100%);
+  -webkit-box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.46);
+          box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.46);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 430px;
+  height: 85px;
+}
+
+.eat_name_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #904bc5;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.eat_text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+  margin: 0;
+}
+
+.eat_subcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 265px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.profile_button_light {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: inherit;
+  background-image: url("../fitness_app/theme02/images/profile_button_light.svg");
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: 0;
+  background-position: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.link_container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.link_button {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background: -webkit-gradient(linear, left top, right top, from(#212325), to(#16181b));
+  background: linear-gradient(90deg, #212325 0%, #16181b 100%);
+  -webkit-box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+          box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: white;
+  border: none;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.link_button::before {
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  content: "";
+  top: 15px;
+  right: 20px;
+  background-image: url("../fitness_app/theme01/images/arrow_right.svg");
+}
+
+.height {
+  position: relative;
+}
+
+.height::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-color: inherit;
+  background-image: url(../fitness_app/theme02/images/height.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50px;
+  right: 20px;
+}
+/*# sourceMappingURL=theme02.css.map */

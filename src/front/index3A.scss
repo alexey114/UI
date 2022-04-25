@@ -1,0 +1,213 @@
+@import "./base_style/base.scss";
+@import "./base_style/demo.scss";
+
+// @import "./_index_base.scss";
+@import "./theme03/theme03.scss";
+
+// .column1::before {
+//   width: 380px;
+//   margin-left: 11px;
+// }
+
+// .column2::before {
+//   width: 380px;
+//   margin-left: 11px;
+// }
+
+// .column3::before {
+//   width: 380px;
+//   margin-left: 11px;
+// }
+
+// .subel1::after {
+//   top: -46px;
+//   left: 274px;
+// }
+
+// .subel1::before {
+//   top: -59px;
+//   left: 274px;
+// }
+
+// .subel2::after {
+//   top: 30px;
+//   left: 274px;
+// }
+
+// .subel2::before {
+//   top: 30px;
+//   left: 274px;
+// }
+
+// .subel3::after {
+//   top: -76px;
+//   left: 274.5px;
+// }
+
+// .subel3::before {
+//   top: -76px;
+//   left: 274.5px;
+// }
+
+// .subel4::after {
+//   top: 30px;
+//   left: 274.5px;
+// }
+
+// .subel4::before {
+//   top: 30px;
+//   left: 274.5px;
+// }
+
+// .subel5::after {
+//   top: -76px;
+//   left: 274.5px;
+// }
+
+// .subel5::before {
+//   top: -76px;
+//   left: 274.5px;
+// }
+
+// .subel6::after {
+//   top: 30px;
+//   left: 274.5px;
+// }
+
+// .subel6::before {
+//   top: 30px;
+//   left: 274.5px;
+// }
+
+// .menu_sec {
+//   min-width: 365px;
+//   width: 365px;
+// }
+
+// .menu_subcontainer {
+//   margin-left: 50px;
+// }
+
+// .button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   align-self: auto;
+//   margin-left: 14px;
+// }
+
+// .example1 {
+//   height: 42px;
+//   background-color: white;
+//   margin-left: -35px;
+// }
+
+// .block1 {
+//   position: fixed;
+//   top: 45%;
+//   left: 45%;
+//   height: 10px;
+//   width: 10px;
+
+//   > .item {
+//     position: absolute;
+//     height: 10px;
+//     width: 10px;
+//     background: white;
+//     animation: move 0.5s linear infinite;
+
+//     &:nth-of-type(1) {
+//       top: -10px;
+//       left: -10px;
+//       animation-delay: 0s;
+//       background: grey;
+//     }
+
+//     &:nth-of-type(2) {
+//       top: -10px;
+//       left: 0;
+//       animation-delay: -0.5s / 8;
+//       background: grey;
+//     }
+
+//     &:nth-of-type(3) {
+//       background: grey;
+//       top: -10px;
+//       left: 10px;
+//       animation-delay: -2 * 0.5s / 8;
+//     }
+
+//     &:nth-of-type(4) {
+//       background: grey;
+//       top: 0;
+//       left: 10px;
+//       animation-delay: -3 * 0.5s / 8;
+//     }
+
+//     &:nth-of-type(5) {
+//       background: grey;
+//       top: 10px;
+//       left: 10px;
+//       animation-delay: -4 * 0.5s / 8;
+//     }
+
+//     &:nth-of-type(6) {
+//       background: grey;
+//       top: 10px;
+//       left: 0;
+//       animation-delay: -5 * 0.5s / 8;
+//     }
+
+//     &:nth-of-type(7) {
+//       background: grey;
+//       top: 10px;
+//       left: -10px;
+//       animation-delay: -6 * 0.5s / 8;
+//     }
+
+//     &:nth-of-type(8) {
+//       background: grey;
+//       top: 0;
+//       left: -10px;
+//       animation-delay: -7 * 0.5s / 8;
+//     }
+//   }
+// }
+
+// .adding {
+//   margin: 0;
+//   margin-left: 0;
+//   margin-top: 0;
+// }
+
+// .element {
+//   width: 25px;
+//   height: 25px;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   margin-left: -13px;
+//   margin-right: 13px;
+// }
+
+// element.style {
+// }
+// .margin-top {
+//   margin-top: 10px;
+// }
+// .margin-top {
+//   margin-top: 10px;
+// }
+// .margin-top {
+//   margin-top: 10px;
+// }
+// .margin-top {
+//   margin-top: 20px;
+// }
+// .menu_subelement {
+//   margin-left: 13px;
+// }
+
+// .menu_subcontainer {
+//   margin-left: 35px;
+//   width: 347px;
+// }

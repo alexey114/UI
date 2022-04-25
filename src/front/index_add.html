@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link id="css" rel="stylesheet" href="./css/index1A.css" />
+
+</head>
+
+<body class="body">
+  <select
+    onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + 'A.css'">
+    <option value="1">Тема 1</option>
+    <option value="2">Тема 2</option>
+    <option value="3">Тема 3</option>
+    <option value="4">Тема 4</option>
+    <option value="5">Тема 5</option>
+  </select>
+  <div class="buttons-wrapper">
+    <div class="buttons-container">
+      <p class="header">Ждун квадратный</p>
+      <button type="submit" class="button small delete loading-btn">
+        <div class="example1">
+          <div class="block1">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+          </div>
+        </div>
+        <div>Удалить</div>
+      </button>
+    </div>
+  </div>
+
+  <div class="buttons-wrapper">
+    <div class="buttons-container">
+      <p class="header">Ждун круглый</p>
+      <button type="submit" class="button small save loading-btn">
+        <div class="loader">
+          <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="load one" cx="60" cy="60" r="40" />
+            <circle class="load two" cx="60" cy="60" r="40" />
+            <circle class="load three" cx="60" cy="60" r="40" />
+            <g>
+              <circle class="point one" cx="45" cy="70" r="5" />
+              <circle class="point two" cx="60" cy="70" r="5" />
+              <circle class="point three" cx="75" cy="70" r="5" />
+            </g>
+          </svg>
+        </div>
+        <div>Сохранить</div>
+      </button>
+    </div>
+  </div>
+
+  <p class="header">Пагинация</p>
+  <div class="main">
+    <ul class="menu_container">
+      <li class="menu_subcontainer">
+        <div class="menu_point"></div>
+        <div class="element business business_white"></div>
+        <div class="menu_text column text_color">
+          Служебные</div>
+      <li class="menu_subelement margin-top li_color subel1 text_color subelement_text_color">
+        Элементы простые 1
+      </li>
+      <li class="menu_subelement subel2">Элементы простые 2</li>
+      <li class="menu_subelement menu_subelement_last">Элементы с картинками</li>
+
+      </li>
+      <li class="menu_subcontainer">
+        <div class="element content"></div>
+        <p class="menu_text">Контент</p>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="element control"></div>
+        <p class="menu_text">Управление сайтом</p>
+      </li>
+    </ul>
+
+    <div class="else_content">
+      <div class="else_content_container">
+        <div class="search_container search_margin">
+          <input class="search" placeholder="Поиск" />
+        </div>
+        <div class="filter_container">
+          <input class="input" placeholder="Фильтр..." />
+          <button type="submit" class="button small filter filter_small">
+            <p>Фильтр</p>
+          </button>
+        </div>
+      </div>
+      <table class="table">
+        <tr class="row main_row">
+          <td class="cell cell_1 cell_weight">Имя</td>
+          <td class="cell cell_2 cell_weight">Фото</td>
+          <td class="cell cell_3 cell_weight">Список</td>
+          <td class="cell cell_4 cell_weight">Вес</td>
+          <td class="cell cell_5 cell_weight">Публикация</td>
+          <td class="cell cell_6 cell_weight">Редактировать</td>
+          <td class="cell cell_7 cell_weight">Удалить</td>
+        </tr>
+        <tr class="row main_row">
+          <td class="cell cell_1">Новость 4</td>
+          <td class="cell cell_2">
+            <img class="image" src="./images/image_1.jpg" />
+          </td>
+          <td class="cell cell_3">
+            <input type="reset" class="reset" value="Clear it!" />
+            <div class="__select" data-state="">
+              <div class="__select__title width_for_list" data-default="Option 0">
+                Сиблинг 1
+              </div>
+              <div class="__select__content">
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label">Главная</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect2" class="__select__label">Новости</label>
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect3" class="__select__label">Контакты</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+              </div>
+            </div>
+          </td>
+          <td class="cell cell_4">
+            <p class="cell_text">100</p>
+          </td>
+          <td class="cell cell_5"><button class="checkbox_big"></button></td>
+          <td class="cell cell_6"><button class="pen"></button></td>
+          <td class="cell cell_7"><button class="trash"></button></td>
+        </tr>
+        <tr class="row main_row">
+          <td class="cell cell_1">Новость 4</td>
+          <td class="cell cell_2">
+            <img class="image" src="./images/image_1.jpg" />
+          </td>
+          <td class="cell cell_3">
+            <input type="reset" class="reset" value="Clear it!" />
+            <div class="__select" data-state="">
+              <div class="__select__title width_for_list" data-default="Option 0">
+                Сиблинг 1
+              </div>
+              <div class="__select__content">
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label">Главная</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect2" class="__select__label">Новости</label>
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect3" class="__select__label">Контакты</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+              </div>
+            </div>
+          </td>
+          <td class="cell cell_4">
+            <p class="cell_text">100</p>
+          </td>
+          <td class="cell cell_5"><button class="checkbox_big"></button></td>
+          <td class="cell cell_6"><button class="pen"></button></td>
+          <td class="cell cell_7"><button class="trash"></button></td>
+        </tr>
+        <tr class="row main_row">
+          <td class="cell cell_1">Новость 4</td>
+          <td class="cell cell_2">
+            <img class="image" src="./images/imagess.png" />
+          </td>
+          <td class="cell cell_3">
+            <input type="reset" class="reset" value="Clear it!" />
+            <div class="__select" data-state="">
+              <div class="__select__title width_for_list" data-default="Option 0">
+                Сиблинг 1
+              </div>
+              <div class="__select__content">
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label">Главная</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect2" class="__select__label">Новости</label>
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect3" class="__select__label">Контакты</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+              </div>
+            </div>
+          </td>
+          <td class="cell cell_4">
+            <p class="cell_text">100</p>
+          </td>
+          <td class="cell cell_5"><button class="checkbox_big"></button></td>
+          <td class="cell cell_6"><button class="pen"></button></td>
+          <td class="cell cell_7"><button class="trash"></button></td>
+        </tr>
+        <tr class="row main_row">
+          <td class="cell cell_1">Новость 4</td>
+          <td class="cell cell_2">
+            <img class="image" src="./images/image_1.jpg" />
+          </td>
+          <td class="cell cell_3">
+            <input type="reset" class="reset" value="Clear it!" />
+            <div class="__select" data-state="">
+              <div class="__select__title width_for_list" data-default="Option 0">
+                Сиблинг 1
+              </div>
+              <div class="__select__content">
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label">Главная</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect2" class="__select__label">Новости</label>
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect3" class="__select__label">Контакты</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+              </div>
+            </div>
+          </td>
+          <td class="cell cell_4">
+            <p class="cell_text">100</p>
+          </td>
+          <td class="cell cell_5"><button class="checkbox_big"></button></td>
+          <td class="cell cell_6"><button class="pen"></button></td>
+          <td class="cell cell_7"><button class="trash"></button></td>
+        </tr>
+        <tr class="row main_row">
+          <td class="cell cell_1">Новость 4</td>
+          <td class="cell cell_2">
+            <img class="image" src="./images/image_1.jpg" />
+          </td>
+          <td class="cell cell_3">
+            <input type="reset" class="reset" value="Clear it!" />
+            <div class="__select" data-state="">
+              <div class="__select__title width_for_list" data-default="Option 0">
+                Сиблинг 1
+              </div>
+              <div class="__select__content">
+                <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect1" class="__select__label">Главная</label>
+                <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect2" class="__select__label">Новости</label>
+                <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect3" class="__select__label">Контакты</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+                <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                <label for="singleSelect4" class="__select__label">Выход</label>
+              </div>
+            </div>
+          </td>
+          <td class="cell cell_4">
+            <p class="cell_text">100</p>
+          </td>
+          <td class="cell cell_5"><button class="checkbox_big"></button></td>
+          <td class="cell cell_6"><button class="pen"></button></td>
+          <td class="cell cell_7"><button class="trash"></button></td>
+        </tr>
+      </table>
+      <div class="button_container">
+        <button type="submit" class="add small button button_table">
+          <span class="plus">+&nbsp&nbsp</span> Добавить
+        </button>
+
+        <nav data-pagination>
+          <a href=# disabled><i class=ion-chevron-left></i></a>
+          <ul>
+            <li class=current><a href=#1>1</a>
+            <li><a href=#2>2</a>
+            <li><a href=#3>3</a>
+            <li><a href=#4>4</a>
+            <li><a href=#5>5</a>
+            <li><a href=#6>6</a>
+            <li><a href=#7>7</a>
+            <li><a href=#8>8</a>
+            <li><a href=#9>9</a>
+            <li><a href=#10>…</a>
+            <li><a href=#41>41</a>
+          </ul>
+          <a href=#2><i class=ion-chevron-right></i></a>
+        </nav>
+
+        <button type="submit" class="button save button_table">Сохранить</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="header">Слайдер</p>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="80" class="slider" id="myRange" />
+    <!-- <p>Value: <span id="demo"></span></p> -->
+  </div>
+
+  <p class="header">Свитчеры</p>
+  <div class="container container_switch">
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider-switcher switcher-color1 round"></span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider-switcher switcher-color2 round"></span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider-switcher switcher-color3 round"></span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider-switcher switcher-color4 round"></span>
+    </label>
+  </div>
+
+  <p class="header">Попап</p>
+  <button type="submit" class="button small add popup_button">
+    Открыть
+  </button>
+
+  <p class="header">No-image</p>
+  <img class="error_image" src="./images/" onerror="this.onerror=null; this.src='./images/imagess.png'" />
+
+  <h1 id="forms" class="header">Формы</h1>
+  <form class="form form_add" type="submit" novalidate>
+    <div class="form_container">
+      <input class="input" placeholder="" />
+      <div class="form_subcontainer">
+        <button class="form_button_accept"></button>
+        <button class="form_button_deny"></button>
+      </div>
+    </div>
+  </form>
+
+  <h1 id="forms" class="header">Валидация</h1>
+  <form class="form_valid" type="submit" novalidate>
+    <div class="form_container form_correct">
+      <p class="form_title">Уникальный url-имя<span class="form_span">*</span></p>
+      <input class="input_correct" placeholder="" />
+      <span class="form_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+    <div class="form_container form_incorrect">
+      <p class="form_title">Уникальный url-имя<span class="form_span">*</span></p>
+      <input class="input_incorrect" placeholder="" />
+      <span class="form_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+    </div>
+  </form>
+
+  <h1 id="menu" class="header">Меню</h1>
+  <nav class="menu">
+    <ul class="menu_container">
+      <li class="menu_subcontainer">
+        <div class="element business"></div>
+        <p class="menu_text">Служебные</p>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="element content"></div>
+        <p class="menu_text">Контент</p>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="element control"></div>
+        <p class="menu_text">Управление сайтом</p>
+      </li>
+      <button class="button small delete supersmall_button">Выход</button>
+    </ul>
+
+    <ul class="menu_container">
+      <li class="menu_subcontainer">
+        <div class="menu_point"></div>
+        <div class="element business business_white"></div>
+        <div class="menu_text column text_color">
+          Служебные
+          <li class="menu_subelement margin-top li_color subel1 text_color subelement_text_color">
+            Элементы простые 1
+          </li>
+          <li class="menu_subelement subel2">Элементы простые 2</li>
+          <li class="menu_subelement menu_subelement_last">Элементы с картинками</li>
+        </div>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="element content"></div>
+        <p class="menu_text">Контент</p>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="element control"></div>
+        <p class="menu_text">Управление сайтом</p>
+      </li>
+    </ul>
+
+    <ul class="menu_container">
+      <li class="menu_subcontainer">
+        <div class="element business"></div>
+        <div class="menu_text">Служебные</div>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="menu_point"></div>
+        <div class="element content content_black"></div>
+        <div class="menu_text column text_color">
+          Контент
+          <li class="menu_subelement margin-top li_color subel3 text_color subelement_text_color">
+            Отдельные фрагменты
+          </li>
+          <li class="menu_subelement subel4 menu_subelement_last">Новости</li>
+        </div>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="element control"></div>
+        <p class="menu_text">Управление сайтом</p>
+      </li>
+    </ul>
+
+    <ul class="menu_container">
+      <li class="menu_subcontainer">
+        <div class="element business"></div>
+        <div class="menu_text">Служебные</div>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="element content"></div>
+        <p class="menu_text">Контент</p>
+      </li>
+      <li class="menu_subcontainer">
+        <div class="menu_point"></div>
+        <div class="element control control_black"></div>
+        <div class="menu_text column text_color">
+          Управление сайтом
+          <li class="menu_subelement margin-top li_color subel5 text_color subelement_text_color">Главная</li>
+          <li class="menu_subelement margin-top li_color subel6">Управление</li>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <h1 id="checkbox" class="header ">Хештеги</h1>
+
+  <div class="hashtag">
+    <div class="hashtag_item"><p class="hashtag_item-text">Текст</p><span class="hashtag_item-close"></span></div>
+    <div class="hashtag_item"><p class="hashtag_item-text">Новости</p><span class="hashtag_item-close"></span></div>
+    <div class="hashtag_item"><p class="hashtag_item-text">События</p><span class="hashtag_item-close"></span></div>
+    <div class="hashtag_item"><p class="hashtag_item-text">Москва</p><span class="hashtag_item-close"></span></div>
+    <div class="hashtag_item"><p class="hashtag_item-text">Россия</p><span class="hashtag_item-close"></span></div>
+  </div>
+
+  <h1 id="checkbox" class="header ">Всплывающая подсказка</h1>
+  <div class="tick">
+    <div class="tick_popup">Здесь текст всплывающей подсказки</div>
+  </div>
+
+  <div id="delete" class="popup">
+    <div class="popup__container popup__container_delete"></div>
+  </div>
+
+  <script src="./index2js.js"></script>
+  <script src="./vanillaSelectBox.js?v0.75"></script>
+
+  <script>
+    selectBoxTest = new vanillaSelectBox("#demoShort", {
+      maxHeight: 200,
+      search: true,
+      translations: {
+        all: "All",
+        items: "items",
+        selectAll: "Check All",
+        clearAll: "Clear All",
+        placeHolder: "Choose a brand...",
+      },
+    });
+  </script>
+
+</body>
+
+</html>

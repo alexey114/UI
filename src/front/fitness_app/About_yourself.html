@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Немного о Вас</title>
+    <link id="css" rel="stylesheet" href="../css/nutrition/index11.css" />
+  </head>
+  <body class="body">
+    <select
+      onchange="document.querySelector('#css').href='../css/nutrition/index1' + this.options[this.selectedIndex].value + '.css'"
+    >
+      <option value="1">Тема 1</option>
+      <option value="2">Тема 2</option>
+    </select>
+    <h1 class="header">Немного о Вас</h1>
+    <form class="form" type="submit" novalidate>
+      <p class="form_title name">Как Вас зовут?</p>
+      <input class="form_input" placeholder="Имя" type="text" />
+      <p class="form_title age">Сколько Вам лет?</p>
+      <input class="form_input" placeholder="дд/мм/гг" type="date" />
+      <p class="form_title weight">Ваш вес?</p>
+      <input class="form_input" placeholder="00" type="number" />
+      <div class="form_radio_container">
+        <div class="form_radio">
+          <input id="radio-1" type="radio" name="radio" value="male" checked />
+          <label for="radio-1">Мужчина</label>
+        </div>
+        <div class="form_radio">
+          <input id="radio-2" type="radio" name="radio" value="female" />
+          <label for="radio-2">Женщина</label>
+        </div>
+      </div>
+      <button class="form_button" type="submit">Далее</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Прогресс</title>
+    <link id="css" rel="stylesheet" href="../css/nutrition/index11.css" />
+  </head>
+  <body class="body">
+    <select
+      onchange="document.querySelector('#css').href='../css/nutrition/index1' + this.options[this.selectedIndex].value + '.css'"
+    >
+      <option value="1">Тема 1</option>
+      <option value="2">Тема 2</option>
+    </select>
+    <div class="content">
+      <button class="profile_button"></button>
+      <div class="profile_container">
+        <div class="name_container">
+          <p class="name_text">Иванов Иван</p>
+          <button class="name_edit_button"></button>
+        </div>
+        <div class="calories_container">
+          <div class="calories_text_container">
+            <p class="calories_text">кКалории</p>
+            <p class="calories_text">
+              <span class="calories_text calories_total">2900</span>/<span
+                class="calories_text calories_goal"
+                >2500</span
+              >
+            </p>
+          </div>
+          <div class="progress">
+            <progress max="100" value="100"></progress>
+            <div class="progress-bg"><div class="progress-bar"></div></div>
+          </div>
+        </div>
+        <div class="nutrients_container">
+          <div class="nutrients_subcontainer">
+            <p class="nutrients_text">Белки</p>
+            <div class="progress">
+              <progress max="100" value="100"></progress>
+              <div class="progress-bg bar_thin"><div class="progress-bar"></div></div>
+            </div>
+            <p class="nutrients_text">
+              <span class="nutrients_text protein_total">290</span>/<span
+                class="nutrients_text protein_goal"
+                >250</span
+              >
+            </p>
+          </div>
+
+          <div class="nutrients_subcontainer">
+            <p class="nutrients_text">Жиры</p>
+            <div class="progress">
+              <progress max="100" value="100"></progress>
+              <div class="progress-bg bar_thin"><div class="progress-bar"></div></div>
+            </div>
+            <p class="nutrients_text">
+              <span class="nutrients_text fats_total">290</span>/<span
+                class="nutrients_text fats_goal"
+                >250</span
+              >
+            </p>
+          </div>
+
+          <div class="nutrients_subcontainer">
+            <p class="nutrients_text">Углеводы</p>
+            <div class="progress">
+              <progress max="100" value="100"></progress>
+              <div class="progress-bg bar_thin"><div class="progress-bar"></div></div>
+            </div>
+            <p class="nutrients_text">
+              <span class="nutrients_text carbohyfrates_total">290</span>/<span
+                class="nutrients_text carbohydrates_goal"
+                >250</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <p class="date_text">Сегодня 24.01.2021</p>
+      <div class="dish_container">
+        <div class="dish_subcontainer">
+          <p class="dish_name_text">Овсяная каша</p>
+          <p class="dish_calories_text">400.0 кКал</p>
+        </div>
+        <div class="dish_subcontainer">
+          <p class="dish_name_text">Овсяная каша</p>
+          <p class="dish_calories_text">400.0 кКал</p>
+        </div>
+        <div class="dish_subcontainer">
+          <p class="dish_name_text">Овсяная каша</p>
+          <p class="dish_calories_text">400.0 кКал</p>
+        </div>
+        <div class="dish_subcontainer">
+          <p class="dish_name_text">Овсяная каша</p>
+          <p class="dish_calories_text">400.0 кКал</p>
+        </div>
+        <div class="dish_subcontainer">
+          <p class="dish_name_text">Овсяная каша</p>
+          <p class="dish_calories_text">400.0 кКал</p>
+        </div>
+        <button class="dish_button"></button>
+      </div>
+    </div>
+  </body>
+</html>

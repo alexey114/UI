@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ваша цель</title>
+    <link id="css" rel="stylesheet" href="../css/nutrition/index11.css" />
+  </head>
+  <body class="body">
+    <select
+      onchange="document.querySelector('#css').href='../css/nutrition/index1' + this.options[this.selectedIndex].value + '.css'"
+    >
+      <option value="1">Тема 1</option>
+      <option value="2">Тема 2</option>
+    </select>
+    <div class="content">
+      <h1 class="header">Ваша цель</h1>
+      <div class="goal_container">
+        <button class="goal_button looseweight">Похудеть</button>
+        <button class="goal_button addweight">Набрать вес</button>
+        <button class="goal_button saveweight">Сохранить вес</button>
+      </div>
+      <button class="form_button" type="submit">Далее</button>
+    </div>
+  </body>
+</html>

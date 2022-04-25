@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link id="css" rel="stylesheet" href="../css/nutrition/index11.css" />
+  </head>
+  <body class="body">
+    <select
+      onchange="document.querySelector('#css').href='../css/nutrition/index1' + this.options[this.selectedIndex].value + '.css'"
+    >
+      <option value="1">Тема 1</option>
+      <option value="2">Тема 2</option>
+    </select>
+    <h1 class="header">Регистрация</h1>
+    <form class="form" type="submit" novalidate>
+      <p class="form_title login">Логин</p>
+      <input class="form_input" placeholder="login@ya.ru" type="text" />
+      <p class="form_title password">Пароль</p>
+      <input class="form_input" placeholder="password" type="password" />
+      <button class="form_button" type="submit">Войти</button>
+    </form>
+    <p class="socialnet_text">Войти через:</p>
+    <div class="socialnet_container">
+      <button class="google"></button>
+      <button class="facebook"></button>
+      <button class="telegram"></button>
+      <button class="ok"></button>
+    </div>
+  </body>
+</html>

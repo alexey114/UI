@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ваша цель</title>
+    <link id="css" rel="stylesheet" href="../css/nutrition/index11.css" />
+  </head>
+  <body class="body">
+    <select
+      onchange="document.querySelector('#css').href='../css/nutrition/index1' + this.options[this.selectedIndex].value + '.css'"
+    >
+      <option value="1">Тема 1</option>
+      <option value="2">Тема 2</option>
+    </select>
+    <div class="content">
+      <button class="profile_button"></button>
+      <div class="profile_container">
+        <div class="name_container">
+          <p class="today_header_text">24 августа 2021</p>
+        </div>
+        <div class="today_container">
+          <div class="today_subcontainer">
+            <p class="today_number_text">2000.0</p>
+            <p class="today_text">кКал</p>
+          </div>
+          <div class="today_subcontainer">
+            <p class="today_number_text">100.0</p>
+            <p class="today_text">Жир, г</p>
+          </div>
+          <div class="today_subcontainer">
+            <p class="today_number_text">200.0</p>
+            <p class="today_text">Углеводы, г</p>
+          </div>
+          <div class="today_subcontainer">
+            <p class="today_number_text">100.0</p>
+            <p class="today_text">Белки, г</p>
+          </div>
+        </div>
+      </div>
+      <p class="date_text">В этот день Вы съели:</p>
+      <div class="eat_container">
+        <div class="eat_flex_container">
+          <h3 class="eat_name_text">Гречка</h3>
+          <div class="eat_subcontainer">
+            <p class="eat_text">200.0 кКал</p>
+            <p class="eat_text">10.2 Б</p>
+            <p class="eat_text">20.0 Ж</p>
+            <p class="eat_text">20.0 У</p>
+          </div>
+        </div>
+        <div class="eat_flex_container">
+          <h3 class="eat_name_text">Пирожок</h3>
+          <div class="eat_subcontainer">
+            <p class="eat_text">200.0 кКал</p>
+            <p class="eat_text">10.2 Б</p>
+            <p class="eat_text">20.0 Ж</p>
+            <p class="eat_text">20.0 У</p>
+          </div>
+        </div>
+        <div class="eat_flex_container">
+          <h3 class="eat_name_text">Виноград</h3>
+          <div class="eat_subcontainer">
+            <p class="eat_text">200.0 кКал</p>
+            <p class="eat_text">10.2 Б</p>
+            <p class="eat_text">20.0 Ж</p>
+            <p class="eat_text">20.0 У</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

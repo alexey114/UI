@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link id="css" rel="stylesheet" href="./css/index1.css" />
+  </head>
+  <body class="body">
+
+    <select onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + '.css'">
+        <option value="1">Тема 1</option>
+        <option value="2">Тема 2</option>
+        <option value="3">Тема 3</option>
+        <option value="4">Тема 4</option>
+        <option value="5">Тема 5</option>
+    </select>
+
+    <nav id="menu" class="navigation">
+      <a class="link" id="nav" href="#buttons">Кнопки</a>
+      <a class="link" id="fonts_menu" href="#fonts">Шрифты</a>
+      <a class="link" id="forms_menu" href="#forms">Формы</a>
+      <a class="link" id="menu" href="#menu">Меню</a>
+      <a class="link" id="check_menu" href="#checkbox">Чекбоксы</a>
+      <a class="link" id="icons_menu" href="#icons">Иконки</a>
+      <a class="link" id="lists_menu" href="#lists">Выпадающие списки</a>
+      <a class="link" id="search_menu" href="#search">Поиск</a>
+      <a class="link" id="colors_menu" href="#colors">Цвета</a>
+      <a class="link" id="loader_menu" href="#">Ждун</a>
+    </nav>
+
+    <div class="example_loader">
+      <div class='block'>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+          <div class='item'></div>
+      </div>
+    </div>
+
+    <h1 id="buttons" class="header">Кнопки</h1>
+
+    <div class="buttons">
+      <div class="buttons-container">
+        <p class="buttons-name">Able</p>
+        <button type="submit" class="button small delete">Удалить</button>
+      </div>
+      <div class="buttons-container">
+        <p class="buttons-name">Disabled</p>
+        <button type="submit" class="button small delete_inactive">
+          Удалить
+        </button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons-container">
+        <p class="buttons-name">Able</p>
+        <button type="submit" class="button small save">
+
+          <div>Сохранить</div></button>
+      </div>
+      <div class="buttons-container">
+        <p class="buttons-name">Disabled</p>
+        <button type="submit" class="button small save_inactive">
+          Сохранить
+        </button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons-container">
+        <p class="buttons-name">Able</p>
+        <button type="submit" class="button big save-exit">
+          Сохранить и выйти
+        </button>
+      </div>
+      <div class="buttons-container">
+        <p class="buttons-name">Disabled</p>
+        <button type="submit" class="button big save-exit_inactive">
+          Сохранить и выйти
+        </button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons-container">
+        <p class="buttons-name">Able</p>
+        <button type="submit" class="button big filter">Отфильтровать</button>
+      </div>
+      <div class="buttons-container">
+        <p class="buttons-name">Disabled</p>
+        <button type="submit" class="button big filter_inactive">
+          Отфильтровать
+        </button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons-container">
+        <p class="buttons-name">Able</p>
+        <button type="submit" class="add small button">
+          <span class="plus">+&nbsp;&nbsp;</span> Добавить
+        </button>
+      </div>
+      <div class="buttons-container">
+        <p class="buttons-name">Disabled</p>
+        <button type="submit" class="button small add_inactive">
+          <span class="plus plus_disabled">+&nbsp;&nbsp;</span>Добавить
+        </button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons-container">
+        <p class="buttons-name">Able</p>
+        <button type="submit" class="exit small button">
+          Выход
+        </button>
+      </div>
+      <div class="buttons-container">
+        <p class="buttons-name">Disabled</p>
+        <button type="submit" class="button small exit_inactive">
+          Выход
+        </button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons-container">
+        <p class="buttons-name">Able</p>
+        <button type="submit" class="back small button">
+          Назад
+        </button>
+      </div>
+      <div class="buttons-container">
+        <p class="buttons-name">Disabled</p>
+        <button type="submit" class="button small back_inactive">
+          Назад
+        </button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons-container container_add_text">
+        <p class="buttons-name">Able</p>
+        <button type="submit" class="add_text first">
+          Текст
+        </button>
+        <button type="submit" class="add_text average">
+          Текст
+        </button>
+        <button type="submit" class="add_text last">
+          Текст
+        </button>
+      </div>
+  </div>
+
+
+
+
+    <h1 id="fonts" class="header">Шрифты</h1>
+    <div class="fonts_container">
+      <div class="fonts_subcontainer">
+        <h1 class="header">H1</h1>
+        <div class="fonts_art_container">
+          <h1 class="header_h1">Это пример шрифта</h1>
+          <h1 class="header_h1 color_back">Это пример шрифта</h1>
+        </div>
+      </div>
+
+      <div class="fonts_subcontainer">
+        <h1 class="header">H2</h1>
+        <div class="fonts_art_container">
+          <h2 class="header_h2">Это пример шрифта</h2>
+          <h2 class="header_h2 grey_color">Это пример шрифта</h2>
+        </div>
+      </div>
+
+      <div class="fonts_subcontainer">
+        <h1 class="header">H3</h1>
+        <div class="fonts_art_container">
+          <h2 class="header_h3">Это пример шрифта</h2>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="forms" class="header">Формы</h1>
+    <form class="form" type="submit" novalidate>
+      <input class="input" placeholder="Фильтр..." />
+      <input class="input" placeholder="" />
+      <input class="input select2" placeholder="" />
+    </form>
+
+    <h1 id="menu" class="header">Меню</h1>
+    <nav class="menu">
+      <ul class="menu_container">
+        <li class="menu_subcontainer">
+          <div class="element business"></div>
+          <p class="menu_text">Служебные</p>
+        </li>
+        <li class="menu_subcontainer">
+          <div class="element content"></div>
+          <p class="menu_text">Контент</p>
+        </li>
+        <li class="menu_subcontainer">
+          <div class="element control"></div>
+          <p class="menu_text">Управление сайтом</p>
+        </li>
+      </ul>
+
+      <ul class="menu_container">
+        <li class="menu_subcontainer">
+          <div class="menu_point"></div>
+          <div class="element business business_white"></div>
+          <div class="menu_text column text_color after-none">
+            Служебные
+            <li class="menu_subelement margin-top li_color subel1 text_color subelement_text_color">
+              Элементы простые 1
+            </li>
+            <li class="menu_subelement subel2">Элементы простые 2</li>
+            <li class="menu_subelement menu_subelement_last">Элементы с картинками</li>
+          </div>
+        </li>
+        <li class="menu_subcontainer">
+          <div class="element content"></div>
+          <p class="menu_text">Контент</p>
+        </li>
+        <li class="menu_subcontainer">
+          <div class="element control"></div>
+          <p class="menu_text">Управление сайтом</p>
+        </li>
+      </ul>
+
+      <ul class="menu_container">
+        <li class="menu_subcontainer">
+          <div class="element business"></div>
+          <div class="menu_text">Служебные</div>
+        </li>
+        <li class="menu_subcontainer">
+          <div class="menu_point"></div>
+          <div class="element element_active content content_black"></div>
+          <div class="menu_text column text_color">
+            Контент
+            <li class="menu_subelement margin-top li_color subel3 text_color subelement_text_color">
+              Отдельные фрагменты
+            </li>
+            <li class="menu_subelement subel4 menu_subelement_last">Новости</li>
+          </div>
+        </li>
+        <li class="menu_subcontainer">
+          <div class="element control"></div>
+          <p class="menu_text">Управление сайтом</p>
+        </li>
+      </ul>
+
+      <ul class="menu_container">
+        <li class="menu_subcontainer">
+          <div class="element business"></div>
+          <div class="menu_text">Служебные</div>
+        </li>
+        <li class="menu_subcontainer">
+          <div class="element content"></div>
+          <p class="menu_text">Контент</p>
+        </li>
+        <li class="menu_subcontainer">
+          <div class="menu_point"></div>
+          <div class="element control control_black"></div>
+          <div class="menu_text column text_color">
+            Управление сайтом
+            <li class="menu_subelement margin-top li_color subel5 text_color subelement_text_color">Главная</li>
+            <li class="menu_subelement margin-top li_color subel6">Управление</li>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 id="checkbox" class="header header_margin">Чекбокс</h1>
+
+      <div class="checkbox_subcontainer">
+        <div class="checkbox__active_container">
+          <button class="checkbox_big"></button>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="icons" class="header">Иконки</h1>
+
+    <div class="checkbox_container">
+      <div class="checkbox_subcontainer">
+        <div class="checkbox__active_container">
+          <p class="checkbox_text">Активный</p>
+          <button class="trash"></button>
+        </div>
+        <div class="checkbox__active_container">
+          <p class="checkbox_text inactive_marker">Неактивный</p>
+          <button class="trash_inactive inactive_marker"></button>
+        </div>
+      </div>
+
+      <div class="checkbox_subcontainer">
+        <div class="checkbox__active_container">
+          <p class="checkbox_text">Активный</p>
+          <button class="pen"></button>
+        </div>
+        <div class="checkbox__active_container">
+          <p class="checkbox_text inactive_marker">Неактивный</p>
+          <button class="pen_inactive inactive_marker"></button>
+        </div>
+      </div>
+
+
+    <h1 id="lists" class="header">Выпадающие списки</h1>
+
+    <div class="demo-zone">
+      <select id="demoShort" multiple="" size="5" style="display: inline-block;">
+          <option value="Abarth" selected="true">Abarth</option>
+          <option value="Alfa Romeo"  selected="true">Alfa Romeo</option>
+          <option value="Alpine" data-test="example" selected="true">Alpine</option>
+          <option value="Aston Martin" selected="true">Aston Martin</option>
+          <option value="Audi" selected="true">Audi</option>
+          <option value="Bentley" selected="true">Bentley</option>
+          <option value="BMW" selected="true">BMW</option>
+          <option value="Cadillac" selected="true">Cadillac</option>
+          <option value="Chevrolet" selected="true">Chevrolet</option>
+          <option value="Citroën" selected="true">Citroën</option>
+          <option value="Cupra" selected="true">Cupra</option>
+          <option value="DACIA" selected="true">DACIA</option>
+      </select>
+    </div>
+
+    <input type="reset" class="reset" value="" />
+    <div class="__select" data-state="">
+      <div class="__select__title" data-default="Option 0">
+        Страница с каталогом
+      </div>
+      <div class="__select__content">
+        <input
+          id="singleSelect1"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect1" class="__select__label">Главная</label>
+        <input
+          id="singleSelect2"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect2" class="__select__label">Новости</label>
+        <input
+          id="singleSelect3"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect3" class="__select__label">Контакты</label>
+        <input
+          id="singleSelect4"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect4" class="__select__label">Статьи</label>
+        <input
+          id="singleSelect4"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect4" class="__select__label">Новое</label>
+        <input
+          id="singleSelect4"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect4" class="__select__label">Познавательное</label>
+        <input
+          id="singleSelect4"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect4" class="__select__label">Звезды</label>
+        <input
+          id="singleSelect4"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect4" class="__select__label">Телешоу</label>
+        <input
+          id="singleSelect4"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect4" class="__select__label">Россия</label>
+        <input
+          id="singleSelect4"
+          class="__select__input"
+          type="radio"
+          name="singleSelect"
+        />
+        <label for="singleSelect4" class="__select__label">Современность</label>
+      </div>
+    </div>
+
+    <h1 id="search" class="header">Поиск</h1>
+    <div class="search_container">
+      <input class="search" placeholder="Поиск" />
+    </div>
+
+    <h1 id="colors" class="header">Цвета</h1>
+    <div class="color_container">
+
+      <div class="color theme1_color1"></div>
+      <div class="color theme1_color2"></div>
+      <div class="color theme1_color3"></div>
+      <div class="color theme1_color4"></div>
+      <div class="color theme1_color5"></div>
+      <div class="color theme1_color6"></div>
+      <div class="color theme1_color7"></div>
+      <div class="color theme1_color8"></div>
+      <div class="color theme1_color9"></div>
+      <div class="color theme1_color10"></div>
+      <div class="color theme1_color11"></div>
+      <div class="color theme1_color12"></div>
+      <div class="color theme1_color13"></div>
+      <div class="color theme1_color14"></div>
+
+    <script src="./index1js.js"></script>
+    <script src="./vanillaSelectBox.js?v0.75"></script>
+    <script>
+
+
+    selectBoxTest = new vanillaSelectBox("#demoShort", {
+        "maxHeight": 200,
+        "search": true ,
+        "translations": { "all": "All", "items": "items","selectAll":"Check All","clearAll":"Clear All","placeHolder": "Choose a brand..."}
+    });
+    </script>
+  </body>
+</html>

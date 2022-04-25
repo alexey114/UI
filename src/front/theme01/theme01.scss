@@ -1,0 +1,376 @@
+
+@import "../base_style/base.scss";
+@import "../base_style/theme_colors.scss";
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./theme01/font/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./theme01/font/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+*{
+  font-family: Montserrat;
+}
+
+.header {
+  @include header(Montserrat);
+}
+.header_h1 {
+  @include header_text(Montserrat);
+}
+.header_h2 {
+  @include header_text(Montserrat);
+}
+.header_h3 {
+  @include header_text(Montserrat);
+}
+
+.color_back {
+  color: $theme1_color2;
+}
+.grey_color {
+  font-weight: 500;
+  color: $theme1_color14;
+}
+
+.buttons-name {
+  font-family: Montserrat;
+}
+
+.checkbox_text {
+  font-family: Montserrat;
+}
+
+/* Navigation */
+
+.navigation {
+  @include font_style_base(Montserrat);
+}
+
+/* Button */
+
+.button {
+  font-family: Montserrat;
+  @include size_btn(276px, 77px);
+  border: none;
+  color: $white;
+}
+
+.filter_small{
+  @include size_btn(154px, 50px);
+}
+
+.plus {
+  font-size: 1.75 * $font_size_base;
+  line-height: 1.75 * $font_size_base;
+}
+
+.delete {
+  @include bg_color($theme1_color3);
+&:hover {
+  @include bg_color($theme1_color6);
+  transition: all 500ms ease;
+}
+&:active {
+  @include bg_color($theme1_color7);
+}
+}
+
+.delete_inactive {
+  @include bg_color($theme1_color8);
+}
+
+
+.save, .save-exit, .filter {
+  @include bg_color($theme1_color5);
+}
+.filter:hover, .save-exit:hover {
+  @include bg_color($theme1_color4);
+  transition: all 500ms ease;
+}
+
+.filter:active, .save-exit:active {
+  @include bg_color($theme1_color9);
+}
+
+.save-exit_inactive, .filter_inactive, .save_inactive {
+  @include bg_color($theme1_color10);
+}
+
+.add, .exit, .back {
+  @include bg_color($theme1_color2);
+}
+
+.add_inactive, .exit_inactive, .back_inactive {
+  @include bg_color($theme1_color13);
+}
+
+.container_add_text{
+  display: none;
+}
+
+/* Checkbox */
+
+.checkbox_big {
+  @include size_checkbox(30px, 30px);
+  @include background;
+  background-image: url(./theme01/images/active_1.svg);
+  background-size: contain;
+}
+
+.checkbox_big_inactive {
+  background-image: url(./theme01/images/active_2.svg);
+}
+
+/* Switcher */
+
+.switcher-color1{
+  background-color: $theme1_color1;
+}
+
+.switcher-color2{
+  background-color: $theme1_color2;
+}
+
+.switcher-color3{
+  background-color: $theme1_color3;
+}
+
+.switcher-color4{
+  background-color: $theme1_color4;
+}
+
+/* Icons */
+
+.trash {
+  @include size_icon(30px, 30px);
+  @include background;
+  background-image: url(./theme01/images/trash_1.svg);
+  background-size: contain;
+
+  &:hover {
+  background-image: url(./theme01/images/trash_2.svg);
+  }
+
+  &:active {
+  background-image: url(./theme01/images/trash_3.svg);
+  }
+}
+
+.trash_inactive {
+  @include size_icon(30px, 30px);
+  @include background;
+  background-image: url(./theme01/images/trash_4.svg);
+  background-size: contain;
+}
+
+.pen {
+  @include size_icon(30px, 30px);
+  @include background;
+  background-image: url(./theme01/images/pen_1.svg);
+  background-size: contain;
+
+  &:hover {
+  background-image: url(./theme01/images/pen_2.svg);
+  }
+
+  &:active {
+  background-image: url(./theme01/images/pen_3.svg);
+  }
+}
+
+.pen_inactive {
+  @include size_icon(30px, 30px);
+  @include background;
+  background-image: url(./theme01/images/pen_4.svg);
+  background-size: contain;
+}
+
+/* Search */
+
+
+.search:hover {
+  @include border(1px solid $theme1_color17);
+}
+
+.search:focus {
+  @include border(2px solid $theme1_color3);
+}
+
+.search_container::before {
+  background-image: url(./theme01/images/search.svg);
+}
+
+/* Menu */
+.menu_subcontainer {
+   gap: 20px;
+}
+
+.menu_text {
+  @include font_style_base(Montserrat);
+  color: $theme1_color1;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.menu_point {
+  width: 8px;
+  height: 40px;
+  background-image: url(./theme01/images/point.svg);
+  margin-left: -28px;
+}
+.menu_subelement {
+  font-family: Montserrat;
+  color: $theme1_color1;
+  margin-left: 34px;
+  margin-top: 20px;
+}
+.menu_subelement_last{
+  margin-bottom: 20px;
+}
+
+.subel1, .subel3, .subel5{
+  color: #4E7CCA;
+}
+
+.business {
+  background-image: url(./theme01/images/point_1.svg);
+}
+
+.content {
+  background-image: url(./theme01/images/point_2.svg);
+}
+
+.control {
+  background-image: url(./theme01/images/point_3.svg);
+}
+
+/* Dropdown lists */
+
+.__select__label:hover {
+  background-color: $theme1_color2;
+  color: $white;
+}
+
+.__select__title {
+  &:hover {
+    border-color: $theme1_color2;
+
+    &::before,
+    &::after {
+      background-color: $theme1_color2;
+    }
+  }
+}
+
+/* Form */
+
+.input {
+  @include color_btn(1px solid $theme1_color15, $theme1_color16);
+  font-family: Montserrat;
+  font-size: 0.8 * $font_size_base;
+  line-height: 0.8 * $font_size_base;
+  display: flex;
+}
+
+.select2 {
+  @include color_btn(2px solid $theme1_color3, $theme1_color16);
+}
+
+
+/* Color */
+
+.theme1_color1{
+  background-color: $theme1_color1;
+}
+
+.theme1_color2{
+  background-color: $theme1_color2;
+}
+
+.theme1_color3{
+  background-color: $theme1_color3;
+}
+.theme1_color4{
+  background-color: $theme1_color4;
+}
+.theme1_color5{
+  background-color: $theme1_color5;
+}
+.theme1_color6{
+  background-color: $theme1_color14;
+}
+.theme1_color7{
+  background-color: $theme1_color18;
+}
+.theme1_color8{
+  background-color: $theme1_color19;
+}
+.theme1_color9{
+  background-color: $theme1_color8;
+}
+.theme1_color10{
+  background-color: $theme1_color10;
+}
+.theme1_color11{
+  background-color: $theme1_color13;
+}
+.theme1_color12{
+  display: none;
+}
+.theme1_color13{
+  display: none;
+}
+.theme1_color14{
+  display: none;
+}
+
+
+.vsb-menu .multi li:not(.grouped-option)::before {
+  background-image: url(./theme01/images/multiempty.svg);
+}
+
+
+/* Main */
+.hashtag_item {
+  background-color: $theme1_color2;
+}
+
+.form_button_accept {
+  @include form_button;
+  background-image: url(./images/galka.png);
+}
+
+.form_button_deny {
+  @include form_button;
+  background-image: url(./images/krest.png);
+}
+
+input:checked + .slider-switcher {
+  background-color: $theme1_color2;
+}
+
+.slider::-webkit-slider-thumb {
+  background: $theme1_color5;
+}
+
+.slider::-moz-range-thumb {
+  background: $theme1_color15;
+}
+
+.block1 {
+
+  > .item {
+    background: $white;
+  }
+}
