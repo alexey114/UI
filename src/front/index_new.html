@@ -39,7 +39,7 @@
               <span class="slider-switcher"></span>
             </label>
           </div>
-          <p class="select_container-text">Выбор дизайны</p>
+          <p class="select_container-text">Выбор дизайна</p>
 
           <select onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + '.css'">
             <option value="1">Тема 1</option>
@@ -63,6 +63,105 @@
             <div class="item"></div>
             <div class="item"></div>
         </div>
+      </div>
+
+
+      <div class="color_container-six_theme">
+
+        <h1 id="colors colors_h1">Цвета</h1>
+
+        <p class="color_container-text">Основные цвета</p>
+
+        <div class="color_container-items">
+          <div class="color_container-item">
+            <div class="color theme6_color1"></div>
+            <p class="color_container-number_color">109CF1</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color2"></div>
+            <p class="color_container-number_color">192A3E</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color3"></div>
+            <p class="color_container-number_color">6C7293</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color4"></div>
+            <p class="color_container-number_color">A7ABC3</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color5"></div>
+            <p class="color_container-number_color">FFFFFF</p>
+          </div>
+        </div>
+
+        <p class="color_container-text">Акцентные цвета</p>
+
+          <div class="color_container-items">
+            <div class="color_container-item">
+              <div class="color theme6_color6"></div>
+              <p class="color_container-number_color">885AF8</p>
+            </div>
+            <div class="color_container-item">
+              <div class="color theme6_color7"></div>
+              <p class="color_container-number_color">FFB946</p>
+            </div>
+            <div class="color_container-item">
+              <div class="color theme6_color8"></div>
+              <p class="color_container-number_color">F7685B</p>
+            </div>
+            <div class="color_container-item">
+              <div class="color theme6_color9"></div>
+              <p class="color_container-number_color">28C46F</p>
+            </div>
+            <div class="color_container-item">
+              <div class="color theme6_color10"></div>
+              <p class="color_container-number_color">2ED47A</p>
+            </div>
+          </div>
+
+        <p class="color_container-text">Системные цвета</p>
+
+        <div class="color_container-items">
+          <div class="color_container-item">
+            <div class="color theme6_color18"></div>
+            <p class="color_container-number_color">6A707E</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color17"></div>
+            <p class="color_container-number_color">90A0B7</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color11"></div>
+            <p class="color_container-number_color">C2CFE0</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color12"></div>
+            <p class="color_container-number_color">D3D8DD</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color13"></div>
+            <p class="color_container-number_color">EBEFF2</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color14"></div>
+            <p class="color_container-number_color">F2F3F8</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color15"></div>
+            <p class="color_container-number_color">F1F5FB</p>
+          </div>
+          <div class="color_container-item">
+            <div class="color theme6_color16"></div>
+            <p class="color_container-number_color">F5F7F9</p>
+          </div>
+        </div>
+
+
+
+
+
+
       </div>
 
       <h1 id="buttons" class="header">Кнопки</h1>
@@ -440,28 +539,11 @@
         <input class="search" placeholder="Поиск" />
       </div>
 
-      <h1 id="colors" class="header">Цвета</h1>
-      <div class="color_container">
-
-        <div class="color theme1_color1"></div>
-        <div class="color theme1_color2"></div>
-        <div class="color theme1_color3"></div>
-        <div class="color theme1_color4"></div>
-        <div class="color theme1_color5"></div>
-        <div class="color theme1_color6"></div>
-        <div class="color theme1_color7"></div>
-        <div class="color theme1_color8"></div>
-        <div class="color theme1_color9"></div>
-        <div class="color theme1_color10"></div>
-        <div class="color theme1_color11"></div>
-        <div class="color theme1_color12"></div>
-        <div class="color theme1_color13"></div>
-        <div class="color theme1_color14"></div>
+    </div>
 
       <script src="./index1js.js"></script>
       <script src="./vanillaSelectBox.js?v0.75"></script>
       <script>
-
 
       selectBoxTest = new vanillaSelectBox("#demoShort", {
           "maxHeight": 200,
@@ -470,6 +552,5 @@
       });
       </script>
 
-    </div>
   </body>
 </html>

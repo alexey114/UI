@@ -125,11 +125,22 @@ $font_size_base: 16px;
 
 .select_container-menu{
   width: 80%;
+
+  @media (max-width: 875px) {
+    order: 2;
+  }
+
 }
 
 .select_container-theme{
+  min-width: 120px;
   width: 10%;
   margin-left: 98px;
+  margin-bottom: 25px;
+
+  @media (max-width: 1250px) {
+    margin-left: 25px;
+  }
 }
 
 .select_container-text{
@@ -637,12 +648,10 @@ $font_size_base: 16px;
     min-height: 40px;
     padding-left: 16px;
 
-
   & + input + & {
     border-top: 0 solid #c7ccd160;
   }
 }
-
 
 .__select[data-state=active] .__select__content {
   opacity: 1;
@@ -769,7 +778,6 @@ $font_size_base: 16px;
   padding-bottom: 50px;
   margin-top: 50px;
 }
-
 
 .search_container::before {
   width: 20px;

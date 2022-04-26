@@ -71,6 +71,10 @@
   text-align: center;
 }
 
+.link:first-child{
+  margin: 0;
+}
+
 .header_components{
   color: $theme6_color1;
   font-weight: 700;
@@ -121,7 +125,7 @@
 .switch {
   position: absolute;
   margin: 0px;
-  left: 40px;
+  left: 35px;
   top: 0px;
 }
 
@@ -379,49 +383,92 @@ input:checked + .slider-switcher:before {
 
 /* Color */
 
-.theme1_color1{
-  background-color: $theme1_color1;
+.color{
+  width: 230px;
+  height: 60px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 40px;
+  box-shadow: none;
 }
 
-.theme1_color2{
-  background-color: $theme1_color2;
+.theme6_color5{
+  border: 1px solid #F0F0F0;
 }
 
-.theme1_color3{
-  background-color: $theme1_color3;
+.color_container-six_theme{
+  color: $theme6_color17;
 }
-.theme1_color4{
-  background-color: $theme1_color4;
+
+.color_container-number_color{
+  color: $theme6_color18;
 }
-.theme1_color5{
-  background-color: $theme1_color5;
+
+.colors_h1{
+  font-size: 30px;
 }
-.theme1_color6{
-  background-color: $theme1_color14;
+
+.color_container-items{
+  display: flex;
+  flex-wrap: wrap;
 }
-.theme1_color7{
-  background-color: $theme1_color18;
+
+.color_container-text{
+  font-size: $font_size_base;
 }
-.theme1_color8{
-  background-color: $theme1_color19;
+.theme6_color1{
+  background-color: $theme6_color3;
 }
-.theme1_color9{
-  background-color: $theme1_color8;
+.theme6_color2{
+  background-color: $theme6_color4;
 }
-.theme1_color10{
-  background-color: $theme1_color10;
+.theme6_color3{
+  background-color: $theme6_color1;
 }
-.theme1_color11{
-  background-color: $theme1_color13;
+.theme6_color4{
+  background-color: $theme6_color5;
 }
-.theme1_color12{
-  display: none;
+.theme6_color5{
+  background-color: $theme6_color6;
 }
-.theme1_color13{
-  display: none;
+.theme6_color6{
+  background-color: $theme6_color7;
 }
-.theme1_color14{
-  display: none;
+.theme6_color7{
+  background-color: $theme6_color8;
+}
+.theme6_color8{
+  background-color: $theme6_color9;
+}
+.theme6_color9{
+  background-color: $theme6_color10;
+}
+.theme6_color10{
+  background-color: $theme6_color11;
+}
+.theme6_color11{
+  background-color: $theme6_color12;
+}
+.theme6_color12{
+  background-color: $theme6_color13;
+}
+.theme6_color13{
+  background-color: $theme6_color2;
+}
+.theme6_color14{
+  background-color: $theme6_color14;
+}
+.theme6_color15{
+  background-color: $theme6_color15;
+}
+.theme6_color16{
+  background-color: $theme6_color16;
+}
+.theme6_color17{
+  background-color: $theme6_color17;
+}
+.theme6_color18{
+  background-color: $theme6_color18;
 }
 
 
