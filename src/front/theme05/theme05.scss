@@ -93,7 +93,7 @@
 }
 
 .filter_inactive::before {
-  content: " ";
+  content:"";
   @include size_icon(23px, 23px);
   background-image: url(./theme05/images/filter_grey.svg);
   margin-right: 15px;
@@ -101,7 +101,7 @@
 }
 
 .exit::before {
-  content: " ";
+  content:"";
   @include size_icon(23px, 23px);
   margin-right: 15px;
   z-index: 2;

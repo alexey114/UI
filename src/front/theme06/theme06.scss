@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
-    url("./theme01/font/Montserrat/Montserrat-Regular.ttf") format("truetype");
+    url("./theme06/font/Montserrat/Montserrat-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -13,9 +13,17 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
-    url("./theme01/font/Montserrat/Montserrat-Medium.ttf") format("truetype");
+    url("./theme06/font/Montserrat/Montserrat-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./theme06/font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
 }
 
 *{
@@ -55,6 +63,87 @@
 
 .navigation {
   @include font_style_base(Montserrat);
+  margin: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+}
+
+.header_components{
+  color: $theme6_color1;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.select_container{
+  color: $theme6_color1;
+  font-size: 0.85 * $font_size_base;
+}
+
+.link{
+  color: $theme6_color1;
+  padding: 5px 12px 5px 12px;
+  margin-right: 0px 15px 15px 0px;
+  border-radius: 4px;
+  background-color:$theme6_color2;
+}
+
+.select_container-switcher{
+  display: block;
+  position: relative;
+  height: 40px;
+}
+
+.select_container-switcher::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content:" ";
+  width: 20px;
+  height: 20px;
+  background-image: url(./theme06/images/light_theme.svg);
+  background-repeat: no-repeat;
+}
+
+.select_container-switcher::after{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  content:" ";
+  width: 20px;
+  height: 20px;
+  background-image: url(./theme06/images/dark_theme.svg);
+  background-repeat: no-repeat;
+}
+
+.switch {
+  position: absolute;
+  margin: 0px;
+  left: 40px;
+  top: 0px;
+}
+
+.slider-switcher{
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: $theme6_color3;
+}
+
+.slider-switcher::before {
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  border-radius: 16px;
+}
+
+input:checked + .slider-switcher:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
 }
 
 /* Button */
