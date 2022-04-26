@@ -38,5 +38,15 @@
   },
   "dependencies": {
     "nouislider": "^15.5.1"
-  }
+  },
+  "name": "uikits",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git@cartweb.top:CartwebProjects/_UIKits.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

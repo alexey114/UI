@@ -2,8 +2,6 @@ const selectSingle = document.querySelector(".__select");
 const selectSingle_title = selectSingle.querySelector(".__select__title");
 const selectSingle_labels = selectSingle.querySelectorAll(".__select__label");
 
-//slide-new
-
 // Toggle menu
 selectSingle_title.addEventListener("click", () => {
   if ("active" === selectSingle.getAttribute("data-state")) {

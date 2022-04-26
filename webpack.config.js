@@ -14,6 +14,7 @@ let entries = {
     'index3': './src/front/index3.scss',
     'index4': './src/front/index4.scss',
     'index5': './src/front/index5.scss',
+    'index6': './src/front/index6.scss',
     'index1A': './src/front/index1A.scss',
     'index2A': './src/front/index2A.scss',
     'index3A': './src/front/index3A.scss',

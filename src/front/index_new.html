@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link id="css" rel="stylesheet" href="./css/index1.css" />
+    <link id="css" rel="stylesheet" href="./css/index6.css" />
   </head>
   <body class="body">
 
-    <select id="select_themes">
+    <select onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + '.css'">
         <option value="1">Тема 1</option>
         <option value="2">Тема 2</option>
         <option value="3">Тема 3</option>
         <option value="4">Тема 4</option>
         <option value="5">Тема 5</option>
-        <option value="6">Тема 6</option>
+        <option value="./index_new.html" selected="selected">Тема 6</option>
     </select>
+
+    <h1>ЭТО 6 тема</h1>
 
     <nav id="menu" class="navigation">
       <a class="link" id="nav" href="#buttons">Кнопки</a>

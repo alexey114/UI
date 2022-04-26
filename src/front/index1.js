@@ -2,10 +2,33 @@ const selectSingle = document.querySelector(".__select");
 const selectSingle_title = selectSingle.querySelector(".__select__title");
 const selectSingle_labels = selectSingle.querySelectorAll(".__select__label");
 
+//Forwarding to
+
+const selectThemes = document.querySelector("#select_themes");
+let theme = selectThemes.options[selectThemes.selectedIndex].value;
+let selectCss = document.querySelector("#css")
+console.log(theme)
+
+function selectTheme(){
+
+  let theme = selectThemes.options[selectThemes.selectedIndex].value;
+
+  if(theme === "6"){
+    console.log("index_new", theme)
+    window.location.href = './index_new.html';
+  } else {
+    // window.location.href = './index.html';
+    selectCss.href='./css/index' + theme + '.css'
+  }
+  console.log("theme",theme)
+}
+
+selectThemes.addEventListener("change", selectTheme)
+
 //Change Style loader
 
-let obj = document.getElementById("loader_menu")
-let classChange = document.getElementsByClassName("example_loader")[0]
+let obj = document.querySelector("#loader_menu")
+let classChange = document.querySelector(".example_loader")
 
 function onclickAdd(e){
   e.preventDefault()
