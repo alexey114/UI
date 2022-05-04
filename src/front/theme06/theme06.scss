@@ -260,11 +260,187 @@ input:checked + .slider-switcher:before {
 
 /* Button */
 
-.button {
-  font-family: Montserrat;
-  @include size_btn(276px, 77px);
+.button_checkbox_headers, .button_checkbox_buttons{
+  display: flex;
+  max-width: 790px;
+}
+
+.button_checkbox_buttons{
+  border: 1px dashed #885AF8;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.button_checkbox_header{
+  @include font_style_six_theme(normal,500,18px,21.94px, $theme6_color4);
+
+  &.header_standard{
+    padding-left: 20px;
+    padding-right: 87px;
+  }
+  &.header_guidance{
+    padding-right: 59px;
+  }
+  &.header_pressing{
+    padding-right: 83px;
+  }
+}
+
+button{
+  color: $theme6_color6;
+}
+
+.button_checkbox_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 11.5px, 34px;
+  margin-right: 50px;
+
+  &:last-child{
+    margin-right: 0px;
+  }
+
+  width: 160px;
+  height: 42px;
   border: none;
-  color: $white;
+  background-color: $theme6_color6;
+}
+
+.btn_small{
+  width: 143px;
+  height: 32px;
+  margin-right: 67px;
+}
+
+.plus{
+  padding-right: 8px;
+}
+
+.hover_cursor-text{
+  position: relative;
+
+  &:after{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    content: "";
+    left: 75px;
+    top: 0;
+    background-image: url(./theme06/images/hand.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.states-add{
+  color: $theme6_color6;
+
+  .states-add-active{
+    background-color: $theme6_color3;
+  }
+
+  .states-add-guidance{
+    background-color: #34AFF9;
+  }
+
+  .states-add-pressing{
+    background-color: #098EDF;
+  }
+  .states-add-not_active{
+    background-color: #C2CFE0;
+  }
+}
+
+.states-load{
+
+  .attach{
+    width: 18px;
+    height: 18px;
+    padding-right: 4px;
+    background-image: url(./theme06/images/attach.svg);
+    background-repeat: no-repeat;
+  }
+
+  .states-load-active{
+    color: $theme6_color5;
+    background-color: $theme6_color14;
+  }
+
+  .states-load-guidance{
+    color: #A7ABC3;
+    background-color: #E5E6ED;
+  }
+
+  .states-load-pressing{
+    color: $theme6_color1;
+    background-color: #D7D9E4;
+  }
+
+  .states-load-not_active{
+    color: $theme6_color6;
+    background-color: $theme6_color12;
+  }
+}
+
+.states-cancel{
+
+  .states-cancel-active{
+    border: solid 1px #109CF1;
+    color: #109CF1;
+    font-weight: 600;
+    line-height: 18.2px;
+  }
+
+  .states-cancel-guidance{
+    border: solid 1px #34AFF9;
+    color: #34AFF9;
+    font-weight: 600;
+    line-height: 18.2px;
+  }
+
+  .states-cancel-pressing{
+    border: solid 1px #098EDF;
+    color: #098EDF;
+    font-weight: 600;
+    line-height: 18.2px;
+  }
+
+  .states-cancel-not_active{
+    border: solid 1px #C2CFE0;
+    color: #C2CFE0;
+    font-weight: 600;
+    line-height: 18.2px;
+  }
+}
+
+.states-cancel_v2{
+
+  .states-cancel_v2-active{
+    color: #109CF1;
+    font-weight: 600;
+    line-height: 18.2px;
+  }
+
+  .states-cancel_v2-guidance{
+    color: #34AFF9;
+    font-weight: 600;
+    line-height: 18.2px;
+  }
+
+  .states-cancel_v2-pressing{
+    color: #098EDF;
+    font-weight: 600;
+    line-height: 18.2px;
+  }
+
+  .states-cancel_v2-not_active{
+    color: #C2CFE0;
+    font-weight: 600;
+    line-height: 18.2px;
+  }
 }
 
 .filter_small{
