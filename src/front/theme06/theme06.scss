@@ -265,6 +265,10 @@ input:checked + .slider-switcher:before {
   max-width: 790px;
 }
 
+.button-checkbox_items{
+  display: flex;
+}
+
 .button_checkbox_buttons{
   border: 1px dashed #885AF8;
   border-radius: 5px;
@@ -612,16 +616,35 @@ button{
 
 /* Checkbox */
 
-.checkbox_big {
-  @include size_checkbox(30px, 30px);
-  @include background;
-  background-image: url(./theme01/images/active_1.svg);
-  background-size: contain;
+input{
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  margin: 0 20px 0 0;
 }
 
-.checkbox_big_inactive {
-  background-image: url(./theme01/images/active_2.svg);
+.checked_no{
+  background: #D5D5D5;
 }
+.checked_yes{
+  background-color: $theme6_color3;
+}
+.checked_two{
+  background-color: $theme6_color3;
+}
+.checked_light:checked{
+  color: $theme6_color12;
+}
+.checked_green{
+  background-color: $theme6_color3;
+}
+.checked_alert{
+  background-color: $theme6_color3;
+}
+
+// input:checked + .slider-switcher {
+//   background-color: $theme6_color3;
+// }
 
 /* Switcher */
 
@@ -890,10 +913,6 @@ button{
 .form_button_deny {
   @include form_button;
   background-image: url(./images/krest.png);
-}
-
-input:checked + .slider-switcher {
-  background-color: $theme1_color2;
 }
 
 .slider::-webkit-slider-thumb {
