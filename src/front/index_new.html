@@ -283,57 +283,73 @@
 
           </div>
 
-          <div class="button-checkbox_container-item collection_element">
+          <div class="button-checkbox_container-item collection_elements">
 
-            <div>
+            <div class="collection_element">
 
               <div class="button_checkbox_header header_standard">Checkbox</div>
 
-              <div class="button_checkbox_buttons">
-                <input class="checked_no" type="checkbox">
-                <input class="checked_yes" type="checkbox" checked>
-                <input class="checked_two" type="checkbox" checked>
-                <input class="checked_light" type="checkbox" checked>
-                <input class="checked_green" type="checkbox" checked>
-                <input class="checked_alert" type="checkbox" checked>
+              <div class="collection_element_checkbox">
+                <div class="collection_element_item">
+                  <input class="checkbox checked_no" type="checkbox">
+                  <input class="checkbox checked_yes" type="checkbox" checked>
+                  <input class="checkbox checked_two" type="checkbox" checked>
+                  <input class="checkbox checked_light" type="checkbox" checked>
+                  <input class="checkbox checked_green" type="checkbox" checked>
+                  <input class="checkbox checked_alert" type="checkbox" checked>
+                </div>
               </div>
 
             </div>
 
-            <div>
+            <div class="collection_element">
 
               <div class="button_checkbox_header header_standard">Radio</div>
 
-              <div class="button_checkbox_buttons">
-                <input class="radio_no" type="radio">
-                <input class="radio_yes" type="radio" checked>
-                <input class="radio_alert" type="radio" checked>
+              <div class="collection_element_radio">
+                <div class="collection_element_item">
+                  <input class="radio radio_no" type="radio">
+                  <input class="radio radio_yes" type="radio" checked>
+                  <input class="radio radio_alert" type="radio" checked>
+                </div>
               </div>
 
             </div>
 
-            <div>
+            <div class="collection_element">
 
               <div class="button_checkbox_header header_standard">Статусы элементов</div>
-
-              <div class="button_checkbox_buttons">
-                <button class="button_checkbox_button states-add-not_active"></button>
-                <button class="button_checkbox_button states-add-not_active"></button>
-                <button class="button_checkbox_button states-add-not_active"></button>
+              <div class="collection_element_button">
+                <div class="collection_element_item">
+                  <button class="states-item states_active">Активен</button>
+                  <button class="states-item states_not_active">Не активен</button>
+                  <button class="states-item states_off">Отключён</button>
+                </div>
               </div>
 
             </div>
 
-            <div>
+            <div class="collection_element">
 
               <div class="button_checkbox_header header_standard">Switcher</div>
 
-              <div class="button_checkbox_buttons">
-                <div class="select_container-switcher">
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <span class="slider-switcher"></span>
-                  </label>
+              <div class="collection_element_switcher">
+
+                <div class="collection_element_item">
+                  <div class="switch_items">
+                    <div class="switch_item">
+                      <input class="switcher_collection swt_active" type="checkbox" checked/>
+                    </div>
+                    <div class="switch_item">
+                      <input class="switcher_collection swt_no_active" type="checkbox"/>
+                    </div>
+                    <div class="switch_item">
+                      <input class="switcher_collection swt_active_light" type="checkbox" checked/>
+                    </div>
+                    <div class="switch_item">
+                      <input class="switcher_collection swt_no_active_light" type="checkbox"/>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -345,232 +361,78 @@
 
       </div>
 
-      <h1 id="forms" class="header">Формы</h1>
-      <form class="form" type="submit" novalidate>
-        <input class="input" placeholder="Фильтр..." />
-        <input class="input" placeholder="" />
-        <input class="input select2" placeholder="" />
-      </form>
+      <div class="avatar_container-six_theme">
+        <h1 class="colors_h1">Аватары пользователей</h1>
 
-      <h1 id="menu" class="header">Меню</h1>
-      <nav class="menu">
-        <ul class="menu_container">
-          <li class="menu_subcontainer">
-            <div class="element business"></div>
-            <p class="menu_text">Служебные</p>
-          </li>
-          <li class="menu_subcontainer">
-            <div class="element content"></div>
-            <p class="menu_text">Контент</p>
-          </li>
-          <li class="menu_subcontainer">
-            <div class="element control"></div>
-            <p class="menu_text">Управление сайтом</p>
-          </li>
-        </ul>
+        <div class="avatar_items">
 
-        <ul class="menu_container">
-          <li class="menu_subcontainer">
-            <div class="menu_point"></div>
-            <div class="element business business_white"></div>
-            <div class="menu_text column text_color after-none">
-              Служебные
-              <li class="menu_subelement margin-top li_color subel1 text_color subelement_text_color">
-                Элементы простые 1
-              </li>
-              <li class="menu_subelement subel2">Элементы простые 2</li>
-              <li class="menu_subelement menu_subelement_last">Элементы с картинками</li>
+          <div class="avatar_item">
+
+            <div class="button_checkbox_header">Аватар пользователя</div>
+            <p class="text_container-item-font-size-14pt">104 x 104</p>
+
+            <div class="foto_items">
+              <div class="foto_item avatar">
+              </div>
+              <div class="foto_item avatar_done">
+              </div>
+              <div class="foto_item avatar_hover">
+              </div>
             </div>
-          </li>
-          <li class="menu_subcontainer">
-            <div class="element content"></div>
-            <p class="menu_text">Контент</p>
-          </li>
-          <li class="menu_subcontainer">
-            <div class="element control"></div>
-            <p class="menu_text">Управление сайтом</p>
-          </li>
-        </ul>
 
-        <ul class="menu_container">
-          <li class="menu_subcontainer">
-            <div class="element business"></div>
-            <div class="menu_text">Служебные</div>
-          </li>
-          <li class="menu_subcontainer">
-            <div class="menu_point"></div>
-            <div class="element element_active content content_black"></div>
-            <div class="menu_text column text_color">
-              Контент
-              <li class="menu_subelement margin-top li_color subel3 text_color subelement_text_color">
-                Отдельные фрагменты
-              </li>
-              <li class="menu_subelement subel4 menu_subelement_last">Новости</li>
-            </div>
-          </li>
-          <li class="menu_subcontainer">
-            <div class="element control"></div>
-            <p class="menu_text">Управление сайтом</p>
-          </li>
-        </ul>
-
-        <ul class="menu_container">
-          <li class="menu_subcontainer">
-            <div class="element business"></div>
-            <div class="menu_text">Служебные</div>
-          </li>
-          <li class="menu_subcontainer">
-            <div class="element content"></div>
-            <p class="menu_text">Контент</p>
-          </li>
-          <li class="menu_subcontainer">
-            <div class="menu_point"></div>
-            <div class="element control control_black"></div>
-            <div class="menu_text column text_color">
-              Управление сайтом
-              <li class="menu_subelement margin-top li_color subel5 text_color subelement_text_color">Главная</li>
-              <li class="menu_subelement margin-top li_color subel6">Управление</li>
-            </div>
-          </li>
-        </ul>
-      </nav>
-
-      <h1 id="checkbox" class="header header_margin">Чекбокс</h1>
-
-        <div class="checkbox_subcontainer">
-          <div class="checkbox__active_container">
-            <button class="checkbox_big"></button>
           </div>
+
+          <div class="avatar_item">
+
+            <div class="button_checkbox_header">Аватар пользователя<br> на боковой панели</div>
+            <p class="text_container-item-font-size-14pt">46 x 46</p>
+
+            <div class="foto_items">
+              <div class="foto_item profile_user">
+              </div>
+              <div class="foto_item profile_user_active">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="avatar_item">
+
+            <div class="button_checkbox_header">Связанный аватар<br> пользователя</div>
+            <p class="text_container-item-font-size-14pt">24 x 24</p>
+
+            <div class="foto_items">
+              <div class="mini_avatar">
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
 
-      <h1 id="icons" class="header">Иконки</h1>
+      <div class="preloader_container-six_theme">
+        <h1 class="colors_h1">Прелоадеры</h1>
 
-      <div class="checkbox_container">
-        <div class="checkbox_subcontainer">
-          <div class="checkbox__active_container">
-            <p class="checkbox_text">Активный</p>
-            <button class="trash"></button>
+        <div class="preloader_items">
+          <div class="preloader_item">
+            <div class="button_checkbox_header">Стандартный</div>
+            <div class="preloader_elements">
+              <div class="preloader_element">
+              </div>
+              <div class="preloader_element">
+              </div>
+              <div class="preloader_element">
+              </div>
+            </div>
           </div>
-          <div class="checkbox__active_container">
-            <p class="checkbox_text inactive_marker">Неактивный</p>
-            <button class="trash_inactive inactive_marker"></button>
-          </div>
-        </div>
-
-        <div class="checkbox_subcontainer">
-          <div class="checkbox__active_container">
-            <p class="checkbox_text">Активный</p>
-            <button class="pen"></button>
-          </div>
-          <div class="checkbox__active_container">
-            <p class="checkbox_text inactive_marker">Неактивный</p>
-            <button class="pen_inactive inactive_marker"></button>
+          <div class="preloader_item">
+            <div class="button_checkbox_header">Прогрессбар</div>
+            <div class="progress_bar_element">
+              <progress class="progress_bar" max="100" value="45"></progress>
+            </div>
           </div>
         </div>
-
-
-      <h1 id="lists" class="header">Выпадающие списки</h1>
-
-      <div class="demo-zone">
-        <select id="demoShort" multiple="" size="5" style="display: inline-block;">
-            <option value="Abarth" selected="true">Abarth</option>
-            <option value="Alfa Romeo"  selected="true">Alfa Romeo</option>
-            <option value="Alpine" data-test="example" selected="true">Alpine</option>
-            <option value="Aston Martin" selected="true">Aston Martin</option>
-            <option value="Audi" selected="true">Audi</option>
-            <option value="Bentley" selected="true">Bentley</option>
-            <option value="BMW" selected="true">BMW</option>
-            <option value="Cadillac" selected="true">Cadillac</option>
-            <option value="Chevrolet" selected="true">Chevrolet</option>
-            <option value="Citroën" selected="true">Citroën</option>
-            <option value="Cupra" selected="true">Cupra</option>
-            <option value="DACIA" selected="true">DACIA</option>
-        </select>
-      </div>
-
-      <input type="reset" class="reset" value="" />
-      <div class="__select" data-state="">
-        <div class="__select__title" data-default="Option 0">
-          Страница с каталогом
-        </div>
-        <div class="__select__content">
-          <input
-            id="singleSelect1"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect1" class="__select__label">Главная</label>
-          <input
-            id="singleSelect2"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect2" class="__select__label">Новости</label>
-          <input
-            id="singleSelect3"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect3" class="__select__label">Контакты</label>
-          <input
-            id="singleSelect4"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect4" class="__select__label">Статьи</label>
-          <input
-            id="singleSelect4"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect4" class="__select__label">Новое</label>
-          <input
-            id="singleSelect4"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect4" class="__select__label">Познавательное</label>
-          <input
-            id="singleSelect4"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect4" class="__select__label">Звезды</label>
-          <input
-            id="singleSelect4"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect4" class="__select__label">Телешоу</label>
-          <input
-            id="singleSelect4"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect4" class="__select__label">Россия</label>
-          <input
-            id="singleSelect4"
-            class="__select__input"
-            type="radio"
-            name="singleSelect"
-          />
-          <label for="singleSelect4" class="__select__label">Современность</label>
-        </div>
-      </div>
-
-      <h1 id="search" class="header">Поиск</h1>
-      <div class="search_container">
-        <input class="search" placeholder="Поиск" />
       </div>
 
     </div>
