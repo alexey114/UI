@@ -1735,7 +1735,7 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  padding: 0px 75px 0px 12px;
+  padding: 0px 79px 0px 12px;
   outline: none;
   border-radius: 5px;
 }
@@ -1901,7 +1901,7 @@ progress::-moz-progress-bar {
     height: 40px;
     top: 12px;
     left: 270px;
-    background-image: url(./theme06/images/calendar.svg);
+    background-image: url(./theme06/images/calendar_blue.svg);
     background-repeat: no-repeat;
   }
 }
@@ -2091,4 +2091,152 @@ progress::-moz-progress-bar {
 
 .blue_header{
   color: $theme6_color3;
+}
+
+.arrow_design{
+  .name_item{
+
+        position: relative;
+
+        &:not(:first-child)::before{
+          content:"";
+          width: 12px;
+          height: 7px;
+          top: 42px;
+          right: 15px;
+          position: absolute;
+          background-image: url(./theme06/images/arrow_down.svg);
+          background-repeat: no-repeat;
+        }
+
+        &:last-child::before{
+          background-image: url(./theme06/images/arrow_down_blue.svg);
+          transform: rotate(180deg);
+        }
+    }
+}
+
+.calendar_grey_light,
+.calendar_grey,
+.calendar_blue{
+  position: relative;
+
+  &::before{
+    content:"";
+    width: 15px;
+    height: 16.67px;
+    top: 37px;
+    right: 15px;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}
+
+.calendar_grey_light::before{
+  top: 25px;
+  right: 40px;
+  background-image: url(./theme06/images/calendar_grey_light.svg);
+}
+.calendar_grey::before{
+  background-image: url(./theme06/images/calendar_grey.svg);
+}
+.calendar_blue::before{
+  background-image: url(./theme06/images/calendar_blue.svg);
+}
+
+.input_status{
+
+  margin-left: 20px;
+
+  .name_item{
+    margin-right: 42px;
+    position: relative;
+
+    &:first-child{
+      margin-right: 0;
+    }
+  }
+
+  .input_field_first{
+    width: 200px;
+    padding: 12px 50px 13px 12px;
+    border-radius: 5px;
+  }
+
+}
+
+.not_true{
+  position: absolute;
+  top: 70px;
+  left: 1px;
+  color: $theme6_color9;
+}
+
+.icon_close::after{
+  content:"";
+  width: 10px;
+  height: 10px;
+  top: 40px;
+  right: 50px;
+  position: absolute;
+  background-image: url(./theme06/images/close_red.svg);
+  background-repeat: no-repeat;
+}
+
+.icon_check_big::after{
+  content:"";
+  width: 15px;
+  height: 11.42px;
+  top: 40px;
+  right: 10px;
+  position: absolute;
+  background-image: url(./theme06/images/check_green_big.svg);
+  background-repeat: no-repeat;
+}
+
+.green_border{
+  border: 1px solid #2ED47A;
+}
+
+.red_border{
+  border: 1px solid $theme6_color9;
+}
+
+.input_text_status-items{
+  display: flex;
+  margin-top: 49px;
+}
+
+.input_text_status-item{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 80px;
+
+  .input_field_header{
+    width: 130px;
+    padding: 0 50px 0 20px;
+    display: block;
+  }
+
+  .not_true{
+    top: 45px;
+    left: 200px;
+  }
+
+  .icon_close::after{
+    top: 18px;
+  }
+
+  .icon_check_big{
+    margin-left: 30px;
+  }
+
+  .icon_check_big::after{
+    top: 18px;
+  }
+
+  .field_new{
+    color: $theme6_color4;
+  }
 }
