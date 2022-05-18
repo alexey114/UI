@@ -97,6 +97,7 @@ $font_family: Montserrat;
 }
 
 .select_container-switcher{
+  width: 118px;
   display: block;
   position: relative;
   height: 40px;
@@ -2675,6 +2676,7 @@ color: $theme6_color12;
 
 .icon_items{
   display: flex;
+
   .button_checkbox_header{
     margin-bottom: 20px;
   }
@@ -2684,12 +2686,23 @@ color: $theme6_color12;
   margin-right: 80px;
 }
 
+.icon_items_no_active{
+  .icon_item{
+    .sidebar_menu_icon{
+      margin-right: 24px;
+    }
+  }
+}
+
 .icon_item{
   display: flex;
   margin-bottom: 25px;
 
   .sidebar_menu_icon{
-    padding-right: 40px;
+    margin-right: 40px;
+    width: 24px;
+    height: 24px;
+    background-position: center;
   }
 }
 
@@ -2716,4 +2729,69 @@ color: $theme6_color12;
 }
 .icon_two_arrow_active{
   background-image: url(./theme06/images/two_arrow_active.svg);
+}
+
+/* Other */
+
+.icon_edit{
+    background-image: url(./theme06/images/edit.svg);
+}
+.icon_show{
+    background-image: url(./theme06/images/show.svg);
+}
+.icon_trach{
+    background-image: url(./theme06/images/trash.svg);
+}
+.icon_check_blue{
+    background-image: url(./theme06/images/check_blue.svg);
+}
+.icon_search{
+    width: auto;
+    background-image: url(./theme06/images/search.svg);
+}
+.icon_close_light{
+    background-image: url(./theme06/images/close_light.svg);
+}
+.icon_add{
+    background-image: url(./theme06/images/add.svg);
+}
+.icon_add{
+    background-image: url(./theme06/images/add.svg);
+}
+.icon_attach{
+    background-image: url(./theme06/images/attach.svg);
+}
+.icon_arrow_down{
+    background-image: url(./theme06/images/arrow_down.svg);
+}
+.icon_arrow_up{
+    background-image: url(./theme06/images/arrow_down.svg);
+    transform: rotate(180deg);
+}
+.icon_burger_menu{
+    background-image: url(./theme06/images/burger_menu.svg);
+    display: flex;
+    align-items: center;
+}
+.icon_filter{
+    background-image: url(./theme06/images/filter.svg);
+}
+.icon_save{
+    background-image: url(./theme06/images/save_gray.svg);
+}
+.icon_back{
+    background-image: url(./theme06/images/back_gray.svg);
+}
+.icon_left_gray{
+    background-image: url(./theme06/images/left_gray.svg);
+}
+.icon_right_gray{
+    background-image: url(./theme06/images/left_gray.svg);
+    transform: rotate(180deg);
+}
+.icon_image{
+    background-image: url(./theme06/images/image.svg);
+}
+.icon_no_image{
+    background-image: url(./theme06/images/no_image.svg);
 }
