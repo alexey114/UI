@@ -51,7 +51,7 @@
   color: $white;
 
   @media (max-width: 400px) {
-    @include size_btn(285px, 54px);
+    @include size_btn(220px, 54px);
   }
 
 }
