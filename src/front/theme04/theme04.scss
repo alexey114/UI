@@ -392,6 +392,10 @@
   height: 800px;
   padding-top: 67px;
   border-radius: 0 20px 20px 0;
+
+  @media (max-width:434px){
+    width: calc(100vw - 71px);
+  }
 }
 
 .menu_container::before {
@@ -484,6 +488,10 @@
   border-radius: 0 0 30px 0;
   content: "";
   z-index: 2;
+
+  @media (max-width:434px){
+    left: calc(100vw - 103px);
+  }
 }
 
 .subel1::after {
@@ -495,6 +503,10 @@
   background-color: $white;
   border: none;
   content: "";
+
+  @media (max-width:434px){
+    left: calc(100vw - 103px);
+  }
 }
 
 .subel2::before {
@@ -508,6 +520,10 @@
   border: none;
   content: "";
   z-index: 2;
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel2::after {
@@ -519,6 +535,10 @@
   background-color: $white;
   border: none;
   content: "";
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel3::before {
@@ -532,6 +552,10 @@
   border-radius: 0 0 30px 0;
   content: "";
   z-index: 2;
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel3::after {
@@ -543,6 +567,10 @@
   background-color: $white;
   border: none;
   content: "";
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel4::before {
@@ -556,6 +584,10 @@
   border: none;
   content: "";
   z-index: 2;
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel4::after {
@@ -567,6 +599,10 @@
   background-color: $white;
   border: none;
   content: "";
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel5::before {
@@ -580,6 +616,10 @@
   border-radius: 0 0 30px 0;
   content: "";
   z-index: 2;
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel5::after {
@@ -591,6 +631,10 @@
   background-color: $white;
   border: none;
   content: "";
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel6::before {
@@ -604,6 +648,10 @@
   border: none;
   content: "";
   z-index: 2;
+
+  @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 .subel6::after {
@@ -615,6 +663,10 @@
   background-color: $white;
   border: none;
   content: "";
+
+    @media (max-width:434px){
+    left: calc(100vw - 127px);
+  }
 }
 
 /* Checkbox */

@@ -39,6 +39,12 @@ $font_size_base: 16px;
   }
 }
 
+body{
+  @media (max-width: 400px) {
+    overflow-x:hidden;
+  }
+}
+
 @mixin header_text($font_family) {
   font-family: $font_family;
   font-style: normal;
@@ -227,10 +233,14 @@ $font_size_base: 16px;
 }
 
 .menu_container {
-  margin: 25px auto;
+  margin: 25px 25px;
   display: flex;
   flex-direction: column;
   padding-left: 5px;
+
+  @media (max-width: 500px) {
+    margin: 25px auto;
+  }
 }
 
 .menu_subcontainer {
@@ -1305,12 +1315,13 @@ tbody {
 /* Slider */
 
 .slidecontainer {
-  width: 100%;
+  width: 252px;
+  margin: 0 auto;
 }
 
 .slider {
   -webkit-appearance: none;
-  width: 40%;
+  width: 100%;
   height: 15px;
   border-radius: 5px;
   background: #b8b6b6;
