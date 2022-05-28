@@ -383,13 +383,16 @@ button{
 
   .states-add-active{
     background-color: $theme6_color3;
+    cursor: pointer;
   }
 
-  .states-add-guidance{
+  .states-add-guidance,
+  .states-add-active:hover{
     background-color: #34AFF9;
   }
 
-  .states-add-pressing{
+  .states-add-pressing,
+  .states-add-active:active{
     background-color: #098EDF;
   }
   .states-add-not_active{
@@ -410,14 +413,17 @@ button{
   .states-load-active{
     color: $theme6_color5;
     background-color: $theme6_color14;
+    cursor: pointer;
   }
 
-  .states-load-guidance{
+  .states-load-guidance,
+  .states-load-active:hover{
     color: #A7ABC3;
     background-color: #E5E6ED;
   }
 
-  .states-load-pressing{
+  .states-load-pressing,
+  .states-load-active:active{
     color: $theme6_color1;
     background-color: #D7D9E4;
   }
@@ -435,16 +441,19 @@ button{
     color: #109CF1;
     font-weight: 600;
     line-height: 18.2px;
+    cursor: pointer;
   }
 
-  .states-cancel-guidance{
+  .states-cancel-guidance,
+  .states-cancel-active:hover{
     border: solid 1px #34AFF9;
     color: #34AFF9;
     font-weight: 600;
     line-height: 18.2px;
   }
 
-  .states-cancel-pressing{
+  .states-cancel-pressing,
+  .states-cancel-active:active{
     border: solid 1px #098EDF;
     color: #098EDF;
     font-weight: 600;
@@ -465,15 +474,18 @@ button{
     color: #109CF1;
     font-weight: 600;
     line-height: 18.2px;
+    cursor: pointer;
   }
 
-  .states-cancel_v2-guidance{
+  .states-cancel_v2-guidance,
+  .states-cancel_v2-active:hover{
     color: #34AFF9;
     font-weight: 600;
     line-height: 18.2px;
   }
 
-  .states-cancel_v2-pressing{
+  .states-cancel_v2-pressing,
+  .states-cancel_v2-active:active{
     color: #098EDF;
     font-weight: 600;
     line-height: 18.2px;
