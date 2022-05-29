@@ -1904,7 +1904,7 @@ progress::-moz-progress-bar {
 }
 
 .fields_border{
-  width: auto;
+  width: fit-content;
   border: 1px dashed #885AF8;
   border-radius: 5px;
   padding: 20px;
@@ -2141,6 +2141,12 @@ progress::-moz-progress-bar {
 .srch_item{
   display: inline-flex;
   margin-bottom: 20px;
+
+  @media (max-width: 940px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+  }
 }
 
 .srch_item-no_active{
@@ -2149,11 +2155,20 @@ progress::-moz-progress-bar {
   margin-right: 30px;
   color: $theme6_color13;
 
+  @media (max-width: 940px) {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
   input{
     padding: 12px 215px 11px 38px;
     background-color: $theme6_color16;
     border-radius: 5px;
     border: none;
+
+    @media (max-width: 490px) {
+      padding: 12px 50px 11px 38px;
+    }
 
     &::-webkit-input-placeholder {
       color: $theme6_color13;
@@ -2164,7 +2179,6 @@ progress::-moz-progress-bar {
     &::-ms-input-placeholder {
       color: $theme6_color13;
     }
-
   }
 
   &::after{
@@ -2186,6 +2200,10 @@ progress::-moz-progress-bar {
     padding: 12px 215px 11px 38px;
     border-radius: 5px;
     border: 1px solid $theme6_color13;
+
+    @media (max-width: 490px) {
+      padding: 12px 50px 11px 38px;
+    }
 
     &::-webkit-input-placeholder {
       color: $theme6_color4;
@@ -2229,12 +2247,20 @@ progress::-moz-progress-bar {
     padding: 12px 161px 11px 38px;
     background-color: $theme6_color6;
     border: 1px solid $theme6_color13;
+
+    @media (max-width: 490px) {
+      padding: 12px 10px 11px 38px;
+    }
   }
 }
 
 .srch_small{
   input{
     padding: 12px 161px 11px 38px;
+
+    @media (max-width: 490px) {
+      padding: 12px 10px 11px 38px;
+    }
   }
 
   &::after{
@@ -2261,6 +2287,10 @@ progress::-moz-progress-bar {
     padding: 9px 151px 10px 10px;
     border-radius: 5px;
     border: 1px solid $theme6_color13;
+
+    @media (max-width: 490px) {
+      padding: 9px 60px 10px 10px;
+    }
 
     &::-webkit-input-placeholder {
       color: $theme6_color5;
