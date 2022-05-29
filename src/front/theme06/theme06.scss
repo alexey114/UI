@@ -289,20 +289,41 @@ input:checked + .slider-switcher:before, input:checked.switcher_collection:befor
 
 /* Button */
 
-.button_checkbox_headers, .button_checkbox_buttons{
+.button-checkbox_container-item{
+  width: 100%;
+}
+
+.button_checkbox_headers{
   display: flex;
   max-width: 790px;
+
+  @media (max-width: 850px) {
+      display: none;
+  }
 }
+
 
 .button-checkbox_items{
   display: flex;
+
+  @media (max-width: 1350px) {
+    flex-wrap: wrap;
+  }
 }
 
 .button_checkbox_buttons{
+  display: flex;
+  max-width: 790px;
   border: 1px dashed #885AF8;
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
+
+  @media (max-width: 850px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
 }
 
 .button_checkbox_header{
@@ -341,12 +362,20 @@ button{
   height: 42px;
   border: none;
   background-color: $theme6_color6;
+
+  @media (max-width: 850px) {
+    margin-right: 0;
+  }
 }
 
 .btn_small{
   width: 143px;
   height: 32px;
   margin-right: 67px;
+
+  @media (max-width: 850px) {
+    margin-right: 0;
+  }
 }
 
 .plus{
@@ -500,10 +529,18 @@ button{
 
 .button_checkbox-items_mini{
   display: flex;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 }
 
 .button_checkbox-item_mini{
   width: 250px;
+
+  @media (max-width: 600px) {
+    width: 300px;
+  }
 }
 
 .btn_mini{
@@ -512,6 +549,10 @@ button{
   margin-right: 20px;
 
     &:last-child{
+      margin-right: 0px;
+    }
+
+    @media (max-width: 850px) {
       margin-right: 0px;
     }
 
@@ -540,6 +581,10 @@ button{
 .button_checkbox-button_options{
   margin-top: 23px;
   margin-left: 63px;
+
+  @media (max-width: 600px) {
+    margin-left: 20px;
+  }
 }
 
 .btns_opt{
@@ -620,6 +665,14 @@ button{
 .collection_elements{
   width: auto;
   margin-left: 120px;
+
+  @media (max-width: 1350px) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
 }
 
 .button_checkbox_buttons.test_checkbox{
@@ -630,6 +683,7 @@ button{
   display: inline-block;
   width: auto;
   margin-bottom: 40px;
+
 }
 
 .collection_element_checkbox{
@@ -645,9 +699,18 @@ button{
 }
 
 .collection_element_button{
+  display: flex;
+  flex-wrap: wrap;
   margin: 20px;
-  width: 332px;
+  max-width: 332px;
+  width: auto;
   border: 1px dashed #885AF8;
+  padding: 20px;
+
+  @media (max-width: 400px) {
+    justify-content: center;
+    max-width: 150px;
+  }
 }
 
 .collection_element_switcher{
@@ -810,7 +873,7 @@ input{
   }
 }
 
-.collection_element_item button{
+.collection_element_button button{
   font-size: 11px;
   font-weight: 500;
   width: 84px;
@@ -823,6 +886,15 @@ input{
   margin-right: 20px;
   &:last-child{
     margin-right: 0px;
+  }
+
+  @media (max-width: 400px) {
+    margin-right: 0px;
+    margin: 10px;
+
+    &:last-child{
+      margin: 10px;
+    }
   }
 }
 
@@ -1182,15 +1254,24 @@ input{
 
 .preloader_items{
   display: flex;
+  flex-wrap: wrap;
   padding-top: 20px;
 }
 
 .preloader_item{
   margin-left: 50px;
+  max-width: 450px;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
 }
 
 .preloader_elements{
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
   border: 1px dashed #7B61FF;
   border-radius: 5px;
@@ -1231,7 +1312,8 @@ input{
 }
 
 progress{
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   background-color: #F2F3F8;
   height: 6px;
   border: 0;
@@ -1266,6 +1348,10 @@ progress::-moz-progress-bar {
 .tooltipe_item{
   position: relative;
   display: inline-block;
+
+  @media (max-width: 1407px) {
+    margin-bottom: 50px;
+  }
 }
 
 .tooltipe_items{
@@ -1291,6 +1377,13 @@ progress::-moz-progress-bar {
   -webkit-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
   -moz-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
   box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
+
+  &.tooltip_text_mini{
+    @media (max-width: 400px) {
+      width: 170px;
+      font-size: 8px;
+    }
+  }
 }
 
 .tooltip_up{
@@ -1310,6 +1403,10 @@ progress::-moz-progress-bar {
   height: 115px;
   width: 270px;
   margin-right: 40px;
+}
+
+.tooltipe_side {
+  width: 400px;
 }
 
 .tooltip_button{
@@ -1399,6 +1496,10 @@ progress::-moz-progress-bar {
   .tooltip_button{
     top: 20px;
     left: 280px;
+
+    @media (max-width: 400px) {
+      left: 190px;
+    }
   }
 
   .tooltip_text::after{
@@ -1441,10 +1542,18 @@ progress::-moz-progress-bar {
   position: absolute;
   top: 95px;
   left: 230px;
+
+  @media (max-width: 550px) {
+    left: 20px;
+  }
 }
 
 .tooltip_button_cancel{
   left: 330px;
+
+  @media (max-width: 550px) {
+    left: 120px;
+  }
 }
 
 .text_with_button{
@@ -1455,19 +1564,30 @@ progress::-moz-progress-bar {
 
   .tooltipe_item{
     width: 480px;
+    margin-top: 50px;
+
+    @media (max-width: 1300px) {
+      width: 100%;
+    }
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
   }
 
   .tooltip_up_right{
     .tooltip_button{
       top: 150px;
     }
-
-
   }
 
   .tooltip_text{
     left: 220px;
     height: 131px;
+
+    @media (max-width: 550px) {
+      left: 10px;
+    }
   }
 
   .tooltip_button_accept{
@@ -1497,6 +1617,10 @@ progress::-moz-progress-bar {
     .text_container-item-font-size-14pt{
       color: $theme6_color5;
       margin-right: 70px;
+
+      @media (max-width: 550px) {
+        margin-right: 10px;
+      }
     }
   }
 
@@ -1507,9 +1631,18 @@ progress::-moz-progress-bar {
     border: 1px solid #D3D8DD;
     border-radius: 5px;
     color: #192A3E;
+
+    @media (max-width: 550px) {
+      padding: 0px 12px 0px 12px;
+    }
   }
 
   .tooltip_right{
+
+    @media (max-width: 780px) {
+      display: none;
+    }
+
     .text_field{
       top: 20px;
     }
@@ -1548,12 +1681,21 @@ progress::-moz-progress-bar {
     text-decoration: none;
   }
 
+  @media (max-width: 480px) {
+    &.text_container-item-font-size-12pt{
+      font-size: 9px;
+    }
+  }
 }
 
 .pagination_item{
   display: inline;
   padding: 3px 9px;
   position: relative;
+
+  @media (max-width: 480px) {
+    padding: 3px 4px;
+  }
 }
 
 .icon_left:after{
@@ -1644,18 +1786,17 @@ progress::-moz-progress-bar {
 .btn_mini-exit_v_2{
   width: 97px;
   height: 32px;
-  margin-top: 25.5px;
   background-color: $theme6_color3;
+}
+
+.accordion_button{
+  margin-top: 25.5px;
 }
 
 /* Images */
 
 .images_container{
   margin-top: 160px;
-
-  .colors_h1{
-    margin-bottom: 40px;
-  }
 
   .button_checkbox_header{
     margin-bottom: 20px;
@@ -1664,10 +1805,16 @@ progress::-moz-progress-bar {
 
 .images_items{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .images_no{
   margin-right: 100px;
+  margin-top: 30px;
+}
+
+.images_yes{
+  margin-top: 30px;
 }
 
 .images_no_item{
@@ -1695,6 +1842,10 @@ progress::-moz-progress-bar {
 
   .button_checkbox_header{
     width: 340px;
+
+    @media (max-width: 1400px) {
+      display: none;
+    }
   }
 }
 

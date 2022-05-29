@@ -1,1419 +1,1471 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link id="css" rel="stylesheet" href="./css/index6.css" />
-  </head>
-  <body class="body">
 
-    <div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link id="css" rel="stylesheet" href="./css/index6.css" />
+</head>
 
-      <div class="select_container">
-        <div class="select_container-menu">
-          <h1 class="header_h2 header_components">Библиотека компонентов</h1>
-          <nav id="menu" class="navigation">
-            <a class="link" id="colors_menu" href="#colors">Цвета</a>
-            <a class="link" id="fonts_menu" href="#fonts">Типографика</a>
-            <a class="link" id="nav" href="#buttons">Активные элементы</a>
-            <a class="link" id="#" href="#">Аватары пользователей</a>
-            <a class="link" id="loader_menu" href="#">Ждун</a>
-            <a class="link" id="#" href="#">Тултипы</a>
-            <a class="link" id="#" href="#">Пагинация</a>
-            <a class="link" id="menu" href="#menu">Меню акордеон</a>
-            <a class="link" id="#" href="#">Изображения</a>
-            <a class="link" id="forms_menu" href="#forms">Ввод данных</a>
-            <a class="link" id="menu" href="#menu">Боковое меню</a>
-            <a class="link" id="menu" href="#menu">Верхнее меню</a>
-            <a class="link" id="icons_menu" href="#icons">Иконки</a>
-          </nav>
+<body class="body">
+
+  <div class="container">
+
+    <div class="select_container">
+      <div class="select_container-menu">
+        <h1 class="header_h2 header_components">Библиотека компонентов</h1>
+        <nav id="menu" class="navigation">
+          <a class="link" id="colors_menu" href="#colors">Цвета</a>
+          <a class="link" id="fonts_menu" href="#fonts">Типографика</a>
+          <a class="link" id="nav" href="#buttons">Активные элементы</a>
+          <a class="link" id="#" href="#">Аватары пользователей</a>
+          <a class="link" id="loader_menu" href="#">Ждун</a>
+          <a class="link" id="#" href="#">Тултипы</a>
+          <a class="link" id="#" href="#">Пагинация</a>
+          <a class="link" id="menu" href="#menu">Меню акордеон</a>
+          <a class="link" id="#" href="#">Изображения</a>
+          <a class="link" id="forms_menu" href="#forms">Ввод данных</a>
+          <a class="link" id="menu" href="#menu">Боковое меню</a>
+          <a class="link" id="menu" href="#menu">Верхнее меню</a>
+          <a class="link" id="icons_menu" href="#icons">Иконки</a>
+        </nav>
+      </div>
+
+      <div class="select_container-theme">
+        <p class="select_container-text">Дневная тема</p>
+        <div class="select_container-switcher">
+          <label class="switch">
+            <input type="checkbox" />
+            <div class="slider-switcher"></div>
+          </label>
         </div>
+        <p class="select_container-text">Выбор дизайна</p>
 
-        <div class="select_container-theme">
-          <p class="select_container-text">Дневная тема</p>
-          <div class="select_container-switcher">
-            <label class="switch">
-              <input type="checkbox" />
-              <div class="slider-switcher"></div>
-            </label>
-          </div>
-          <p class="select_container-text">Выбор дизайна</p>
+        <select
+          onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + '.css'">
+          <option value="1">Тема 1</option>
+          <option value="2">Тема 2</option>
+          <option value="3">Тема 3</option>
+          <option value="4">Тема 4</option>
+          <option value="5">Тема 5</option>
+          <option value="./index_new.html" selected="selected">Тема 6</option>
+        </select>
+      </div>
+    </div>
 
-          <select onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + '.css'">
-            <option value="1">Тема 1</option>
-            <option value="2">Тема 2</option>
-            <option value="3">Тема 3</option>
-            <option value="4">Тема 4</option>
-            <option value="5">Тема 5</option>
-            <option value="./index_new.html" selected="selected">Тема 6</option>
-          </select>
+    <div class="example_loader">
+      <div class="block">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+
+
+    <div class="color_container-six_theme">
+
+      <h1 id="colors" class="colors_h1">Цвета</h1>
+
+      <p class="color_container-text">Основные цвета</p>
+
+      <div class="color_container-items">
+        <div class="color_container-item">
+          <div class="color theme6_color1"></div>
+          <p class="color_container-number_color">109CF1</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color2"></div>
+          <p class="color_container-number_color">192A3E</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color3"></div>
+          <p class="color_container-number_color">6C7293</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color4"></div>
+          <p class="color_container-number_color">A7ABC3</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color5"></div>
+          <p class="color_container-number_color">FFFFFF</p>
         </div>
       </div>
 
-      <div class="example_loader">
-        <div class="block">
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+      <p class="color_container-text">Акцентные цвета</p>
+
+      <div class="color_container-items">
+        <div class="color_container-item">
+          <div class="color theme6_color6"></div>
+          <p class="color_container-number_color">885AF8</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color7"></div>
+          <p class="color_container-number_color">FFB946</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color8"></div>
+          <p class="color_container-number_color">F7685B</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color9"></div>
+          <p class="color_container-number_color">28C46F</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color10"></div>
+          <p class="color_container-number_color">2ED47A</p>
         </div>
       </div>
 
+      <p class="color_container-text">Системные цвета</p>
 
-      <div class="color_container-six_theme">
-
-        <h1 id="colors" class="colors_h1">Цвета</h1>
-
-        <p class="color_container-text">Основные цвета</p>
-
-        <div class="color_container-items">
-          <div class="color_container-item">
-            <div class="color theme6_color1"></div>
-            <p class="color_container-number_color">109CF1</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color2"></div>
-            <p class="color_container-number_color">192A3E</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color3"></div>
-            <p class="color_container-number_color">6C7293</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color4"></div>
-            <p class="color_container-number_color">A7ABC3</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color5"></div>
-            <p class="color_container-number_color">FFFFFF</p>
-          </div>
+      <div class="color_container-items">
+        <div class="color_container-item">
+          <div class="color theme6_color18"></div>
+          <p class="color_container-number_color">6A707E</p>
         </div>
-
-        <p class="color_container-text">Акцентные цвета</p>
-
-          <div class="color_container-items">
-            <div class="color_container-item">
-              <div class="color theme6_color6"></div>
-              <p class="color_container-number_color">885AF8</p>
-            </div>
-            <div class="color_container-item">
-              <div class="color theme6_color7"></div>
-              <p class="color_container-number_color">FFB946</p>
-            </div>
-            <div class="color_container-item">
-              <div class="color theme6_color8"></div>
-              <p class="color_container-number_color">F7685B</p>
-            </div>
-            <div class="color_container-item">
-              <div class="color theme6_color9"></div>
-              <p class="color_container-number_color">28C46F</p>
-            </div>
-            <div class="color_container-item">
-              <div class="color theme6_color10"></div>
-              <p class="color_container-number_color">2ED47A</p>
-            </div>
-          </div>
-
-        <p class="color_container-text">Системные цвета</p>
-
-        <div class="color_container-items">
-          <div class="color_container-item">
-            <div class="color theme6_color18"></div>
-            <p class="color_container-number_color">6A707E</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color17"></div>
-            <p class="color_container-number_color">90A0B7</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color11"></div>
-            <p class="color_container-number_color">C2CFE0</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color12"></div>
-            <p class="color_container-number_color">D3D8DD</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color13"></div>
-            <p class="color_container-number_color">EBEFF2</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color14"></div>
-            <p class="color_container-number_color">F2F3F8</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color15"></div>
-            <p class="color_container-number_color">F1F5FB</p>
-          </div>
-          <div class="color_container-item">
-            <div class="color theme6_color16"></div>
-            <p class="color_container-number_color">F5F7F9</p>
-          </div>
+        <div class="color_container-item">
+          <div class="color theme6_color17"></div>
+          <p class="color_container-number_color">90A0B7</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color11"></div>
+          <p class="color_container-number_color">C2CFE0</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color12"></div>
+          <p class="color_container-number_color">D3D8DD</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color13"></div>
+          <p class="color_container-number_color">EBEFF2</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color14"></div>
+          <p class="color_container-number_color">F2F3F8</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color15"></div>
+          <p class="color_container-number_color">F1F5FB</p>
+        </div>
+        <div class="color_container-item">
+          <div class="color theme6_color16"></div>
+          <p class="color_container-number_color">F5F7F9</p>
         </div>
       </div>
+    </div>
 
-      <div class="text_container-six_theme">
+    <div class="text_container-six_theme">
 
-        <h1 class="colors_h1">Типографика</h1>
+      <h1 class="colors_h1">Типографика</h1>
 
-        <div class="text_container-items">
+      <div class="text_container-items">
 
-          <div class="text_container-item">
-            <div>
-              <h5 class="text_container-header">Шрифт</h5>
-              <div class="text_container-font_family-montserrat"><p>Montserrat</p></div>
-            </div>
-          </div>
-
-          <div class="text_container-item">
-            <h5 class="text_container-header">Размеры</h5>
-            <div class="text_container-items-font-size">
-              <div class="text_container-item-font-size">
-                <p class="text_container-font_style-regular font_style-margin">Regular</p>
-                <p class="text_container-item-font-size-16pt">Paragraph – 16 pt</p>
-                <p class="text_container-item-font-size-14pt">Notice – 14 pt</p>
-                <p class="text_container-item-font-size-12pt">Description – 12 pt</p>
-              </div>
-              <div class="text_container-item-font-size">
-                <p class="text_container-font_style-medium font_style-margin">Medium</p>
-                <p class="text_container-item-font-size-11pt_500">Tag status text – 11 pt</p>
-                <p class="text_container-item-font-size-12pt_500">Text field title text – 12 pt</p>
-              </div>
-              <div class="text_container-item-font-size">
-                <p class="text_container-font_style-semibold font_style-margin">Semibold</p>
-                <p class="text_container-item-font-size-18pt_600">Header 2 text – 18 pt</p>
-                <p class="text_container-item-font-size-14pt_600">Button text – 14 pt</p>
-              </div>
-              <div class="text_container-item-font-size">
-                <p class="text_container-font_style-bold font_style-margin">Bold</p>
-                <p class="text_container-item-font-size-20pt_700">Header 1 text – 20 pt</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="button_checkbox_container-six_theme">
-
-        <h1 id="buttons" class="colors_h1">Кнопки и другие активные элементы</h1>
-
-        <div class="button-checkbox_items">
-
-          <div class="button-checkbox_container-item">
-
-            <div class="button_checkbox_headers">
-              <div class="button_checkbox_header header_standard">Стандартное</div>
-              <div class="button_checkbox_header header_guidance">При наведении</div>
-              <div class="button_checkbox_header header_pressing">При нажатии</div>
-              <div class="button_checkbox_header header_not_active">Не активная</div>
-            </div>
-
-            <div class="button_checkbox_buttons states-add">
-                <button class="button_checkbox_button states-add-active"><span class="plus">+</span>Добавить</button>
-                <button class="button_checkbox_button states-add-guidance"><span class="plus">+</span><p class="hover_cursor-text">Добавить</p></button>
-                <button class="button_checkbox_button states-add-pressing"><span class="plus">+</span><p class="hover_cursor-text">Добавить</p></button>
-                <button class="button_checkbox_button states-add-not_active"><span class="plus">+</span>Добавить</button>
-            </div>
-
-            <div class="button_checkbox_buttons states-load">
-                <button class="button_checkbox_button states-load-active"><span class="attach"></span>Загрузить</button>
-                <button class="button_checkbox_button states-load-guidance"><span class="attach"></span><p class="hover_cursor-text">Загрузить</p></button>
-                <button class="button_checkbox_button states-load-pressing"><span class="attach"></span><p class="hover_cursor-text">Загрузить</p></button>
-                <button class="button_checkbox_button states-load-not_active"><span class="attach"></span>Загрузить</button>
-            </div>
-
-            <div class="button_checkbox_buttons states-cancel">
-              <button class="button_checkbox_button states-cancel-active">Отмена</button>
-              <button class="button_checkbox_button states-cancel-guidance"><p class="hover_cursor-text">Отмена</p></button>
-              <button class="button_checkbox_button states-cancel-pressing"><p class="hover_cursor-text">Отмена</p></button>
-              <button class="button_checkbox_button states-cancel-not_active">Отмена</button>
-            </div>
-
-            <div class="button_checkbox_buttons states-cancel_v2">
-              <button class="button_checkbox_button states-cancel_v2-active">Отмена</button>
-              <button class="button_checkbox_button states-cancel_v2-guidance"><p class="hover_cursor-text">Отмена</p></button>
-              <button class="button_checkbox_button states-cancel_v2-pressing"><p class="hover_cursor-text">Отмена</p></button>
-              <button class="button_checkbox_button states-cancel_v2-not_active">Отмена</button>
-            </div>
-
-            <div class="button_checkbox_buttons states-add">
-              <button class="button_checkbox_button btn_small states-add-active"><span class="plus">+</span>Добавить</button>
-              <button class="button_checkbox_button btn_small states-add-guidance"><span class="plus">+</span><p class="hover_cursor-text">Добавить</p></button>
-              <button class="button_checkbox_button btn_small states-add-pressing"><span class="plus">+</span><p class="hover_cursor-text">Добавить</p></button>
-              <button class="button_checkbox_button btn_small states-add-not_active"><span class="plus">+</span>Добавить</button>
-            </div>
-
-            <div class="button_checkbox-items_mini">
-              <div class="button_checkbox-item_mini">
-                <div class="button_checkbox_buttons states-add btns_mini">
-                  <button class="button_checkbox_button btn_mini states-add-active"><span class="icon_save"></span></button>
-                  <button class="button_checkbox_button btn_mini states-add-guidance"><span class="icon_save hover_cursor-text"></span></button>
-                  <button class="button_checkbox_button btn_mini states-add-pressing"><span class="icon_save hover_cursor-text"></span></button>
-                  <button class="button_checkbox_button btn_mini states-add-not_active"><span class="icon_save"></span></button>
-                </div>
-
-                <div class="button_checkbox_buttons states-add btns_mini">
-                  <button class="button_checkbox_button btn_mini states-add-active"><span class="icon_exit"></span></button>
-                  <button class="button_checkbox_button btn_mini states-add-guidance"><span class="icon_exit hover_cursor-text"></span></button>
-                  <button class="button_checkbox_button btn_mini states-add-pressing"><span class="icon_exit hover_cursor-text"></span></button>
-                  <button class="button_checkbox_button btn_mini states-add-not_active"><span class="icon_exit"></span></button>
-                </div>
-              </div>
-
-              <div class="button_checkbox-item_mini">
-                <div class="button_checkbox-button_options">
-                  <div class="button_checkbox_header">Варианты кнопок</div>
-                  <div class="states-add btns_opt">
-                    <button class="button_checkbox_button btn_mini-back states-add-active"><span class="icon_back"></span>Назад</button>
-                    <button class="button_checkbox_button btn_mini-back_v_2 states-add-active"><span class="icon_back"></span>Назад</button>
-                    <button class="button_checkbox_button btn_mini-exit states-add-active"><span class="icon_exit"></span>Выход</button>
-                    <button class="button_checkbox_button btn_mini-exit_v_2 states-add-active">Выход</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="button-checkbox_container-item collection_elements">
-
-            <div class="collection_element">
-
-              <div class="button_checkbox_header header_standard">Checkbox</div>
-
-              <div class="collection_element_checkbox">
-                <div class="collection_element_item">
-                  <input class="checkbox checked_no" type="checkbox">
-                  <input class="checkbox checked_yes" type="checkbox" checked>
-                  <input class="checkbox checked_two" type="checkbox" checked>
-                  <input class="checkbox checked_light" type="checkbox" checked>
-                  <input class="checkbox checked_green" type="checkbox" checked>
-                  <input class="checkbox checked_alert" type="checkbox" checked>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="collection_element">
-
-              <div class="button_checkbox_header header_standard">Radio</div>
-
-              <div class="collection_element_radio">
-                <div class="collection_element_item">
-                  <input class="radio radio_no" type="radio">
-                  <input class="radio radio_yes" type="radio" checked>
-                  <input class="radio radio_alert" type="radio" checked>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="collection_element">
-
-              <div class="button_checkbox_header header_standard">Статусы элементов</div>
-              <div class="collection_element_button">
-                <div class="collection_element_item">
-                  <button class="states-item states_active">Активен</button>
-                  <button class="states-item states_not_active">Не активен</button>
-                  <button class="states-item states_off">Отключён</button>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="collection_element">
-
-              <div class="button_checkbox_header header_standard">Switcher</div>
-
-              <div class="collection_element_switcher">
-
-                <div class="collection_element_item">
-                  <div class="switch_items">
-                    <div class="switch_item">
-                      <input class="switcher_collection swt_active" type="checkbox" checked/>
-                    </div>
-                    <div class="switch_item">
-                      <input class="switcher_collection swt_no_active" type="checkbox"/>
-                    </div>
-                    <div class="switch_item">
-                      <input class="switcher_collection swt_active_light" type="checkbox" checked/>
-                    </div>
-                    <div class="switch_item">
-                      <input class="switcher_collection swt_no_active_light" type="checkbox"/>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="avatar_container-six_theme">
-        <h1 class="colors_h1">Аватары пользователей</h1>
-
-        <div class="avatar_items">
-
-          <div class="avatar_item">
-
-            <div class="button_checkbox_header">Аватар пользователя</div>
-            <p class="text_container-item-font-size-14pt">104 x 104</p>
-
-            <div class="foto_items">
-              <div class="foto_item avatar">
-              </div>
-              <div class="foto_item avatar_done">
-              </div>
-              <div class="foto_item avatar_hover">
-              </div>
-            </div>
-
-          </div>
-
-          <div class="avatar_item">
-
-            <div class="button_checkbox_header">Аватар пользователя<br> на боковой панели</div>
-            <p class="text_container-item-font-size-14pt">46 x 46</p>
-
-            <div class="foto_items">
-              <div class="foto_item profile_user">
-              </div>
-              <div class="foto_item profile_user_active">
-              </div>
-            </div>
-
-          </div>
-
-          <div class="avatar_item">
-
-            <div class="button_checkbox_header">Связанный аватар<br> пользователя</div>
-            <p class="text_container-item-font-size-14pt">24 x 24</p>
-
-            <div class="foto_items">
-              <div class="mini_avatar">
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="preloader_container-six_theme">
-        <h1 class="colors_h1">Прелоадеры</h1>
-
-        <div class="preloader_items">
+        <div class="text_container-item">
           <div>
-            <div class="button_checkbox_header">Стандартный</div>
-            <div class="preloader_elements">
-              <div class="preloader_element element_ellipse">
-              </div>
-              <div class="preloader_element element_ellipse-v_2">
-              </div>
-              <div class="preloader_element element_polygon">
-              </div>
-            </div>
-          </div>
-          <div class="preloader_item">
-            <div class="button_checkbox_header">Прогрессбар</div>
-            <div class="progress_bar_element">
-              <progress max="100" value="44"></progress>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tooltip_container-six_theme">
-        <h1 class="colors_h1">Тултипы</h1>
-
-        <div class="tooltipe">
-
-          <div class="button_checkbox_header">Только текст</div>
-
-          <div class="tooltipe_items">
-            <div class="tooltipe_item tooltip_up">
-              <span class="tooltip_text">Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-              <button class="tooltip_button">Кнопка</button>
-            </div>
-            <div class="tooltipe_item tooltip_up_right">
-              <span class="tooltip_text">Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-              <button class="tooltip_button">Кнопка</button>
-            </div>
-            <div class="tooltipe_item tooltip_bottom">
-              <button class="tooltip_button">Кнопка</button>
-              <span class="tooltip_text">Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-            </div>
-            <div class="tooltipe_item">
-              <div class="tooltipe_items_side">
-                <div class="tooltipe_item_side tooltip_right">
-                  <button class="tooltip_button">Кнопка</button>
-                  <span class="tooltip_text">Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-                </div>
-                <div class="tooltipe_item_side tooltip_left">
-                  <span class="tooltip_text">Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-                  <button class="tooltip_button">Кнопка</button>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="button_checkbox_header">Текст с заголовком</div>
-
-          <div class="tooltipe_items text_with_heading">
-            <div class="tooltipe_item tooltip_up">
-              <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br/>Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-              <button class="tooltip_button">Кнопка</button>
-            </div>
-            <div class="tooltipe_item tooltip_up_right">
-              <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br/>Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-              <button class="tooltip_button">Кнопка</button>
-            </div>
-            <div class="tooltipe_item tooltip_bottom">
-              <button class="tooltip_button">Кнопка</button>
-              <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br/>Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-            </div>
-            <div class="tooltipe_item">
-              <div class="tooltipe_items_side">
-                <div class="tooltipe_item_side tooltip_right">
-                  <button class="tooltip_button">Кнопка</button>
-                  <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br/>Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-                </div>
-                <div class="tooltipe_item_side tooltip_left">
-                  <span class="tooltip_text"><div class="tooltip_header">Заголовок</div><br/>Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-                  <button class="tooltip_button">Кнопка</button>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="button_checkbox_header">Текст с заголовком и кнопками</div>
-
-          <div class="tooltipe_items text_with_button">
-
-            <div class="tooltipe_item tooltip_up_right">
-              <div class="tooltip_text"><span class="tooltip_header">Заголовок</span>Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</div>
-              <button class="tooltip_button_accept">Принять</button>
-              <button class="tooltip_button_cancel">Отмена</button>
-
-              <div class="text_field">
-                <div class="text_container-item-font-size-14pt">Текстовое поле</div>
-                <div>
-                  <input type="text" value="Вспомогательный текст">
-                </div>
-              </div>
-            </div>
-
-
-              <div class="tooltipe_item tooltip_right">
-
-                <div class="text_field">
-                  <div class="text_container-item-font-size-14pt">Текстовое поле</div>
-                  <div>
-                    <input type="text" value="Вспомогательный текст">
-                  </div>
-                </div>
-
-                <span class="tooltip_text"><span class="tooltip_header">Заголовок</span>Всплывающая подсказка с текстовым <br/> наполнением, показывается поверх <br/> основного контента на странице</span>
-                <button class="tooltip_button_accept">Принять</button>
-                <button class="tooltip_button_cancel">Отмена</button>
-
-              </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="pagination_container">
-        <h1 class="colors_h1">Пагинация</h1>
-
-        <div class="button_checkbox_header">Пагинация над списком</div>
-
-        <div class="pagination">
-          <div>
-            <ul class="pagination_items text_container-item-font-size-12pt">
-              <li class="pagination_item "><a class="icon_left" href="#">Назад</a></li>
-              <li class="pagination_item active_item"><a href="#">1</a></li>
-              <li class="pagination_item"><a href="#">2</a></li>
-              <li class="pagination_item"><a href="#">3</a></li>
-              <li class="pagination_item"><a href="#">4</a></li>
-              <li class="pagination_item"><a href="#">5</a></li>
-              <li class="pagination_item"><a href="#">6</a></li>
-              <li class="pagination_item"><a href="#">7</a></li>
-              <li class="pagination_item"><a href="#">8</a></li>
-              <li class="pagination_item"><a href="#">9</a></li>
-              <li class="pagination_item"><a href="#">10</a></li>
-              <li class="pagination_item"><a class="icon_right" href="#">Вперёд</a></li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="accordion_container">
-        <h1 class="colors_h1">Меню акордеон</h1>
-
-        <div class="button_checkbox_header">Вертикальное меню</div>
-
-        <div class="accordion">
-          <div class="accordion_items">
-            <div class="accordion_item">
-              <div class="accordion_item-point">
-                Пункт меню 1
-              </div>
-              <div class="accordion_item-arrow">
-                <input class="accordion_item-checkbox" type="checkbox">
-              </div>
-            </div>
-            <div class="accordion_item">
-              <div class="accordion_item-point">
-                Пункт меню 2
-              </div>
-              <div class="accordion_item-arrow">
-                <input class="accordion_item-checkbox" type="checkbox">
-              </div>
-            </div>
-            <div class="accordion_item">
-              <div class="accordion_item-point">
-                Пункт меню 3
-              </div>
-              <div class="accordion_item-arrow">
-                <input class="accordion_item-checkbox" type="checkbox">
-              </div>
-            </div>
-            <div class="accordion_item">
-              <div class="accordion_item-point">
-                Пункт меню 4
-              </div>
-              <div class="accordion_item-arrow">
-                <input class="accordion_item-checkbox" type="checkbox">
-              </div>
-            </div>
-            <div class="accordion_item">
-              <div class="accordion_item-point">
-                Пункт меню 5
-              </div>
-              <div class="accordion_item-arrow">
-                <input class="accordion_item-checkbox" type="checkbox">
-              </div>
-            </div>
-            <div class="accordion_item">
-              <div class="accordion_item-point">
-                Пункт меню 6
-              </div>
-              <div class="accordion_item-arrow">
-                <input class="accordion_item-checkbox" type="checkbox" checked>
-              </div>
-            </div>
-            <div class="subpoints text_container-item-font-size-12pt">
-              <div class="accordion_item-subpoints">
-                <div class="accordion_item-subpoint">
-                  Подпункт меню 1
-                </div>
-                <div class="accordion_item-plus">
-                  +
-                </div>
-              </div>
-            </div>
-            <div class="subpoints text_container-item-font-size-12pt">
-              <div class="accordion_item-subpoints">
-                <div class="accordion_item-subpoint">
-                  Подпункт меню 2
-                </div>
-                <div class="accordion_item-plus">
-                  +
-                </div>
-              </div>
-            </div>
-            <div class="subpoints text_container-item-font-size-12pt">
-              <div class="accordion_item-subpoints">
-                <div class="accordion_item-subpoint">
-                  Подпункт меню 3
-                </div>
-                <div class="accordion_item-plus">
-                  +
-                </div>
-              </div>
+            <h5 class="text_container-header">Шрифт</h5>
+            <div class="text_container-font_family-montserrat">
+              <p>Montserrat</p>
             </div>
           </div>
         </div>
 
-        <button class="button_checkbox_button btn_mini-exit_v_2 states-add-active">Выход</button>
-      </div>
-
-      <div class="images_container">
-        <h1 class="colors_h1">Изображения</h1>
-
-        <div class="images_items">
-
-          <div class="images_no">
-            <div class="button_checkbox_header">Не загружено</div>
-            <div class="images_no_item"></div>
-          </div>
-
-          <div class="images_yes">
-            <div class="button_checkbox_header">Загружено</div>
-            <div class="images_yes_item"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="input_fields_container">
-        <h1 class="colors_h1">Поля ввода</h1>
-
-        <div class="input_fields">
-          <div class="input_fields_items">
-            <div class="input_fields_item">
-              <div class="button_checkbox_header">Название поля</div>
-              <div class="button_checkbox_header">Новое поле</div>
-              <div class="button_checkbox_header">Стандартное состояние</div>
-              <div class="button_checkbox_header">При редактировании</div>
+        <div class="text_container-item">
+          <h5 class="text_container-header">Размеры</h5>
+          <div class="text_container-items-font-size">
+            <div class="text_container-item-font-size">
+              <p class="text_container-font_style-regular font_style-margin">Regular</p>
+              <p class="text_container-item-font-size-16pt">Paragraph – 16 pt</p>
+              <p class="text_container-item-font-size-14pt">Notice – 14 pt</p>
+              <p class="text_container-item-font-size-12pt">Description – 12 pt</p>
             </div>
-
-            <div class="input_fields_item">
-              <div class="input_field_header text_container-item-font-size-14pt">Текстовое поле</div>
-              <div class="input_fields_text fields_border">
-                <input class="input_field field_new" type="text" value="Вспомогательный текст">
-                <input class="input_field field_standart" type="text" value="Вспомогательный текст">
-                <input class="input_field field_editing" type="text" value="Вспомогательный текст">
-              </div>
+            <div class="text_container-item-font-size">
+              <p class="text_container-font_style-medium font_style-margin">Medium</p>
+              <p class="text_container-item-font-size-11pt_500">Tag status text – 11 pt</p>
+              <p class="text_container-item-font-size-12pt_500">Text field title text – 12 pt</p>
             </div>
-
-            <div class="input_fields_item">
-              <div class="input_field_header text_container-item-font-size-14pt">Выпадающий список</div>
-              <div class="input_fields_select fields_border">
-                <select class="input_select field_new" name="select">
-                  <option value="value_1" selected>Вспомогательный текст</option>
-                  <option value="value_2">Вспомогательный текст #2</option>
-                  <option value="value_3">Вспомогательный текст #3</option>
-                </select>
-                <select class="input_select field_standart" name="select">
-                  <option value="value_1" selected>Вспомогательный текст</option>
-                  <option value="value_2">Вспомогательный текст #2</option>
-                  <option value="value_3">Вспомогательный текст #3</option>
-                </select>
-                <select class="input_select field_editing" name="select">
-                  <option value="value_1" selected>Вспомогательный текст</option>
-                  <option value="value_2">Вспомогательный текст #2</option>
-                  <option value="value_3">Вспомогательный текст #3</option>
-                </select>
-              </div>
+            <div class="text_container-item-font-size">
+              <p class="text_container-font_style-semibold font_style-margin">Semibold</p>
+              <p class="text_container-item-font-size-18pt_600">Header 2 text – 18 pt</p>
+              <p class="text_container-item-font-size-14pt_600">Button text – 14 pt</p>
             </div>
-
-            <div class="input_fields_item">
-              <div class="input_field_header text_container-item-font-size-14pt">Выбор даты</div>
-              <div class="input_fields_date fields_border">
-                <input class="input_date field_new" type="date" value="Вспомогательный текст">
-                <input class="input_date field_standart" type="date" value="Вспомогательный текст">
-                <input class="input_date field_editing" type="date" value="Вспомогательный текст">
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="calendar-select-search_container text_container-item-font-size-14pt">
-        <div class="calendar_container">
-          <h1 class="colors_h1">Календарь</h1>
-          <div class="calendar">
-            <div class="calendar_item">
-              <div class="calendar-one_day"></div>
-            </div>
-            <div class="calendar_item">
-              <div class="calendar-date_range"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slct_container">
-          <h1 class="colors_h1">Выпадающий список</h1>
-          <div class="slct">
-            <div class="slct_items">
-
-              <div class="slct_items-two">
-                <div class="slct_item">
-                  <div class="slct_option">Вариант 1</div>
-                  <div class="slct_option active_option">Вариант 2</div>
-                  <div class="slct_option">Вариант 3</div>
-                  <div class="slct_option">Вариант 4</div>
-                  <div class="slct_option">Вариант 5</div>
-                  <div class="slct_option">Вариант 6</div>
-                </div>
-
-                <div class="slct_item">
-                  <div class="slct_option option_v2">Вариант 1</div>
-                  <div class="slct_option option_v2 active_option">Вариант 2</div>
-                  <div class="slct_option option_v2">Вариант 3</div>
-                  <div class="slct_option option_v2">Вариант 4</div>
-                  <div class="slct_option option_v2">Вариант 5</div>
-                  <div class="slct_option option_v2">Вариант 6</div>
-                </div>
-              </div>
-
-              <div class="slct_items-four">
-
-                <div class="slct_item">
-                  <div class="slct_div">
-                    <input class="input_slct_option" type="text" value="Вариант 1">
-                  </div>
-                  <div class="slct_option">Вариант 1</div>
-                  <div class="slct_option active_option">Вариант 2</div>
-                  <div class="slct_option">Вариант 3</div>
-                  <div class="slct_option">Вариант 4</div>
-                  <div class="slct_option">Вариант 5</div>
-                  <div class="slct_option">Вариант 6</div>
-                </div>
-
-                <div class="slct_item_calendar">
-                  <div class="slct_div_calendar">
-                    <input class="input_slct_option" type="text" value="17 января 2020 г">
-                  </div>
-                  <div class="calendar_item">
-                    <div class="calendar-one_day"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="srch_container">
-          <h1 class="colors_h1">Поля для поиска и фильтрации</h1>
-          <div class="srch_items">
-            <div class="srch_item fields_border">
-              <div class="srch_item-no_active">
-                <input type="search" placeholder="Поиск">
-              </div>
-              <div class="srch_item_active">
-                <input type="search" placeholder="Поиск">
-              </div>
-            </div>
-            <div class="srch_item fields_border">
-              <div class="srch_item-no_active srch_small-no_active">
-                <input type="search" placeholder="Поиск">
-              </div>
-              <div class="srch_item_active srch_small">
-                <input type="search" placeholder="Поиск">
-              </div>
-            </div>
-            <div class="srch_item-status">
-              <div class="status_text">Статус</div>
-              <div class="status_text-input">
-                <input type="search" placeholder="Текст">
-              </div>
+            <div class="text_container-item-font-size">
+              <p class="text_container-font_style-bold font_style-margin">Bold</p>
+              <p class="text_container-item-font-size-20pt_700">Header 1 text – 20 pt</p>
             </div>
           </div>
         </div>
 
       </div>
-
-      <div class="input_fields_name_container">
-        <h1 class="colors_h1">Поля ввода с названием сверху поля</h1>
-
-        <div class="input_fields_name">
-          <div class="input_fields_name_items">
-            <div class="input_fields_name_item">
-              <div class="button_checkbox_header">Отображение</div>
-              <div class="button_checkbox_header">Новое поле</div>
-              <div class="button_checkbox_header">Стандартное состояние</div>
-              <div class="button_checkbox_header">При редактировании</div>
-            </div>
-            <div class="input_fields_name_item fields_border">
-              <div class="name_item">
-                <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
-                <div class="name_item_input text_container-item-font-size-14pt">Вспомогательный текст</div>
-              </div>
-              <div class="name_item">
-                <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_new" type="text" value="Вспомогательный текст">
-              </div>
-              <div class="name_item">
-                <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_standart" type="text" value="Вспомогательный текст">
-              </div>
-              <div class="name_item">
-                <div class="name_item_header blue_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_standart" type="text" value="Вспомогательный те|">
-              </div>
-            </div>
-
-            <div class="input_fields_name_item arrow_design fields_border">
-              <div class="name_item">
-                <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
-                <div class="name_item_input text_container-item-font-size-14pt">Вспомогательный текст</div>
-              </div>
-              <div class="name_item">
-                <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_new" type="text" value="Вспомогательный текст">
-              </div>
-              <div class="name_item">
-                <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_standart" type="text" value="Вспомогательный текст">
-              </div>
-              <div class="name_item">
-                <div class="name_item_header blue_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_standart" type="text" value="Вспомогательный те|">
-              </div>
-            </div>
-
-            <div class="input_fields_name_item calendar_design fields_border">
-              <div class="name_item">
-                <div class="name_item_header calendar_grey_light text_container-item-font-size-12pt_500">Название</div>
-                <div class="name_item_input text_container-item-font-size-14pt">Вспомогательный текст</div>
-              </div>
-              <div class="name_item">
-                <div class="name_item_header calendar_grey text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_new" type="text" value="Вспомогательный текст">
-              </div>
-              <div class="name_item">
-                <div class="name_item_header calendar_grey text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_standart" type="text" value="Вспомогательный текст">
-              </div>
-              <div class="name_item">
-                <div class="name_item_header calendar_blue blue_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field field_editing" type="text" value="Вспомогательный те|">
-              </div>
-            </div>
-
-            <div class="input_fields_name_item input_status">
-              <div class="name_item">
-                <div class="name_item_header icon_close text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field_first red_border field_standart" type="text" value="Вспомогательный текст">
-                <div class="not_true text_container-item-font-size-12pt">Поле заполнено не верно</div>
-              </div>
-              <div class="name_item">
-                <div class="name_item_header icon_check_big text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field green_border field_standart" type="text" value="Вспомогательный текст">
-              </div>
-              <div class="name_item">
-                <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field red_border field_standart" type="text" value="Вспомогательный текст">
-                <div class="not_true text_container-item-font-size-12pt">Поле заполнено не верно</div>
-              </div>
-              <div class="name_item">
-                <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
-                <input class="input_field green_border field_standart" type="text" value="Вспомогательный текст">
-              </div>
-            </div>
-
-            <div class="input_text_status-items">
-              <div class="input_text_status-item">
-                <div class="input_field_header text_container-item-font-size-14pt">Текстовое поле</div>
-                <input class="input_field field_new red_border" type="text" value="Вспомогательный текст">
-                <div class="not_true text_container-item-font-size-12pt">Поле заполнено не верно</div>
-              </div>
-
-              <div class="input_text_status-item">
-                <div class="input_field_header icon_close text_container-item-font-size-14pt">Текстовое поле</div>
-                <input class="input_field field_new red_border" type="text" value="Вспомогательный текст">
-                <div class="not_true text_container-item-font-size-12pt">Поле заполнено не верно</div>
-              </div>
-            </div>
-
-            <div class="input_text_status-items">
-              <div class="input_text_status-item">
-                <div class="input_field_header text_container-item-font-size-14pt">Текстовое поле</div>
-                <input class="input_field field_new green_border" type="text" value="Вспомогательный текст">
-              </div>
-
-              <div class="input_text_status-item">
-                <div class="input_field_header icon_check_big text_container-item-font-size-14pt">Текстовое поле</div>
-                <input class="input_field field_new green_border" type="text" value="Вспомогательный текст">
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="slider_container">
-        <h1 class="colors_h1">Слайдер</h1>
-
-          <div class="slider_items_name">
-            <div class="button_checkbox_header slider_item_name">Стандартное</div>
-            <div class="button_checkbox_header slider_item_name">При наведении</div>
-            <div class="button_checkbox_header slider_item_name">Отключён</div>
-          </div>
-          <div class="slider_items fields_border">
-            <div class="slider_item">
-              <div class="">Название параметра</div>
-              <input type="range" min="1" max="100" value="50" class="slider slider_standart">
-            </div>
-            <div class="slider_item">
-              <div class="">Название параметра</div>
-              <input type="range" min="1" max="100" value="50" class="slider slider_active">
-            </div>
-            <div class="slider_item">
-              <div class="">Название параметра</div>
-              <input type="range" min="1" max="100" value="50" class="slider slider_off">
-            </div>
-          </div>
-
-      </div>
-
-      <div class="combo_box_container">
-        <h1 class="colors_h1">Комбобокс</h1>
-
-        <div  class="combo_box">
-          <div class="combo_box_items">
-            <div class="combo_box_item">
-              <div class="combo_box_items_name">
-                <div class="button_checkbox_header combo_box_item_name">Стандартное</div>
-                <div class="button_checkbox_header combo_box_item_name">Заполнен</div>
-                <div class="button_checkbox_header combo_box_item_name">При наведении</div>
-                <div class="button_checkbox_header combo_box_item_name">При редактировании</div>
-              </div>
-              <div class="combo_box_items_block fields_border">
-                <div class="combo_box_item_block">
-                  <input class="input_field field_new combo_box_input" type="text" value="Вспомогательный текст">
-                </div>
-                <div class="combo_box_item_block">
-                  <input class="input_field field_new combo_box_input" type="text">
-                  <div class="points">
-                    <div class="combo_box_point ">Пункт 1</div>
-                    <div class="combo_box_point">Пункт 1</div>
-                    <div class="combo_box_close"></div>
-                  </div>
-                </div>
-                <div class="combo_box_item_block">
-                  <input class="input_field field_new combo_box_input" type="text">
-                  <div class="points">
-                    <div class="combo_box_point">Пункт 1</div>
-                    <div class="combo_box_point combo_box_guidance">Пункт 1</div>
-                    <div class="combo_box_close"></div>
-                  </div>
-                </div>
-                <div class="combo_box_item_block combo_box_fill">
-                  <input class="input_field field_new combo_box_input" type="text">
-                  <div class="points">
-                    <div class="combo_box_point">Пункт 1</div>
-                    <div>|</div>
-                    <div class="combo_box_close close_end"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="combo_box_item">
-                <div class="button_checkbox_header">Отключён</div>
-              <div class="combo_box_items_block fields_border">
-                <div class="combo_box_item_block">
-                  <input class="input_field field_new combo_box_input combo_box_no_active" type="text" value="Вспомогательный текст">
-                </div>
-                <div class="combo_box_item_block">
-                  <input class="input_field field_new combo_box_input combo_box_no_active" type="text">
-                  <div class="points">
-                    <div class="combo_box_point">Пункт 1</div>
-                    <div class="combo_box_point">Пункт 1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="combo_box_items">
-            <div class="combo_box_item">
-              <div class="combo_box_items_name">
-                <div class="button_checkbox_header combo_box_item_name">Стандартное</div>
-                <div class="button_checkbox_header combo_box_item_name">Заполнен</div>
-                <div class="button_checkbox_header combo_box_item_name">При наведении</div>
-                <div class="button_checkbox_header combo_box_item_name">При редактировании</div>
-              </div>
-              <div class="combo_box_items_block fields_border">
-                <div class="combo_box_item_block_no_arrow">
-                  <input class="input_field field_new combo_box_input" type="text" value="Вспомогательный текст">
-                </div>
-                <div class="combo_box_item_block_no_arrow">
-                  <input class="input_field field_new combo_box_input" type="text">
-                  <div class="points">
-                    <div class="combo_box_point ">Пункт 1</div>
-                    <div class="combo_box_point">Пункт 1</div>
-                  </div>
-                </div>
-                <div class="combo_box_item_block_no_arrow">
-                  <input class="input_field field_new combo_box_input" type="text">
-                  <div class="points">
-                    <div class="combo_box_point">Пункт 1</div>
-                    <div class="combo_box_point combo_box_guidance">Пункт 1</div>
-                  </div>
-                </div>
-                <div class="combo_box_item_block_no_arrow combo_box_fill">
-                  <input class="input_field field_new combo_box_input" type="text">
-                  <div class="points">
-                    <div class="combo_box_point">Пункт 1</div>
-                    <div>|</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="combo_box_item">
-                <div class="button_checkbox_header">Отключён</div>
-              <div class="combo_box_items_block fields_border">
-                <div class="combo_box_item_block_no_arrow">
-                  <input class="input_field field_new combo_box_input combo_box_no_active" type="text" value="Вспомогательный текст">
-                </div>
-                <div class="combo_box_item_block_no_arrow">
-                  <input class="input_field field_new combo_box_input combo_box_no_active" type="text">
-                  <div class="points">
-                    <div class="combo_box_point">Пункт 1</div>
-                    <div class="combo_box_point">Пункт 1</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sidebar_container">
-          <h1 class="colors_h1">Боковое меню</h1>
-
-          <div class="sidebar">
-            <div class="sidebar_items">
-              <div class="sidebar_item">
-
-                <div class="sidebar_item_name">
-                  <div class="sidebar_name">Название</div>
-                  <div class="sidebar_arrow"></div>
-                </div>
-
-                <div class="sidebar_item_information">
-                  <div class="foto_item profile_user"></div>
-                  <div class="sidebar_information">
-                    <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
-                    <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
-                  </div>
-                </div>
-
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_desktop_active"></div>
-                  <div class="sidebar_menu_name menu_active">Рабочий стол</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_official"></div>
-                  <div class="sidebar_menu_name">Служебные</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_content"></div>
-                  <div class="sidebar_menu_name">Контент</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_control"></div>
-                  <div class="sidebar_menu_name">Управление сайтом</div>
-                </div>
-                <div class="sidebar_item_menu line_gray"></div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_settings"></div>
-                  <div class="sidebar_menu_name">Настройки</div>
-                </div>
-              </div>
-              <div class="sidebar_item">
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_logout"></div>
-                  <div class="sidebar_menu_name">Выйти</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="sidebar_items no_footer_menu">
-              <div class="sidebar_item">
-
-                <div class="sidebar_item_name">
-                  <div class="sidebar_name">Название</div>
-                  <div class="sidebar_arrow"></div>
-                </div>
-
-                <div class="sidebar_item_information">
-                  <div class="foto_item profile_user"></div>
-                  <div class="sidebar_information">
-                    <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
-                    <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
-                  </div>
-                </div>
-
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_desktop"></div>
-                  <div class="sidebar_menu_name">Рабочий стол</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_official_active"></div>
-                  <div class="sidebar_menu_name official_active">Служебные</div>
-                </div>
-                <div class="menu_elements text_container-item-font-size-12pt_500">
-                  <ul>
-                    <li class="menu_element">Элементы простые 1</li>
-                    <li class="menu_element">Элементы простые 2</li>
-                    <li class="menu_element">Элементы с картинками</li>
-                  </ul>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_content"></div>
-                  <div class="sidebar_menu_name">Контент</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_control"></div>
-                  <div class="sidebar_menu_name">Управление сайтом</div>
-                </div>
-                <div class="sidebar_item_menu line_gray"></div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_settings"></div>
-                  <div class="sidebar_menu_name">Настройки</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="sidebar_items">
-              <div class="sidebar_item">
-
-                <div class="sidebar_item_name">
-                  <div class="sidebar_name">Название</div>
-                  <div class="sidebar_arrow"></div>
-                </div>
-
-                <div class="sidebar_item_information">
-                  <div class="foto_item profile_user"></div>
-                  <div class="sidebar_information">
-                    <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
-                    <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
-                  </div>
-                </div>
-
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_desktop"></div>
-                  <div class="sidebar_menu_name">Рабочий стол</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_official"></div>
-                  <div class="sidebar_menu_name">Служебные</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_content_active"></div>
-                  <div class="sidebar_menu_name content_active">Контент</div>
-                </div>
-                <div class="menu_elements text_container-item-font-size-12pt_500">
-                  <ul>
-                    <li class="menu_element">Отдельные фрагменты</li>
-                    <li class="menu_element">Новости</li>
-                  </ul>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_control"></div>
-                  <div class="sidebar_menu_name">Управление сайтом</div>
-                </div>
-                <div class="sidebar_item_menu line_gray"></div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_logout"></div>
-                  <div class="sidebar_menu_name">Выйти</div>
-                </div>
-
-              </div>
-              <div class="sidebar_item">
-
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_settings"></div>
-                  <div class="sidebar_menu_name">Настройки</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="sidebar_items no_footer_menu">
-              <div class="sidebar_item">
-
-                <div class="sidebar_item_name">
-                  <div class="sidebar_name">Название</div>
-                  <div class="sidebar_arrow"></div>
-                </div>
-
-                <div class="sidebar_item_information">
-                  <div class="foto_item profile_user"></div>
-                  <div class="sidebar_information">
-                    <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
-                    <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
-                  </div>
-                </div>
-
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_desktop"></div>
-                  <div class="sidebar_menu_name">Рабочий стол</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_official"></div>
-                  <div class="sidebar_menu_name">Служебные</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_content"></div>
-                  <div class="sidebar_menu_name">Контент</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_control_active"></div>
-                  <div class="sidebar_menu_name control_active">Управление сайтом</div>
-                </div>
-                <div class="menu_elements text_container-item-font-size-12pt_500">
-                  <ul>
-                    <li class="menu_element">Главная</li>
-                  </ul>
-                </div>
-                <div class="sidebar_item_menu line_gray"></div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_settings"></div>
-                  <div class="sidebar_menu_name">Настройки</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="sidebar_items no_footer_menu">
-              <div class="sidebar_item">
-
-                <div class="sidebar_item_name">
-                  <div class="sidebar_name">Название</div>
-                  <div class="sidebar_arrow"></div>
-                </div>
-
-                <div class="sidebar_item_information">
-                  <div class="foto_item profile_user"></div>
-                  <div class="sidebar_information">
-                    <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
-                    <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
-                  </div>
-                </div>
-
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_desktop"></div>
-                  <div class="sidebar_menu_name">Рабочий стол</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_official"></div>
-                  <div class="sidebar_menu_name">Служебные</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_content"></div>
-                  <div class="sidebar_menu_name">Контент</div>
-                </div>
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_control"></div>
-                  <div class="sidebar_menu_name">Управление сайтом</div>
-                </div>
-
-                <div class="sidebar_item_menu line_gray"></div>
-
-                <div class="sidebar_item_menu">
-                  <div class="sidebar_menu_icon icon_settings_active"></div>
-                  <div class="sidebar_menu_name settings_active">Настройки</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="header_container">
-          <h1 class="colors_h1">Верхнее меню (шапка)</h1>
-
-          <div class="header_items">
-            <div class="srch_item-no_active">
-              <input type="search" placeholder="Поиск">
-            </div>
-            <div class="header_item_icons">
-              <div class="header_item_icon icon_notifications"></div>
-              <div class="header_item_icon icon_logout"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="icon_container">
-          <h1 class="colors_h1">Иконки</h1>
-
-          <div class="icon_items">
-            <div class="icon_items_active">
-              <div class="button_checkbox_header">Menu</div>
-              <div class="icon_item">
-                <div class="sidebar_menu_icon icon_desktop"></div>
-                <div class="sidebar_menu_icon icon_official"></div>
-                <div class="sidebar_menu_icon icon_content"></div>
-                <div class="sidebar_menu_icon icon_control"></div>
-                <div class="sidebar_menu_icon">
-                  <div class="icon_rhombus"></div>
-                </div>
-                <div class="sidebar_menu_icon icon_settings"></div>
-                <div class="sidebar_menu_icon icon_pen"></div>
-                <div class="sidebar_menu_icon icon_two_arrow"></div>
-              </div>
-              <div class="icon_item">
-                <div class="sidebar_menu_icon icon_desktop_active"></div>
-                <div class="sidebar_menu_icon icon_official_active"></div>
-                <div class="sidebar_menu_icon icon_content_active"></div>
-                <div class="sidebar_menu_icon icon_control_active"></div>
-                <div class="sidebar_menu_icon">
-                  <div class="icon_rhombus rhombus_active"></div>
-                </div>
-                <div class="sidebar_menu_icon icon_settings_active"></div>
-                <div class="sidebar_menu_icon icon_pen_active"></div>
-                <div class="sidebar_menu_icon icon_two_arrow_active"></div>
-              </div>
-            </div>
-
-            <div class="icon_items_no_active">
-              <div class="button_checkbox_header">Other</div>
-              <div class="icon_item">
-                <div class="sidebar_menu_icon icon_edit"></div>
-                <div class="sidebar_menu_icon icon_show"></div>
-                <div class="sidebar_menu_icon icon_trach"></div>
-                <div class="sidebar_menu_icon icon_check_blue"></div>
-                <div class="sidebar_menu_icon icon_search"></div>
-                <div class="sidebar_menu_icon icon_notifications"></div>
-                <div class="sidebar_menu_icon icon_close_light"></div>
-                <div class="sidebar_menu_icon icon_add"></div>
-                <div class="sidebar_menu_icon icon_attach"></div>
-                <div class="sidebar_menu_icon icon_logout"></div>
-                <div class="sidebar_menu_icon icon_arrow_down"></div>
-                <div class="sidebar_menu_icon icon_arrow_up"></div>
-                <div class="sidebar_menu_icon icon_burger_menu"></div>
-                <div class="sidebar_menu_icon icon_filter"></div>
-                <div class="sidebar_menu_icon icon_save"></div>
-                <div class="sidebar_menu_icon icon_back"></div>
-                <div class="sidebar_menu_icon icon_left_gray"></div>
-                <div class="sidebar_menu_icon icon_right_gray"></div>
-                <div class="sidebar_menu_icon icon_image"></div>
-                <div class="sidebar_menu_icon icon_no_image"></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-
 
     </div>
 
-      <script src="./index1js.js"></script>
-      <script src="./vanillaSelectBox.js?v0.75"></script>
-      <script>
+    <div class="button_checkbox_container-six_theme">
 
-      selectBoxTest = new vanillaSelectBox("#demoShort", {
-          "maxHeight": 200,
-          "search": true ,
-          "translations": { "all": "All", "items": "items","selectAll":"Check All","clearAll":"Clear All","placeHolder": "Choose a brand..."}
-      });
-      </script>
+      <h1 id="buttons" class="colors_h1">Кнопки и другие активные элементы</h1>
 
-  </body>
+      <div class="button-checkbox_items">
+
+        <div class="button-checkbox_container-item">
+
+          <div class="button_checkbox_headers">
+            <div class="button_checkbox_header header_standard">Стандартное</div>
+            <div class="button_checkbox_header header_guidance">При наведении</div>
+            <div class="button_checkbox_header header_pressing">При нажатии</div>
+            <div class="button_checkbox_header header_not_active">Не активная</div>
+          </div>
+
+          <div class="button_checkbox_buttons states-add">
+            <button class="button_checkbox_button states-add-active"><span class="plus">+</span>Добавить</button>
+            <button class="button_checkbox_button states-add-guidance"><span class="plus">+</span>
+              <p class="hover_cursor-text">Добавить</p>
+            </button>
+            <button class="button_checkbox_button states-add-pressing"><span class="plus">+</span>
+              <p class="hover_cursor-text">Добавить</p>
+            </button>
+            <button class="button_checkbox_button states-add-not_active"><span class="plus">+</span>Добавить</button>
+          </div>
+
+          <div class="button_checkbox_buttons states-load">
+            <button class="button_checkbox_button states-load-active"><span class="attach"></span>Загрузить</button>
+            <button class="button_checkbox_button states-load-guidance"><span class="attach"></span>
+              <p class="hover_cursor-text">Загрузить</p>
+            </button>
+            <button class="button_checkbox_button states-load-pressing"><span class="attach"></span>
+              <p class="hover_cursor-text">Загрузить</p>
+            </button>
+            <button class="button_checkbox_button states-load-not_active"><span class="attach"></span>Загрузить</button>
+          </div>
+
+          <div class="button_checkbox_buttons states-cancel">
+            <button class="button_checkbox_button states-cancel-active">Отмена</button>
+            <button class="button_checkbox_button states-cancel-guidance">
+              <p class="hover_cursor-text">Отмена</p>
+            </button>
+            <button class="button_checkbox_button states-cancel-pressing">
+              <p class="hover_cursor-text">Отмена</p>
+            </button>
+            <button class="button_checkbox_button states-cancel-not_active">Отмена</button>
+          </div>
+
+          <div class="button_checkbox_buttons states-cancel_v2">
+            <button class="button_checkbox_button states-cancel_v2-active">Отмена</button>
+            <button class="button_checkbox_button states-cancel_v2-guidance">
+              <p class="hover_cursor-text">Отмена</p>
+            </button>
+            <button class="button_checkbox_button states-cancel_v2-pressing">
+              <p class="hover_cursor-text">Отмена</p>
+            </button>
+            <button class="button_checkbox_button states-cancel_v2-not_active">Отмена</button>
+          </div>
+
+          <div class="button_checkbox_buttons states-add">
+            <button class="button_checkbox_button btn_small states-add-active"><span
+                class="plus">+</span>Добавить</button>
+            <button class="button_checkbox_button btn_small states-add-guidance"><span class="plus">+</span>
+              <p class="hover_cursor-text">Добавить</p>
+            </button>
+            <button class="button_checkbox_button btn_small states-add-pressing"><span class="plus">+</span>
+              <p class="hover_cursor-text">Добавить</p>
+            </button>
+            <button class="button_checkbox_button btn_small states-add-not_active"><span
+                class="plus">+</span>Добавить</button>
+          </div>
+
+          <div class="button_checkbox-items_mini">
+            <div class="button_checkbox-item_mini">
+              <div class="button_checkbox_buttons states-add btns_mini">
+                <button class="button_checkbox_button btn_mini states-add-active"><span
+                    class="icon_save"></span></button>
+                <button class="button_checkbox_button btn_mini states-add-guidance"><span
+                    class="icon_save hover_cursor-text"></span></button>
+                <button class="button_checkbox_button btn_mini states-add-pressing"><span
+                    class="icon_save hover_cursor-text"></span></button>
+                <button class="button_checkbox_button btn_mini states-add-not_active"><span
+                    class="icon_save"></span></button>
+              </div>
+
+              <div class="button_checkbox_buttons states-add btns_mini">
+                <button class="button_checkbox_button btn_mini states-add-active"><span
+                    class="icon_exit"></span></button>
+                <button class="button_checkbox_button btn_mini states-add-guidance"><span
+                    class="icon_exit hover_cursor-text"></span></button>
+                <button class="button_checkbox_button btn_mini states-add-pressing"><span
+                    class="icon_exit hover_cursor-text"></span></button>
+                <button class="button_checkbox_button btn_mini states-add-not_active"><span
+                    class="icon_exit"></span></button>
+              </div>
+            </div>
+
+            <div class="button_checkbox-item_mini">
+              <div class="button_checkbox-button_options">
+                <div class="button_checkbox_header">Варианты кнопок</div>
+                <div class="states-add btns_opt">
+                  <button class="button_checkbox_button btn_mini-back states-add-active"><span
+                      class="icon_back"></span>Назад</button>
+                  <button class="button_checkbox_button btn_mini-back_v_2 states-add-active"><span
+                      class="icon_back"></span>Назад</button>
+                  <button class="button_checkbox_button btn_mini-exit states-add-active"><span
+                      class="icon_exit"></span>Выход</button>
+                  <button class="button_checkbox_button btn_mini-exit_v_2 states-add-active">Выход</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="button-checkbox_container-item collection_elements">
+
+          <div class="collection_element">
+
+            <div class="button_checkbox_header header_standard">Checkbox</div>
+
+            <div class="collection_element_checkbox">
+              <div class="collection_element_item">
+                <input class="checkbox checked_no" type="checkbox">
+                <input class="checkbox checked_yes" type="checkbox" checked>
+                <input class="checkbox checked_two" type="checkbox" checked>
+                <input class="checkbox checked_light" type="checkbox" checked>
+                <input class="checkbox checked_green" type="checkbox" checked>
+                <input class="checkbox checked_alert" type="checkbox" checked>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="collection_element">
+
+            <div class="button_checkbox_header header_standard">Radio</div>
+
+            <div class="collection_element_radio">
+              <div class="collection_element_item">
+                <input class="radio radio_no" type="radio">
+                <input class="radio radio_yes" type="radio" checked>
+                <input class="radio radio_alert" type="radio" checked>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="collection_element">
+
+            <div class="button_checkbox_header header_standard">Статусы элементов</div>
+            <div class="collection_element_button">
+                <button class="states-item states_active">Активен</button>
+                <button class="states-item states_not_active">Не активен</button>
+                <button class="states-item states_off">Отключён</button>
+            </div>
+
+          </div>
+
+          <div class="collection_element">
+
+            <div class="button_checkbox_header header_standard">Switcher</div>
+
+            <div class="collection_element_switcher">
+
+              <div class="collection_element_item">
+                <div class="switch_items">
+                  <div class="switch_item">
+                    <input class="switcher_collection swt_active" type="checkbox" checked />
+                  </div>
+                  <div class="switch_item">
+                    <input class="switcher_collection swt_no_active" type="checkbox" />
+                  </div>
+                  <div class="switch_item">
+                    <input class="switcher_collection swt_active_light" type="checkbox" checked />
+                  </div>
+                  <div class="switch_item">
+                    <input class="switcher_collection swt_no_active_light" type="checkbox" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="avatar_container-six_theme">
+      <h1 class="colors_h1">Аватары пользователей</h1>
+
+      <div class="avatar_items">
+
+        <div class="avatar_item">
+
+          <div class="button_checkbox_header">Аватар пользователя</div>
+          <p class="text_container-item-font-size-14pt">104 x 104</p>
+
+          <div class="foto_items">
+            <div class="foto_item avatar">
+            </div>
+            <div class="foto_item avatar_done">
+            </div>
+            <div class="foto_item avatar_hover">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="avatar_item">
+
+          <div class="button_checkbox_header">Аватар пользователя<br> на боковой панели</div>
+          <p class="text_container-item-font-size-14pt">46 x 46</p>
+
+          <div class="foto_items">
+            <div class="foto_item profile_user">
+            </div>
+            <div class="foto_item profile_user_active">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="avatar_item">
+
+          <div class="button_checkbox_header">Связанный аватар<br> пользователя</div>
+          <p class="text_container-item-font-size-14pt">24 x 24</p>
+
+          <div class="foto_items">
+            <div class="mini_avatar">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="preloader_container-six_theme">
+      <h1 class="colors_h1">Прелоадеры</h1>
+
+      <div class="preloader_items">
+        <div>
+          <div class="button_checkbox_header">Стандартный</div>
+          <div class="preloader_elements">
+            <div class="preloader_element element_ellipse">
+            </div>
+            <div class="preloader_element element_ellipse-v_2">
+            </div>
+            <div class="preloader_element element_polygon">
+            </div>
+          </div>
+        </div>
+        <div class="preloader_item">
+          <div class="button_checkbox_header">Прогрессбар</div>
+          <div class="progress_bar_element">
+            <progress max="100" value="44"></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tooltip_container-six_theme">
+      <h1 class="colors_h1">Тултипы</h1>
+
+      <div class="tooltipe">
+
+        <div class="button_checkbox_header">Только текст</div>
+
+        <div class="tooltipe_items">
+          <div class="tooltipe_item tooltip_up">
+            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
+              основного контента на странице</span>
+            <button class="tooltip_button">Кнопка</button>
+          </div>
+          <div class="tooltipe_item tooltip_up_right">
+            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
+              основного контента на странице</span>
+            <button class="tooltip_button">Кнопка</button>
+          </div>
+          <div class="tooltipe_item tooltip_bottom">
+            <button class="tooltip_button">Кнопка</button>
+            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
+              основного контента на странице</span>
+          </div>
+          <div class="tooltipe_item tooltipe_side">
+            <div class="tooltipe_items_side">
+              <div class="tooltipe_item_side tooltip_right">
+                <button class="tooltip_button">Кнопка</button>
+                <span class="tooltip_text tooltip_text_mini">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх
+                  <br /> основного контента на странице</span>
+              </div>
+              <div class="tooltipe_item_side tooltip_left">
+                <span class="tooltip_text tooltip_text_mini">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх
+                  <br /> основного контента на странице</span>
+                <button class="tooltip_button">Кнопка</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="button_checkbox_header">Текст с заголовком</div>
+
+        <div class="tooltipe_items text_with_heading">
+          <div class="tooltipe_item tooltip_up">
+            <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
+              с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
+            <button class="tooltip_button">Кнопка</button>
+          </div>
+          <div class="tooltipe_item tooltip_up_right">
+            <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
+              с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
+            <button class="tooltip_button">Кнопка</button>
+          </div>
+          <div class="tooltipe_item tooltip_bottom">
+            <button class="tooltip_button">Кнопка</button>
+            <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
+              с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
+          </div>
+          <div class="tooltipe_item tooltipe_side">
+            <div class="tooltipe_items_side">
+              <div class="tooltipe_item_side tooltip_right">
+                <button class="tooltip_button">Кнопка</button>
+                <span class="tooltip_text tooltip_text_mini"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
+                  с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
+              </div>
+              <div class="tooltipe_item_side tooltip_left">
+                <span class="tooltip_text tooltip_text_mini">
+                  <div class="tooltip_header">Заголовок</div><br />Всплывающая подсказка с текстовым <br /> наполнением,
+                  показывается поверх <br /> основного контента на странице
+                </span>
+                <button class="tooltip_button">Кнопка</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="button_checkbox_header">Текст с заголовком и кнопками</div>
+
+        <div class="tooltipe_items text_with_button">
+
+          <div class="tooltipe_item tooltip_up_right">
+            <div class="tooltip_text"><span class="tooltip_header">Заголовок</span>Всплывающая подсказка с текстовым
+              <br /> наполнением, показывается поверх <br /> основного контента на странице</div>
+            <button class="tooltip_button_accept">Принять</button>
+            <button class="tooltip_button_cancel">Отмена</button>
+
+            <div class="text_field">
+              <div class="text_container-item-font-size-14pt">Текстовое поле</div>
+              <div>
+                <input type="text" value="Вспомогательный текст">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tooltipe_item tooltip_right">
+
+            <div class="text_field">
+              <div class="text_container-item-font-size-14pt">Текстовое поле</div>
+              <div>
+                <input type="text" value="Вспомогательный текст">
+              </div>
+            </div>
+
+            <span class="tooltip_text"><span class="tooltip_header">Заголовок</span>Всплывающая подсказка с текстовым
+              <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
+            <button class="tooltip_button_accept">Принять</button>
+            <button class="tooltip_button_cancel">Отмена</button>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="pagination_container">
+      <h1 class="colors_h1">Пагинация</h1>
+
+      <div class="button_checkbox_header">Пагинация над списком</div>
+
+      <div class="pagination">
+        <div>
+          <ul class="pagination_items text_container-item-font-size-12pt">
+            <li class="pagination_item "><a class="icon_left" href="#">Назад</a></li>
+            <li class="pagination_item active_item"><a href="#">1</a></li>
+            <li class="pagination_item"><a href="#">2</a></li>
+            <li class="pagination_item"><a href="#">3</a></li>
+            <li class="pagination_item"><a href="#">4</a></li>
+            <li class="pagination_item"><a href="#">5</a></li>
+            <li class="pagination_item"><a href="#">6</a></li>
+            <li class="pagination_item"><a href="#">7</a></li>
+            <li class="pagination_item"><a href="#">8</a></li>
+            <li class="pagination_item"><a href="#">9</a></li>
+            <li class="pagination_item"><a href="#">10</a></li>
+            <li class="pagination_item"><a class="icon_right" href="#">Вперёд</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="accordion_container">
+      <h1 class="colors_h1">Меню акордеон</h1>
+
+      <div class="button_checkbox_header">Вертикальное меню</div>
+
+      <div class="accordion">
+        <div class="accordion_items">
+          <div class="accordion_item">
+            <div class="accordion_item-point">
+              Пункт меню 1
+            </div>
+            <div class="accordion_item-arrow">
+              <input class="accordion_item-checkbox" type="checkbox">
+            </div>
+          </div>
+          <div class="accordion_item">
+            <div class="accordion_item-point">
+              Пункт меню 2
+            </div>
+            <div class="accordion_item-arrow">
+              <input class="accordion_item-checkbox" type="checkbox">
+            </div>
+          </div>
+          <div class="accordion_item">
+            <div class="accordion_item-point">
+              Пункт меню 3
+            </div>
+            <div class="accordion_item-arrow">
+              <input class="accordion_item-checkbox" type="checkbox">
+            </div>
+          </div>
+          <div class="accordion_item">
+            <div class="accordion_item-point">
+              Пункт меню 4
+            </div>
+            <div class="accordion_item-arrow">
+              <input class="accordion_item-checkbox" type="checkbox">
+            </div>
+          </div>
+          <div class="accordion_item">
+            <div class="accordion_item-point">
+              Пункт меню 5
+            </div>
+            <div class="accordion_item-arrow">
+              <input class="accordion_item-checkbox" type="checkbox">
+            </div>
+          </div>
+          <div class="accordion_item">
+            <div class="accordion_item-point">
+              Пункт меню 6
+            </div>
+            <div class="accordion_item-arrow">
+              <input class="accordion_item-checkbox" type="checkbox" checked>
+            </div>
+          </div>
+          <div class="subpoints text_container-item-font-size-12pt">
+            <div class="accordion_item-subpoints">
+              <div class="accordion_item-subpoint">
+                Подпункт меню 1
+              </div>
+              <div class="accordion_item-plus">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="subpoints text_container-item-font-size-12pt">
+            <div class="accordion_item-subpoints">
+              <div class="accordion_item-subpoint">
+                Подпункт меню 2
+              </div>
+              <div class="accordion_item-plus">
+                +
+              </div>
+            </div>
+          </div>
+          <div class="subpoints text_container-item-font-size-12pt">
+            <div class="accordion_item-subpoints">
+              <div class="accordion_item-subpoint">
+                Подпункт меню 3
+              </div>
+              <div class="accordion_item-plus">
+                +
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="button_checkbox_button btn_mini-exit_v_2 states-add-active accordion_button">Выход</button>
+    </div>
+
+    <div class="images_container">
+      <h1 class="colors_h1">Изображения</h1>
+
+      <div class="images_items">
+
+        <div class="images_no">
+          <div class="button_checkbox_header">Не загружено</div>
+          <div class="images_no_item"></div>
+        </div>
+
+        <div class="images_yes">
+          <div class="button_checkbox_header">Загружено</div>
+          <div class="images_yes_item"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input_fields_container">
+      <h1 class="colors_h1">Поля ввода</h1>
+
+      <div class="input_fields">
+        <div class="input_fields_items">
+          <div class="input_fields_item">
+            <div class="button_checkbox_header">Название поля</div>
+            <div class="button_checkbox_header">Новое поле</div>
+            <div class="button_checkbox_header">Стандартное состояние</div>
+            <div class="button_checkbox_header">При редактировании</div>
+          </div>
+
+          <div class="input_fields_item">
+            <div class="input_field_header text_container-item-font-size-14pt">Текстовое поле</div>
+            <div class="input_fields_text fields_border">
+              <input class="input_field field_new" type="text" value="Вспомогательный текст">
+              <input class="input_field field_standart" type="text" value="Вспомогательный текст">
+              <input class="input_field field_editing" type="text" value="Вспомогательный текст">
+            </div>
+          </div>
+
+          <div class="input_fields_item">
+            <div class="input_field_header text_container-item-font-size-14pt">Выпадающий список</div>
+            <div class="input_fields_select fields_border">
+              <select class="input_select field_new" name="select">
+                <option value="value_1" selected>Вспомогательный текст</option>
+                <option value="value_2">Вспомогательный текст #2</option>
+                <option value="value_3">Вспомогательный текст #3</option>
+              </select>
+              <select class="input_select field_standart" name="select">
+                <option value="value_1" selected>Вспомогательный текст</option>
+                <option value="value_2">Вспомогательный текст #2</option>
+                <option value="value_3">Вспомогательный текст #3</option>
+              </select>
+              <select class="input_select field_editing" name="select">
+                <option value="value_1" selected>Вспомогательный текст</option>
+                <option value="value_2">Вспомогательный текст #2</option>
+                <option value="value_3">Вспомогательный текст #3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input_fields_item">
+            <div class="input_field_header text_container-item-font-size-14pt">Выбор даты</div>
+            <div class="input_fields_date fields_border">
+              <input class="input_date field_new" type="date" value="Вспомогательный текст">
+              <input class="input_date field_standart" type="date" value="Вспомогательный текст">
+              <input class="input_date field_editing" type="date" value="Вспомогательный текст">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="calendar-select-search_container text_container-item-font-size-14pt">
+      <div class="calendar_container">
+        <h1 class="colors_h1">Календарь</h1>
+        <div class="calendar">
+          <div class="calendar_item">
+            <div class="calendar-one_day"></div>
+          </div>
+          <div class="calendar_item">
+            <div class="calendar-date_range"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slct_container">
+        <h1 class="colors_h1">Выпадающий список</h1>
+        <div class="slct">
+          <div class="slct_items">
+
+            <div class="slct_items-two">
+              <div class="slct_item">
+                <div class="slct_option">Вариант 1</div>
+                <div class="slct_option active_option">Вариант 2</div>
+                <div class="slct_option">Вариант 3</div>
+                <div class="slct_option">Вариант 4</div>
+                <div class="slct_option">Вариант 5</div>
+                <div class="slct_option">Вариант 6</div>
+              </div>
+
+              <div class="slct_item">
+                <div class="slct_option option_v2">Вариант 1</div>
+                <div class="slct_option option_v2 active_option">Вариант 2</div>
+                <div class="slct_option option_v2">Вариант 3</div>
+                <div class="slct_option option_v2">Вариант 4</div>
+                <div class="slct_option option_v2">Вариант 5</div>
+                <div class="slct_option option_v2">Вариант 6</div>
+              </div>
+            </div>
+
+            <div class="slct_items-four">
+
+              <div class="slct_item">
+                <div class="slct_div">
+                  <input class="input_slct_option" type="text" value="Вариант 1">
+                </div>
+                <div class="slct_option">Вариант 1</div>
+                <div class="slct_option active_option">Вариант 2</div>
+                <div class="slct_option">Вариант 3</div>
+                <div class="slct_option">Вариант 4</div>
+                <div class="slct_option">Вариант 5</div>
+                <div class="slct_option">Вариант 6</div>
+              </div>
+
+              <div class="slct_item_calendar">
+                <div class="slct_div_calendar">
+                  <input class="input_slct_option" type="text" value="17 января 2020 г">
+                </div>
+                <div class="calendar_item">
+                  <div class="calendar-one_day"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="srch_container">
+        <h1 class="colors_h1">Поля для поиска и фильтрации</h1>
+        <div class="srch_items">
+          <div class="srch_item fields_border">
+            <div class="srch_item-no_active">
+              <input type="search" placeholder="Поиск">
+            </div>
+            <div class="srch_item_active">
+              <input type="search" placeholder="Поиск">
+            </div>
+          </div>
+          <div class="srch_item fields_border">
+            <div class="srch_item-no_active srch_small-no_active">
+              <input type="search" placeholder="Поиск">
+            </div>
+            <div class="srch_item_active srch_small">
+              <input type="search" placeholder="Поиск">
+            </div>
+          </div>
+          <div class="srch_item-status">
+            <div class="status_text">Статус</div>
+            <div class="status_text-input">
+              <input type="search" placeholder="Текст">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="input_fields_name_container">
+      <h1 class="colors_h1">Поля ввода с названием сверху поля</h1>
+
+      <div class="input_fields_name">
+        <div class="input_fields_name_items">
+          <div class="input_fields_name_item">
+            <div class="button_checkbox_header">Отображение</div>
+            <div class="button_checkbox_header">Новое поле</div>
+            <div class="button_checkbox_header">Стандартное состояние</div>
+            <div class="button_checkbox_header">При редактировании</div>
+          </div>
+          <div class="input_fields_name_item fields_border">
+            <div class="name_item">
+              <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
+              <div class="name_item_input text_container-item-font-size-14pt">Вспомогательный текст</div>
+            </div>
+            <div class="name_item">
+              <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field field_new" type="text" value="Вспомогательный текст">
+            </div>
+            <div class="name_item">
+              <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field field_standart" type="text" value="Вспомогательный текст">
+            </div>
+            <div class="name_item">
+              <div class="name_item_header blue_header text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field field_standart" type="text" value="Вспомогательный те|">
+            </div>
+          </div>
+
+          <div class="input_fields_name_item arrow_design fields_border">
+            <div class="name_item">
+              <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
+              <div class="name_item_input text_container-item-font-size-14pt">Вспомогательный текст</div>
+            </div>
+            <div class="name_item">
+              <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field field_new" type="text" value="Вспомогательный текст">
+            </div>
+            <div class="name_item">
+              <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field field_standart" type="text" value="Вспомогательный текст">
+            </div>
+            <div class="name_item">
+              <div class="name_item_header blue_header text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field field_standart" type="text" value="Вспомогательный те|">
+            </div>
+          </div>
+
+          <div class="input_fields_name_item calendar_design fields_border">
+            <div class="name_item">
+              <div class="name_item_header calendar_grey_light text_container-item-font-size-12pt_500">Название</div>
+              <div class="name_item_input text_container-item-font-size-14pt">Вспомогательный текст</div>
+            </div>
+            <div class="name_item">
+              <div class="name_item_header calendar_grey text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field field_new" type="text" value="Вспомогательный текст">
+            </div>
+            <div class="name_item">
+              <div class="name_item_header calendar_grey text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field field_standart" type="text" value="Вспомогательный текст">
+            </div>
+            <div class="name_item">
+              <div class="name_item_header calendar_blue blue_header text_container-item-font-size-12pt_500">Название
+              </div>
+              <input class="input_field field_editing" type="text" value="Вспомогательный те|">
+            </div>
+          </div>
+
+          <div class="input_fields_name_item input_status">
+            <div class="name_item">
+              <div class="name_item_header icon_close text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field_first red_border field_standart" type="text" value="Вспомогательный текст">
+              <div class="not_true text_container-item-font-size-12pt">Поле заполнено не верно</div>
+            </div>
+            <div class="name_item">
+              <div class="name_item_header icon_check_big text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field green_border field_standart" type="text" value="Вспомогательный текст">
+            </div>
+            <div class="name_item">
+              <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field red_border field_standart" type="text" value="Вспомогательный текст">
+              <div class="not_true text_container-item-font-size-12pt">Поле заполнено не верно</div>
+            </div>
+            <div class="name_item">
+              <div class="name_item_header text_container-item-font-size-12pt_500">Название</div>
+              <input class="input_field green_border field_standart" type="text" value="Вспомогательный текст">
+            </div>
+          </div>
+
+          <div class="input_text_status-items">
+            <div class="input_text_status-item">
+              <div class="input_field_header text_container-item-font-size-14pt">Текстовое поле</div>
+              <input class="input_field field_new red_border" type="text" value="Вспомогательный текст">
+              <div class="not_true text_container-item-font-size-12pt">Поле заполнено не верно</div>
+            </div>
+
+            <div class="input_text_status-item">
+              <div class="input_field_header icon_close text_container-item-font-size-14pt">Текстовое поле</div>
+              <input class="input_field field_new red_border" type="text" value="Вспомогательный текст">
+              <div class="not_true text_container-item-font-size-12pt">Поле заполнено не верно</div>
+            </div>
+          </div>
+
+          <div class="input_text_status-items">
+            <div class="input_text_status-item">
+              <div class="input_field_header text_container-item-font-size-14pt">Текстовое поле</div>
+              <input class="input_field field_new green_border" type="text" value="Вспомогательный текст">
+            </div>
+
+            <div class="input_text_status-item">
+              <div class="input_field_header icon_check_big text_container-item-font-size-14pt">Текстовое поле</div>
+              <input class="input_field field_new green_border" type="text" value="Вспомогательный текст">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="slider_container">
+      <h1 class="colors_h1">Слайдер</h1>
+
+      <div class="slider_items_name">
+        <div class="button_checkbox_header slider_item_name">Стандартное</div>
+        <div class="button_checkbox_header slider_item_name">При наведении</div>
+        <div class="button_checkbox_header slider_item_name">Отключён</div>
+      </div>
+      <div class="slider_items fields_border">
+        <div class="slider_item">
+          <div class="">Название параметра</div>
+          <input type="range" min="1" max="100" value="50" class="slider slider_standart">
+        </div>
+        <div class="slider_item">
+          <div class="">Название параметра</div>
+          <input type="range" min="1" max="100" value="50" class="slider slider_active">
+        </div>
+        <div class="slider_item">
+          <div class="">Название параметра</div>
+          <input type="range" min="1" max="100" value="50" class="slider slider_off">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="combo_box_container">
+      <h1 class="colors_h1">Комбобокс</h1>
+
+      <div class="combo_box">
+        <div class="combo_box_items">
+          <div class="combo_box_item">
+            <div class="combo_box_items_name">
+              <div class="button_checkbox_header combo_box_item_name">Стандартное</div>
+              <div class="button_checkbox_header combo_box_item_name">Заполнен</div>
+              <div class="button_checkbox_header combo_box_item_name">При наведении</div>
+              <div class="button_checkbox_header combo_box_item_name">При редактировании</div>
+            </div>
+            <div class="combo_box_items_block fields_border">
+              <div class="combo_box_item_block">
+                <input class="input_field field_new combo_box_input" type="text" value="Вспомогательный текст">
+              </div>
+              <div class="combo_box_item_block">
+                <input class="input_field field_new combo_box_input" type="text">
+                <div class="points">
+                  <div class="combo_box_point ">Пункт 1</div>
+                  <div class="combo_box_point">Пункт 1</div>
+                  <div class="combo_box_close"></div>
+                </div>
+              </div>
+              <div class="combo_box_item_block">
+                <input class="input_field field_new combo_box_input" type="text">
+                <div class="points">
+                  <div class="combo_box_point">Пункт 1</div>
+                  <div class="combo_box_point combo_box_guidance">Пункт 1</div>
+                  <div class="combo_box_close"></div>
+                </div>
+              </div>
+              <div class="combo_box_item_block combo_box_fill">
+                <input class="input_field field_new combo_box_input" type="text">
+                <div class="points">
+                  <div class="combo_box_point">Пункт 1</div>
+                  <div>|</div>
+                  <div class="combo_box_close close_end"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="combo_box_item">
+            <div class="button_checkbox_header">Отключён</div>
+            <div class="combo_box_items_block fields_border">
+              <div class="combo_box_item_block">
+                <input class="input_field field_new combo_box_input combo_box_no_active" type="text"
+                  value="Вспомогательный текст">
+              </div>
+              <div class="combo_box_item_block">
+                <input class="input_field field_new combo_box_input combo_box_no_active" type="text">
+                <div class="points">
+                  <div class="combo_box_point">Пункт 1</div>
+                  <div class="combo_box_point">Пункт 1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="combo_box_items">
+          <div class="combo_box_item">
+            <div class="combo_box_items_name">
+              <div class="button_checkbox_header combo_box_item_name">Стандартное</div>
+              <div class="button_checkbox_header combo_box_item_name">Заполнен</div>
+              <div class="button_checkbox_header combo_box_item_name">При наведении</div>
+              <div class="button_checkbox_header combo_box_item_name">При редактировании</div>
+            </div>
+            <div class="combo_box_items_block fields_border">
+              <div class="combo_box_item_block_no_arrow">
+                <input class="input_field field_new combo_box_input" type="text" value="Вспомогательный текст">
+              </div>
+              <div class="combo_box_item_block_no_arrow">
+                <input class="input_field field_new combo_box_input" type="text">
+                <div class="points">
+                  <div class="combo_box_point ">Пункт 1</div>
+                  <div class="combo_box_point">Пункт 1</div>
+                </div>
+              </div>
+              <div class="combo_box_item_block_no_arrow">
+                <input class="input_field field_new combo_box_input" type="text">
+                <div class="points">
+                  <div class="combo_box_point">Пункт 1</div>
+                  <div class="combo_box_point combo_box_guidance">Пункт 1</div>
+                </div>
+              </div>
+              <div class="combo_box_item_block_no_arrow combo_box_fill">
+                <input class="input_field field_new combo_box_input" type="text">
+                <div class="points">
+                  <div class="combo_box_point">Пункт 1</div>
+                  <div>|</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="combo_box_item">
+            <div class="button_checkbox_header">Отключён</div>
+            <div class="combo_box_items_block fields_border">
+              <div class="combo_box_item_block_no_arrow">
+                <input class="input_field field_new combo_box_input combo_box_no_active" type="text"
+                  value="Вспомогательный текст">
+              </div>
+              <div class="combo_box_item_block_no_arrow">
+                <input class="input_field field_new combo_box_input combo_box_no_active" type="text">
+                <div class="points">
+                  <div class="combo_box_point">Пункт 1</div>
+                  <div class="combo_box_point">Пункт 1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar_container">
+      <h1 class="colors_h1">Боковое меню</h1>
+
+      <div class="sidebar">
+        <div class="sidebar_items">
+          <div class="sidebar_item">
+
+            <div class="sidebar_item_name">
+              <div class="sidebar_name">Название</div>
+              <div class="sidebar_arrow"></div>
+            </div>
+
+            <div class="sidebar_item_information">
+              <div class="foto_item profile_user"></div>
+              <div class="sidebar_information">
+                <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
+                <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_desktop_active"></div>
+              <div class="sidebar_menu_name menu_active">Рабочий стол</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_official"></div>
+              <div class="sidebar_menu_name">Служебные</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_content"></div>
+              <div class="sidebar_menu_name">Контент</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_control"></div>
+              <div class="sidebar_menu_name">Управление сайтом</div>
+            </div>
+            <div class="sidebar_item_menu line_gray"></div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_settings"></div>
+              <div class="sidebar_menu_name">Настройки</div>
+            </div>
+          </div>
+          <div class="sidebar_item">
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_logout"></div>
+              <div class="sidebar_menu_name">Выйти</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar_items no_footer_menu">
+          <div class="sidebar_item">
+
+            <div class="sidebar_item_name">
+              <div class="sidebar_name">Название</div>
+              <div class="sidebar_arrow"></div>
+            </div>
+
+            <div class="sidebar_item_information">
+              <div class="foto_item profile_user"></div>
+              <div class="sidebar_information">
+                <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
+                <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_desktop"></div>
+              <div class="sidebar_menu_name">Рабочий стол</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_official_active"></div>
+              <div class="sidebar_menu_name official_active">Служебные</div>
+            </div>
+            <div class="menu_elements text_container-item-font-size-12pt_500">
+              <ul>
+                <li class="menu_element">Элементы простые 1</li>
+                <li class="menu_element">Элементы простые 2</li>
+                <li class="menu_element">Элементы с картинками</li>
+              </ul>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_content"></div>
+              <div class="sidebar_menu_name">Контент</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_control"></div>
+              <div class="sidebar_menu_name">Управление сайтом</div>
+            </div>
+            <div class="sidebar_item_menu line_gray"></div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_settings"></div>
+              <div class="sidebar_menu_name">Настройки</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar_items">
+          <div class="sidebar_item">
+
+            <div class="sidebar_item_name">
+              <div class="sidebar_name">Название</div>
+              <div class="sidebar_arrow"></div>
+            </div>
+
+            <div class="sidebar_item_information">
+              <div class="foto_item profile_user"></div>
+              <div class="sidebar_information">
+                <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
+                <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_desktop"></div>
+              <div class="sidebar_menu_name">Рабочий стол</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_official"></div>
+              <div class="sidebar_menu_name">Служебные</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_content_active"></div>
+              <div class="sidebar_menu_name content_active">Контент</div>
+            </div>
+            <div class="menu_elements text_container-item-font-size-12pt_500">
+              <ul>
+                <li class="menu_element">Отдельные фрагменты</li>
+                <li class="menu_element">Новости</li>
+              </ul>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_control"></div>
+              <div class="sidebar_menu_name">Управление сайтом</div>
+            </div>
+            <div class="sidebar_item_menu line_gray"></div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_logout"></div>
+              <div class="sidebar_menu_name">Выйти</div>
+            </div>
+
+          </div>
+          <div class="sidebar_item">
+
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_settings"></div>
+              <div class="sidebar_menu_name">Настройки</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar_items no_footer_menu">
+          <div class="sidebar_item">
+
+            <div class="sidebar_item_name">
+              <div class="sidebar_name">Название</div>
+              <div class="sidebar_arrow"></div>
+            </div>
+
+            <div class="sidebar_item_information">
+              <div class="foto_item profile_user"></div>
+              <div class="sidebar_information">
+                <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
+                <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_desktop"></div>
+              <div class="sidebar_menu_name">Рабочий стол</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_official"></div>
+              <div class="sidebar_menu_name">Служебные</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_content"></div>
+              <div class="sidebar_menu_name">Контент</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_control_active"></div>
+              <div class="sidebar_menu_name control_active">Управление сайтом</div>
+            </div>
+            <div class="menu_elements text_container-item-font-size-12pt_500">
+              <ul>
+                <li class="menu_element">Главная</li>
+              </ul>
+            </div>
+            <div class="sidebar_item_menu line_gray"></div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_settings"></div>
+              <div class="sidebar_menu_name">Настройки</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar_items no_footer_menu">
+          <div class="sidebar_item">
+
+            <div class="sidebar_item_name">
+              <div class="sidebar_name">Название</div>
+              <div class="sidebar_arrow"></div>
+            </div>
+
+            <div class="sidebar_item_information">
+              <div class="foto_item profile_user"></div>
+              <div class="sidebar_information">
+                <div class="sidebar_surname text_container-item-font-size-14pt_600">Денис Смирнов</div>
+                <div class="sidebar_mail text_container-item-font-size-12pt_500">d.smirnov@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_desktop"></div>
+              <div class="sidebar_menu_name">Рабочий стол</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_official"></div>
+              <div class="sidebar_menu_name">Служебные</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_content"></div>
+              <div class="sidebar_menu_name">Контент</div>
+            </div>
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_control"></div>
+              <div class="sidebar_menu_name">Управление сайтом</div>
+            </div>
+
+            <div class="sidebar_item_menu line_gray"></div>
+
+            <div class="sidebar_item_menu">
+              <div class="sidebar_menu_icon icon_settings_active"></div>
+              <div class="sidebar_menu_name settings_active">Настройки</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header_container">
+      <h1 class="colors_h1">Верхнее меню (шапка)</h1>
+
+      <div class="header_items">
+        <div class="srch_item-no_active">
+          <input type="search" placeholder="Поиск">
+        </div>
+        <div class="header_item_icons">
+          <div class="header_item_icon icon_notifications"></div>
+          <div class="header_item_icon icon_logout"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="icon_container">
+      <h1 class="colors_h1">Иконки</h1>
+
+      <div class="icon_items">
+        <div class="icon_items_active">
+          <div class="button_checkbox_header">Menu</div>
+          <div class="icon_item">
+            <div class="sidebar_menu_icon icon_desktop"></div>
+            <div class="sidebar_menu_icon icon_official"></div>
+            <div class="sidebar_menu_icon icon_content"></div>
+            <div class="sidebar_menu_icon icon_control"></div>
+            <div class="sidebar_menu_icon">
+              <div class="icon_rhombus"></div>
+            </div>
+            <div class="sidebar_menu_icon icon_settings"></div>
+            <div class="sidebar_menu_icon icon_pen"></div>
+            <div class="sidebar_menu_icon icon_two_arrow"></div>
+          </div>
+          <div class="icon_item">
+            <div class="sidebar_menu_icon icon_desktop_active"></div>
+            <div class="sidebar_menu_icon icon_official_active"></div>
+            <div class="sidebar_menu_icon icon_content_active"></div>
+            <div class="sidebar_menu_icon icon_control_active"></div>
+            <div class="sidebar_menu_icon">
+              <div class="icon_rhombus rhombus_active"></div>
+            </div>
+            <div class="sidebar_menu_icon icon_settings_active"></div>
+            <div class="sidebar_menu_icon icon_pen_active"></div>
+            <div class="sidebar_menu_icon icon_two_arrow_active"></div>
+          </div>
+        </div>
+
+        <div class="icon_items_no_active">
+          <div class="button_checkbox_header">Other</div>
+          <div class="icon_item">
+            <div class="sidebar_menu_icon icon_edit"></div>
+            <div class="sidebar_menu_icon icon_show"></div>
+            <div class="sidebar_menu_icon icon_trach"></div>
+            <div class="sidebar_menu_icon icon_check_blue"></div>
+            <div class="sidebar_menu_icon icon_search"></div>
+            <div class="sidebar_menu_icon icon_notifications"></div>
+            <div class="sidebar_menu_icon icon_close_light"></div>
+            <div class="sidebar_menu_icon icon_add"></div>
+            <div class="sidebar_menu_icon icon_attach"></div>
+            <div class="sidebar_menu_icon icon_logout"></div>
+            <div class="sidebar_menu_icon icon_arrow_down"></div>
+            <div class="sidebar_menu_icon icon_arrow_up"></div>
+            <div class="sidebar_menu_icon icon_burger_menu"></div>
+            <div class="sidebar_menu_icon icon_filter"></div>
+            <div class="sidebar_menu_icon icon_save"></div>
+            <div class="sidebar_menu_icon icon_back"></div>
+            <div class="sidebar_menu_icon icon_left_gray"></div>
+            <div class="sidebar_menu_icon icon_right_gray"></div>
+            <div class="sidebar_menu_icon icon_image"></div>
+            <div class="sidebar_menu_icon icon_no_image"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="./index1js.js"></script>
+  <script src="./vanillaSelectBox.js?v0.75"></script>
+  <script>
+
+    selectBoxTest = new vanillaSelectBox("#demoShort", {
+      "maxHeight": 200,
+      "search": true,
+      "translations": { "all": "All", "items": "items", "selectAll": "Check All", "clearAll": "Clear All", "placeHolder": "Choose a brand..." }
+    });
+  </script>
+
+</body>
+
 </html>
