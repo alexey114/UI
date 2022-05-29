@@ -1090,7 +1090,11 @@ input{
 .colors_h1{
   font-size: 30px;
   font-weight: 600;
-  color: $theme6_color17
+  color: $theme6_color17;
+
+  @media (max-width: 1120px) {
+    font-size: 20px;
+  }
 }
 
 .color_container-items{
@@ -1847,6 +1851,10 @@ progress::-moz-progress-bar {
       display: none;
     }
   }
+
+  @media (max-width: 1120px) {
+    display: block;
+  }
 }
 
 .input_field_header{
@@ -1870,13 +1878,33 @@ progress::-moz-progress-bar {
   padding: 0px 120px 0px 12px;
   outline: none;
   border-radius: 5px;
+
+  @media (max-width: 1400px) {
+    padding: 0px 70px 0px 12px;
+  }
+
+  @media (max-width: 1220px) {
+    padding: 0px 38px 0px 12px;
+  }
+
+  @media (max-width: 800px) {
+    margin-right: 0px;
+  }
 }
 
 .input_fields_text, .input_fields_select, .input_fields_date{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 30px;
+
+  @media (max-width: 800px) {
+    gap: 10px;
+  }
 }
 
 .fields_border{
+  width: auto;
   border: 1px dashed #885AF8;
   border-radius: 5px;
   padding: 20px;
@@ -1903,15 +1931,35 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  padding: 0px 79px 0px 12px;
+  padding: 0px 82px 0px 12px;
   outline: none;
   border-radius: 5px;
+
+  @media (max-width: 1400px) {
+    padding: 0px 32px 0px 12px;
+  }
+
+  @media (max-width: 1220px) {
+    padding: 0px 0px 0px 12px;
+  }
+
+  @media (max-width: 800px) {
+    margin-right: 0px;
+  }
 }
 
 .input_date{
-  width: 280px;
+  width: 281px;
   height: 42px;
   margin-right: 32px;
+
+  @media (max-width: 1400px) {
+    width: 231px;
+  }
+
+  @media (max-width: 1220px) {
+    width: 199px;
+  }
 
   &:last-child{
     margin-right: 0px;
@@ -1920,6 +1968,10 @@ progress::-moz-progress-bar {
   padding: 0px 10px 0px 10px;
   outline: none;
   border-radius: 5px;
+
+  @media (max-width: 800px) {
+    margin-right: 0px;
+  }
 }
 
 /* Calendar */
@@ -1932,28 +1984,27 @@ progress::-moz-progress-bar {
 
 .calendar{
   display: flex;
+  flex-wrap: wrap;
   margin-right: 60px;
 }
 
+.calendar_item{
+  margin: 5px;
+}
+
 .calendar-one_day{
-  width: 292px;
-  height: 301px;
+  width: 315px;
+  height: 315px;
   margin-right: 40px;
   background-image: url(./theme06/images/singular.svg);
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
-  -moz-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
-  box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
 }
 
 .calendar-date_range{
-  width: 292px;
-  height: 360px;
+  width: 315px;
+  height: 375px;
   background-image: url(./theme06/images/interval.svg);
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
-  -moz-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
-  box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
 }
 
 /* Select */
@@ -1968,15 +2019,22 @@ progress::-moz-progress-bar {
 }
 
 .slct_items-two{
-  height: 180px;
-  margin-top: 47px;
+
+  .slct_item{
+    height: 180px;
+    margin-top: 40px;
+  }
 }
 
 .slct_items-four{
-  margin-top: 44px;
+  margin-top: 40px;
 
   .slct_item{
     height: 225px;
+  }
+
+  .slct_item_calendar{
+    margin-top: 40px;
   }
 }
 
