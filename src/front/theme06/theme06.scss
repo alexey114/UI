@@ -2221,6 +2221,7 @@ progress::-moz-progress-bar {
     display: flex;
     flex-wrap: wrap;
     width: min-content;
+    gap: 20px;
   }
 }
 
@@ -2232,7 +2233,6 @@ progress::-moz-progress-bar {
 
   @media (max-width: 940px) {
     margin-right: 0px;
-    margin-bottom: 20px;
   }
 
   input {
@@ -2610,6 +2610,11 @@ progress::-moz-progress-bar {
     margin-right: 10px;
   }
 
+  @media (max-width: 420px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .input_field{
     margin-right: 0px;
   }
@@ -2623,14 +2628,29 @@ progress::-moz-progress-bar {
   .not_true {
     top: 45px;
     left: 200px;
+
+    @media (max-width: 420px) {
+      top: 63px;
+      left: 30px;
+    }
   }
 
   .icon_close::after {
     top: 18px;
+
+    @media (max-width: 420px) {
+      top: 34px;
+      right: 42px;
+    }
   }
 
   .icon_check_big::after {
     top: 18px;
+
+    @media (max-width: 420px) {
+      top: 34px;
+      right: 42px;
+    }
   }
 
   .field_new {
@@ -2769,7 +2789,7 @@ progress::-moz-progress-bar {
       width: 26px;
       height: 26px;
       top: 0;
-      left: 140px;
+      left: calc(50% - 10px);
       background-image: url(./theme06/images/hand.svg);
       background-repeat: no-repeat;
       border-radius: 4px;
@@ -2806,9 +2826,34 @@ progress::-moz-progress-bar {
   margin-bottom: 20px;
 }
 
-.combo_box_items_name,
+.combo_box_items_name{
+  display: inline-flex;
+  max-width: 1300px;
+  width: 100%;
+  margin-left: 20px;
+
+  @media (max-width: 1400px) {
+    max-width: 1100px;
+  }
+
+  @media (max-width: 1220px) {
+    max-width: 950px;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
 .combo_box_items_block {
   display: inline-flex;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
 }
 
 .combo_box_item_name {
@@ -2826,12 +2871,20 @@ progress::-moz-progress-bar {
   &:last-child {
     margin-right: 0px;
   }
+
+  @media (max-width: 1000px) {
+    margin-right: 0px;
+  }
 }
 
 .combo_box_item_block {
 
   position: relative;
   margin-right: 20px;
+
+  @media (max-width: 1000px) {
+    margin-right: 0px;
+  }
 
   &:last-child {
     margin-right: 0px;
@@ -2857,6 +2910,7 @@ progress::-moz-progress-bar {
     height: 42px;
     border: 1px solid $theme6_color13;
     border-radius: 0 5px 5px 0;
+    background-color: white;
   }
 }
 
@@ -2872,10 +2926,22 @@ progress::-moz-progress-bar {
     left: 15px;
     background-image: url(./theme06/images/close.svg);
     background-repeat: no-repeat;
+
+    @media (max-width: 1400px) {
+      left: 75px;
+    }
+
+    @media (max-width: 1220px) {
+      left: 42px;
+    }
   }
 
   &.close_end {
     left: 105px;
+
+    @media (max-width: 1400px) {
+      left: -5px;
+    }
   }
 }
 
@@ -2924,10 +2990,17 @@ progress::-moz-progress-bar {
   background-color: $theme6_color16;
 }
 
+.combo_box_none{
+  @media (max-width: 1400px) {
+    display: none;
+  }
+}
+
 /* sidebar */
 
-.sidebar {
+.sidebar{
   display: flex;
+  flex-wrap: wrap;
   margin-top: 40px;
   margin-bottom: 180px;
 }
@@ -3091,6 +3164,14 @@ progress::-moz-progress-bar {
   margin-top: 40px;
 }
 
+@media (max-width: 420px) {
+.srch_item-no_active{
+    & input{
+      padding: 12px 12px 11px 38px;
+      }
+  }
+}
+
 .header_item_icons {
   display: flex;
 }
@@ -3114,6 +3195,7 @@ progress::-moz-progress-bar {
 
 .icon_items {
   display: flex;
+  flex-wrap: wrap;
 
   .button_checkbox_header {
     margin-bottom: 20px;
@@ -3134,10 +3216,11 @@ progress::-moz-progress-bar {
 
 .icon_item {
   display: flex;
-  margin-bottom: 25px;
+  flex-wrap: wrap;
 
   .sidebar_menu_icon {
     margin-right: 40px;
+    margin-bottom: 25px;
     width: 24px;
     height: 24px;
     background-position: center;
