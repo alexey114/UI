@@ -2407,6 +2407,13 @@ progress::-moz-progress-bar {
   align-items: center;
   margin-bottom: 20px;
 
+  @media (max-width: 1020px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px
+  }
+
   .button_checkbox_header,
   .name_item {
     margin-right: 42px;
@@ -2419,7 +2426,18 @@ progress::-moz-progress-bar {
     @media (max-width: 1220px) {
       width: 218px;
     }
+
+    @media (max-width: 1020px) {
+      margin-right: 0px;
+    }
   }
+
+  .button_checkbox_header{
+    @media (max-width: 1020px) {
+      display: none;
+    }
+  }
+
 }
 
 .name_item {
@@ -2428,6 +2446,12 @@ progress::-moz-progress-bar {
   &:last-child,
   &:first-child {
     margin-right: 0px;
+  }
+}
+
+.text_none{
+  @media (max-width: 1240px) {
+    display: none;
   }
 }
 
@@ -2482,6 +2506,7 @@ progress::-moz-progress-bar {
 .calendar_grey_light::before {
   top: 25px;
   right: 40px;
+  background-color: white;
   background-image: url(./theme06/images/calendar_grey_light.svg);
 }
 
@@ -2497,11 +2522,19 @@ progress::-moz-progress-bar {
 
   margin-left: 20px;
 
+  @media (max-width: 1020px) {
+    gap: 30px;
+  }
+
   .name_item {
     margin-right: 42px;
     position: relative;
 
     &:first-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: 1020px) {
       margin-right: 0;
     }
   }
@@ -2518,6 +2551,7 @@ progress::-moz-progress-bar {
     @media (max-width: 1220px) {
       width: 118px;
     }
+
   }
 
 }
@@ -2561,6 +2595,8 @@ progress::-moz-progress-bar {
 
 .input_text_status-items {
   display: flex;
+  flex-wrap: wrap;
+  // justify-content: center;
   margin-top: 49px;
 }
 
@@ -2569,6 +2605,10 @@ progress::-moz-progress-bar {
   align-items: center;
   position: relative;
   margin-right: 80px;
+
+  @media (max-width: 1090px) {
+    margin-right: 10px;
+  }
 
   .input_field_header {
     width: 130px;
