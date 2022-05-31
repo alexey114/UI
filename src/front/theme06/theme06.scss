@@ -1,4 +1,4 @@
-@import "../base_style/base.scss";
+// @import "../base_style/base.scss";
 @import "../base_style/theme_colors.scss";
 
 @font-face {
@@ -80,6 +80,11 @@ $theme_color_selection: none;
 
 .link:first-child {
   margin-left: 0;
+}
+
+.subcontainer{
+  border-bottom: solid 1px #EBEFF2;
+  padding-bottom: 50px;
 }
 
 .header_components {
