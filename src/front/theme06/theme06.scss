@@ -26,6 +26,8 @@
 }
 
 $font_family: Montserrat;
+$show_hand: none;
+$theme_color_selection: none;
 
 * {
   font-family: $font_family;
@@ -99,9 +101,13 @@ $font_family: Montserrat;
   background-color: $theme6_color2;
 }
 
+.select_container-text:first-child{
+  display: $theme_color_selection;
+}
+
 .select_container-switcher {
   width: 118px;
-  display: block;
+  display: $theme_color_selection;
   position: relative;
   height: 40px;
 }
@@ -167,7 +173,7 @@ $font_family: Montserrat;
   height: 16px;
   width: 16px;
   left: 2px;
-  bottom: 1.5px;
+  top: 2px;
   border-radius: 16px;
 }
 
@@ -203,7 +209,7 @@ input:checked.switcher_collection:before {
   display: flex;
   flex-wrap: wrap;
   color: $theme6_color17;
-  margin: 120px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .text_container-items,
@@ -402,6 +408,7 @@ button {
   position: relative;
 
   &:after {
+    display: $show_hand;
     position: absolute;
     width: 26px;
     height: 26px;
@@ -677,7 +684,7 @@ button {
 /* Checkbox */
 
 .button_checkbox_container-six_theme {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .collection_elements {
@@ -1255,7 +1262,7 @@ input {
 
 .avatar_container-six_theme,
 .preloader_container-six_theme {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .avatar_items,
@@ -1402,20 +1409,20 @@ progress::-moz-progress-bar {
 /* Tooltip */
 
 .tooltip_container-six_theme {
-  margin-top: 140px;
+  margin-top: 50px;
 }
 
 .tooltipe {
   padding-top: 20px;
 
   .button_checkbox_header {
-    margin-bottom: 37px;
+    margin-bottom: 10px;
   }
 }
 
 .tooltipe_item {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
 
   @media (max-width: 1407px) {
     margin-bottom: 50px;
@@ -1647,16 +1654,24 @@ progress::-moz-progress-bar {
 
   .tooltip_up_right {
     .tooltip_button {
-      top: 150px;
+      top: 97px;
     }
   }
 
   .tooltip_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
     left: 220px;
-    height: 131px;
+    height: 140px;
 
     @media (max-width: 550px) {
       left: 10px;
+    }
+
+    .tip_text{
+      padding-top: 23px;
     }
   }
 
@@ -1682,7 +1697,7 @@ progress::-moz-progress-bar {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 145px;
+    top: 155px;
 
     .text_container-item-font-size-14pt {
       color: $theme6_color5;
@@ -1741,7 +1756,7 @@ progress::-moz-progress-bar {
 /* Pagination*/
 
 .pagination_container {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .pagination_items {
@@ -1803,7 +1818,7 @@ progress::-moz-progress-bar {
 /* accordion*/
 
 .accordion_container {
-  margin-top: 160px;
+  margin-top: 50px;
 }
 
 .accordion {
@@ -1868,7 +1883,7 @@ progress::-moz-progress-bar {
 /* Images */
 
 .images_container {
-  margin-top: 160px;
+  margin-top: 50px;
 
   .button_checkbox_header {
     margin-bottom: 20px;
@@ -1906,7 +1921,7 @@ progress::-moz-progress-bar {
 /*input_fields*/
 
 .input_fields_container {
-  margin-top: 135px;
+  margin-top: 50px;
 }
 
 .input_fields_item {
@@ -2135,6 +2150,7 @@ progress::-moz-progress-bar {
 
 
   &::before {
+    display: $show_hand;
     content: "";
     width: 26px;
     height: 26px;
@@ -2784,6 +2800,7 @@ progress::-moz-progress-bar {
     }
 
     &::after {
+      display: $show_hand;
       position: absolute;
       content: "";
       width: 26px;
@@ -2974,6 +2991,7 @@ progress::-moz-progress-bar {
 
 .combo_box_guidance {
   &::before {
+    display: $show_hand;
     position: absolute;
     content: "";
     width: 26px;
@@ -3002,7 +3020,7 @@ progress::-moz-progress-bar {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
-  margin-bottom: 180px;
+  margin-bottom: 20px;
 }
 
 .sidebar_items {
@@ -3151,17 +3169,36 @@ progress::-moz-progress-bar {
 
 /* header */
 
-.header_container {
-  margin-bottom: 170px;
-}
-
 .header_items {
   max-width: 1184px;
+  height: 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 6px 35px -13px rgba(0, 0, 0, 0.06);
   margin-top: 40px;
+
+  .srch_item-no_active{
+    & input{
+      margin-left: 30px;
+      }
+
+      &::after{
+          left: 42.5px;
+      }
+  }
+
+  @media (max-width: 420px) {
+    .srch_item-no_active{
+      & input{
+        margin-left: 10px;
+        }
+
+        &::after{
+            left: 22.5px;
+        }
+      }
+    }
 }
 
 @media (max-width: 420px) {
@@ -3192,6 +3229,10 @@ progress::-moz-progress-bar {
 }
 
 /* Icon */
+
+.icon_container{
+  margin-top: 50px;
+}
 
 .icon_items {
   display: flex;

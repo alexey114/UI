@@ -54,7 +54,12 @@ body{
 .container{
   max-width: 1580px;
   width: 100%;
-  margin: 0 60px;
+  margin: 0 auto;
+}
+
+.subcontainer{
+  border-bottom: solid 1px #EBEFF2;
+  padding-bottom: 50px;
 }
 
 .fonts_container{
@@ -126,7 +131,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .select_container-menu{
