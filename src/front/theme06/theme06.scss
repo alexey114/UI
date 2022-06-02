@@ -26,6 +26,7 @@
 }
 
 $font_family: Montserrat;
+$font_size_base: 16px;
 $show_hand: none;
 $theme_color_selection: none;
 
@@ -33,38 +34,140 @@ $theme_color_selection: none;
   font-family: $font_family;
 }
 
-.header {
-  @include header(Montserrat);
+
+@mixin header_text($font_family) {
+  font-family: $font_family;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.header_h1 {
-  @include header_text(Montserrat);
+//Из base
+
+body{
+  @media (max-width: 400px) {
+    overflow-x:hidden;
+  }
+}
+
+/* Select */
+
+.container {
+  max-width: 1580px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header_h2 {
   @include header_text(Montserrat);
+  font-size: 20px;
+  line-height: 20px;
 }
 
-.header_h3 {
-  @include header_text(Montserrat);
+.select_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
-.color_back {
-  color: $theme1_color2;
+.select_container-menu {
+  width: 80%;
 }
 
-.grey_color {
-  font-weight: 500;
-  color: $theme1_color14;
+.select_container-theme {
+  min-width: 120px;
+  width: 10%;
+  margin-left: 98px;
+  margin-bottom: 25px;
 }
 
-.buttons-name {
-  font-family: Montserrat;
+.select_container-text {
+  font-size: 12px;
 }
 
-.checkbox_text {
-  font-family: Montserrat;
+.switch,
+.switch_item {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 10px;
 }
+
+.switch input {
+  display: none;
+}
+
+.slider-switcher {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider-switcher:before, .switcher_collection:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+/* Navigation */
+
+.navigation {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid $black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.link {
+  margin: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: $black;
+
+  &:first-child {
+  margin-left: 25px;
+}
+  &:link:last-child {
+  margin-right: 25px;
+}
+}
+
+/* Select theme */
+
+.select_container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.select_container-menu{
+  width: 80%;
+
+  @media (max-width: 868px) {
+    order: 2;
+  }
+}
+
+//Из base конец
 
 /* Navigation */
 
@@ -953,166 +1056,6 @@ input {
   background-color: #FFB946;
 }
 
-/* Switcher */
-
-.switcher-color1 {
-  background-color: $theme1_color1;
-}
-
-.switcher-color2 {
-  background-color: $theme1_color2;
-}
-
-.switcher-color3 {
-  background-color: $theme1_color3;
-}
-
-.switcher-color4 {
-  background-color: $theme1_color4;
-}
-
-/* Icons */
-
-.trash {
-  @include size_icon(30px, 30px);
-  @include background;
-  background-image: url(./theme01/images/trash_1.svg);
-  background-size: contain;
-
-  &:hover {
-    background-image: url(./theme01/images/trash_2.svg);
-  }
-
-  &:active {
-    background-image: url(./theme01/images/trash_3.svg);
-  }
-}
-
-.trash_inactive {
-  @include size_icon(30px, 30px);
-  @include background;
-  background-image: url(./theme01/images/trash_4.svg);
-  background-size: contain;
-}
-
-.pen {
-  @include size_icon(30px, 30px);
-  @include background;
-  background-image: url(./theme01/images/pen_1.svg);
-  background-size: contain;
-
-  &:hover {
-    background-image: url(./theme01/images/pen_2.svg);
-  }
-
-  &:active {
-    background-image: url(./theme01/images/pen_3.svg);
-  }
-}
-
-.pen_inactive {
-  @include size_icon(30px, 30px);
-  @include background;
-  background-image: url(./theme01/images/pen_4.svg);
-  background-size: contain;
-}
-
-/* Search */
-
-
-.search:hover {
-  @include border(1px solid $theme1_color17);
-}
-
-.search:focus {
-  @include border(2px solid $theme1_color3);
-}
-
-.search_container::before {
-  background-image: url(./theme01/images/search.svg);
-}
-
-/* Menu */
-.menu_subcontainer {
-  gap: 20px;
-}
-
-.menu_text {
-  @include font_style_base(Montserrat);
-  color: $theme1_color1;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-
-.menu_point {
-  width: 8px;
-  height: 40px;
-  background-image: url(./theme01/images/point.svg);
-  margin-left: -28px;
-}
-
-.menu_subelement {
-  font-family: Montserrat;
-  color: $theme1_color1;
-  margin-left: 34px;
-  margin-top: 20px;
-}
-
-.menu_subelement_last {
-  margin-bottom: 20px;
-}
-
-.subel1,
-.subel3,
-.subel5 {
-  color: #4E7CCA;
-}
-
-.business {
-  background-image: url(./theme01/images/point_1.svg);
-}
-
-.content {
-  background-image: url(./theme01/images/point_2.svg);
-}
-
-.control {
-  background-image: url(./theme01/images/point_3.svg);
-}
-
-/* Dropdown lists */
-
-.__select__label:hover {
-  background-color: $theme1_color2;
-  color: $white;
-}
-
-.__select__title {
-  &:hover {
-    border-color: $theme1_color2;
-
-    &::before,
-    &::after {
-      background-color: $theme1_color2;
-    }
-  }
-}
-
-/* Form */
-
-.input {
-  @include color_btn(1px solid $theme1_color15, $theme1_color16);
-  font-family: Montserrat;
-  font-size: 0.8 * $font_size_base;
-  line-height: 0.8 * $font_size_base;
-  display: flex;
-}
-
-.select2 {
-  @include color_btn(2px solid $theme1_color3, $theme1_color16);
-}
-
-
 /* Color */
 
 .color {
@@ -1230,37 +1173,6 @@ input {
 
 .vsb-menu .multi li:not(.grouped-option)::before {
   background-image: url(./theme01/images/multiempty.svg);
-}
-
-
-/* Main */
-.hashtag_item {
-  background-color: $theme1_color2;
-}
-
-.form_button_accept {
-  @include form_button;
-  background-image: url(./images/galka.png);
-}
-
-.form_button_deny {
-  @include form_button;
-  background-image: url(./images/krest.png);
-}
-
-.slider::-webkit-slider-thumb {
-  background: $theme1_color5;
-}
-
-.slider::-moz-range-thumb {
-  background: $theme1_color15;
-}
-
-.block1 {
-
-  >.item {
-    background: $white;
-  }
 }
 
 /*Avatar*/
@@ -2188,7 +2100,6 @@ progress::-moz-progress-bar {
 }
 
 .input_slct_option {
-
   height: 42px;
   margin-right: 32px;
   padding: 0px 115px 0px 12px;
@@ -2568,9 +2479,7 @@ progress::-moz-progress-bar {
     @media (max-width: 1220px) {
       width: 156px;
     }
-
   }
-
 }
 
 .not_true {
