@@ -1,6 +1,8 @@
 // @import "../base_style/base.scss";
 @import "../base_style/theme_colors.scss";
 
+/* Шрифты */
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
@@ -25,23 +27,36 @@
   font-weight: 600;
 }
 
+/* Переменные */
+
 $font_family: Montserrat;
 $font_size_base: 16px;
 $show_hand: none;
 $theme_color_selection: none;
 
+/* Миксины */
+
+@mixin text($font-size, $line-height, $font-weight){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin width($max-width, $width){
+  max-width: $max-width;
+  width: $width;
+}
+
+@mixin wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Общие */
+
 * {
   font-family: $font_family;
 }
-
-
-@mixin header_text($font_family) {
-  font-family: $font_family;
-  font-style: normal;
-  font-weight: normal;
-}
-
-//Из base
 
 body{
   @media (max-width: 400px) {
@@ -49,34 +64,38 @@ body{
   }
 }
 
-/* Select */
+.subcontainer{
+  border-bottom: solid 1px #EBEFF2;
+  padding-bottom: 50px;
+}
 
 .container {
-  max-width: 1580px;
-  width: 100%;
+  @include width(1580px, 100%);
   margin: 0 auto;
 }
 
-.header_h2 {
-  @include header_text(Montserrat);
-  font-size: 20px;
-  line-height: 20px;
+/* Select */
+
+.library {
+  @include text($font_size_base*1.25, 28px, 700)
 }
 
 .select_container {
-  display: flex;
-  flex-wrap: wrap;
+  @include wrap;
   width: 100%;
   justify-content: space-between;
 }
 
-.select_container-menu {
+.select{
   width: 80%;
+
+  @media (max-width: 868px) {
+    order: 2;
+  }
 }
 
 .select_container-theme {
-  min-width: 120px;
-  width: 10%;
+  @include width(120px, 10%);
   margin-left: 98px;
   margin-bottom: 25px;
 }
@@ -153,18 +172,9 @@ body{
 /* Select theme */
 
 .select_container{
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   width: 100%;
   justify-content: space-between;
-}
-
-.select_container-menu{
-  width: 80%;
-
-  @media (max-width: 868px) {
-    order: 2;
-  }
 }
 
 //Из base конец
@@ -172,7 +182,7 @@ body{
 /* Navigation */
 
 .navigation {
-  @include font_style_base(Montserrat);
+  font-style: Montserrat;
   margin: 0;
   width: 100%;
   height: auto;
@@ -183,11 +193,6 @@ body{
 
 .link:first-child {
   margin-left: 0;
-}
-
-.subcontainer{
-  border-bottom: solid 1px #EBEFF2;
-  padding-bottom: 50px;
 }
 
 .header_components {
@@ -293,8 +298,7 @@ input:checked.switcher_collection:before {
 }
 
 .switch_items {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
 }
 
 .switch_item {
@@ -314,16 +318,14 @@ input:checked.switcher_collection:before {
 }
 
 .text_container-six_theme {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   color: $theme6_color17;
   margin: 50px 0 0 0;
 }
 
 .text_container-items,
 .text_container-items-font-size {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
 }
 
 .text_container-items-font-size {
@@ -721,8 +723,7 @@ button {
 
 .btns_opt {
   width: 400px;
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   margin-top: 17px;
 
   .btn_mini-back {
@@ -780,10 +781,6 @@ button {
   }
 }
 
-.filter_small {
-  @include size_btn(154px, 50px);
-}
-
 .plus {
   font-size: 1.75 * $font_size_base;
   line-height: 1.75 * $font_size_base;
@@ -800,9 +797,8 @@ button {
   margin-left: 120px;
 
   @media (max-width: 1350px) {
-    display: flex;
+    @include wrap;
     align-items: center;
-    flex-wrap: wrap;
     margin-left: 0px;
     margin-top: 50px;
   }
@@ -832,11 +828,9 @@ button {
 }
 
 .collection_element_button {
-  display: flex;
-  flex-wrap: wrap;
+  @include wrap;
+  @include width(332px, auto);
   margin: 20px;
-  max-width: 332px;
-  width: auto;
   border: 1px dashed #885AF8;
   padding: 20px;
 
@@ -1090,8 +1084,7 @@ input {
 }
 
 .color_container-items {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
 }
 
 .color_container-text {
@@ -1184,8 +1177,7 @@ input {
 
 .avatar_items,
 .foto_items {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
 }
 
 .avatar_item {
@@ -1240,8 +1232,7 @@ input {
 }
 
 .preloader_items {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   padding-top: 20px;
 }
 
@@ -1257,8 +1248,7 @@ input {
 }
 
 .preloader_elements {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   margin-top: 20px;
   border: 1px dashed #7B61FF;
   border-radius: 5px;
@@ -1552,8 +1542,7 @@ progress::-moz-progress-bar {
 
 .text_with_button {
 
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   position: relative;
 
   .tooltipe_item {
@@ -1808,8 +1797,7 @@ progress::-moz-progress-bar {
 }
 
 .images_items {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
 }
 
 .images_no {
@@ -1895,8 +1883,7 @@ progress::-moz-progress-bar {
 .input_fields_text,
 .input_fields_select,
 .input_fields_date {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   justify-content: space-around;
   margin-top: 30px;
 
@@ -1981,14 +1968,12 @@ progress::-moz-progress-bar {
 /* Calendar */
 
 .calendar-select-search_container {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   margin-top: 30px;
 }
 
 .calendar {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   margin-right: 60px;
 }
 
@@ -2021,8 +2006,7 @@ progress::-moz-progress-bar {
 .slct_items,
 .slct_items-two,
 .slct_items-four {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
 }
 
 .slct_items-two {
@@ -2150,8 +2134,7 @@ progress::-moz-progress-bar {
   margin-bottom: 20px;
 
   @media (max-width: 940px) {
-    display: flex;
-    flex-wrap: wrap;
+    @include wrap;
     width: min-content;
     gap: 20px;
   }
@@ -2340,8 +2323,7 @@ progress::-moz-progress-bar {
   margin-bottom: 20px;
 
   @media (max-width: 1060px) {
-    display: flex;
-    flex-wrap: wrap;
+    @include wrap;
     justify-content: space-around;
     gap: 10px
   }
@@ -2520,8 +2502,7 @@ progress::-moz-progress-bar {
 }
 
 .input_text_status-items {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   margin-top: 49px;
 
   @media (max-width: 890px) {
@@ -2605,8 +2586,7 @@ progress::-moz-progress-bar {
 
 
   @media (max-width: 550px) {
-    display: flex;
-    flex-wrap: wrap;
+    @include wrap;
     justify-content: center;
 
     .slider_item {
@@ -2627,8 +2607,7 @@ progress::-moz-progress-bar {
 }
 
 .slider_item {
-  display: flex;
-  flex-wrap: wrap;
+  @include wrap;
   align-items: center;
   max-width: 320px;
   width: 100%;
@@ -2647,6 +2626,7 @@ progress::-moz-progress-bar {
   position: relative;
   -webkit-appearance: none;
   margin: 0;
+  z-index: 0;
 
   &::before {
     position: absolute;
@@ -2656,8 +2636,8 @@ progress::-moz-progress-bar {
     top: 0;
     left: 0;
     background: $theme6_color3;
-    z-index: -1;
     border-radius: 4px;
+    z-index: -1;
   }
 
   &.slider_active::before {
@@ -2677,24 +2657,27 @@ progress::-moz-progress-bar {
     width: 16px;
     height: 16px;
     -webkit-appearance: none;
-    background: $theme6_color6;
+    background-color: $theme6_color6;
     border: 2px solid $theme6_color3;
+    border-radius: 50%;
   }
 
   &::-moz-range-thumb {
     width: 16px;
     height: 16px;
     -webkit-appearance: none;
-    background: $theme6_color6;
+    background-color: $theme6_color6;
     border: 2px solid $theme6_color3;
+    border-radius: 50%;
   }
 
   &::-ms-thumb {
     width: 16px;
     height: 16px;
     -webkit-appearance: none;
-    background: $theme6_color6;
+    background-color: $theme6_color6;
     border: 2px solid $theme6_color3;
+    border-radius: 50%;
   }
 
   &.slider_active {
@@ -2780,8 +2763,7 @@ progress::-moz-progress-bar {
   display: inline-flex;
 
   @media (max-width: 1000px) {
-    display: flex;
-    flex-wrap: wrap;
+    @include wrap;
     justify-content: space-around;
     gap: 20px;
   }
@@ -2931,8 +2913,7 @@ progress::-moz-progress-bar {
 /* sidebar */
 
 .sidebar{
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -3149,8 +3130,7 @@ progress::-moz-progress-bar {
 }
 
 .icon_items {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
 
   .button_checkbox_header {
     margin-bottom: 20px;
@@ -3170,8 +3150,7 @@ progress::-moz-progress-bar {
 }
 
 .icon_item {
-  display: flex;
-  flex-wrap: wrap;
+@include wrap;
 
   .sidebar_menu_icon {
     margin-right: 40px;
