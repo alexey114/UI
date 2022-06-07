@@ -3,6 +3,7 @@ const selectSingle_title = selectSingle.querySelector(".__select__title");
 const selectSingle_labels = selectSingle.querySelectorAll(".__select__label");
 
 // Toggle menu
+
 selectSingle_title.addEventListener("click", () => {
   if ("active" === selectSingle.getAttribute("data-state")) {
     selectSingle.setAttribute("data-state", "");
@@ -19,6 +20,23 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
   });
 }
 
+// Toggle menu for multiple imputs
+
+// const selects = document.querySelectorAll('.__select');
+// selects.forEach(function(select) {
+//   select.addEventListener('click', function() {
+//     let isActive = 'active' === this.getAttribute('data-state');
+//     selects.forEach(i => i.setAttribute('data-state', ''));
+//     this.setAttribute('data-state', isActive ? '' : 'active');
+//   });
+//   select.querySelectorAll('.__select__label').forEach(function(label) {
+//     label.addEventListener('click', function() {
+//       select.setAttribute('data-state', '');
+//       select.querySelector('.__select__title').textContent = this.textContent;
+//     });
+//   });
+// });
+
 // Reset title
 const reset = document.querySelector(".reset");
 reset.addEventListener("click", () => {
@@ -26,11 +44,13 @@ reset.addEventListener("click", () => {
     selectSingle_title.getAttribute("data-default");
 });
 
+// checkBox
 let checkBoxButton = document.querySelector(".checkbox_big");
 checkBoxButton.addEventListener("click", () => {
   checkBoxButton.classList.toggle("checkbox_big_inactive");
 });
 
+// Popup
 export class Popup {
   constructor (popupSelector) {
       this._popup = document.querySelector(popupSelector);

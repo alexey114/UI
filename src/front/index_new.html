@@ -734,12 +734,101 @@
           <div class="input_fields_item">
             <div class="input_field_header text_container-item-font-size-14pt">Выпадающий список</div>
             <div class="input_fields_select fields_border">
-              <select class="input_select field_new" name="select">
+
+              <!-- <select class="input_select field_new" name="select">
                 <option value="value_1" selected>Вспомогательный текст</option>
                 <option value="value_2">Вспомогательный текст #2</option>
                 <option value="value_3">Вспомогательный текст #3</option>
-              </select>
-              <select class="input_select field_standart" name="select">
+              </select> -->
+
+              <div class="__select" data-state="">
+                <div class="__select__title input_select field_new" data-default="Option 0">
+                  Вспомогательный текст
+                </div>
+                <div class="__select__content">
+                  <input
+                  id="singleSelect2"
+                  class="__select__input"
+                  type="radio"
+                  name="singleSelect"
+                />
+                <label for="singleSelect2" class="__select__label">Вспомогательный текст</label>
+                  <input
+                    id="singleSelect1"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect1" class="__select__label">Вспомогательный текст #2</label>
+                  <input
+                    id="singleSelect2"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect2" class="__select__label">Вспомогательный текст #3</label>
+                </div>
+              </div>
+
+              <div class="__select" data-state="">
+                <div class="__select__title input_select field_standart" data-default="Option 0">
+                  Вспомогательный текст
+                </div>
+                <div class="__select__content">
+                  <input
+                  id="singleSelect2"
+                  class="__select__input"
+                  type="radio"
+                  name="singleSelect"
+                />
+                <label for="singleSelect2" class="__select__label">Вспомогательный текст</label>
+                  <input
+                    id="singleSelect1"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect1" class="__select__label">Вспомогательный текст #2</label>
+                  <input
+                    id="singleSelect2"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect2" class="__select__label">Вспомогательный текст #3</label>
+                </div>
+              </div>
+
+              <div class="__select" data-state="">
+                <div class="__select__title input_select field_editing" data-default="Option 0">
+                  Вспомогательный текст
+                </div>
+                <div class="__select__content">
+                  <input
+                  id="singleSelect2"
+                  class="__select__input"
+                  type="radio"
+                  name="singleSelect"
+                />
+                <label for="singleSelect2" class="__select__label">Вспомогательный текст</label>
+                  <input
+                    id="singleSelect1"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect1" class="__select__label">Вспомогательный текст #2</label>
+                  <input
+                    id="singleSelect2"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label for="singleSelect2" class="__select__label">Вспомогательный текст #3</label>
+                </div>
+              </div>
+
+              <!-- <select class="input_select field_standart" name="select">
                 <option value="value_1" selected>Вспомогательный текст</option>
                 <option value="value_2">Вспомогательный текст #2</option>
                 <option value="value_3">Вспомогательный текст #3</option>
@@ -748,16 +837,17 @@
                 <option value="value_1" selected>Вспомогательный текст</option>
                 <option value="value_2">Вспомогательный текст #2</option>
                 <option value="value_3">Вспомогательный текст #3</option>
-              </select>
+              </select> -->
+
             </div>
           </div>
 
           <div class="input_fields_item">
             <div class="input_field_header text_container-item-font-size-14pt">Выбор даты</div>
             <div class="input_fields_date fields_border">
-              <input class="input_date field_new" type="date" value="Вспомогательный текст">
-              <input class="input_date field_standart" type="date" value="Вспомогательный текст">
-              <input class="input_date field_editing" type="date" value="Вспомогательный текст">
+              <input class="input_date field_new" type="date">
+              <input class="input_date field_standart" type="date">
+              <input class="input_date field_editing" type="date">
             </div>
           </div>
 
@@ -1439,7 +1529,7 @@
 
   </div>
 
-  <script src="./index1js.js"></script>
+  <script src="./index2js.js"></script>
   <script src="./vanillaSelectBox.js?v0.75"></script>
   <script>
 
@@ -1448,6 +1538,7 @@
       "search": true,
       "translations": { "all": "All", "items": "items", "selectAll": "Check All", "clearAll": "Clear All", "placeHolder": "Choose a brand..." }
     });
+
   </script>
 
 </body>
