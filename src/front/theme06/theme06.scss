@@ -1973,7 +1973,7 @@ progress::-moz-progress-bar {
   height: 42px;
   margin-right: 32px;
 
-  &.combo_box_input {
+  &.combobox_input {
     margin-right: 0px;
   }
 
@@ -2846,7 +2846,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.combo_box_items_block {
+.combobox_blocks {
   display: inline-flex;
 
   @media (max-width: 1000px) {
@@ -2860,11 +2860,11 @@ progress::-moz-progress-bar {
   width: 340px;
 }
 
-.combo_box_items_block {
+.combobox_blocks {
   margin-top: 20px;
 }
 
-.combo_box_item_block_no_arrow {
+.no_arrow {
   position: relative;
   margin-right: 20px;
 
@@ -2877,7 +2877,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.combo_box_item_block {
+.combobox_block {
 
   position: relative;
   margin-right: 20px;
@@ -2914,7 +2914,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.combo_box_close {
+.combobox_close {
   position: relative;
 
   &::after {
@@ -2953,7 +2953,7 @@ progress::-moz-progress-bar {
   left: 7px;
 }
 
-.combo_box_point {
+.point {
   background: $theme6_color2;
   padding: 5px 34px 6px 12px;
   margin-right: 4px;
@@ -2972,7 +2972,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.combo_box_guidance {
+.combobox_guidance {
   &::before {
     display: $show_hand;
     position: absolute;
@@ -2987,7 +2987,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.combo_box_no_active {
+.combobox_inactive {
   background-color: $theme6_color16;
 }
 
