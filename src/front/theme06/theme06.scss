@@ -1851,16 +1851,12 @@ progress::-moz-progress-bar {
 
 /* accordion*/
 
-.accordion_container {
-  margin-top: 50px;
-}
-
-.accordion {
+.accordions {
   margin-top: 20px;
   color: #6C7293;
 }
 
-.accordion_item {
+.accordion {
   display: flex;
   justify-content: space-between;
   margin-top: 14px;
@@ -1868,11 +1864,11 @@ progress::-moz-progress-bar {
   height: 20px;
 }
 
-.accordion_item-arrow {
+.accordion_arrow {
   position: relative;
 }
 
-.accordion_item-checkbox:after {
+.accordion_checkbox:after {
   content: "";
   width: 12px;
   height: 7px;
@@ -1883,7 +1879,7 @@ progress::-moz-progress-bar {
   background-repeat: no-repeat;
 }
 
-.accordion_item-checkbox:checked:after {
+.accordion_checkbox:checked:after {
   content: "";
   width: 12px;
   height: 7px;
@@ -1895,7 +1891,7 @@ progress::-moz-progress-bar {
   transform: rotate(180deg);
 }
 
-.accordion_item-subpoints {
+.subpoint {
   display: flex;
   justify-content: space-between;
   margin-top: 15.5px;
@@ -1904,7 +1900,7 @@ progress::-moz-progress-bar {
   padding-left: 20px;
 }
 
-.btn_mini-exit_v_2 {
+.btn_exit {
   width: 97px;
   height: 32px;
   background-color: $theme6_color3;
@@ -1916,15 +1912,13 @@ progress::-moz-progress-bar {
 
 /* Images */
 
-.images_container {
-  margin-top: 50px;
-
+.images div {
   .subtitle {
     margin-bottom: 20px;
   }
 }
 
-.images_items {
+.images {
 @include wrap;
 }
 
@@ -1937,14 +1931,14 @@ progress::-moz-progress-bar {
   margin-top: 30px;
 }
 
-.images_no_item {
+.image_no {
   width: 140px;
   height: 140px;
   background-image: url(./theme06/images/no_images.svg);
   background-repeat: no-repeat;
 }
 
-.images_yes_item {
+.image_yes {
   width: 140px;
   height: 140px;
   background-image: url(./theme06/images/images.svg);
@@ -1952,10 +1946,6 @@ progress::-moz-progress-bar {
 }
 
 /*input_fields*/
-
-.input_fields_container {
-  margin-top: 50px;
-}
 
 .input_fields_item {
   display: flex;
