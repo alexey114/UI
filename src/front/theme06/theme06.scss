@@ -31,8 +31,8 @@
 
 $font_family: Montserrat;
 $font_size_base: 16px;
-$show_hand: none;
-$theme_display: none;
+$show_hand: flex;
+$theme_display: flex;
 
 $dark: $theme6_color4;        // #192A3E
 $dark_light: $theme6_color18; // #90A0B7
@@ -129,8 +129,7 @@ body{
   }
 }
 
-.switch,
-.switch_item {
+.switch{
   position: relative;
   display: inline-block;
   width: 60px;
@@ -154,7 +153,7 @@ body{
   transition: 0.4s;
 }
 
-.theme_slider:before, .switcher_collection:before {
+.theme_slider:before, .switcher:before {
   position: absolute;
   content: "";
   height: 26px;
@@ -414,33 +413,33 @@ body{
   top: 0px;
 }
 
-.switcher_collection {
+.switcher {
   position: relative;
 }
 
 .theme_slider,
-.switcher_collection {
+.switcher {
   width: 40px;
   height: 20px;
   border-radius: 10px;
   background-color: $theme6_color3;
 
-  &.swt_no_active {
+  &.no_active {
     background-color: $theme6_color5;
   }
 
-  &.swt_active_light {
+  &.active_light {
     background-color: $theme6_color3;
     opacity: 0.4;
   }
 
-  &.swt_no_active_light {
+  &.no_active_light {
     background-color: $theme6_color13;
   }
 }
 
 .theme_slider::before,
-.switcher_collection::before {
+.switcher::before {
   content: "";
   position: absolute;
   height: 16px;
@@ -451,7 +450,7 @@ body{
 }
 
 input:checked+.theme_slider:before,
-input:checked.switcher_collection:before {
+input:checked.switcher:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
@@ -929,7 +928,7 @@ button {
 
 /* Checkbox */
 
-.collection_elements {
+.elements {
   margin-left: 120px;
 
   @media (max-width: 1350px) {
@@ -944,26 +943,26 @@ button {
   width: 100px;
 }
 
-.collection_element {
+.element {
   display: inline-block;
   width: auto;
   margin-bottom: 40px;
 
 }
 
-.collection_element_checkbox {
+.element_checkbox {
   margin: 20px;
   width: 236px;
   border: 1px dashed #885AF8;
 }
 
-.collection_element_radio {
+.element_radio {
   margin: 20px;
   width: 128px;
   border: 1px dashed #885AF8;
 }
 
-.collection_element_button {
+.element_button {
   @include wrap;
   @include width(332px, auto);
   margin: 20px;
@@ -976,18 +975,18 @@ button {
   }
 }
 
-.collection_element_switcher {
+.element_switcher {
   margin: 20px;
   width: 260px;
   border: 1px dashed #885AF8;
 }
 
-.collection_element_item {
+.element_item {
   display: flex;
   margin: 20px 0 20px 20px;
 }
 
-.collection_element {
+.element {
   &.states-items {
     margin-left: 20px;
   }
@@ -1148,7 +1147,7 @@ input {
   }
 }
 
-.collection_element_button button {
+.element_button button {
   font-size: 11px;
   font-weight: 500;
   width: 84px;
@@ -1157,11 +1156,23 @@ input {
   border-radius: 4px;
 }
 
-.states-item {
+.states {
   margin-right: 20px;
 
   &:last-child {
     margin-right: 0px;
+  }
+
+  &.active {
+    background-color: $theme6_color11;
+  }
+
+  &.not_active {
+    background-color: $theme6_color9;
+  }
+
+  &.off {
+    background-color: #FFB946;
   }
 
   @media (max-width: 400px) {
@@ -1174,17 +1185,7 @@ input {
   }
 }
 
-.states_active {
-  background-color: $theme6_color11;
-}
 
-.states_not_active {
-  background-color: $theme6_color9;
-}
-
-.states_off {
-  background-color: #FFB946;
-}
 
 /* Color */
 
