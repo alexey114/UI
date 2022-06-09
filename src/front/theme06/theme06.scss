@@ -1311,13 +1311,8 @@ input {
 
 /*Avatar*/
 
-.avatar_container-six_theme,
-.preloader_container-six_theme {
-  margin-top: 50px;
-}
-
-.avatar_items,
-.foto_items {
+.avatars,
+.fotos {
 @include wrap;
 }
 
@@ -1325,32 +1320,32 @@ input {
   margin-right: 120px;
 }
 
-.foto_item {
+.foto {
   width: 104px;
   height: 104px;
   margin: 20px 20px 20px 0;
 }
 
-.foto_item.avatar {
+.foto.avatar {
   background-image: url(./theme06/images/user_avatar.svg);
 }
 
-.foto_item.avatar_done {
+.foto.avatar_done {
   background-image: url(./theme06/images/user_avatar_done.svg);
 }
 
-.foto_item.avatar_hover {
+.foto.avatar_hover {
   background-image: url(./theme06/images/user_avatar_hover.svg);
 }
 
-.foto_item.profile_user {
+.foto.profile{
   width: 46px;
   height: 46px;
   background-image: url(./theme06/images/profile_photo.svg);
   background-repeat: no-repeat;
 }
 
-.foto_item.profile_user_active {
+.foto.profile_active {
   width: 55px;
   height: 55px;
   background-image: url(./theme06/images/profile_photo-active.svg);
@@ -1372,12 +1367,12 @@ input {
   }
 }
 
-.preloader_items {
+.preloaders {
 @include wrap;
   padding-top: 20px;
 }
 
-.preloader_item {
+.progress_item {
   margin-left: 50px;
   max-width: 450px;
   width: 100%;
@@ -1388,18 +1383,18 @@ input {
   }
 }
 
-.preloader_elements {
+.preloader_items {
 @include wrap;
   margin-top: 20px;
   border: 1px dashed #7B61FF;
   border-radius: 5px;
 }
 
-.preloader_element {
+.preloader {
   animation: moving 3s infinite linear;
 }
 
-.element_ellipse {
+.ellipse {
   width: 36px;
   height: 36px;
   background-image: url(./theme06/images/ellipse.svg);
@@ -1409,7 +1404,7 @@ input {
   transform-origin: 18px 18px;
 }
 
-.element_ellipse-v_2 {
+.ellipse_second {
   width: 18px;
   height: 18px;
   background-image: url(./theme06/images/ellipse2.svg);
@@ -1419,7 +1414,7 @@ input {
   transform-origin: 9px 9px;
 }
 
-.element_polygon {
+.polygon {
   width: 34.34px;
   height: 34.34px;
   background-image: url(./theme06/images/polygon.svg);
@@ -1427,7 +1422,7 @@ input {
   margin: 20px;
 }
 
-.progress_bar_element {
+.progress {
   margin-top: 29px;
 }
 
@@ -1455,10 +1450,6 @@ progress::-moz-progress-bar {
 }
 
 /* Tooltip */
-
-.tooltip_container-six_theme {
-  margin-top: 50px;
-}
 
 .tooltipe {
   padding-top: 20px;
