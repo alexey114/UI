@@ -1492,7 +1492,7 @@ progress::-moz-progress-bar {
   -moz-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
   box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
 
-  &.tooltip_text_mini {
+  &.text_mini {
     @media (max-width: 400px) {
       width: 170px;
       font-size: 8px;
@@ -1519,7 +1519,7 @@ progress::-moz-progress-bar {
   margin-right: 40px;
 }
 
-.tooltipe_side {
+.side {
   width: 400px;
 }
 
@@ -1653,8 +1653,8 @@ progress::-moz-progress-bar {
   position: absolute;
 }
 
-.tooltip_button_accept,
-.tooltip_button_cancel {
+.button_accept,
+.button_cancel {
   position: absolute;
   top: 95px;
   left: 230px;
@@ -1664,7 +1664,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.tooltip_button_cancel {
+.button_cancel {
   left: 330px;
 
   @media (max-width: 550px) {
@@ -1672,7 +1672,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.text_with_button {
+.text_button {
 
 @include wrap;
   position: relative;
@@ -1713,7 +1713,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  .tooltip_button_accept {
+  .button_accept {
     width: 87px;
     height: 32px;
     border: 0;
@@ -1722,7 +1722,7 @@ progress::-moz-progress-bar {
     border-radius: 6px;
   }
 
-  .tooltip_button_cancel {
+  .button_cancel {
     width: 87px;
     height: 32px;
     border: 1px solid $theme6_color3;
@@ -1779,13 +1779,13 @@ progress::-moz-progress-bar {
       top: 60px;
     }
 
-    .tooltip_button_accept,
-    .tooltip_button_cancel {
+    .button_accept,
+    .button_cancel {
       top: 75px;
       left: 510px;
     }
 
-    .tooltip_button_cancel {
+    .button_cancel {
       left: 610px;
     }
   }
@@ -1793,11 +1793,7 @@ progress::-moz-progress-bar {
 
 /* Pagination*/
 
-.pagination_container {
-  margin-top: 100px;
-}
-
-.pagination_items {
+.paginations {
   margin-top: 20px;
   padding: 20px;
   list-style-type: none;
@@ -1813,10 +1809,18 @@ progress::-moz-progress-bar {
   }
 }
 
-.pagination_item {
+.pagination {
   display: inline;
   padding: 3px 9px;
   position: relative;
+
+  &.active {
+    text-align: center;
+    background-color: $theme6_color15;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
 
   @media (max-width: 480px) {
     padding: 3px 4px;
@@ -1843,14 +1847,6 @@ progress::-moz-progress-bar {
   height: 7.71px;
   background-image: url(./theme06/images/right.svg);
   background-repeat: no-repeat;
-}
-
-.active_item {
-  text-align: center;
-  background-color: $theme6_color15;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
 }
 
 /* accordion*/
