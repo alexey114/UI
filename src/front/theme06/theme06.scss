@@ -31,8 +31,8 @@
 
 $font_family: Montserrat;
 $font_size_base: 16px;
-$show_hand: flex;
-$theme_display: flex;
+$show_hand: none;
+$theme_display: none;
 
 $dark: $theme6_color4;        // #192A3E
 $dark_light: $theme6_color18; // #90A0B7
@@ -56,6 +56,10 @@ $gray_dark:  $theme6_color1;  // #6C7293
 }
 
 @mixin wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin center{
   display: flex;
   flex-wrap: wrap;
 }
@@ -209,8 +213,7 @@ body{
 }
 
 .__select__title {
-  display: flex;
-  align-items: center;
+  @include center;
   height: 42px;
   cursor: pointer;
 
@@ -265,8 +268,7 @@ body{
 }
 
 .__select__label {
-    display: flex;
-    align-items: center;
+    @include center;
     min-height: 40px;
     padding-left: 16px;
 
@@ -312,8 +314,7 @@ body{
   height: auto;
   border-radius: 10px;
   border: 1px solid $black;
-  display: flex;
-  align-items: center;
+  @include center;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -619,8 +620,7 @@ button {
 }
 
 .button_item{
-  display: flex;
-  align-items: center;
+  @include center;
   justify-content: center;
   font-size: 14px;
   border-radius: 6px;
@@ -999,8 +999,7 @@ input {
 
 input {
   &.checkbox {
-    display: flex;
-    align-items: center;
+    @include center;
     justify-content: center;
     width: 16px;
     height: 16px;
@@ -1018,8 +1017,7 @@ input {
   }
 
   &.radio {
-    display: flex;
-    align-items: center;
+    @include center;
     justify-content: center;
     width: 16px;
     height: 16px;
@@ -1477,9 +1475,8 @@ progress::-moz-progress-bar {
 }
 
 .tooltip_text {
-  display: flex;
+  @include center;
   justify-content: center;
-  align-items: center;
   color: #192A3E;
   font-weight: 400;
   font-size: 12px;
@@ -1732,8 +1729,7 @@ progress::-moz-progress-bar {
   }
 
   .text_field {
-    display: flex;
-    align-items: center;
+    @include center;
     position: absolute;
     top: 155px;
 
@@ -2354,8 +2350,7 @@ progress::-moz-progress-bar {
 }
 
 .srch_status {
-  display: flex;
-  align-items: center;
+  @include center;
   color: $theme6_color5;
   margin-top: 30px;
 }
@@ -2603,8 +2598,7 @@ progress::-moz-progress-bar {
 }
 
 .input_text_status-item {
-  display: flex;
-  align-items: center;
+  @include center;
   position: relative;
   margin-right: 80px;
 
@@ -2951,8 +2945,7 @@ progress::-moz-progress-bar {
 }
 
 .points {
-  display: flex;
-  align-items: center;
+  @include center;
   position: absolute;
   top: 7px;
   left: 7px;
@@ -3029,9 +3022,8 @@ progress::-moz-progress-bar {
 }
 
 .sidebar_block {
-  display: flex;
+  @include center;
   justify-content: space-between;
-  align-items: center;
 }
 
 .sidebar_name {
@@ -3050,8 +3042,7 @@ progress::-moz-progress-bar {
 }
 
 .sidebar_information {
-  display: flex;
-  align-items: center;
+  @include center;
   justify-content: center;
   margin: 40px 0;
 }
@@ -3061,8 +3052,7 @@ progress::-moz-progress-bar {
 }
 
 .sidebar_menu {
-  display: flex;
-  align-items: center;
+  @include center;
   margin-bottom: 20px;
 }
 
@@ -3155,9 +3145,8 @@ progress::-moz-progress-bar {
 .header_items {
   max-width: 1184px;
   height: 64px;
-  display: flex;
+  @include center;
   justify-content: space-between;
-  align-items: center;
   box-shadow: 0px 6px 35px -13px rgba(0, 0, 0, 0.06);
   margin-top: 40px;
 
@@ -3323,8 +3312,7 @@ progress::-moz-progress-bar {
 
 .burger_menu {
   background-image: url(./theme06/images/burger_menu.svg);
-  display: flex;
-  align-items: center;
+  @include center;
 }
 
 .icon_filter {
