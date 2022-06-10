@@ -2823,11 +2823,16 @@ progress::-moz-progress-bar {
 
 /* combobox */
 
-.combobox {
-  margin-bottom: 20px;
+.combobox_off {
+  margin-top: 20px;
+
+  .subtitle{
+    padding-left: 20px;
+  }
 }
 
 .comboboxes{
+  margin-top: 20px;
   display: inline-flex;
   max-width: 1300px;
   width: 100%;
@@ -2991,7 +2996,7 @@ progress::-moz-progress-bar {
   background-color: $theme6_color16;
 }
 
-.combo_box_none{
+.combobox_none{
   @media (max-width: 1400px) {
     display: none;
   }
@@ -3014,7 +3019,7 @@ progress::-moz-progress-bar {
   box-shadow: 6px 0px 35px -12px rgba(0, 0, 0, 0.06);
   margin-right: 50px;
 
-  &.no_footer_menu {
+  &.no_footer {
     justify-content: start;
   }
 }
@@ -3023,7 +3028,7 @@ progress::-moz-progress-bar {
   padding: 19px 25px 20px 24px;
 }
 
-.sidebar_item_name {
+.sidebar_block {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -3044,7 +3049,7 @@ progress::-moz-progress-bar {
   transform: rotate(90deg);
 }
 
-.sidebar_item_information {
+.sidebar_information {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3055,38 +3060,34 @@ progress::-moz-progress-bar {
   color: $theme6_color5;
 }
 
-.sidebar_item_menu {
+.sidebar_menu {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.sidebar_menu_icon {
+.sidebar_icon {
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
 }
 
-.sidebar_menu_name {
+.sidebar_point {
   padding-left: 14px;
   color: $gray_dark;
   font-weight: 500;
   font-size: 14px;
-}
 
-.menu_active,
-.official_active,
-.content_active,
-.control_active,
-.settings_active {
-  color: $theme6_color3;
+    &.active {
+    color: $theme6_color3;
+  }
 }
 
 .icon_desktop {
   background-image: url(./theme06/images/desktop.svg);
 }
 
-.icon_desktop_active {
+.desktop_active {
   background-image: url(./theme06/images/desktop_active.svg);
 }
 
@@ -3094,7 +3095,7 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/official.svg);
 }
 
-.icon_official_active {
+.official_active {
   background-image: url(./theme06/images/official_active.svg);
 
 }
@@ -3107,7 +3108,7 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/content.svg);
 }
 
-.icon_content_active {
+.content_active {
   background-image: url(./theme06/images/content_active.svg);
 }
 
@@ -3115,7 +3116,7 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/control.svg);
 }
 
-.icon_control_active {
+.control_active {
   background-image: url(./theme06/images/control_active.svg);
 }
 
@@ -3123,7 +3124,7 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/settings.svg);
 }
 
-.icon_settings_active {
+.settings_active {
   background-image: url(./theme06/images/settings_active.svg);
 }
 
@@ -3191,11 +3192,11 @@ progress::-moz-progress-bar {
   }
 }
 
-.header_item_icons {
+.header_icons {
   display: flex;
 }
 
-.header_item_icon {
+.header_icon {
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -3212,10 +3213,6 @@ progress::-moz-progress-bar {
 
 /* Icon */
 
-.icon_container{
-  margin-top: 50px;
-}
-
 .icon_items {
 @include wrap;
 
@@ -3224,13 +3221,13 @@ progress::-moz-progress-bar {
   }
 }
 
-.icon_items_active {
+.icon_active {
   margin-right: 80px;
 }
 
-.icon_items_no_active {
+.icon_inactive {
   .icon_item {
-    .sidebar_menu_icon {
+    .sidebar_icon {
       margin-right: 24px;
     }
   }
@@ -3239,7 +3236,7 @@ progress::-moz-progress-bar {
 .icon_item {
 @include wrap;
 
-  .sidebar_menu_icon {
+  .sidebar_icon {
     margin-right: 40px;
     margin-bottom: 25px;
     width: 24px;
@@ -3264,15 +3261,15 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/pen.svg);
 }
 
-.icon_pen_active {
+.pen_active {
   background-image: url(./theme06/images/pen_active.svg);
 }
 
-.icon_two_arrow {
+.two_arrow {
   background-image: url(./theme06/images/two_arrow.svg);
 }
 
-.icon_two_arrow_active {
+.arrow_active {
   background-image: url(./theme06/images/two_arrow_active.svg);
 }
 
@@ -3290,7 +3287,7 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/trash.svg);
 }
 
-.icon_check_blue {
+.check_blue {
   background-image: url(./theme06/images/check_blue.svg);
 }
 
@@ -3299,7 +3296,7 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/search.svg);
 }
 
-.icon_close_light {
+.close_light {
   background-image: url(./theme06/images/close_light.svg);
 }
 
@@ -3315,16 +3312,16 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/attach.svg);
 }
 
-.icon_arrow_down {
+.arrow_down {
   background-image: url(./theme06/images/arrow_down.svg);
 }
 
-.icon_arrow_up {
+.arrow_up {
   background-image: url(./theme06/images/arrow_down.svg);
   transform: rotate(180deg);
 }
 
-.icon_burger_menu {
+.burger_menu {
   background-image: url(./theme06/images/burger_menu.svg);
   display: flex;
   align-items: center;
@@ -3342,11 +3339,11 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/back_gray.svg);
 }
 
-.icon_left_gray {
+.left_gray {
   background-image: url(./theme06/images/left_gray.svg);
 }
 
-.icon_right_gray {
+.right_gray {
   background-image: url(./theme06/images/left_gray.svg);
   transform: rotate(180deg);
 }
@@ -3355,6 +3352,6 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/image.svg);
 }
 
-.icon_no_image {
+.no_image {
   background-image: url(./theme06/images/no_image.svg);
 }

@@ -1089,7 +1089,7 @@
                 <input class="input_field field_new combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
-                  <div class="point combo_box_none">Пункт 1</div>
+                  <div class="point combobox_none">Пункт 1</div>
                   <div class="combobox_close"></div>
                 </div>
               </div>
@@ -1097,7 +1097,7 @@
                 <input class="input_field field_new combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
-                  <div class="point combo_box_none combobox_guidance">Пункт 1</div>
+                  <div class="point combobox_none combobox_guidance">Пункт 1</div>
                   <div class="combobox_close"></div>
                 </div>
               </div>
@@ -1111,7 +1111,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="combobox_off">
             <div class="subtitle">Отключён</div>
             <div class="combobox_blocks border">
               <div class="combobox_block">
@@ -1122,7 +1122,7 @@
                 <input class="input_field field_new combobox_input combobox_inactive" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
-                  <div class="point combo_box_none">Пункт 1</div>
+                  <div class="point combobox_none">Пункт 1</div>
                 </div>
               </div>
             </div>
@@ -1145,14 +1145,14 @@
                 <input class="input_field field_new combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
-                  <div class="point combo_box_none">Пункт 1</div>
+                  <div class="point combobox_none">Пункт 1</div>
                 </div>
               </div>
               <div class="no_arrow">
                 <input class="input_field field_new combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
-                  <div class="point combobox_guidance combo_box_none">Пункт 1</div>
+                  <div class="point combobox_guidance combobox_none">Пункт 1</div>
                 </div>
               </div>
               <div class="no_arrow">
@@ -1164,7 +1164,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="combobox_off">
             <div class="subtitle">Отключён</div>
             <div class="combobox_blocks border">
               <div class="no_arrow">
@@ -1175,7 +1175,7 @@
                 <input class="input_field field_new combobox_input combobox_inactive" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
-                  <div class="point combo_box_none">Пункт 1</div>
+                  <div class="point combobox_none">Пункт 1</div>
                 </div>
               </div>
             </div>
@@ -1184,79 +1184,79 @@
       </div>
     </div>
 
-    <div class="sidebar_container subcontainer">
+    <div class="subcontainer">
       <h1 class="header" id="side">Боковое меню</h1>
 
       <div class="sidebar">
         <div class="sidebar_items">
           <div class="sidebar_item">
 
-            <div class="sidebar_item_name">
+            <div class="sidebar_block">
               <div class="sidebar_name">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
 
-            <div class="sidebar_item_information">
+            <div class="sidebar_information">
               <div class="foto profile"></div>
-              <div class="sidebar_information">
-                <div class="sidebar_surname regular_14pt_600">Денис Смирнов</div>
+              <div>
+                <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
               </div>
             </div>
 
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_desktop_active"></div>
-              <div class="sidebar_menu_name menu_active">Рабочий стол</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon desktop_active"></div>
+              <div class="sidebar_point active">Рабочий стол</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_official"></div>
-              <div class="sidebar_menu_name">Служебные</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_official"></div>
+              <div class="sidebar_point">Служебные</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_content"></div>
-              <div class="sidebar_menu_name">Контент</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_content"></div>
+              <div class="sidebar_point">Контент</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_control"></div>
-              <div class="sidebar_menu_name">Управление сайтом</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_control"></div>
+              <div class="sidebar_point">Управление сайтом</div>
             </div>
-            <div class="sidebar_item_menu line_gray"></div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_settings"></div>
-              <div class="sidebar_menu_name">Настройки</div>
+            <div class="sidebar_menu line_gray"></div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_settings"></div>
+              <div class="sidebar_point">Настройки</div>
             </div>
           </div>
           <div class="sidebar_item">
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_logout"></div>
-              <div class="sidebar_menu_name">Выйти</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_logout"></div>
+              <div class="sidebar_point">Выйти</div>
             </div>
           </div>
         </div>
 
-        <div class="sidebar_items no_footer_menu">
+        <div class="sidebar_items no_footer">
           <div class="sidebar_item">
 
-            <div class="sidebar_item_name">
+            <div class="sidebar_block">
               <div class="sidebar_name">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
 
-            <div class="sidebar_item_information">
+            <div class="sidebar_information">
               <div class="foto profile"></div>
-              <div class="sidebar_information">
-                <div class="sidebar_surname regular_14pt_600">Денис Смирнов</div>
+              <div>
+                <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
               </div>
             </div>
 
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_desktop"></div>
-              <div class="sidebar_menu_name">Рабочий стол</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_desktop"></div>
+              <div class="sidebar_point">Рабочий стол</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_official_active"></div>
-              <div class="sidebar_menu_name official_active">Служебные</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon official_active"></div>
+              <div class="sidebar_point active">Служебные</div>
             </div>
             <div class="menu_elements medium_12pt">
               <ul>
@@ -1265,18 +1265,18 @@
                 <li class="menu_element">Элементы с картинками</li>
               </ul>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_content"></div>
-              <div class="sidebar_menu_name">Контент</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_content"></div>
+              <div class="sidebar_point">Контент</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_control"></div>
-              <div class="sidebar_menu_name">Управление сайтом</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_control"></div>
+              <div class="sidebar_point">Управление сайтом</div>
             </div>
-            <div class="sidebar_item_menu line_gray"></div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_settings"></div>
-              <div class="sidebar_menu_name">Настройки</div>
+            <div class="sidebar_menu line_gray"></div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_settings"></div>
+              <div class="sidebar_point">Настройки</div>
             </div>
           </div>
         </div>
@@ -1284,30 +1284,30 @@
         <div class="sidebar_items">
           <div class="sidebar_item">
 
-            <div class="sidebar_item_name">
+            <div class="sidebar_block">
               <div class="sidebar_name">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
 
-            <div class="sidebar_item_information">
+            <div class="sidebar_information">
               <div class="foto profile"></div>
-              <div class="sidebar_information">
-                <div class="sidebar_surname regular_14pt_600">Денис Смирнов</div>
+              <div>
+                <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
               </div>
             </div>
 
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_desktop"></div>
-              <div class="sidebar_menu_name">Рабочий стол</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_desktop"></div>
+              <div class="sidebar_point">Рабочий стол</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_official"></div>
-              <div class="sidebar_menu_name">Служебные</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_official"></div>
+              <div class="sidebar_point">Служебные</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_content_active"></div>
-              <div class="sidebar_menu_name content_active">Контент</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon content_active"></div>
+              <div class="sidebar_point active">Контент</div>
             </div>
             <div class="menu_elements medium_12pt">
               <ul>
@@ -1315,109 +1315,109 @@
                 <li class="menu_element">Новости</li>
               </ul>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_control"></div>
-              <div class="sidebar_menu_name">Управление сайтом</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_control"></div>
+              <div class="sidebar_point">Управление сайтом</div>
             </div>
-            <div class="sidebar_item_menu line_gray"></div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_logout"></div>
-              <div class="sidebar_menu_name">Выйти</div>
+            <div class="sidebar_menu line_gray"></div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_logout"></div>
+              <div class="sidebar_point">Выйти</div>
             </div>
 
           </div>
           <div class="sidebar_item">
 
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_settings"></div>
-              <div class="sidebar_menu_name">Настройки</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_settings"></div>
+              <div class="sidebar_point">Настройки</div>
             </div>
           </div>
         </div>
 
-        <div class="sidebar_items no_footer_menu">
+        <div class="sidebar_items no_footer">
           <div class="sidebar_item">
 
-            <div class="sidebar_item_name">
+            <div class="sidebar_block">
               <div class="sidebar_name">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
 
-            <div class="sidebar_item_information">
+            <div class="sidebar_information">
               <div class="foto profile"></div>
-              <div class="sidebar_information">
-                <div class="sidebar_surname regular_14pt_600">Денис Смирнов</div>
+              <div>
+                <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
               </div>
             </div>
 
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_desktop"></div>
-              <div class="sidebar_menu_name">Рабочий стол</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_desktop"></div>
+              <div class="sidebar_point">Рабочий стол</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_official"></div>
-              <div class="sidebar_menu_name">Служебные</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_official"></div>
+              <div class="sidebar_point">Служебные</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_content"></div>
-              <div class="sidebar_menu_name">Контент</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_content"></div>
+              <div class="sidebar_point">Контент</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_control_active"></div>
-              <div class="sidebar_menu_name control_active">Управление сайтом</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon control_active"></div>
+              <div class="sidebar_point active">Управление сайтом</div>
             </div>
             <div class="menu_elements medium_12pt">
               <ul>
                 <li class="menu_element">Главная</li>
               </ul>
             </div>
-            <div class="sidebar_item_menu line_gray"></div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_settings"></div>
-              <div class="sidebar_menu_name">Настройки</div>
+            <div class="sidebar_menu line_gray"></div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_settings"></div>
+              <div class="sidebar_point">Настройки</div>
             </div>
           </div>
         </div>
 
-        <div class="sidebar_items no_footer_menu">
+        <div class="sidebar_items no_footer">
           <div class="sidebar_item">
 
-            <div class="sidebar_item_name">
+            <div class="sidebar_block">
               <div class="sidebar_name">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
 
-            <div class="sidebar_item_information">
+            <div class="sidebar_information">
               <div class="foto profile"></div>
-              <div class="sidebar_information">
-                <div class="sidebar_surname regular_14pt_600">Денис Смирнов</div>
+              <div>
+                <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
               </div>
             </div>
 
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_desktop"></div>
-              <div class="sidebar_menu_name">Рабочий стол</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_desktop"></div>
+              <div class="sidebar_point">Рабочий стол</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_official"></div>
-              <div class="sidebar_menu_name">Служебные</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_official"></div>
+              <div class="sidebar_point">Служебные</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_content"></div>
-              <div class="sidebar_menu_name">Контент</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_content"></div>
+              <div class="sidebar_point">Контент</div>
             </div>
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_control"></div>
-              <div class="sidebar_menu_name">Управление сайтом</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_control"></div>
+              <div class="sidebar_point">Управление сайтом</div>
             </div>
 
-            <div class="sidebar_item_menu line_gray"></div>
+            <div class="sidebar_menu line_gray"></div>
 
-            <div class="sidebar_item_menu">
-              <div class="sidebar_menu_icon icon_settings_active"></div>
-              <div class="sidebar_menu_name settings_active">Настройки</div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon settings_active"></div>
+              <div class="sidebar_point active">Настройки</div>
             </div>
           </div>
         </div>
@@ -1425,75 +1425,75 @@
       </div>
     </div>
 
-    <div class="header_container subcontainer">
+    <div class="subcontainer">
       <h1 class="header" id="up">Верхнее меню (шапка)</h1>
 
       <div class="header_items">
         <div class="srch_no">
           <input type="search" placeholder="Поиск">
         </div>
-        <div class="header_item_icons">
-          <div class="header_item_icon icon_notifications"></div>
-          <div class="header_item_icon icon_logout"></div>
+        <div class="header_icons">
+          <div class="header_icon icon_notifications"></div>
+          <div class="header_icon icon_logout"></div>
         </div>
       </div>
     </div>
 
-    <div class="icon_container subcontainer">
+    <div class="subcontainer">
       <h1 class="header" id="icons">Иконки</h1>
 
       <div class="icon_items">
-        <div class="icon_items_active">
+        <div class="icon_active">
           <div class="subtitle">Menu</div>
           <div class="icon_item">
-            <div class="sidebar_menu_icon icon_desktop"></div>
-            <div class="sidebar_menu_icon icon_official"></div>
-            <div class="sidebar_menu_icon icon_content"></div>
-            <div class="sidebar_menu_icon icon_control"></div>
-            <div class="sidebar_menu_icon">
+            <div class="sidebar_icon icon_desktop"></div>
+            <div class="sidebar_icon icon_official"></div>
+            <div class="sidebar_icon icon_content"></div>
+            <div class="sidebar_icon icon_control"></div>
+            <div class="sidebar_icon">
               <div class="icon_rhombus"></div>
             </div>
-            <div class="sidebar_menu_icon icon_settings"></div>
-            <div class="sidebar_menu_icon icon_pen"></div>
-            <div class="sidebar_menu_icon icon_two_arrow"></div>
+            <div class="sidebar_icon icon_settings"></div>
+            <div class="sidebar_icon icon_pen"></div>
+            <div class="sidebar_icon two_arrow"></div>
           </div>
           <div class="icon_item">
-            <div class="sidebar_menu_icon icon_desktop_active"></div>
-            <div class="sidebar_menu_icon icon_official_active"></div>
-            <div class="sidebar_menu_icon icon_content_active"></div>
-            <div class="sidebar_menu_icon icon_control_active"></div>
-            <div class="sidebar_menu_icon">
+            <div class="sidebar_icon desktop_active"></div>
+            <div class="sidebar_icon official_active"></div>
+            <div class="sidebar_icon content_active"></div>
+            <div class="sidebar_icon control_active"></div>
+            <div class="sidebar_icon">
               <div class="icon_rhombus rhombus_active"></div>
             </div>
-            <div class="sidebar_menu_icon icon_settings_active"></div>
-            <div class="sidebar_menu_icon icon_pen_active"></div>
-            <div class="sidebar_menu_icon icon_two_arrow_active"></div>
+            <div class="sidebar_icon settings_active"></div>
+            <div class="sidebar_icon pen_active"></div>
+            <div class="sidebar_icon arrow_active"></div>
           </div>
         </div>
 
-        <div class="icon_items_no_active">
+        <div class="icon_inactive">
           <div class="subtitle">Other</div>
           <div class="icon_item">
-            <div class="sidebar_menu_icon icon_edit"></div>
-            <div class="sidebar_menu_icon icon_show"></div>
-            <div class="sidebar_menu_icon icon_trach"></div>
-            <div class="sidebar_menu_icon icon_check_blue"></div>
-            <div class="sidebar_menu_icon icon_search"></div>
-            <div class="sidebar_menu_icon icon_notifications"></div>
-            <div class="sidebar_menu_icon icon_close_light"></div>
-            <div class="sidebar_menu_icon icon_add"></div>
-            <div class="sidebar_menu_icon icon_attach"></div>
-            <div class="sidebar_menu_icon icon_logout"></div>
-            <div class="sidebar_menu_icon icon_arrow_down"></div>
-            <div class="sidebar_menu_icon icon_arrow_up"></div>
-            <div class="sidebar_menu_icon icon_burger_menu"></div>
-            <div class="sidebar_menu_icon icon_filter"></div>
-            <div class="sidebar_menu_icon icon_save"></div>
-            <div class="sidebar_menu_icon icon_back"></div>
-            <div class="sidebar_menu_icon icon_left_gray"></div>
-            <div class="sidebar_menu_icon icon_right_gray"></div>
-            <div class="sidebar_menu_icon icon_image"></div>
-            <div class="sidebar_menu_icon icon_no_image"></div>
+            <div class="sidebar_icon icon_edit"></div>
+            <div class="sidebar_icon icon_show"></div>
+            <div class="sidebar_icon icon_trach"></div>
+            <div class="sidebar_icon check_blue"></div>
+            <div class="sidebar_icon icon_search"></div>
+            <div class="sidebar_icon icon_notifications"></div>
+            <div class="sidebar_icon close_light"></div>
+            <div class="sidebar_icon icon_add"></div>
+            <div class="sidebar_icon icon_attach"></div>
+            <div class="sidebar_icon icon_logout"></div>
+            <div class="sidebar_icon arrow_down"></div>
+            <div class="sidebar_icon arrow_up"></div>
+            <div class="sidebar_icon burger_menu"></div>
+            <div class="sidebar_icon icon_filter"></div>
+            <div class="sidebar_icon icon_save"></div>
+            <div class="sidebar_icon icon_back"></div>
+            <div class="sidebar_icon left_gray"></div>
+            <div class="sidebar_icon right_gray"></div>
+            <div class="sidebar_icon icon_image"></div>
+            <div class="sidebar_icon no_image"></div>
           </div>
         </div>
 
