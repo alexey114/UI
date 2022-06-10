@@ -1,0 +1,372 @@
+@import "../base_style/theme_colors.scss";
+
+/* Шрифты */
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./theme06/font/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./theme06/font/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./theme06/font/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Переменные */
+
+$font_family: Montserrat;
+$font_size_base: 16px;
+$show_hand: none;
+$theme_display: none;
+
+$dark: $theme6_color4;        // #192A3E
+$dark_light: $theme6_color18; // #90A0B7
+
+$gray: $theme6_color17;       // #90A0B7
+$gray_light: $theme6_color15; // #F1F5FB
+$gray_dark:  $theme6_color1;  // #6C7293
+
+
+/* Миксины */
+
+@mixin text($font-size, $line-height, $font-weight){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin width($max-width, $width){
+  max-width: $max-width;
+  width: $width;
+}
+
+@mixin wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin center{
+  display: flex;
+  align-items: center;
+}
+
+/* Общие */
+
+// .container{
+//   display: flex;
+//   width: 1440px;
+//   height: auto;
+// }
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  @include width(1580px, 100%);
+  margin: 0 auto;
+}
+
+.container_content{
+  display: flex;
+}
+
+/* sidebar */
+
+.select{
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* sidebar */
+
+  .sidebar_items {
+    margin-top: 20px;
+    height: 90vh;
+    max-width: 993px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 256px;
+    box-shadow: 6px 0px 35px -12px rgba(0, 0, 0, 0.06);
+    margin-right: 50px;
+
+    &.no_footer {
+      justify-content: start;
+    }
+  }
+
+  .sidebar_item {
+    padding: 19px 25px 20px 24px;
+  }
+
+  .sidebar_block {
+    @include center;
+    justify-content: space-between;
+  }
+
+  .sidebar_name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $theme6_color12;
+  }
+
+  .sidebar_arrow {
+    width: 15px;
+    height: 15px;
+    background-image: url(./theme06/images/arrow_down_blue.svg);
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+  }
+
+  .sidebar_information {
+    @include center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
+  .foto.profile{
+    width: 46px;
+    height: 46px;
+    background-image: url(./theme06/images/profile_photo.svg);
+    background-repeat: no-repeat;
+    padding-right: 24px;
+  }
+
+  .sidebar_mail {
+    color: $theme6_color5;
+  }
+
+  .sidebar_menu {
+    @include center;
+    margin-bottom: 20px;
+  }
+
+  .sidebar_icon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .sidebar_point {
+    padding-left: 14px;
+    color: $gray_dark;
+    font-weight: 500;
+    font-size: 14px;
+
+      &.active {
+      color: $theme6_color3;
+    }
+  }
+
+  .icon_desktop {
+    background-image: url(./theme06/images/desktop.svg);
+  }
+
+  .desktop_active {
+    background-image: url(./theme06/images/desktop_active.svg);
+  }
+
+  .icon_official {
+    background-image: url(./theme06/images/official.svg);
+  }
+
+  .official_active {
+    background-image: url(./theme06/images/official_active.svg);
+
+  }
+
+  .icon_official {
+    background-image: url(./theme06/images/official.svg);
+  }
+
+  .icon_content {
+    background-image: url(./theme06/images/content.svg);
+  }
+
+  .content_active {
+    background-image: url(./theme06/images/content_active.svg);
+  }
+
+  .icon_control {
+    background-image: url(./theme06/images/control.svg);
+  }
+
+  .control_active {
+    background-image: url(./theme06/images/control_active.svg);
+  }
+
+  .icon_settings {
+    background-image: url(./theme06/images/settings.svg);
+  }
+
+  .settings_active {
+    background-image: url(./theme06/images/settings_active.svg);
+  }
+
+  .icon_logout {
+    background-image: url(./theme06/images/logout.svg);
+  }
+
+  .line_gray {
+    height: 1px;
+    margin-left: -20px;
+    width: 122%;
+    background-color: $theme6_color2;
+  }
+
+  .menu_element {
+    color: #6C7293;
+    padding-bottom: 13px;
+
+    &::marker {
+      color: #C2CFE0;
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+/* header */
+
+.content_right{
+  display: flex;
+  width: 100%;
+}
+
+/* header */
+
+.header_items {
+  max-width: 1184px;
+  width: 100%;
+  height: 64px;
+  @include center;
+  justify-content: space-between;
+  box-shadow: 0px 6px 35px -13px rgba(0, 0, 0, 0.06);
+  margin-top: 20px;
+
+  .srch_no{
+    & input{
+      margin-left: 30px;
+      }
+
+      &::after{
+          left: 42.5px;
+      }
+  }
+
+  @media (max-width: 420px) {
+    .srch_no{
+      & input{
+        margin-left: 10px;
+        }
+
+        &::after{
+            left: 22.5px;
+        }
+      }
+    }
+}
+
+@media (max-width: 420px) {
+.srch_no{
+    & input{
+      padding: 12px 12px 11px 38px;
+      }
+  }
+}
+
+.header_icons {
+  display: flex;
+}
+
+.header_icon {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  margin-right: 23px;
+}
+
+.icon_notifications {
+  background-image: url(./theme06/images/notifications.svg);
+}
+
+.icon_logout {
+  background-image: url(./theme06/images/logout_gray.svg);
+}
+
+/* Search */
+
+.srch_items {
+  margin-top: 40px;
+}
+
+.srch_item {
+  display: inline-flex;
+  margin-bottom: 20px;
+
+  @media (max-width: 940px) {
+    @include wrap;
+    width: min-content;
+    gap: 20px;
+  }
+}
+
+.srch_no {
+
+  position: relative;
+  margin-right: 30px;
+  color: $theme6_color13;
+
+  @media (max-width: 940px) {
+    margin-right: 0px;
+  }
+
+  input {
+    padding: 12px 215px 11px 38px;
+    background-color: $theme6_color16;
+    border-radius: 5px;
+    border: none;
+
+    @media (max-width: 490px) {
+      padding: 12px 50px 11px 38px;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $theme6_color13;
+    }
+
+    &::-moz-placeholder {
+      color: $theme6_color13;
+    }
+
+    &::-ms-input-placeholder {
+      color: $theme6_color13;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 12.5px;
+    left: 12.5px;
+    background-image: url(./theme06/images/search_lite.svg);
+    background-repeat: no-repeat;
+  }
+}

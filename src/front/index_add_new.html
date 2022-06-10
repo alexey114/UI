@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link id="css" rel="stylesheet" href="./css/index6A.css" />
+
+</head>
+
+  <body class="body">
+
+    <div class="container">
+
+      <div class="select">
+        <select
+        onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + 'A.css'">
+          <option value="1">Тема 1</option>
+          <option value="2">Тема 2</option>
+          <option value="3">Тема 3</option>
+          <option value="4">Тема 4</option>
+          <option value="5">Тема 5</option>
+          <option value="6" selected>Тема 6</option>
+        </select>
+      </div>
+
+      <div class="container_content">
+
+        <div class="sidebar_items">
+          <div class="sidebar_item">
+
+            <div class="sidebar_block">
+              <div class="sidebar_name">Название</div>
+              <div class="sidebar_arrow"></div>
+            </div>
+
+            <div class="sidebar_information">
+              <div class="foto profile"></div>
+              <div>
+                <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
+                <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
+              </div>
+            </div>
+
+            <div class="sidebar_menu">
+              <div class="sidebar_icon desktop_active"></div>
+              <div class="sidebar_point active">Рабочий стол</div>
+            </div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_official"></div>
+              <div class="sidebar_point">Служебные</div>
+            </div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_content"></div>
+              <div class="sidebar_point">Контент</div>
+            </div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_control"></div>
+              <div class="sidebar_point">Управление сайтом</div>
+            </div>
+            <div class="sidebar_menu line_gray"></div>
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_settings"></div>
+              <div class="sidebar_point">Настройки</div>
+            </div>
+          </div>
+          <div class="sidebar_item">
+            <div class="sidebar_menu">
+              <div class="sidebar_icon icon_logout"></div>
+              <div class="sidebar_point">Выйти</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_right">
+          <div class="header_items">
+            <div class="srch_no">
+              <input type="search" placeholder="Поиск">
+            </div>
+            <div class="header_icons">
+              <div class="header_icon icon_notifications"></div>
+              <div class="header_icon icon_logout"></div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>

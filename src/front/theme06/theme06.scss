@@ -61,7 +61,7 @@ $gray_dark:  $theme6_color1;  // #6C7293
 }
 @mixin center{
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Общие */

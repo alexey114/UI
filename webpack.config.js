@@ -20,6 +20,7 @@ let entries = {
     'index3A': './src/front/index3A.scss',
     'index4A': './src/front/index4A.scss',
     'index5A': './src/front/index5A.scss',
+    'index6A': './src/front/index6A.scss',
     'nutrition/index11': './src/front/nutrition/index1.scss',
     'nutrition/index12': './src/front/nutrition/index2.scss',
 }
