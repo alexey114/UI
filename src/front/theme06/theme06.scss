@@ -76,12 +76,12 @@ body{
   }
 }
 
-.subcontainer{
+.section{
   border-bottom: solid 1px #EBEFF2;
   padding: 50px 0px 50px 0px;
 }
 
-.container {
+#containerTotal {
   @include width(1580px, 100%);
   margin: 0 auto;
 }
@@ -100,25 +100,26 @@ body{
 
 /* Select */
 
-.library {
-  @include text($font_size_base*1.25, 28px, 700)
-}
-
-.container_select{
+.section_choise{
   @include wrap;
   width: 100%;
   justify-content: space-between;
 }
 
-.select{
+#choise{
   width: 80%;
+
+  h1 {
+    @include text($font_size_base*1.25, 28px, 700);
+    color: $gray_dark;
+  }
 
   @media (max-width: 782px) {
     order: 2;
   }
 }
 
-.container_theme {
+.section_theme {
 
   .regular_12pt:first-child{
     display: $theme_display;
@@ -309,74 +310,33 @@ body{
 
 /* Navigation */
 
-.navigation {
-  width: 90%;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid $black;
+#menu{
   @include center;
-  justify-content: space-around;
   flex-wrap: wrap;
-}
 
-.link {
-  margin: 10px;
-  padding-right: 10px;
-  text-decoration: none;
-  color: $black;
+  a {
+    margin: 0px 15px 15px 0px;
+    padding: 5px 12px 5px 12px;
+    text-decoration: none;
+    color: $gray_dark;
+    border-radius: 4px;
+    background-color: $theme6_color2;
 
-  &:first-child {
-  margin-left: 25px;
-}
-  &:link:last-child {
-  margin-right: 25px;
-}
-}
+    &:first-child {
+    margin-left: 25px;
+  }
+    &:link:last-child {
+    margin-right: 25px;
+  }
 
-/* Select theme */
-
-.select_container{
-@include wrap;
-  width: 100%;
-  justify-content: space-between;
+    &:first-child {
+    margin-left: 0;
+  }
+  }
 }
-
 //Из base конец
 
 /* Navigation */
-
-.navigation {
-  font-style: Montserrat;
-  margin: 0;
-  width: 100%;
-  height: auto;
-  border-radius: 0;
-  border: none;
-  justify-content: flex-start;
-}
-
-.link:first-child {
-  margin-left: 0;
-}
-
-.header_components {
-  color: $gray_dark;
-  font-weight: 700;
-  line-height: 28px;
-}
-
-.select_container {
-  color: $gray_dark;
-  font-size: 0.85 * $font_size_base;
-}
-
-.link {
-  color: $gray_dark;
-  padding: 5px 12px 5px 12px;
-  margin: 0px 15px 15px 0px;
-  border-radius: 4px;
-  background-color: $theme6_color2;
-}
 
 .theme_switcher {
   width: 118px;
@@ -477,7 +437,7 @@ input:checked.switcher:before {
   color: $color;
 }
 
-.container_text {
+.section_text {
   @include wrap;
   margin: 50px 0 0 0;
 }
@@ -2054,7 +2014,7 @@ progress::-moz-progress-bar {
 
 /* Calendar */
 
-.container_calendar {
+.section_calendar {
 @include wrap;
   margin-top: 30px;
 }
@@ -2399,7 +2359,7 @@ progress::-moz-progress-bar {
 
 /*input fields name*/
 
-.container_input {
+.section_input {
   margin-top: 50px;
 }
 
@@ -2656,7 +2616,7 @@ progress::-moz-progress-bar {
 
 /* slider */
 
-.container_slider {
+.section_slider {
   margin-top: 69px;
 }
 
