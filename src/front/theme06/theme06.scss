@@ -100,7 +100,7 @@ body{
 
 /* Select */
 
-.section_choise{
+#section_choise{
   @include wrap;
   width: 100%;
   justify-content: space-between;
@@ -119,7 +119,7 @@ body{
   }
 }
 
-.section_theme {
+#container_theme {
 
   .regular_12pt:first-child{
     display: $theme_display;
@@ -430,7 +430,7 @@ input:checked.switcher:before {
   color: $color;
 }
 
-.section_text {
+#section_text {
   @include wrap;
   margin: 50px 0 0 0;
 }
@@ -1146,7 +1146,7 @@ input {
 .dark_light{
   color: $dark_light;
 }
-.gray{
+.common_color{
   color: $gray;
 }
 .gray_light{
@@ -2007,7 +2007,7 @@ progress::-moz-progress-bar {
 
 /* Calendar */
 
-.section_calendar {
+#section_calendar {
 @include wrap;
   margin-top: 30px;
 }
@@ -2352,7 +2352,7 @@ progress::-moz-progress-bar {
 
 /*input fields name*/
 
-.section_input {
+#section_input {
   margin-top: 50px;
 }
 
@@ -2609,7 +2609,7 @@ progress::-moz-progress-bar {
 
 /* slider */
 
-.section_slider {
+#section_slider {
   margin-top: 69px;
 }
 
@@ -3295,4 +3295,42 @@ progress::-moz-progress-bar {
 
 .no_image {
   background-image: url(./theme06/images/no_image.svg);
+}
+
+/* Pop-up */
+
+#popup{
+    .active{
+      margin-top: 30px;
+      background-color: $theme6_color3;
+    }
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  visibility: visible;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  transition: visibility 0.5s ease-out, opacity 0.5s ease-out;
+  opacity: 0;
+  z-index: -2;
+}
+
+.popup_active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.popup__container {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
 }
