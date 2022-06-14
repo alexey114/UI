@@ -314,7 +314,7 @@ body{
   @include center;
   flex-wrap: wrap;
 
-  a {
+  .link {
     margin: 0px 15px 15px 0px;
     padding: 5px 12px 5px 12px;
     text-decoration: none;
@@ -322,15 +322,8 @@ body{
     border-radius: 4px;
     background-color: $theme6_color2;
 
-    &:first-child {
-    margin-left: 25px;
-  }
     &:link:last-child {
     margin-right: 25px;
-  }
-
-    &:first-child {
-    margin-left: 0;
   }
   }
 }
