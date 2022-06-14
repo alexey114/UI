@@ -86,12 +86,24 @@ input {
   margin: 0 auto;
 }
 
-.container_content{
+.flex{
   display: flex;
 }
 
 .mtb_30{
   margin: 30px 0;
+}
+
+.items_center{
+  @include center;
+}
+
+.dark{
+  color: $dark;
+}
+
+.gray_dark{
+  color: $gray_dark;
 }
 
 /* sidebar */
@@ -104,7 +116,7 @@ input {
 /* sidebar */
 
   .sidebar_items {
-    height: 90vh;
+    height: 993px;
     max-width: 256px;
     width: 100%;
     display: flex;
@@ -261,7 +273,7 @@ input {
 /* header */
 
 .header_items {
-  max-width: 1184px;
+  max-width: 2400px;
   width: 100%;
   height: 64px;
   @include center;
@@ -476,7 +488,7 @@ input {
 /* table */
 
 .container_table{
-  max-width: 1124px;
+  max-width: 2400px;
   width: 100%;
   margin: 0 30px;
   padding: 47px 30px;
@@ -500,6 +512,7 @@ input {
   }
   & td{
     font-size: 16px;
+    border-top: solid 1px $theme6_color2;
   }
 }
 
@@ -604,3 +617,52 @@ input {
 
 // <button class="states active">Активен</button>
 // <button class="states not_active">Не активен</button>
+
+/* actions */
+
+.images{
+  @include center;
+  justify-content: end;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+
+  &:last-child{
+    padding-right: 0px;
+  }
+}
+
+.editing{
+  background-image: url(./theme06/images/editing.svg);
+  margin-top: -3px;
+}
+
+.close_table{
+  background-image: url(./theme06/images/close_table.svg);
+}
+
+.eye_blue{
+  background-image: url(./theme06/images/eye_blue.svg);
+}
+
+/* footer table */
+
+.footer_item{
+  padding-right: 30px;
+
+  p{
+    padding-right: 8px;
+  }
+
+  .img{
+    padding-right: 12px;
+
+    &.editing{
+      margin-top: 16px;
+    }
+  }
+}
