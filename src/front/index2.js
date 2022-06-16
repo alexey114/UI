@@ -81,6 +81,20 @@ popupButton.addEventListener('click', ()=> {
   popup.open();
 })
 
+//Scroll
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for(let anchor of anchors){
+  anchor.addEventListener("click", function(event){
+    event.preventDefault();
+    const blockID = anchor.getAttribute('href')
+    document.querySelector(''+blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
+
 // Reset title - мешает работе popup!!!
 const reset = document.querySelector(".reset");
 reset.addEventListener("click", () => {
