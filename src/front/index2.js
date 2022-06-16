@@ -38,19 +38,6 @@ selects.forEach(function(select) {
   });
 });
 
-// Reset title
-const reset = document.querySelector(".reset");
-reset.addEventListener("click", () => {
-  selectSingle_title.textContent =
-    selectSingle_title.getAttribute("data-default");
-});
-
-// checkBox
-let checkBoxButton = document.querySelector(".checkbox_big");
-checkBoxButton.addEventListener("click", () => {
-  checkBoxButton.classList.toggle("checkbox_big_inactive");
-});
-
 // Popup
 export class Popup {
   constructor (popupSelector) {
@@ -72,7 +59,7 @@ export class Popup {
       if(evt.key === 'Escape') {
           this.close();
   }
-}
+  }
 
   setEventListeners() {
           this._popup.addEventListener('click', (evt) => {
@@ -87,8 +74,22 @@ export class Popup {
 }
 
 const popup = new Popup ('.popup');
+// const closedPopup = new closedPop ('.closed_popup');
 const popupButton = document.querySelector('.popup_button');
 popup.setEventListeners();
 popupButton.addEventListener('click', ()=> {
   popup.open();
 })
+
+// Reset title - мешает работе popup!!!
+const reset = document.querySelector(".reset");
+reset.addEventListener("click", () => {
+  selectSingle_title.textContent =
+    selectSingle_title.getAttribute("data-default");
+});
+
+// checkBox  - мешает работе popup!!!
+let checkBoxButton = document.querySelector(".checkbox_big");
+checkBoxButton.addEventListener("click", () => {
+  checkBoxButton.classList.toggle("checkbox_big_inactive");
+});

@@ -1500,18 +1500,28 @@
       </div>
     </div>
 
-    <div id="popup" class="section">
+    <div id="popup_section" class="section">
       <h1 class="header">Попап</h1>
 
         <button type="submit" class="button_item btn_small active popup_button">Вызвать попап</button>
 
     </div>
 
+    <div id="delete" class="popup">
+      <div class="popup__container popup__container_delete">
+        <div class="popup_section">
+          <h1 class="bold_20pt">Заголовок модального окна</h1>
+          <span class="popup__close-button"></span>
+          <p>Содержимое модального окна. Здесь может быть что угодно: текст, изображение, форма или таблица. Всё, что хочется вынести из контекста и показать поверх основной страницы.</p>
+          <button class="popup_cancel popup__close-button">Отмена</button>
+          <button class="popup_accept popup__close-button">Понятно</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <div id="delete" class="popup">
-    <div class="popup__container popup__container_delete"></div>
-  </div>
+
 
   <script src="./index2js.js"></script>
   <script src="./vanillaSelectBox.js?v0.75"></script>

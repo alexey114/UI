@@ -3299,7 +3299,7 @@ progress::-moz-progress-bar {
 
 /* Pop-up */
 
-#popup{
+#popup_section{
     .active{
       margin-top: 30px;
       background-color: $theme6_color3;
@@ -3329,8 +3329,55 @@ progress::-moz-progress-bar {
 }
 
 .popup__container {
-  width: 500px;
-  height: 500px;
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  min-height: 238px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 4px;
+}
+
+.popup_section{
+  margin: 50px;
+
+  h1{
+    margin-top: 0;
+    color: $theme6_color1;
+  }
+
+  p{
+    margin: 20px 0 30px 0;
+    color: $theme6_color5;
+  }
+
+  span{
+    content:"";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 20px;
+    background-image: url(./theme06/images/close_light.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.popup_accept {
+  width: 87px;
+  height: 32px;
+  border: 0;
+  background-color: $theme6_color3;
+  color: $theme6_color6;
+  border-radius: 6px;
+}
+
+.popup_cancel {
+  width: 87px;
+  height: 32px;
+  border: 1px solid $theme6_color3;
+  background-color: $theme6_color6;
+  color: $theme6_color3;
+  border-radius: 6px;
+
+  margin-right: 20px;
 }
