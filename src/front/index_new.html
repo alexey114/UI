@@ -11,37 +11,39 @@
 
 <body>
 
-  <div id="containerTotal">
+  <div id="full-container">
 
-    <div id="section_choise" class="section">
-      <div id="choise">
+    <div id="section_menu" class="section">
+      <div id="menu-wrapper">
         <h1>Библиотека компонентов</h1>
         <nav id="menu">
-          <a class="link" href="#colors">Цвета</a>
-          <a class="link" href="#fonts">Типографика</a>
-          <a class="link" href="#buttons">Активные элементы</a>
-          <a class="link" href="#avatar">Аватары пользователей</a>
-          <a class="link" href="#preloader">Прелоадеры</a>
-          <a class="link" href="#tooltip">Тултипы</a>
-          <a class="link" href="#pagination">Пагинация</a>
-          <a class="link" href="#accordion">Меню акордеон</a>
-          <a class="link" href="#images">Изображения</a>
-          <a class="link" href="#forms">Ввод данных</a>
-          <a class="link" href="#side">Боковое меню</a>
-          <a class="link" href="#up">Верхнее меню</a>
-          <a class="link" href="#icons">Иконки</a>
+          <a class="menu-link" href="#colors">Цвета</a>
+          <a class="menu-link" href="#fonts">Типографика</a>
+          <a class="menu-link" href="#buttons">Активные элементы</a>
+          <a class="menu-link" href="#avatar">Аватары пользователей</a>
+          <a class="menu-link" href="#preloader">Прелоадеры</a>
+          <a class="menu-link" href="#tooltip">Тултипы</a>
+          <a class="menu-link" href="#pagination">Пагинация</a>
+          <a class="menu-link" href="#accordion">Меню акордеон</a>
+          <a class="menu-link" href="#images">Изображения</a>
+          <a class="menu-link" href="#forms">Ввод данных</a>
+          <a class="menu-link" href="#side">Боковое меню</a>
+          <a class="menu-link" href="#up">Верхнее меню</a>
+          <a class="menu-link" href="#icons">Иконки</a>
         </nav>
       </div>
 
       <div id="container_theme">
-        <p class="regular_12pt">Дневная тема</p>
+        <p class="regular_12pt">Дневная тема</p><!-- @@## пока не трогать -->
+
         <div class="theme_switcher">
           <label class="switch">
             <input type="checkbox"/>
             <div class="theme_slider"></div>
           </label>
         </div>
-        <p class="regular_12pt">Выбор дизайна</p>
+
+        <p class="regular_12pt">Выбор дизайна</p><!-- @@## -->
 
         <select
           class="regular_14pt"
@@ -193,45 +195,78 @@
 
     </div>
 
-    <div id="buttons" class="section">
+    <div id="section_buttons" class="section">
 
-      <h1 class="header">Кнопки и другие активные элементы</h1>
+      <h1>Кнопки и другие активные элементы</h1>
 
-      <div class="button_checkbox">
-
-        <div>
+      <div class="section-inner">
+        <div class="subsection">
 
           <div class="button_headers subtitle">
             <div>Стандартное</div>
             <div>При наведении</div>
             <div>При нажатии</div>
-            <div>Не активная</div>
+            <div>Не активная</div>
           </div>
 
-          <div class="button_items add">
-            <button class="button_item active"><span class="plus">+</span>Добавить</button>
-            <button class="button_item guidance"><span class="plus">+</span>
-              <p class="hand">Добавить</p>
+          <div class="block"><!-- buttons add -->
+            <button class="button add">
+              <span class="icon">+</span>
+              <p class="button-name">Добавить</p>
             </button>
-            <button class="button_item pressing"><span class="plus">+</span>
-              <p class="hand">Добавить</p>
+            <button class="button add_hover">
+              <span class="icon">+</span>
+              <p class="button-name">Добавить</p>
             </button>
-            <button class="button_item not_active"><span class="plus">+</span>Добавить</button>
+            <button class="button add_pressing">
+              <span class="icon">+</span>
+              <p class="button-name">Добавить</p>
+            </button>
+            <button class="button add_disabled">
+              <span class="icon">+</span>
+              <p class="button-name">Добавить</p>
+            </button>
           </div>
 
-          <div class="button_items load">
-            <button class="button_item active"><span class="attach"></span>Загрузить</button>
-            <button class="button_item guidance"><span class="attach"></span>
-              <p class="hand">Загрузить</p>
+          <div class="block"><!-- buttons add -->
+            <!-- $$## -->
+            <button class="button add">
+              <span class="icon attach"></span>
+              <p class="button-name">Загрузить</p>
             </button>
-            <button class="button_item pressing"><span class="attach"></span>
-              <p class="hand">Загрузить</p>
+            <button class="button add_hover">
+              <span class="icon attach"></span>
+              <p class="button-name">Загрузить</p>
             </button>
-            <button class="button_item not_active"><span class="attach"></span>Загрузить</button>
+            <button class="button add_pressing">
+              <span class="icon attach"></span>
+              <p class="button-name">Загрузить</p>
+            </button>
+            <button class="button add_disabled">
+              <span class="icon attach"></span>
+              <p class="button-name">Загрузить</p>
+            </button>
           </div>
 
-          <div class="button_items cancel">
-            <button class="button_item active">Отмена</button>
+          <div class="block">
+            <button class="button cancel">
+              <p class="button-name">Отмена</p>
+            </button>
+            <button class="button cancel_add">
+              <p class="button-name">Отмена</p>
+            </button>
+            <button class="button cancel_pressing">
+              <p class="button-name">Отмена</p>
+            </button>
+            <button class="button cancel_active">
+              <p class="button-name">Отмена</p>
+            </button>
+          </div>
+
+          <div class="block cancel_v2">
+            <button class="button_item active">
+              Отмена
+            </button>
             <button class="button_item guidance">
               <p class="hand">Отмена</p>
             </button>
@@ -241,19 +276,8 @@
             <button class="button_item not_active">Отмена</button>
           </div>
 
-          <div class="button_items cancel_v2">
-            <button class="button_item active">Отмена</button>
-            <button class="button_item guidance">
-              <p class="hand">Отмена</p>
-            </button>
-            <button class="button_item pressing">
-              <p class="hand">Отмена</p>
-            </button>
-            <button class="button_item not_active">Отмена</button>
-          </div>
-
-          <div class="button_items add">
-            <button class="button_item btn_small active"><span
+          <div class="block add">
+            <button class="button_item btn_small<!-- --> active"><span
                 class="plus">+</span>Добавить</button>
             <button class="button_item btn_small guidance"><span class="plus">+</span>
               <p class="hand">Добавить</p>
@@ -265,7 +289,7 @@
                 class="plus">+</span>Добавить</button>
           </div>
 
-          <div class="buttons_mini">
+          <div class="block">
             <div class="button_mini">
               <div class="button_items add btns_mini">
                 <button class="button_item btn_mini active"><span
@@ -308,26 +332,26 @@
 
         </div>
 
-        <div class="elements">
+        <div class="subsection">
 
-          <div class="element">
+          <div class="block-wrapper">
 
             <div class="subtitle">Checkbox</div>
 
             <div class="element_checkbox">
-              <div class="element_item">
-                <input class="checkbox checked_no" type="checkbox">
-                <input class="checkbox checked_yes" type="checkbox" checked>
-                <input class="checkbox checked_two" type="checkbox" checked>
-                <input class="checkbox checked_light" type="checkbox" checked>
-                <input class="checkbox checked_green" type="checkbox" checked>
-                <input class="checkbox checked_alert" type="checkbox" checked>
-              </div>
+              <!-- <div class="element_item"> $$## желательно не делать 2 дива на одном ур-не -->
+                <input class="checkbox" type="checkbox">
+                <input class="checkbox" type="checkbox" checked>
+                <input class="checkbox checkbox_two" type="checkbox" checked>
+                <input class="checkbox checkbox_fade" type="checkbox" checked>
+                <input class="checkbox checkbox_good" type="checkbox" checked>
+                <input class="checkbox checkbox_alert" type="checkbox" checked>
+              <!-- </div> -->
             </div>
 
           </div>
 
-          <div class="element">
+          <div class="block">
 
             <div class="subtitle">Radio</div>
 
@@ -341,18 +365,18 @@
 
           </div>
 
-          <div class="element">
+          <div class="block">
 
             <div class="subtitle">Статусы элементов</div>
             <div class="element_button">
-                <button class="states active">Активен</button>
-                <button class="states not_active">Не активен</button>
-                <button class="states off">Отключён</button>
+                <button class="status active">Активен</button>
+                <button class="status not-active">Не активен</button>
+                <button class="status off">Отключён</button>
             </div>
 
           </div>
 
-          <div class="element">
+          <div class="block">
 
             <div class="subtitle">Switcher</div>
 
@@ -364,10 +388,10 @@
                     <input class="switcher active" type="checkbox" checked />
                   </div>
                   <div class="switch_item">
-                    <input class="switcher no_active" type="checkbox" />
+                    <input class="switcher not-active" type="checkbox" />
                   </div>
                   <div class="switch_item">
-                    <input class="switcher active_light" type="checkbox" checked />
+                    <input class="switcher active-light" type="checkbox" checked />
                   </div>
                   <div class="switch_item">
                     <input class="switcher no_active_light" type="checkbox" />
@@ -392,14 +416,16 @@
         <div class="avatar_item">
 
           <div class="subtitle">Аватар пользователя</div>
-          <p class="regular_14pt">104 x 104</p>
+          <p class="sub2title">104 x 104</p><!-- $$## переделаь на H1..H6 -->
 
-          <div class="fotos">
-            <div class="foto avatar">
+          <div class="block-avatars"><!-- @@## вероятно не нужен class "block" -->
+            <div class="photo avatar avatar_edit"><!-- $$## foto -
+              т.к. ориентируемся не только на росс. рынок, то исп. только реальные англ. слова -->
+
             </div>
-            <div class="foto avatar_done">
+            <div class="oto avatar avatar_done">
             </div>
-            <div class="foto avatar_hover">
+            <div class="foto avatar avatar_done avatar_hover">
             </div>
           </div>
 
@@ -461,18 +487,18 @@
     <div id="tooltip" class="section">
       <h1 class="header">Тултипы</h1>
 
-      <div class="tooltipe">
+      <div class="tooltipe"><!-- $$## typo! -->
 
         <div class="subtitle">Только текст</div>
 
         <div class="tooltipe_items">
           <div class="tooltipe_item tooltip_up">
-            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
+            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
               основного контента на странице</span>
             <button class="tooltip_button">Кнопка</button>
           </div>
           <div class="tooltipe_item tooltip_up_right">
-            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
+            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
               основного контента на странице</span>
             <button class="tooltip_button">Кнопка</button>
           </div>
