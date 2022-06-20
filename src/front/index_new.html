@@ -11,25 +11,26 @@
 
 <body>
 
-  <div id="containerTotal">
+  <div id="fullContainer">
 
-    <div id="section_choise" class="section">
-      <div id="choise">
-        <h1>Библиотека компонентов</h1>
+    <div id="section_menu" class="section">
+      <div id="menuWrapper">
+        <h2>Библиотека компонентов</h2>
         <nav id="menu">
-          <a class="link" href="#colors">Цвета</a>
-          <a class="link" href="#fonts">Типографика</a>
-          <a class="link" href="#buttons">Активные элементы</a>
-          <a class="link" href="#avatar">Аватары пользователей</a>
-          <a class="link" href="#preloader">Прелоадеры</a>
-          <a class="link" href="#tooltip">Тултипы</a>
-          <a class="link" href="#pagination">Пагинация</a>
-          <a class="link" href="#accordion">Меню акордеон</a>
-          <a class="link" href="#images">Изображения</a>
-          <a class="link" href="#forms">Ввод данных</a>
-          <a class="link" href="#side">Боковое меню</a>
-          <a class="link" href="#up">Верхнее меню</a>
-          <a class="link" href="#icons">Иконки</a>
+          <a class="menuLink" href="#section_color">Цвета</a>
+          <a class="menuLink" href="#section_text">Типографика</a>
+          <a class="menuLink" href="#section_buttons">Активные элементы</a>
+          <a class="menuLink" href="#section_avatar">Аватары пользователей</a>
+          <a class="menuLink" href="#section_preloader">Прелоадеры</a>
+          <a class="menuLink" href="#section_tooltipe">Тултипы</a>
+          <a class="menuLink" href="#section_pagination">Пагинация</a>
+          <a class="menuLink" href="#section_accordion">Меню акордеон</a>
+          <a class="menuLink" href="#section_images">Изображения</a>
+          <a class="menuLink" href="#section_forms">Ввод данных</a>
+          <a class="menuLink" href="#section_side">Боковое меню</a>
+          <a class="menuLink" href="#section_up">Верхнее меню</a>
+          <a class="menuLink" href="#section_icons">Иконки</a>
+          <a class="menuLink" href="#section_popup">Попап</a>
         </nav>
       </div>
 
@@ -37,14 +38,13 @@
         <p class="regular_12pt">Дневная тема</p>
         <div class="theme_switcher">
           <label class="switch">
-            <input type="checkbox"/>
+            <input type="checkbox" />
             <div class="theme_slider"></div>
           </label>
         </div>
         <p class="regular_12pt">Выбор дизайна</p>
 
-        <select
-          class="regular_14pt"
+        <select class="regular_14pt"
           onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + '.css'">
           <option value="1">Тема 1</option>
           <option value="2">Тема 2</option>
@@ -56,9 +56,9 @@
       </div>
     </div>
 
-    <div id="section_color colors" class="section common_color">
+    <div id="section_color" class="section common_color">
 
-      <h1 class="header">Цвета</h1>
+      <h1>Цвета</h1>
 
       <p>Основные цвета</p>
 
@@ -85,7 +85,7 @@
         </div>
       </div>
 
-      <p >Акцентные цвета</p>
+      <p>Акцентные цвета</p>
 
       <div class="color_items">
         <div>
@@ -148,9 +148,9 @@
       </div>
     </div>
 
-    <div id="section_text fonts" class="section common_color">
+    <div id="section_text" class="section common_color">
 
-      <h1 class="header">Типографика</h1>
+      <h1>Типографика</h1>
 
       <div class="text">
 
@@ -193,11 +193,11 @@
 
     </div>
 
-    <div id="buttons" class="section">
+    <div id="section_buttons" class="section">
 
-      <h1 class="header">Кнопки и другие активные элементы</h1>
+      <h1>Кнопки и другие активные элементы</h1>
 
-      <div class="button_checkbox">
+      <div class="section-inner">
 
         <div>
 
@@ -208,99 +208,86 @@
             <div>Не активная</div>
           </div>
 
-          <div class="button_items add">
-            <button class="button_item active"><span class="plus">+</span>Добавить</button>
-            <button class="button_item guidance"><span class="plus">+</span>
-              <p class="hand">Добавить</p>
+          <div class="button_items">
+            <button class="button add_active"><span class="icon_plus">+</span>Добавить</button>
+            <button class="button add_guidance"><span class="icon_plus">+</span>
+              <p class="icon_hand">Добавить</p>
             </button>
-            <button class="button_item pressing"><span class="plus">+</span>
-              <p class="hand">Добавить</p>
+            <button class="button add_pressing"><span class="icon_plus">+</span>
+              <p class="icon_hand">Добавить</p>
             </button>
-            <button class="button_item not_active"><span class="plus">+</span>Добавить</button>
+            <button class="button add_disabled"><span class="icon_plus">+</span>Добавить</button>
           </div>
 
-          <div class="button_items load">
-            <button class="button_item active"><span class="attach"></span>Загрузить</button>
-            <button class="button_item guidance"><span class="attach"></span>
-              <p class="hand">Загрузить</p>
+          <div class="button_items">
+            <button class="button load_active"><span class="attach"></span>Загрузить</button>
+            <button class="button load_guidance"><span class="attach"></span>
+              <p class="icon_hand">Загрузить</p>
             </button>
-            <button class="button_item pressing"><span class="attach"></span>
-              <p class="hand">Загрузить</p>
+            <button class="button load_pressing"><span class="attach"></span>
+              <p class="icon_hand">Загрузить</p>
             </button>
-            <button class="button_item not_active"><span class="attach"></span>Загрузить</button>
+            <button class="button load_disabled"><span class="attach"></span>Загрузить</button>
           </div>
 
-          <div class="button_items cancel">
-            <button class="button_item active">Отмена</button>
-            <button class="button_item guidance">
-              <p class="hand">Отмена</p>
+          <div class="button_items">
+            <button class="button cancel_active button_border">Отмена</button>
+            <button class="button cancel_guidance button_border">
+              <p class="icon_hand">Отмена</p>
             </button>
-            <button class="button_item pressing">
-              <p class="hand">Отмена</p>
+            <button class="button cancel_pressing button_border">
+              <p class="icon_hand">Отмена</p>
             </button>
-            <button class="button_item not_active">Отмена</button>
+            <button class="button cancel_disabled button_border">Отмена</button>
           </div>
 
-          <div class="button_items cancel_v2">
-            <button class="button_item active">Отмена</button>
-            <button class="button_item guidance">
-              <p class="hand">Отмена</p>
+          <div class="button_items">
+            <button class="button cancel_active">Отмена</button>
+            <button class="button cancel_guidance">
+              <p class="icon_hand">Отмена</p>
             </button>
-            <button class="button_item pressing">
-              <p class="hand">Отмена</p>
+            <button class="button cancel_pressing">
+              <p class="icon_hand">Отмена</p>
             </button>
-            <button class="button_item not_active">Отмена</button>
+            <button class="button cancel_disabled">Отмена</button>
           </div>
 
-          <div class="button_items add">
-            <button class="button_item btn_small active"><span
-                class="plus">+</span>Добавить</button>
-            <button class="button_item btn_small guidance"><span class="plus">+</span>
-              <p class="hand">Добавить</p>
+          <div class="button_items">
+            <button class="button btn_small add_active"><span class="icon_plus">+</span>Добавить</button>
+            <button class="button btn_small add_guidance"><span class="icon_plus">+</span>
+              <p class="icon_hand">Добавить</p>
             </button>
-            <button class="button_item btn_small pressing"><span class="plus">+</span>
-              <p class="hand">Добавить</p>
+            <button class="button btn_small add_pressing"><span class="icon_plus">+</span>
+              <p class="icon_hand">Добавить</p>
             </button>
-            <button class="button_item btn_small not_active"><span
-                class="plus">+</span>Добавить</button>
+            <button class="button btn_small add_disabled"><span class="icon_plus">+</span>Добавить</button>
           </div>
 
           <div class="buttons_mini">
             <div class="button_mini">
-              <div class="button_items add btns_mini">
-                <button class="button_item btn_mini active"><span
-                    class="icon_save"></span></button>
-                <button class="button_item btn_mini guidance"><span
-                    class="icon_save hand"></span></button>
-                <button class="button_item btn_mini pressing"><span
-                    class="icon_save hand"></span></button>
-                <button class="button_item btn_mini not_active"><span
-                    class="icon_save"></span></button>
+              <div class="button_items btns_mini">
+                <button class="button btn_mini add_active"><span class="icon_save"></span></button>
+                <button class="button btn_mini add_guidance"><span class="icon_save icon_hand"></span></button>
+                <button class="button btn_mini add_pressing"><span class="icon_save icon_hand"></span></button>
+                <button class="button btn_mini add_disabled"><span class="icon_save"></span></button>
               </div>
 
-              <div class="button_items add btns_mini">
-                <button class="button_item btn_mini active"><span
-                    class="icon_exit"></span></button>
-                <button class="button_item btn_mini guidance"><span
-                    class="icon_exit hand"></span></button>
-                <button class="button_item btn_mini pressing"><span
-                    class="icon_exit hand"></span></button>
-                <button class="button_item btn_mini not_active"><span
-                    class="icon_exit"></span></button>
+              <div class="button_items btns_mini">
+                <button class="button btn_mini add_active"><span class="icon_exit"></span></button>
+                <button class="button btn_mini add_guidance"><span class="icon_exit icon_hand"></span></button>
+                <button class="button btn_mini add_pressing"><span class="icon_exit icon_hand"></span></button>
+                <button class="button btn_mini add_disabled"><span class="icon_exit"></span></button>
               </div>
             </div>
 
             <div class="button_mini">
               <div class="button_options">
                 <div class="subtitle">Варианты кнопок</div>
-                <div class="add btns_opt">
-                  <button class="button_item back active"><span
-                      class="icon_back"></span>Назад</button>
-                  <button class="button_item back_second active"><span
-                      class="icon_back"></span>Назад</button>
-                  <button class="button_item exit active"><span
-                      class="icon_exit"></span>Выход</button>
-                  <button class="button_item exit_second active">Выход</button>
+                <div class="btns_opt">
+                  <button class="button back add_active"><span class="icon_back"></span>Назад</button>
+                  <button class="button back_second add_active"><span class="icon_back"></span>Назад</button>
+                  <button class="button exit add_active"><span class="icon_exit"></span>Выход</button>
+                  <button class="button exit_second add_active">Выход</button>
                 </div>
               </div>
             </div>
@@ -308,73 +295,67 @@
 
         </div>
 
-        <div class="elements">
+        <div class="subsection">
 
-          <div class="element">
+          <div class="blockWrapper">
 
             <div class="subtitle">Checkbox</div>
 
-            <div class="element_checkbox">
-              <div class="element_item">
-                <input class="checkbox checked_no" type="checkbox">
-                <input class="checkbox checked_yes" type="checkbox" checked>
-                <input class="checkbox checked_two" type="checkbox" checked>
-                <input class="checkbox checked_light" type="checkbox" checked>
-                <input class="checkbox checked_green" type="checkbox" checked>
-                <input class="checkbox checked_alert" type="checkbox" checked>
-              </div>
+            <div class="border element_item">
+                <input class="checkbox checkbox_unmarked" type="checkbox">
+                <input class="checkbox checkbox_marked" type="checkbox" checked>
+                <input class="checkbox checkbox_two" type="checkbox" checked>
+                <input class="checkbox checkbox_light" type="checkbox" checked>
+                <input class="checkbox checkbox_green" type="checkbox" checked>
+                <input class="checkbox checkbox_alert" type="checkbox" checked>
             </div>
 
           </div>
 
-          <div class="element">
+          <div class="blockWrapper">
 
             <div class="subtitle">Radio</div>
 
-            <div class="element_radio">
-              <div class="element_item">
-                <input class="radio radio_no" type="radio">
-                <input class="radio radio_yes" type="radio" checked>
+            <div class="border element_item">
+                <input class="radio radio_unmarked" type="radio">
+                <input class="radio radio_marked" type="radio" checked>
                 <input class="radio radio_alert" type="radio" checked>
-              </div>
             </div>
 
           </div>
 
-          <div class="element">
+          <div class="blockWrapper">
 
             <div class="subtitle">Статусы элементов</div>
-            <div class="element_button">
-                <button class="states active">Активен</button>
-                <button class="states not_active">Не активен</button>
-                <button class="states off">Отключён</button>
+            <div class="border element_button">
+              <button class="status active">Активен</button>
+              <button class="status disabled">Не активен</button>
+              <button class="status off">Отключён</button>
             </div>
 
           </div>
 
-          <div class="element">
+          <div class="blockWrapper">
 
             <div class="subtitle">Switcher</div>
 
-            <div class="element_switcher">
-
-              <div class="element_item">
+              <div class="border element_item">
                 <div class="switch_items">
                   <div class="switch_item">
                     <input class="switcher active" type="checkbox" checked />
                   </div>
                   <div class="switch_item">
-                    <input class="switcher no_active" type="checkbox" />
+                    <input class="switcher disabled" type="checkbox" />
                   </div>
                   <div class="switch_item">
-                    <input class="switcher active_light" type="checkbox" checked />
+                    <input class="switcher activeLight" type="checkbox" checked />
                   </div>
                   <div class="switch_item">
-                    <input class="switcher no_active_light" type="checkbox" />
+                    <input class="switcher disabledLight" type="checkbox" />
                   </div>
                 </div>
               </div>
-            </div>
+
 
           </div>
 
@@ -384,8 +365,8 @@
 
     </div>
 
-    <div id="avatar" class="section">
-      <h1 class="header">Аватары пользователей</h1>
+    <div id="section_avatar" class="section">
+      <h1>Аватары пользователей</h1>
 
       <div class="avatars">
 
@@ -394,12 +375,12 @@
           <div class="subtitle">Аватар пользователя</div>
           <p class="regular_14pt">104 x 104</p>
 
-          <div class="fotos">
-            <div class="foto avatar">
+          <div class="blockAvatars">
+            <div class="photo avatar_edit">
             </div>
-            <div class="foto avatar_done">
+            <div class="photo avatar_done">
             </div>
-            <div class="foto avatar_hover">
+            <div class="photo avatar_hover">
             </div>
           </div>
 
@@ -410,10 +391,10 @@
           <div class="subtitle">Аватар пользователя<br> на боковой панели</div>
           <p class="regular_14pt">46 x 46</p>
 
-          <div class="fotos">
-            <div class="foto profile">
+          <div class="blockAvatars">
+            <div class="photo profile">
             </div>
-            <div class="foto profile_active">
+            <div class="photo profile_active">
             </div>
           </div>
 
@@ -424,7 +405,7 @@
           <div class="subtitle">Связанный аватар<br> пользователя</div>
           <p class="regular_14pt">24 x 24</p>
 
-          <div class="fotos">
+          <div class="blockAvatars">
             <div class="mini_avatar">
             </div>
           </div>
@@ -434,8 +415,8 @@
       </div>
     </div>
 
-    <div id="preloader" class="section">
-      <h1 class="header">Прелоадеры</h1>
+    <div id="section_preloader" class="section">
+      <h1>Прелоадеры</h1>
 
       <div class="preloaders">
         <div>
@@ -458,40 +439,42 @@
       </div>
     </div>
 
-    <div id="tooltip" class="section">
-      <h1 class="header">Тултипы</h1>
+    <div id="section_tooltipe" class="section">
+      <h1>Тултипы</h1>
 
       <div class="tooltipe">
 
         <div class="subtitle">Только текст</div>
 
         <div class="tooltipe_items">
-          <div class="tooltipe_item tooltip_up">
-            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
+          <div class="tooltipe_item tooltipe_up">
+            <span class="tooltipe_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
               основного контента на странице</span>
-            <button class="tooltip_button">Кнопка</button>
+            <button class="tooltipe_button">Кнопка</button>
           </div>
-          <div class="tooltipe_item tooltip_up_right">
-            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
+          <div class="tooltipe_item tooltipe_up_right">
+            <span class="tooltipe_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
               основного контента на странице</span>
-            <button class="tooltip_button">Кнопка</button>
+            <button class="tooltipe_button">Кнопка</button>
           </div>
-          <div class="tooltipe_item tooltip_bottom">
-            <button class="tooltip_button">Кнопка</button>
-            <span class="tooltip_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
+          <div class="tooltipe_item tooltipe_bottom">
+            <button class="tooltipe_button">Кнопка</button>
+            <span class="tooltipe_text">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
               основного контента на странице</span>
           </div>
           <div class="tooltipe_item side">
             <div>
-              <div class="tooltip_right">
-                <button class="tooltip_button">Кнопка</button>
-                <span class="tooltip_text text_mini">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх
+              <div class="tooltipe_right">
+                <button class="tooltipe_button">Кнопка</button>
+                <span class="tooltipe_text text_mini">Всплывающая подсказка с текстовым <br /> наполнением, показывается
+                  поверх
                   <br /> основного контента на странице</span>
               </div>
-              <div class="tooltip_left">
-                <span class="tooltip_text text_mini">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх
+              <div class="tooltipe_left">
+                <span class="tooltipe_text text_mini">Всплывающая подсказка с текстовым <br /> наполнением, показывается
+                  поверх
                   <br /> основного контента на странице</span>
-                <button class="tooltip_button">Кнопка</button>
+                <button class="tooltipe_button">Кнопка</button>
               </div>
 
             </div>
@@ -502,34 +485,35 @@
         <div class="subtitle">Текст с заголовком</div>
 
         <div class="tooltipe_items text_with_heading">
-          <div class="tooltipe_item tooltip_up">
-            <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
+          <div class="tooltipe_item tooltipe_up">
+            <span class="tooltipe_text"><span class="tooltipe_header">Заголовок</span><br />Всплывающая подсказка
               с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
-            <button class="tooltip_button">Кнопка</button>
+            <button class="tooltipe_button">Кнопка</button>
           </div>
-          <div class="tooltipe_item tooltip_up_right">
-            <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
+          <div class="tooltipe_item tooltipe_up_right">
+            <span class="tooltipe_text"><span class="tooltipe_header">Заголовок</span><br />Всплывающая подсказка
               с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
-            <button class="tooltip_button">Кнопка</button>
+            <button class="tooltipe_button">Кнопка</button>
           </div>
-          <div class="tooltipe_item tooltip_bottom">
-            <button class="tooltip_button">Кнопка</button>
-            <span class="tooltip_text"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
+          <div class="tooltipe_item tooltipe_bottom">
+            <button class="tooltipe_button">Кнопка</button>
+            <span class="tooltipe_text"><span class="tooltipe_header">Заголовок</span><br />Всплывающая подсказка
               с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
           </div>
           <div class="tooltipe_item side">
             <div>
-              <div class="tooltip_right">
-                <button class="tooltip_button">Кнопка</button>
-                <span class="tooltip_text text_mini"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
+              <div class="tooltipe_right">
+                <button class="tooltipe_button">Кнопка</button>
+                <span class="tooltipe_text text_mini"><span class="tooltipe_header">Заголовок</span><br />Всплывающая
+                  подсказка
                   с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
               </div>
-              <div class="tooltip_left">
-                <span class="tooltip_text text_mini">
-                  <div class="tooltip_header">Заголовок</div><br />Всплывающая подсказка с текстовым <br /> наполнением,
+              <div class="tooltipe_left">
+                <span class="tooltipe_text text_mini">
+                  <div class="tooltipe_header">Заголовок</div><br />Всплывающая подсказка с текстовым <br /> наполнением,
                   показывается поверх <br /> основного контента на странице
                 </span>
-                <button class="tooltip_button">Кнопка</button>
+                <button class="tooltipe_button">Кнопка</button>
               </div>
 
             </div>
@@ -541,9 +525,12 @@
 
         <div class="tooltipe_items text_button">
 
-          <div class="tooltipe_item tooltip_up_right">
-            <div class="tooltip_text"><span class="tooltip_header">Заголовок</span><p class="tip_text">Всплывающая подсказка с текстовым
-              <br /> наполнением, показывается поверх <br /> основного контента на странице</p></div>
+          <div class="tooltipe_item tooltipe_up_right">
+            <div class="tooltipe_text"><span class="tooltipe_header">Заголовок</span>
+              <p class="tip_text">Всплывающая подсказка с текстовым
+                <br /> наполнением, показывается поверх <br /> основного контента на странице
+              </p>
+            </div>
             <button class="button_accept">Принять</button>
             <button class="button_cancel">Отмена</button>
 
@@ -556,7 +543,7 @@
           </div>
 
 
-          <div class="tooltipe_item tooltip_right">
+          <div class="tooltipe_item tooltipe_right">
 
             <div class="text_field">
               <div class="regular_14pt">Текстовое поле</div>
@@ -565,8 +552,11 @@
               </div>
             </div>
 
-            <div class="tooltip_text"><span class="tooltip_header">Заголовок</span><p class="tip_text">Всплывающая подсказка с текстовым
-              <br /> наполнением, показывается поверх <br /> основного контента на странице</p></div>
+            <div class="tooltipe_text"><span class="tooltipe_header">Заголовок</span>
+              <p class="tip_text">Всплывающая подсказка с текстовым
+                <br /> наполнением, показывается поверх <br /> основного контента на странице
+              </p>
+            </div>
             <button class="button_accept">Принять</button>
             <button class="button_cancel">Отмена</button>
 
@@ -575,8 +565,8 @@
       </div>
     </div>
 
-    <div id="pagination" class="section">
-      <h1 class="header">Пагинация</h1>
+    <div id="section_pagination" class="section">
+      <h1>Пагинация</h1>
 
       <div>
         <div>
@@ -599,8 +589,8 @@
 
     </div>
 
-    <div id="accordion" class="section">
-      <h1 class="header">Меню акордеон</h1>
+    <div id="section_accordion" class="section">
+      <h1>Меню акордеон</h1>
 
       <div class="subtitle">Вертикальное меню</div>
 
@@ -654,41 +644,41 @@
               <input class="accordion_checkbox" type="checkbox" checked>
             </div>
           </div>
-            <div class="subpoint regular_12pt">
-              <div>
-                Подпункт меню 1
-              </div>
-              <div>
-                +
-              </div>
+          <div class="subpoint regular_12pt">
+            <div>
+              Подпункт меню 1
             </div>
+            <div>
+              +
+            </div>
+          </div>
 
-            <div class="subpoint regular_12pt">
-              <div>
-                Подпункт меню 2
-              </div>
-              <div>
-                +
-              </div>
+          <div class="subpoint regular_12pt">
+            <div>
+              Подпункт меню 2
             </div>
+            <div>
+              +
+            </div>
+          </div>
 
-            <div class="subpoint regular_12pt">
-              <div>
-                Подпункт меню 3
-              </div>
-              <div>
-                +
-              </div>
+          <div class="subpoint regular_12pt">
+            <div>
+              Подпункт меню 3
             </div>
+            <div>
+              +
+            </div>
+          </div>
 
         </div>
       </div>
 
-      <button class="button_item btn_exit add accordion_button">Выход</button>
+      <button class="button btn_exit accordion_button">Выход</button>
     </div>
 
-    <div id="images" class="section">
-      <h1 class="header">Изображения</h1>
+    <div id="section_images" class="section">
+      <h1>Изображения</h1>
 
       <div class="images">
 
@@ -704,8 +694,8 @@
       </div>
     </div>
 
-    <div id="forms">
-      <h1 class="header">Поля ввода</h1>
+    <div id="section_forms">
+      <h1>Поля ввода</h1>
 
       <div>
         <div>
@@ -733,26 +723,11 @@
                   Вспомогательный текст
                 </div>
                 <div class="__select__content">
-                  <input
-                  id="singleSelect1"
-                  class="__select__input"
-                  type="radio"
-                  name="singleSelect"
-                />
-                <label for="singleSelect1" class="__select__label">Вспомогательный текст</label>
-                  <input
-                    id="singleSelect2"
-                    class="__select__input"
-                    type="radio"
-                    name="singleSelect"
-                  />
+                  <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect1" class="__select__label">Вспомогательный текст</label>
+                  <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect2" class="__select__label">Вспомогательный текст #2</label>
-                  <input
-                    id="singleSelect3"
-                    class="__select__input"
-                    type="radio"
-                    name="singleSelect"
-                  />
+                  <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect3" class="__select__label">Вспомогательный текст #3</label>
                 </div>
               </div>
@@ -762,26 +737,11 @@
                   Вспомогательный текст
                 </div>
                 <div class="__select__content content_standart">
-                  <input
-                  id="singleSelect4"
-                  class="__select__input"
-                  type="radio"
-                  name="singleSelect"
-                />
-                <label for="singleSelect4" class="__select__label">Вспомогательный текст</label>
-                  <input
-                    id="singleSelect5"
-                    class="__select__input"
-                    type="radio"
-                    name="singleSelect"
-                  />
+                  <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect4" class="__select__label">Вспомогательный текст</label>
+                  <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect5" class="__select__label">Вспомогательный текст #2</label>
-                  <input
-                    id="singleSelect6"
-                    class="__select__input"
-                    type="radio"
-                    name="singleSelect"
-                  />
+                  <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect6" class="__select__label">Вспомогательный текст #3</label>
                 </div>
               </div>
@@ -791,26 +751,11 @@
                   Вспомогательный текст
                 </div>
                 <div class="__select__content content_standart">
-                  <input
-                  id="singleSelect7"
-                  class="__select__input"
-                  type="radio"
-                  name="singleSelect"
-                />
-                <label for="singleSelect7" class="__select__label label_editing">Вспомогательный текст</label>
-                  <input
-                    id="singleSelect8"
-                    class="__select__input"
-                    type="radio"
-                    name="singleSelect"
-                  />
+                  <input id="singleSelect7" class="__select__input" type="radio" name="singleSelect" />
+                  <label for="singleSelect7" class="__select__label label_editing">Вспомогательный текст</label>
+                  <input id="singleSelect8" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect8" class="__select__label label_editing">Вспомогательный текст #2</label>
-                  <input
-                    id="singleSelect9"
-                    class="__select__input"
-                    type="radio"
-                    name="singleSelect"
-                  />
+                  <input id="singleSelect9" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect9" class="__select__label label_editing">Вспомогательный текст #3</label>
                 </div>
               </div>
@@ -832,7 +777,7 @@
 
     <div id="section_calendar" class="regular_14pt">
       <div>
-        <h1 class="header">Календарь</h1>
+        <h1>Календарь</h1>
         <div class="calendar">
           <div class="calendar_item">
             <div class="calendar_day"></div>
@@ -844,7 +789,7 @@
       </div>
 
       <div>
-        <h1 class="header">Выпадающий список</h1>
+        <h1>Выпадающий список</h1>
         <div class="slct">
           <div class="slct_items">
 
@@ -895,7 +840,7 @@
       </div>
 
       <div>
-        <h1 class="header">Поля для поиска и фильтрации</h1>
+        <h1>Поля для поиска и фильтрации</h1>
         <div class="srch_items">
           <div class="srch_item border">
             <div class="srch_no">
@@ -925,7 +870,7 @@
     </div>
 
     <div id="section_input">
-      <h1 class="header">Поля ввода с названием сверху поля</h1>
+      <h1>Поля ввода с названием сверху поля</h1>
 
       <div>
         <div>
@@ -1045,7 +990,7 @@
     </div>
 
     <div id="section_slider">
-      <h1 class="header">Слайдер</h1>
+      <h1>Слайдер</h1>
 
       <div class="slider_names">
         <div class="subtitle slider_status">Стандартное</div>
@@ -1055,8 +1000,8 @@
       <div class="slider_items border">
         <div class="slider_item">
           <div class="slider_name">Название параметра</div>
-            <input type="range" min="1" max="100" value="50" class="slider slider_standart">
-          </div>
+          <input type="range" min="1" max="100" value="50" class="slider slider_standart">
+        </div>
         <div class="slider_item">
           <div class="slider_name">Название параметра</div>
           <input type="range" min="1" max="100" value="50" class="slider slider_active">
@@ -1070,7 +1015,7 @@
     </div>
 
     <div class="section">
-      <h1 class="header">Комбобокс</h1>
+      <h1>Комбобокс</h1>
 
       <div>
         <div>
@@ -1184,8 +1129,8 @@
       </div>
     </div>
 
-    <div id="side" class="section">
-      <h1 class="header">Боковое меню</h1>
+    <div id="section_side" class="section">
+      <h1>Боковое меню</h1>
 
       <div class="sidebar">
         <div class="sidebar_items">
@@ -1197,7 +1142,7 @@
             </div>
 
             <div class="sidebar_information">
-              <div class="foto profile"></div>
+              <div class="photo profile"></div>
               <div>
                 <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
@@ -1243,7 +1188,7 @@
             </div>
 
             <div class="sidebar_information">
-              <div class="foto profile"></div>
+              <div class="photo profile"></div>
               <div>
                 <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
@@ -1290,7 +1235,7 @@
             </div>
 
             <div class="sidebar_information">
-              <div class="foto profile"></div>
+              <div class="photo profile"></div>
               <div>
                 <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
@@ -1344,7 +1289,7 @@
             </div>
 
             <div class="sidebar_information">
-              <div class="foto profile"></div>
+              <div class="photo profile"></div>
               <div>
                 <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
@@ -1389,7 +1334,7 @@
             </div>
 
             <div class="sidebar_information">
-              <div class="foto profile"></div>
+              <div class="photo profile"></div>
               <div>
                 <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
                 <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
@@ -1425,8 +1370,8 @@
       </div>
     </div>
 
-    <div id="up" class="section">
-      <h1 class="header">Верхнее меню (шапка)</h1>
+    <div id="section_up" class="section">
+      <h1>Верхнее меню (шапка)</h1>
 
       <div class="header_items">
         <div class="srch_no">
@@ -1439,8 +1384,8 @@
       </div>
     </div>
 
-    <div id="icons" class="section">
-      <h1 class="header">Иконки</h1>
+    <div id="section_icons" class="section">
+      <h1>Иконки</h1>
 
       <div class="icon_items">
         <div class="icon_active">
@@ -1500,19 +1445,20 @@
       </div>
     </div>
 
-    <div id="popup_section" class="section">
-      <h1 class="header">Попап</h1>
+    <div id="section_popup" class="section">
+      <h1>Попап</h1>
 
-        <button type="submit" class="button_item btn_small active popup_button">Вызвать попап</button>
+      <button type="submit" class="button btn_small active popup_button">Вызвать попап</button>
 
     </div>
 
     <div id="delete" class="popup">
       <div class="popup__container popup__container_delete">
         <div class="popup_section">
-          <h1 class="bold_20pt">Заголовок модального окна</h1>
+          <h2 class="bold_20pt">Заголовок модального окна</h2>
           <span class="popup__close-button"></span>
-          <p>Содержимое модального окна. Здесь может быть что угодно: текст, изображение, форма или таблица. Всё, что хочется вынести из контекста и показать поверх основной страницы.</p>
+          <p>Содержимое модального окна. Здесь может быть что угодно: текст, изображение, форма или таблица. Всё, что
+            хочется вынести из контекста и показать поверх основной страницы.</p>
           <button class="popup_cancel popup__close-button">Отмена</button>
           <button class="popup_accept popup__close-button">Понятно</button>
         </div>
