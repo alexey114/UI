@@ -18,29 +18,29 @@ input {
   margin: 0 auto;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.mtb_30{
+.mtb_30 {
   margin: 30px 0;
 }
 
-.items_center{
+.items_center {
   @include center;
 }
 
-.dark{
+.dark {
   color: $dark;
 }
 
-.gray_dark{
+.gray_dark {
   color: $gray_dark;
 }
 
 /* sidebar */
 
-.selectTheme{
+.selectTheme {
   text-align: center;
   margin: 20px;
 }
@@ -57,13 +57,13 @@ input {
   width: auto;
 }
 
-.foto.profile{
+.foto.profile {
   margin-right: 20px;
 }
 
 /* header */
 
-.content_right{
+.content_right {
   max-width: 2400px;
   display: flex;
   flex-wrap: wrap;
@@ -78,32 +78,33 @@ input {
 
 /* header */
 
-.header_items {
+.header_block {
   max-width: 2400px;
   width: 100%;
   background-color: $theme6_color6;
   margin-top: 0;
 
-  .srch_no{
+  .search_disabled {
 
-      @media (max-width: 600px) {
-          & input{
-            margin-left: 0px;
-            }
-
-            &::after{
-                left: 12.5px;
-            }
+    @media (max-width: 600px) {
+      & input {
+        margin-left: 0px;
       }
 
-      input {
-        @media (max-width: 870px) {
-          padding: 12px 50px 11px 38px;
-        }
-        @media (max-width: 660px) {
-          padding: 12px 0px 11px 38px;
-        }
+      &::after {
+        left: 12.5px;
       }
+    }
+
+    input {
+      @media (max-width: 870px) {
+        padding: 12px 50px 11px 38px;
+      }
+
+      @media (max-width: 660px) {
+        padding: 12px 0px 11px 38px;
+      }
+    }
   }
 
   @media (max-width: 600px) {
@@ -111,7 +112,7 @@ input {
     align-items: end;
     padding: 15px;
 
-    div{
+    div {
       margin-bottom: 5px;
       margin-right: 15px;
     }
@@ -120,16 +121,16 @@ input {
 
 .header_icon {
 
-    @media (max-width: 700px) {
-      &:first-child{
-        margin-right: 5px;
-      }
+  @media (max-width: 700px) {
+    &:first-child {
+      margin-right: 5px;
+    }
   }
 }
 
 /* box_menu */
 
-.box_menu{
+.box_menu {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -140,7 +141,7 @@ input {
   }
 }
 
-.box{
+.box {
   @include center;
   flex-wrap: wrap;
   justify-content: center;
@@ -151,33 +152,37 @@ input {
   margin-right: 24px;
 }
 
-.box_desktop{
+.box_desktop {
   @include center;
   @include img;
   background-image: url(./theme06/images/desktop_big.svg);
 }
-.box_portfolio{
+
+.box_portfolio {
   @include center;
   @include img;
   background-image: url(./theme06/images/portfolio_big.svg);
 }
-.box_folder{
+
+.box_folder {
   @include center;
   @include img;
   background-image: url(./theme06/images/folder_big.svg);
 }
-.box_graph{
+
+.box_graph {
   @include center;
   @include img;
   background-image: url(./theme06/images/graph_big.svg);
 }
-.box_settings{
+
+.box_settings {
   @include center;
   @include img;
   background-image: url(./theme06/images/settings_big.svg);
 }
 
-.box_text{
+.box_text {
   color: $theme6_color5;
   width: 100px;
   text-align: center;
@@ -188,17 +193,17 @@ input {
   font-style: normal;
 }
 
-.white_text{
+.white_text {
   color: $theme6_color6;
 }
 
-.background_blue{
+.background_blue {
   background-color: $theme6_color3;
 }
 
 /* table */
 
-.container_table{
+.container_table {
   max-width: 2400px;
   width: 100%;
   margin: 0 30px;
@@ -206,13 +211,13 @@ input {
   background-color: $theme6_color6;
 }
 
-.table{
+.table {
   width: 100%;
   font-weight: 400;
   color: $theme6_color5;
 
   & th,
-  & td{
+  & td {
     font-weight: 400;
     text-align: center;
     padding: 15px;
@@ -222,20 +227,21 @@ input {
     }
   }
 
-  & th{
+  & th {
     font-size: 14px;
   }
-  & td{
+
+  & td {
     font-size: 16px;
     border-top: solid 1px $theme6_color2;
   }
 }
 
-.sorting{
+.sorting {
   position: relative;
   cursor: pointer;
 
-  &:before{
+  &:before {
     content: '';
     position: absolute;
     width: 5px;
@@ -246,7 +252,7 @@ input {
     background-repeat: no-repeat;
   }
 
-  &:after{
+  &:after {
     content: '';
     position: absolute;
     width: 5px;
@@ -272,7 +278,7 @@ input {
 
 /* actions */
 
-.images{
+.images {
   @include center;
   min-width: 100px;
   justify-content: end;
@@ -284,37 +290,37 @@ input {
   background-repeat: no-repeat;
   padding-right: 20px;
 
-  &:last-child{
+  &:last-child {
     padding-right: 0px;
   }
 }
 
-.editing{
+.editing {
   background-image: url(./theme06/images/editing.svg);
   margin-top: -3px;
 }
 
-.close_table{
+.close_table {
   background-image: url(./theme06/images/close_table.svg);
 }
 
-.eye_blue{
+.eye_blue {
   background-image: url(./theme06/images/eye_blue.svg);
 }
 
 /* footer table */
 
-.footer_item{
+.footer_item {
   padding-right: 30px;
 
-  p{
+  p {
     padding-right: 8px;
   }
 
-  .img{
+  .img {
     padding-right: 12px;
 
-    &.editing{
+    &.editing {
       margin-top: 16px;
     }
   }

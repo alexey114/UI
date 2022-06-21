@@ -31,38 +31,38 @@ $font_size_base: 16px;
 $show_hand: none;
 $theme_display: none;
 
-$dark: $theme6_color4;        // #192A3E
+$dark: $theme6_color4; // #192A3E
 $dark_light: $theme6_color18; // #6A707E
 
-$gray: $theme6_color17;       // #90A0B7
+$gray: $theme6_color17; // #90A0B7
 $gray_light: $theme6_color15; // #F1F5FB
-$gray_dark:  $theme6_color1;  // #6C7293
+$gray_dark: $theme6_color1; // #6C7293
 
 
 /* Миксины */
 
-@mixin text($font-size, $line-height, $font-weight){
+@mixin text($font-size, $line-height, $font-weight) {
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
 }
 
-@mixin width($max-width, $width){
+@mixin width($max-width, $width) {
   max-width: $max-width;
   width: $width;
 }
 
-@mixin wrap{
+@mixin wrap {
   display: flex;
   flex-wrap: wrap;
 }
 
-@mixin center{
+@mixin center {
   display: flex;
   align-items: center;
 }
 
-@mixin img{
+@mixin img {
   margin-top: 0px;
   width: 40px;
   height: 40px;

@@ -28,7 +28,7 @@
           <a class="menuLink" href="#section_images">Изображения</a>
           <a class="menuLink" href="#section_forms">Ввод данных</a>
           <a class="menuLink" href="#section_side">Боковое меню</a>
-          <a class="menuLink" href="#section_up">Верхнее меню</a>
+          <a class="menuLink" href="#section_header">Верхнее меню</a>
           <a class="menuLink" href="#section_icons">Иконки</a>
           <a class="menuLink" href="#section_popup">Попап</a>
         </nav>
@@ -315,20 +315,20 @@
           <div class="blockWrapper">
             <div class="subtitle">Checkbox</div>
             <div class="border display_item">
-                <input class="checkbox checkbox_standart" type="checkbox">
-                <input class="checkbox checkbox_standart" type="checkbox" checked>
-                <input class="checkbox checkbox_two" type="checkbox" checked>
-                <input class="checkbox checkbox_light" type="checkbox" checked>
-                <input class="checkbox checkbox_green" type="checkbox" checked>
-                <input class="checkbox checkbox_alert" type="checkbox" checked>
+              <input class="checkbox checkbox_standart" type="checkbox">
+              <input class="checkbox checkbox_standart" type="checkbox" checked>
+              <input class="checkbox checkbox_two" type="checkbox" checked>
+              <input class="checkbox checkbox_light" type="checkbox" checked>
+              <input class="checkbox checkbox_green" type="checkbox" checked>
+              <input class="checkbox checkbox_alert" type="checkbox" checked>
             </div>
           </div>
           <div class="blockWrapper">
             <div class="subtitle">Radio</div>
             <div class="border display_item">
-                <input class="radio radio_standart" type="radio">
-                <input class="radio radio_standart" type="radio" checked>
-                <input class="radio radio_alert" type="radio" checked>
+              <input class="radio radio_standart" type="radio">
+              <input class="radio radio_standart" type="radio" checked>
+              <input class="radio radio_alert" type="radio" checked>
             </div>
 
           </div>
@@ -348,22 +348,22 @@
 
             <div class="subtitle">Switcher</div>
 
-              <div class="border display_item">
-                <div class="switch_items">
-                  <div class="switch_item">
-                    <input class="switcher active" type="checkbox" checked />
-                  </div>
-                  <div class="switch_item">
-                    <input class="switcher disabled" type="checkbox" />
-                  </div>
-                  <div class="switch_item">
-                    <input class="switcher activeLight" type="checkbox" checked />
-                  </div>
-                  <div class="switch_item">
-                    <input class="switcher disabledLight" type="checkbox" />
-                  </div>
+            <div class="border display_item">
+              <div class="switch_items">
+                <div class="switch_item">
+                  <input class="switcher active" type="checkbox" checked />
+                </div>
+                <div class="switch_item">
+                  <input class="switcher disabled" type="checkbox" />
+                </div>
+                <div class="switch_item">
+                  <input class="switcher activeLight" type="checkbox" checked />
+                </div>
+                <div class="switch_item">
+                  <input class="switcher disabledLight" type="checkbox" />
                 </div>
               </div>
+            </div>
 
 
           </div>
@@ -519,7 +519,8 @@
               </div>
               <div class="tooltipe_left">
                 <span class="tooltipe_text text_mini">
-                  <div class="tooltipe_header">Заголовок</div><br />Всплывающая подсказка с текстовым <br /> наполнением,
+                  <div class="tooltipe_header">Заголовок</div><br />Всплывающая подсказка с текстовым <br />
+                  наполнением,
                   показывается поверх <br /> основного контента на странице
                 </span>
                 <button class="tooltipe_button">Кнопка</button>
@@ -1029,7 +1030,7 @@
       <div>
         <div>
           <div class="combobox">
-            <div class="comboboxes">
+            <div class="combobox_title">
               <div class="subtitle combobox_status">Стандартное</div>
               <div class="subtitle combobox_status">Заполнен</div>
               <div class="subtitle combobox_status">При наведении</div>
@@ -1065,7 +1066,7 @@
               </div>
             </div>
           </div>
-          <div class="combobox_off">
+          <div class="combobox_disabled">
             <div class="subtitle">Отключён</div>
             <div class="combobox_blocks border">
               <div class="combobox_block">
@@ -1085,31 +1086,31 @@
 
         <div>
           <div>
-            <div class="comboboxes">
+            <div class="combobox_title">
               <div class="subtitle combobox_status">Стандартное</div>
               <div class="subtitle combobox_status">Заполнен</div>
               <div class="subtitle combobox_status">При наведении</div>
               <div class="subtitle combobox_status">При редактировании</div>
             </div>
             <div class="combobox_blocks border">
-              <div class="no_arrow">
+              <div class="combobox_standart">
                 <input class="input_field fieldNew combobox_input" type="text" value="Вспомогательный текст">
               </div>
-              <div class="no_arrow">
+              <div class="combobox_standart">
                 <input class="input_field fieldNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div class="point combobox_none">Пункт 1</div>
                 </div>
               </div>
-              <div class="no_arrow">
+              <div class="combobox_standart">
                 <input class="input_field fieldNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div class="point combobox_guidance combobox_none">Пункт 1</div>
                 </div>
               </div>
-              <div class="no_arrow">
+              <div class="combobox_standart">
                 <input class="input_field fieldNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
@@ -1118,14 +1119,14 @@
               </div>
             </div>
           </div>
-          <div class="combobox_off">
+          <div class="combobox_disabled">
             <div class="subtitle">Отключён</div>
             <div class="combobox_blocks border">
-              <div class="no_arrow">
+              <div class="combobox_standart">
                 <input class="input_field fieldNew combobox_input combobox_inactive" type="text"
                   value="Вспомогательный текст">
               </div>
-              <div class="no_arrow">
+              <div class="combobox_standart">
                 <input class="input_field fieldNew combobox_input combobox_inactive" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
@@ -1159,30 +1160,30 @@
             </div>
 
             <div class="sidebar_menu">
-              <div class="sidebar_icon desktop_active"></div>
+              <div class="icon desktop_active"></div>
               <div class="sidebar_point active">Рабочий стол</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_official"></div>
+              <div class="icon icon_official"></div>
               <div class="sidebar_point">Служебные</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_content"></div>
+              <div class="icon icon_content"></div>
               <div class="sidebar_point">Контент</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_control"></div>
+              <div class="icon icon_control"></div>
               <div class="sidebar_point">Управление сайтом</div>
             </div>
             <div class="sidebar_menu line_gray"></div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_settings"></div>
+              <div class="icon icon_settings"></div>
               <div class="sidebar_point">Настройки</div>
             </div>
           </div>
           <div class="sidebar_item">
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_logout"></div>
+              <div class="icon icon_logout"></div>
               <div class="sidebar_point">Выйти</div>
             </div>
           </div>
@@ -1205,11 +1206,11 @@
             </div>
 
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_desktop"></div>
+              <div class="icon icon_desktop"></div>
               <div class="sidebar_point">Рабочий стол</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon official_active"></div>
+              <div class="icon official_active"></div>
               <div class="sidebar_point active">Служебные</div>
             </div>
             <div class="menu_elements medium_12pt">
@@ -1220,16 +1221,16 @@
               </ul>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_content"></div>
+              <div class="icon icon_content"></div>
               <div class="sidebar_point">Контент</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_control"></div>
+              <div class="icon icon_control"></div>
               <div class="sidebar_point">Управление сайтом</div>
             </div>
             <div class="sidebar_menu line_gray"></div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_settings"></div>
+              <div class="icon icon_settings"></div>
               <div class="sidebar_point">Настройки</div>
             </div>
           </div>
@@ -1252,15 +1253,15 @@
             </div>
 
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_desktop"></div>
+              <div class="icon icon_desktop"></div>
               <div class="sidebar_point">Рабочий стол</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_official"></div>
+              <div class="icon icon_official"></div>
               <div class="sidebar_point">Служебные</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon content_active"></div>
+              <div class="icon content_active"></div>
               <div class="sidebar_point active">Контент</div>
             </div>
             <div class="menu_elements medium_12pt">
@@ -1270,12 +1271,12 @@
               </ul>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_control"></div>
+              <div class="icon icon_control"></div>
               <div class="sidebar_point">Управление сайтом</div>
             </div>
             <div class="sidebar_menu line_gray"></div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_logout"></div>
+              <div class="icon icon_logout"></div>
               <div class="sidebar_point">Выйти</div>
             </div>
 
@@ -1283,7 +1284,7 @@
           <div class="sidebar_item">
 
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_settings"></div>
+              <div class="icon icon_settings"></div>
               <div class="sidebar_point">Настройки</div>
             </div>
           </div>
@@ -1306,19 +1307,19 @@
             </div>
 
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_desktop"></div>
+              <div class="icon icon_desktop"></div>
               <div class="sidebar_point">Рабочий стол</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_official"></div>
+              <div class="icon icon_official"></div>
               <div class="sidebar_point">Служебные</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_content"></div>
+              <div class="icon icon_content"></div>
               <div class="sidebar_point">Контент</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon control_active"></div>
+              <div class="icon control_active"></div>
               <div class="sidebar_point active">Управление сайтом</div>
             </div>
             <div class="menu_elements medium_12pt">
@@ -1328,7 +1329,7 @@
             </div>
             <div class="sidebar_menu line_gray"></div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_settings"></div>
+              <div class="icon icon_settings"></div>
               <div class="sidebar_point">Настройки</div>
             </div>
           </div>
@@ -1351,26 +1352,26 @@
             </div>
 
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_desktop"></div>
+              <div class="icon icon_desktop"></div>
               <div class="sidebar_point">Рабочий стол</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_official"></div>
+              <div class="icon icon_official"></div>
               <div class="sidebar_point">Служебные</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_content"></div>
+              <div class="icon icon_content"></div>
               <div class="sidebar_point">Контент</div>
             </div>
             <div class="sidebar_menu">
-              <div class="sidebar_icon icon_control"></div>
+              <div class="icon icon_control"></div>
               <div class="sidebar_point">Управление сайтом</div>
             </div>
 
             <div class="sidebar_menu line_gray"></div>
 
             <div class="sidebar_menu">
-              <div class="sidebar_icon settings_active"></div>
+              <div class="icon settings_active"></div>
               <div class="sidebar_point active">Настройки</div>
             </div>
           </div>
@@ -1379,10 +1380,10 @@
       </div>
     </div>
 
-    <div id="section_up" class="section">
+    <div id="section_header" class="section">
       <h1>Верхнее меню (шапка)</h1>
 
-      <div class="header_items">
+      <div class="header_block">
         <div class="search_disabled">
           <input type="search" placeholder="Поиск">
         </div>
@@ -1400,54 +1401,54 @@
         <div class="icon_active">
           <div class="subtitle">Menu</div>
           <div class="icon_item">
-            <div class="sidebar_icon icon_desktop"></div>
-            <div class="sidebar_icon icon_official"></div>
-            <div class="sidebar_icon icon_content"></div>
-            <div class="sidebar_icon icon_control"></div>
-            <div class="sidebar_icon">
+            <div class="icon icon_desktop"></div>
+            <div class="icon icon_official"></div>
+            <div class="icon icon_content"></div>
+            <div class="icon icon_control"></div>
+            <div class="icon">
               <div class="icon_rhombus"></div>
             </div>
-            <div class="sidebar_icon icon_settings"></div>
-            <div class="sidebar_icon icon_pen"></div>
-            <div class="sidebar_icon two_arrow"></div>
+            <div class="icon icon_settings"></div>
+            <div class="icon icon_pen"></div>
+            <div class="icon two_arrow"></div>
           </div>
           <div class="icon_item">
-            <div class="sidebar_icon desktop_active"></div>
-            <div class="sidebar_icon official_active"></div>
-            <div class="sidebar_icon content_active"></div>
-            <div class="sidebar_icon control_active"></div>
-            <div class="sidebar_icon">
+            <div class="icon desktop_active"></div>
+            <div class="icon official_active"></div>
+            <div class="icon content_active"></div>
+            <div class="icon control_active"></div>
+            <div class="icon">
               <div class="icon_rhombus rhombus_active"></div>
             </div>
-            <div class="sidebar_icon settings_active"></div>
-            <div class="sidebar_icon pen_active"></div>
-            <div class="sidebar_icon arrow_active"></div>
+            <div class="icon settings_active"></div>
+            <div class="icon pen_active"></div>
+            <div class="icon arrow_active"></div>
           </div>
         </div>
 
         <div class="icon_inactive">
           <div class="subtitle">Other</div>
           <div class="icon_item">
-            <div class="sidebar_icon icon_edit"></div>
-            <div class="sidebar_icon icon_show"></div>
-            <div class="sidebar_icon icon_trach"></div>
-            <div class="sidebar_icon check_blue"></div>
-            <div class="sidebar_icon icon_search"></div>
-            <div class="sidebar_icon icon_notifications"></div>
-            <div class="sidebar_icon close_light"></div>
-            <div class="sidebar_icon icon_add"></div>
-            <div class="sidebar_icon icon_attach"></div>
-            <div class="sidebar_icon icon_logout"></div>
-            <div class="sidebar_icon arrow_down"></div>
-            <div class="sidebar_icon arrow_up"></div>
-            <div class="sidebar_icon burger_menu"></div>
-            <div class="sidebar_icon icon_filter"></div>
-            <div class="sidebar_icon icon_save"></div>
-            <div class="sidebar_icon icon_back"></div>
-            <div class="sidebar_icon left_gray"></div>
-            <div class="sidebar_icon right_gray"></div>
-            <div class="sidebar_icon icon_image"></div>
-            <div class="sidebar_icon no_image"></div>
+            <div class="icon icon_edit"></div>
+            <div class="icon icon_show"></div>
+            <div class="icon icon_trach"></div>
+            <div class="icon check_blue"></div>
+            <div class="icon icon_search"></div>
+            <div class="icon icon_notifications"></div>
+            <div class="icon close_light"></div>
+            <div class="icon icon_add"></div>
+            <div class="icon icon_attach"></div>
+            <div class="icon icon_logout"></div>
+            <div class="icon arrow_down"></div>
+            <div class="icon arrow_up"></div>
+            <div class="icon burger_menu"></div>
+            <div class="icon icon_filter"></div>
+            <div class="icon icon_save"></div>
+            <div class="icon icon_back"></div>
+            <div class="icon left_gray"></div>
+            <div class="icon right_gray"></div>
+            <div class="icon icon_image"></div>
+            <div class="icon no_image"></div>
           </div>
         </div>
 
@@ -1456,9 +1457,7 @@
 
     <div id="section_popup" class="section">
       <h1>Попап</h1>
-
       <button type="submit" class="button btn_small active popup_button">Вызвать попап</button>
-
     </div>
 
     <div id="delete" class="popup">
@@ -1473,10 +1472,7 @@
         </div>
       </div>
     </div>
-
   </div>
-
-
 
   <script src="./index2js.js"></script>
   <script src="./vanillaSelectBox.js?v0.75"></script>

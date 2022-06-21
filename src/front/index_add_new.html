@@ -10,288 +10,297 @@
 
 </head>
 
-  <body class="body">
+<body class="body">
 
-    <div class="fullContainer">
+  <div class="fullContainer">
 
-      <div class="selectTheme">
-        <select
+    <div class="selectTheme">
+      <select
         onchange="document.querySelector('#css').href='./css/index' + this.options[this.selectedIndex].value + 'A.css'">
-          <option value="1">Тема 1</option>
-          <option value="2">Тема 2</option>
-          <option value="3">Тема 3</option>
-          <option value="4">Тема 4</option>
-          <option value="5">Тема 5</option>
-          <option value="6" selected>Тема 6</option>
-        </select>
-      </div>
-
-      <div class="flex">
-
-        <div class="sidebar_items">
-          <div class="sidebar_item">
-
-            <div class="sidebar_block">
-              <div class="sidebar_name">Название</div>
-              <div class="sidebar_arrow"></div>
-            </div>
-
-            <div class="sidebar_information">
-              <div class="photo profile"></div>
-              <div>
-                <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
-                <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
-              </div>
-            </div>
-
-            <div class="sidebar_menu">
-              <div class="sidebar_icon desktop_active"></div>
-              <div class="sidebar_point active">Рабочий стол</div>
-            </div>
-            <div class="sidebar_menu">
-              <div class="sidebar_icon icon_official"></div>
-              <div class="sidebar_point">Служебные</div>
-            </div>
-            <div class="sidebar_menu">
-              <div class="sidebar_icon icon_content"></div>
-              <div class="sidebar_point">Контент</div>
-            </div>
-            <div class="sidebar_menu">
-              <div class="sidebar_icon icon_control"></div>
-              <div class="sidebar_point">Управление сайтом</div>
-            </div>
-            <div class="sidebar_menu line_gray"></div>
-            <div class="sidebar_menu">
-              <div class="sidebar_icon icon_settings"></div>
-              <div class="sidebar_point">Настройки</div>
-            </div>
-          </div>
-          <div class="sidebar_item">
-            <div class="sidebar_menu">
-              <div class="sidebar_icon icon_logout"></div>
-              <div class="sidebar_point">Выйти</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="content_right">
-
-          <div class="header_items">
-            <div class="search_disabled">
-              <input type="search" placeholder="Поиск">
-            </div>
-            <div class="header_icons">
-              <div class="header_icon icon_notifications"></div>
-              <div class="header_icon icon_logout"></div>
-            </div>
-          </div>
-
-          <div class="box_menu mtb_30">
-            <div class="box background_blue">
-              <div class="box_desktop"></div>
-              <div class="box_text white_text">Рабочий <br> стол</div>
-            </div>
-            <div class="box">
-              <div class="box_portfolio"></div>
-              <div class="box_text">Служебные</div>
-            </div>
-            <div class="box">
-              <div class="box_folder"></div>
-              <div class="box_text">Контент</div>
-            </div>
-            <div class="box">
-              <div class="box_graph"></div>
-              <div class="box_text">Управление <br> сайтом</div>
-            </div>
-            <div class="box">
-              <div class="box_settings"></div>
-              <div class="box_text">Настройки</div>
-            </div>
-          </div>
-
-          <div class="container_table">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th><input class="checkbox checkbox_standart" type="checkbox"></th>
-                  <th class="sorting">ID</th>
-                  <th class="sorting">Название</th>
-                  <th class="sorting">Дата создания</th>
-                  <th class="sorting">Статус</th>
-                  <th class="sorting">Категория</th>
-                  <th class="sorting">Действия</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="regular_14pt">
-                  <td><input class="checkbox checkbox_standart" type="checkbox" checked></td>
-                  <td>1</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status active white_text">Активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox" checked></td>
-                  <td>2</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status disabled white_text">Не активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox"></td>
-                  <td>3</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status active white_text">Активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox"></td>
-                  <td>4</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status active white_text">Активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox"></td>
-                  <td>5</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status active white_text">Активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox" checked></td>
-                  <td>6</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status disabled white_text">Не активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox"></td>
-                  <td>5</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status active white_text">Активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox"></td>
-                  <td>5</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status active white_text">Активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox" checked></td>
-                  <td>6</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status disabled white_text">Не активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td><input class="checkbox checkbox_standart" type="checkbox"></td>
-                  <td>5</td>
-                  <td class="gray_dark">Элементы простые 1</td>
-                  <td>12 дек. 2021 г.</td>
-                  <td><button class="status active white_text">Активен</button></td>
-                  <td>Служебные</td>
-                  <td>
-                    <div class="images">
-                      <div class="img editing"></div>
-                      <div class="img eye_blue"></div>
-                      <div class="img close_table"></div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="7">
-                    <div class="items_center">
-                      <div class="flex footer_item"><p>Отмечено</p><p class="dark">3/10</p></div>
-                      <div class="flex footer_item"><p>Всего</p><p class="dark">10</p></div>
-                      <div class="flex footer_item "><div class="img editing"></div><p class="dark">Редактировать</p></div>
-                    </div>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-
-        </div>
-      </div>
+        <option value="1">Тема 1</option>
+        <option value="2">Тема 2</option>
+        <option value="3">Тема 3</option>
+        <option value="4">Тема 4</option>
+        <option value="5">Тема 5</option>
+        <option value="6" selected>Тема 6</option>
+      </select>
     </div>
 
-  </body>
+    <div class="flex">
+
+      <div class="sidebar_items">
+        <div class="sidebar_item">
+
+          <div class="sidebar_block">
+            <div class="sidebar_name">Название</div>
+            <div class="sidebar_arrow"></div>
+          </div>
+
+          <div class="sidebar_information">
+            <div class="photo profile"></div>
+            <div>
+              <div class="sidebar_surname semibold_14pt">Денис Смирнов</div>
+              <div class="sidebar_mail medium_12pt">d.smirnov@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="sidebar_menu">
+            <div class="icon desktop_active"></div>
+            <div class="sidebar_point active">Рабочий стол</div>
+          </div>
+          <div class="sidebar_menu">
+            <div class="icon icon_official"></div>
+            <div class="sidebar_point">Служебные</div>
+          </div>
+          <div class="sidebar_menu">
+            <div class="icon icon_content"></div>
+            <div class="sidebar_point">Контент</div>
+          </div>
+          <div class="sidebar_menu">
+            <div class="icon icon_control"></div>
+            <div class="sidebar_point">Управление сайтом</div>
+          </div>
+          <div class="sidebar_menu line_gray"></div>
+          <div class="sidebar_menu">
+            <div class="icon icon_settings"></div>
+            <div class="sidebar_point">Настройки</div>
+          </div>
+        </div>
+        <div class="sidebar_item">
+          <div class="sidebar_menu">
+            <div class="icon icon_logout"></div>
+            <div class="sidebar_point">Выйти</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_right">
+
+        <div class="header_block">
+          <div class="search_disabled">
+            <input type="search" placeholder="Поиск">
+          </div>
+          <div class="header_icons">
+            <div class="header_icon icon_notifications"></div>
+            <div class="header_icon icon_logout"></div>
+          </div>
+        </div>
+
+        <div class="box_menu mtb_30">
+          <div class="box background_blue">
+            <div class="box_desktop"></div>
+            <div class="box_text white_text">Рабочий <br> стол</div>
+          </div>
+          <div class="box">
+            <div class="box_portfolio"></div>
+            <div class="box_text">Служебные</div>
+          </div>
+          <div class="box">
+            <div class="box_folder"></div>
+            <div class="box_text">Контент</div>
+          </div>
+          <div class="box">
+            <div class="box_graph"></div>
+            <div class="box_text">Управление <br> сайтом</div>
+          </div>
+          <div class="box">
+            <div class="box_settings"></div>
+            <div class="box_text">Настройки</div>
+          </div>
+        </div>
+
+        <div class="container_table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th><input class="checkbox checkbox_standart" type="checkbox"></th>
+                <th class="sorting">ID</th>
+                <th class="sorting">Название</th>
+                <th class="sorting">Дата создания</th>
+                <th class="sorting">Статус</th>
+                <th class="sorting">Категория</th>
+                <th class="sorting">Действия</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="regular_14pt">
+                <td><input class="checkbox checkbox_standart" type="checkbox" checked></td>
+                <td>1</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status active white_text">Активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox" checked></td>
+                <td>2</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status disabled white_text">Не активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox"></td>
+                <td>3</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status active white_text">Активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox"></td>
+                <td>4</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status active white_text">Активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox"></td>
+                <td>5</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status active white_text">Активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox" checked></td>
+                <td>6</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status disabled white_text">Не активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox"></td>
+                <td>5</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status active white_text">Активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox"></td>
+                <td>5</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status active white_text">Активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox" checked></td>
+                <td>6</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status disabled white_text">Не активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><input class="checkbox checkbox_standart" type="checkbox"></td>
+                <td>5</td>
+                <td class="gray_dark">Элементы простые 1</td>
+                <td>12 дек. 2021 г.</td>
+                <td><button class="status active white_text">Активен</button></td>
+                <td>Служебные</td>
+                <td>
+                  <div class="images">
+                    <div class="img editing"></div>
+                    <div class="img eye_blue"></div>
+                    <div class="img close_table"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="7">
+                  <div class="items_center">
+                    <div class="flex footer_item">
+                      <p>Отмечено</p>
+                      <p class="dark">3/10</p>
+                    </div>
+                    <div class="flex footer_item">
+                      <p>Всего</p>
+                      <p class="dark">10</p>
+                    </div>
+                    <div class="flex footer_item ">
+                      <div class="img editing"></div>
+                      <p class="dark">Редактировать</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
 
 </html>

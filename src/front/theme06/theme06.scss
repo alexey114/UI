@@ -366,7 +366,8 @@ input:checked.switcher:before {
   height: 20px;
 
   &:last-child {
-    margin: 0 5px 0 0;;
+    margin: 0 5px 0 0;
+    ;
   }
 }
 
@@ -654,7 +655,7 @@ button {
     line-height: 18.2px;
     cursor: pointer;
 
-    &.button_border{
+    &.button_border {
       border: solid 1px #109CF1;
     }
   }
@@ -665,7 +666,7 @@ button {
     font-weight: 600;
     line-height: 18.2px;
 
-    &.button_border{
+    &.button_border {
       border: solid 1px #34AFF9;
     }
   }
@@ -676,7 +677,7 @@ button {
     font-weight: 600;
     line-height: 18.2px;
 
-    &.button_border{
+    &.button_border {
       border: solid 1px #098EDF;
     }
   }
@@ -686,7 +687,7 @@ button {
     font-weight: 600;
     line-height: 18.2px;
 
-    &.button_border{
+    &.button_border {
       border: solid 1px #C2CFE0;
     }
   }
@@ -1091,7 +1092,7 @@ h1 {
   }
 }
 
-h4{
+h4 {
   font-weight: 400;
 }
 
@@ -1777,10 +1778,10 @@ progress::-moz-progress-bar {
 .imagesWrapper {
   @include wrap;
 
-  div{
+  div {
     margin-top: 30px;
 
-    &:first-child{
+    &:first-child {
       margin-right: 50px;
     }
   }
@@ -1805,14 +1806,14 @@ progress::-moz-progress-bar {
 .inputBlock {
   display: flex;
 
-  .border{
-      @include wrap;
-      justify-content: space-around;
-      margin-top: 30px;
+  .border {
+    @include wrap;
+    justify-content: space-around;
+    margin-top: 30px;
 
-      @media (max-width: 800px) {
-        gap: 10px;
-      }
+    @media (max-width: 800px) {
+      gap: 10px;
+    }
   }
 
   .subtitle {
@@ -2678,7 +2679,7 @@ progress::-moz-progress-bar {
 
 /* combobox */
 
-.combobox_off {
+.combobox_disabled {
   margin-top: 20px;
 
   .subtitle {
@@ -2686,7 +2687,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.comboboxes {
+.combobox_title {
   margin-top: 20px;
   display: inline-flex;
   max-width: 1300px;
@@ -2724,7 +2725,7 @@ progress::-moz-progress-bar {
   margin-top: 20px;
 }
 
-.no_arrow {
+.combobox_standart {
   position: relative;
   margin-right: 20px;
 
@@ -2917,7 +2918,7 @@ progress::-moz-progress-bar {
   margin-bottom: 20px;
 }
 
-.sidebar_icon {
+.icon {
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -3003,7 +3004,7 @@ progress::-moz-progress-bar {
 
 /* header */
 
-.header_items {
+.header_block {
   max-width: 1184px;
   height: 64px;
   @include center;
@@ -3077,7 +3078,7 @@ progress::-moz-progress-bar {
 
 .icon_inactive {
   .icon_item {
-    .sidebar_icon {
+    .icon {
       margin-right: 24px;
     }
   }
@@ -3086,7 +3087,7 @@ progress::-moz-progress-bar {
 .icon_item {
   @include wrap;
 
-  .sidebar_icon {
+  .icon {
     margin-right: 40px;
     margin-bottom: 25px;
     width: 24px;
