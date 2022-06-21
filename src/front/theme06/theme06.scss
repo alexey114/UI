@@ -1,45 +1,6 @@
 @import "../base_style/theme_colors.scss";
 @import "./common/common.scss";
 
-/* Общие */
-
-* {
-  font-family: $font_family;
-}
-
-input {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-body {
-  @media (max-width: 400px) {
-    overflow-x: hidden;
-  }
-}
-
-.section {
-  border-bottom: solid 1px #EBEFF2;
-  padding: 50px 0px 50px 0px;
-}
-
-#fullContainer {
-  @include width(1580px, 100%);
-  margin: 0 auto;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-  background-color: white;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #d3cbcf;
-  border-radius: 3em;
-  box-shadow: inset 1px 1px 10px #f3faf7;
-}
-
 /* Select */
 
 #section_menu {
@@ -79,7 +40,7 @@ body {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
+  @include block(60px, 34px);
   height: 34px;
   margin: 10px;
 }
@@ -104,8 +65,7 @@ body {
 .switcher:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  @include block(26px, 26px);
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -160,7 +120,6 @@ body {
   @include center;
   height: 42px;
   cursor: pointer;
-
   padding: 0px 122px 0px 12px;
   outline: none;
   border-radius: 5px;
@@ -198,7 +157,6 @@ body {
   margin-top: 24px;
 }
 
-
 .content_standart {
   color: $theme6_color4;
 }
@@ -232,19 +190,13 @@ body {
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 50%;
     right: 10px;
-
     display: block;
-    width: 8px;
-    height: 2px;
-
+    @include block(8px, 2px);
     transition: all 0.3s ease-out;
-
     background-color: $theme6_color5;
-
     transform: translate(-2px, -50%) rotate(45deg);
   }
 
@@ -273,37 +225,31 @@ body {
   }
 }
 
-//Из base конец
-
 /* Navigation */
 
-.theme_switcher {
-  width: 118px;
+#theme_switcher {
+  @include block(118px, 40px);
   display: $theme_display;
   position: relative;
-  height: 40px;
 }
 
-.theme_switcher::before {
+#theme_switcher::before,
+#theme_switcher::after {
+  content: " ";
   position: absolute;
   top: 0;
+  @include block(20px, 20px);
+  background-repeat: no-repeat;
+}
+
+#theme_switcher::before {
   left: 0;
-  content: " ";
-  width: 20px;
-  height: 20px;
   background-image: url(./theme06/images/light_theme.svg);
-  background-repeat: no-repeat;
 }
 
-.theme_switcher::after {
-  position: absolute;
-  top: 0;
+#theme_switcher::after {
   right: 10px;
-  content: " ";
-  width: 20px;
-  height: 20px;
   background-image: url(./theme06/images/dark_theme.svg);
-  background-repeat: no-repeat;
 }
 
 .switch {
@@ -319,8 +265,7 @@ body {
 
 .theme_slider,
 .switcher {
-  width: 40px;
-  height: 20px;
+  @include block(40px, 20px);
   border-radius: 10px;
   background-color: $theme6_color3;
 
@@ -342,8 +287,7 @@ body {
 .switcher::before {
   content: "";
   position: absolute;
-  height: 16px;
-  width: 16px;
+  @include block(16px, 16px);
   left: 2px;
   top: 2px;
   border-radius: 16px;
@@ -356,14 +300,9 @@ input:checked.switcher:before {
   transform: translateX(20px);
 }
 
-.switch_items {
-  @include wrap;
-}
-
 .switch_item {
   margin: 0 20px 0 0;
-  width: 40px;
-  height: 20px;
+  @include block(40px, 20px);
 
   &:last-child {
     margin: 0 5px 0 0;
@@ -373,24 +312,6 @@ input:checked.switcher:before {
 
 /* Font */
 
-@mixin font_style_six_theme($font-style, $font-weight, $font_size, $line-height, $color) {
-  font-style: $font-style;
-  font-weight: $font-weight;
-  font-size: $font_size;
-  line-height: $line-height;
-  color: $color;
-}
-
-#section_text {
-  @include wrap;
-  margin: 50px 0 0 0;
-}
-
-.text,
-.text_items {
-  @include wrap;
-}
-
 .text_items {
   :last-child {
     margin-right: 0px;
@@ -398,12 +319,12 @@ input:checked.switcher:before {
 }
 
 .text_header {
-  @include font_style_six_theme(normal, 500, 14px, 17px, $theme6_color17);
+  @include font_style(normal, 500, 14px, 17px, $theme6_color17);
   margin: 20px 0;
 }
 
 .text_montserrat {
-  @include font_style_six_theme(normal, 600, 50px, 60.95px, $theme6_color1);
+  @include font_style(normal, 600, 50px, 60.95px, $theme6_color1);
   margin-right: 150px;
 
   p {
@@ -415,7 +336,6 @@ input:checked.switcher:before {
   margin: 0;
   color: $gray_dark;
   font-size: 40px;
-  // line-height: 48.76px;
 }
 
 .text_item {
@@ -493,7 +413,7 @@ input:checked.switcher:before {
 }
 
 
-.section-inner {
+#section-inner {
   display: flex;
 
   @media (max-width: 1350px) {
@@ -517,7 +437,7 @@ input:checked.switcher:before {
 }
 
 .subtitle {
-  @include font_style_six_theme(normal, 500, 18px, 21.94px, $theme6_color4);
+  @include font_style(normal, 500, 18px, 21.94px, $theme6_color4);
 }
 
 button {
@@ -536,8 +456,7 @@ button {
     margin-right: 0px;
   }
 
-  width: 160px;
-  height: 42px;
+  @include block(160px, 42px);
   border: none;
   background-color: $theme6_color6;
 
@@ -547,8 +466,7 @@ button {
 }
 
 .btn_small {
-  width: 143px;
-  height: 32px;
+  @include block(143px, 32px);
   margin-right: 67px;
 
   @media (max-width: 850px) {
@@ -568,8 +486,7 @@ button {
   &:after {
     display: $show_hand;
     position: absolute;
-    width: 26px;
-    height: 26px;
+    @include block(26px, 26px);
     content: "";
     left: 75px;
     top: 0;
@@ -616,8 +533,7 @@ button {
   &_guidance .icon_attach,
   &_pressing .icon_attach,
   &_disabled .icon_attach {
-    width: 18px;
-    height: 18px;
+    @include block(18px, 18px);
     padding-right: 4px;
     background-image: url(./theme06/images/attach.svg);
     background-repeat: no-repeat;
@@ -693,7 +609,7 @@ button {
   }
 }
 
-.buttons_mini {
+#buttons_mini {
   display: flex;
 
   @media (max-width: 600px) {
@@ -710,8 +626,7 @@ button {
 }
 
 .btn_mini {
-  width: 36px;
-  height: 32px;
+  @include block(36px, 32px);
   margin-right: 20px;
 
   &:last-child {
@@ -723,15 +638,13 @@ button {
   }
 
   .icon_save {
-    width: 24px;
-    height: 24px;
+    @include block(24px, 24px);
     background-image: url(./theme06/images/save.svg);
     background-repeat: no-repeat;
   }
 
   .icon_exit {
-    width: 24px;
-    height: 24px;
+    @include block(24px, 24px);
     background-image: url(./theme06/images/exit.svg);
     background-repeat: no-repeat;
   }
@@ -759,14 +672,12 @@ button {
   margin-top: 17px;
 
   .back {
-    width: 117px;
-    height: 32px;
+    @include block(117px, 32px);
     margin-bottom: 30px;
     margin-right: 30px;
 
     .icon_back {
-      width: 18px;
-      height: 18px;
+      @include block(18px, 18px);
       background-image: url(./theme06/images/back.svg);
       background-repeat: no-repeat;
       padding-right: 7px;
@@ -775,12 +686,10 @@ button {
   }
 
   .back_second {
-    width: 117px;
-    height: 42px;
+    @include block(117px, 42px);
 
     .icon_back {
-      width: 18px;
-      height: 18px;
+      @include block(18px, 18px);
       background-image: url(./theme06/images/back.svg);
       background-repeat: no-repeat;
       padding-right: 7px;
@@ -791,13 +700,11 @@ button {
   .exit {
     display: flex;
     justify-items: center;
-    width: 119px;
-    height: 32px;
+    @include block(119px, 32px);
     margin-right: 30px;
 
     .icon_exit {
-      width: 18px;
-      height: 18px;
+      @include block(18px, 18px);
       background-image: url(./theme06/images/exit.svg);
       background-repeat: no-repeat;
       padding-right: 7px;
@@ -807,14 +714,13 @@ button {
   }
 
   .exit_second {
-    width: 97px;
-    height: 32px;
+    @include block(97px, 32px);
   }
 }
 
 /* Checkbox */
 
-.subsection {
+#subsection {
   margin-left: 120px;
 
   @media (max-width: 1350px) {
@@ -865,8 +771,7 @@ input {
   &.checkbox {
     @include center;
     justify-content: center;
-    width: 16px;
-    height: 16px;
+    @include block(16px, 16px);
     border-radius: 4px;
     padding: 0;
     margin: 0 20px 0 0;
@@ -883,8 +788,7 @@ input {
   &.radio {
     @include center;
     justify-content: center;
-    width: 16px;
-    height: 16px;
+    @include block(16px, 16px);
     border-radius: 50%;
     margin: 0 20px 0 0;
     border: 1px solid #D5D5D5;
@@ -901,8 +805,7 @@ input {
   &_standart:checked:before,
   &_two:checked:before {
     content: "";
-    width: 16px;
-    height: 16px;
+    @include block(16px, 16px);
     border-radius: 4px;
     background-color: #098EDF;
     position: absolute;
@@ -915,8 +818,7 @@ input {
 
   &_standart:checked:after {
     content: "";
-    width: 10px;
-    height: 10px;
+    @include block(10px, 10px);
     background-image: url(./theme06/images/check.svg);
     background-repeat: no-repeat;
     position: absolute;
@@ -925,8 +827,7 @@ input {
 
   &_two:checked:after {
     content: "";
-    width: 6px;
-    height: 7px;
+    @include block(6px, 7px);
     background-image: url(./theme06/images/two.svg);
     background-repeat: no-repeat;
     position: absolute;
@@ -941,8 +842,7 @@ input {
 
     &:checked:after {
       content: "";
-      width: 10px;
-      height: 10px;
+      @include block(10px, 10px);
       background-image: url(./theme06/images/check_light.svg);
       background-repeat: no-repeat;
       position: absolute;
@@ -955,8 +855,7 @@ input {
 
     &:checked:after {
       content: "";
-      width: 10px;
-      height: 10px;
+      @include block(10px, 10px);
       background-image: url(./theme06/images/check_green.svg);
       background-repeat: no-repeat;
       position: absolute;
@@ -969,8 +868,7 @@ input {
 
     &:checked:after {
       content: "";
-      width: 10px;
-      height: 10px;
+      @include block(10px, 10px);
       background-image: url(./theme06/images/alert.svg);
       background-repeat: no-repeat;
       position: absolute;
@@ -987,8 +885,7 @@ input {
 
       &:before {
         content: "";
-        width: 10px;
-        height: 10px;
+        @include block(10px, 10px);
         border-radius: 50%;
         background-color: #109CF1;
       }
@@ -999,8 +896,7 @@ input {
 
       &:before {
         content: "";
-        width: 2px;
-        height: 10px;
+        @include block(2px, 10px);
         background-image: url(./theme06/images/alert.svg);
         background-repeat: no-repeat;
         position: absolute;
@@ -1014,8 +910,7 @@ input {
   margin-right: 20px;
   font-size: 11px;
   font-weight: 500;
-  width: 84px;
-  height: 22px;
+  @include block(84px, 22px);
   border: none;
   border-radius: 4px;
 
@@ -1045,8 +940,6 @@ input {
   }
 }
 
-
-
 /* Color */
 
 .dark {
@@ -1070,8 +963,7 @@ input {
 }
 
 .color {
-  width: 230px;
-  height: 60px;
+  @include block(230px, 60px);
   border: none;
   border-radius: 4px;
   margin-right: 40px;
@@ -1094,10 +986,6 @@ h1 {
 
 h4 {
   font-weight: 400;
-}
-
-.color_items {
-  @include wrap;
 }
 
 .theme6_color1 {
@@ -1179,18 +1067,12 @@ h4 {
 
 /*Avatar*/
 
-.avatars,
-.blockAvatars {
-  @include wrap;
-}
-
 .avatar_item {
   margin-right: 120px;
 }
 
 .photo {
-  width: 104px;
-  height: 104px;
+  @include block(104px, 104px);
   margin: 20px 20px 20px 0;
 }
 
@@ -1207,22 +1089,19 @@ h4 {
 }
 
 .photo.profile {
-  width: 46px;
-  height: 46px;
+  @include block(46px, 46px);
   background-image: url(./theme06/images/profile_photo.svg);
   background-repeat: no-repeat;
 }
 
 .photo.profile_active {
-  width: 55px;
-  height: 55px;
+  @include block(55px, 55px);
   background-image: url(./theme06/images/profile_photo-active.svg);
   background-repeat: no-repeat;
 }
 
 .mini_avatar {
-  width: 24px;
-  height: 24px;
+  @include block(24px, 24px);
   background-image: url(./theme06/images/associated_photo.svg);
   background-repeat: no-repeat;
 }
@@ -1235,12 +1114,12 @@ h4 {
   }
 }
 
-.preloaders {
+#preloaders {
   @include wrap;
   padding-top: 20px;
 }
 
-.progressBar {
+#progressBar {
   margin-left: 50px;
   max-width: 450px;
   width: 100%;
@@ -1256,8 +1135,7 @@ h4 {
 }
 
 .ellipse {
-  width: 36px;
-  height: 36px;
+  @include block(36px, 36px);
   background-image: url(./theme06/images/ellipse.svg);
   background-repeat: no-repeat;
   padding-right: 107px;
@@ -1265,8 +1143,7 @@ h4 {
 }
 
 .ellipse_second {
-  width: 18px;
-  height: 18px;
+  @include block(18px, 18px);
   background-image: url(./theme06/images/ellipse2.svg);
   background-repeat: no-repeat;
   padding-right: 107px;
@@ -1274,8 +1151,7 @@ h4 {
 }
 
 .polygon {
-  width: 34.34px;
-  height: 34.34px;
+  @include block(34.34px, 34.34px);
   background-image: url(./theme06/images/polygon.svg);
   background-repeat: no-repeat;
 
@@ -1287,9 +1163,8 @@ h4 {
 
 progress {
   max-width: 450px;
-  width: 100%;
+  @include block(100%, 6px);
   background-color: #F2F3F8;
-  height: 6px;
   border: 0;
 }
 
@@ -1310,7 +1185,7 @@ progress::-moz-progress-bar {
 
 /* Tooltip */
 
-.tooltipe {
+#tooltipe {
   padding-top: 20px;
 
   .subtitle {
@@ -1343,8 +1218,7 @@ progress::-moz-progress-bar {
   font-size: 12px;
   line-height: 15.6px;
   position: absolute;
-  width: 260px;
-  height: 68px;
+  @include block(260px, 68px);
   border-radius: 4px;
   -webkit-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
   -moz-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
@@ -1372,8 +1246,7 @@ progress::-moz-progress-bar {
 }
 
 .tooltipe_item {
-  height: 115px;
-  width: 270px;
+  @include block(270px, 115px);
   margin-right: 40px;
 }
 
@@ -1385,8 +1258,7 @@ progress::-moz-progress-bar {
   position: absolute;
   font-weight: 600;
   font-size: 14px;
-  width: 104px;
-  height: 32px;
+  @include block(104px, 32px);
   color: $theme6_color6;
   background-color: $theme6_color3;
   border: 0;
@@ -1572,8 +1444,7 @@ progress::-moz-progress-bar {
   }
 
   .button_accept {
-    width: 87px;
-    height: 32px;
+    @include block(87px, 32px);
     border: 0;
     background-color: $theme6_color3;
     color: $theme6_color6;
@@ -1581,8 +1452,7 @@ progress::-moz-progress-bar {
   }
 
   .button_cancel {
-    width: 87px;
-    height: 32px;
+    @include block(87px, 32px);
     border: 1px solid $theme6_color3;
     background-color: $theme6_color6;
     color: $theme6_color3;
@@ -1650,7 +1520,7 @@ progress::-moz-progress-bar {
 
 /* Pagination*/
 
-.paginations {
+#paginations {
   margin-top: 20px;
   padding: 20px;
   list-style-type: none;
@@ -1674,8 +1544,7 @@ progress::-moz-progress-bar {
   &.active {
     text-align: center;
     background-color: $theme6_color15;
-    width: 24px;
-    height: 24px;
+    @include block(24px, 24px);
     border-radius: 4px;
   }
 
@@ -1684,31 +1553,28 @@ progress::-moz-progress-bar {
   }
 }
 
-.icon_left:after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: -15px;
-  width: 9.2px;
-  height: 7.71px;
-  background-image: url(./theme06/images/left.svg);
-  background-repeat: no-repeat;
-}
-
+.icon_left:after,
 .icon_right:before {
   content: "";
   position: absolute;
   top: 6px;
-  right: -15px;
-  width: 9.2px;
-  height: 7.71px;
-  background-image: url(./theme06/images/right.svg);
+  @include block(9.2px, 7.71px);
   background-repeat: no-repeat;
+}
+
+.icon_left:after{
+  left: -15px;
+  background-image: url(./theme06/images/left.svg);
+}
+
+.icon_right:before {
+  right: -15px;
+  background-image: url(./theme06/images/right.svg);
 }
 
 /* accordion*/
 
-.accordions {
+#accordions {
   margin-top: 20px;
   color: #6C7293;
 }
@@ -1717,8 +1583,7 @@ progress::-moz-progress-bar {
   display: flex;
   justify-content: space-between;
   margin-top: 14px;
-  width: 240px;
-  height: 20px;
+  @include block(240px, 20px);
 }
 
 .accordion_arrow {
@@ -1727,8 +1592,7 @@ progress::-moz-progress-bar {
 
 .accordion_checkbox:after {
   content: "";
-  width: 12px;
-  height: 7px;
+  @include block(12px, 7px);
   top: 5px;
   left: 0;
   position: absolute;
@@ -1738,8 +1602,7 @@ progress::-moz-progress-bar {
 
 .accordion_checkbox:checked:after {
   content: "";
-  width: 12px;
-  height: 7px;
+  @include block(12px, 7px);
   top: 5px;
   left: 0;
   position: absolute;
@@ -1752,14 +1615,12 @@ progress::-moz-progress-bar {
   display: flex;
   justify-content: space-between;
   margin-top: 15.5px;
-  width: 220px;
-  height: 17px;
+  @include block(220px, 17px);
   padding-left: 20px;
 }
 
 .btn_exit {
-  width: 97px;
-  height: 32px;
+  @include block(97px, 32px);
   background-color: $theme6_color3;
 }
 
@@ -1775,9 +1636,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.imagesWrapper {
-  @include wrap;
-
+#imagesWrapper {
   div {
     margin-top: 30px;
 
@@ -1788,8 +1647,7 @@ progress::-moz-progress-bar {
 }
 
 .image_disabled {
-  width: 140px;
-  height: 140px;
+  @include block(140px, 140px);
   background-image: url(./theme06/images/no_images.svg);
   background-repeat: no-repeat;
 }
@@ -1889,8 +1747,7 @@ progress::-moz-progress-bar {
 }
 
 .input_date {
-  width: 281px;
-  height: 42px;
+  @include block(281px, 42px);
   margin-right: 32px;
 
   @media (max-width: 1400px) {
@@ -1917,12 +1774,10 @@ progress::-moz-progress-bar {
 /* Calendar */
 
 #section_select {
-  @include wrap;
   margin-top: 30px;
 }
 
-.calendar {
-  @include wrap;
+#calendar {
   margin-right: 60px;
 }
 
@@ -1931,35 +1786,25 @@ progress::-moz-progress-bar {
 }
 
 .calendar_day {
-  width: 315px;
-  height: 315px;
+  @include block(315px, 315px);
   margin-right: 40px;
   background-image: url(./theme06/images/singular.svg);
   background-repeat: no-repeat;
 }
 
 .calendar_range {
-  width: 315px;
-  height: 375px;
+  @include block(315px, 375px);
   background-image: url(./theme06/images/interval.svg);
   background-repeat: no-repeat;
 }
 
 /* Select */
 
-.select {
+#select {
   max-width: 680px;
 }
 
-.select,
-.select_items,
-.select_two,
-.select_one {
-  @include wrap;
-}
-
 .select_two {
-
   .select_item {
     height: 180px;
     margin-top: 40px;
@@ -1973,7 +1818,7 @@ progress::-moz-progress-bar {
     height: 225px;
   }
 
-  .select_calendar {
+  #select_calendar {
     margin-top: 40px;
   }
 }
@@ -2002,8 +1847,7 @@ progress::-moz-progress-bar {
   &::before {
     display: $show_hand;
     content: "";
-    width: 26px;
-    height: 26px;
+    @include block(26px, 26px);
     position: absolute;
     top: 15px;
     left: 260px;
@@ -2019,8 +1863,7 @@ progress::-moz-progress-bar {
   &::after {
     content: "";
     position: absolute;
-    width: 5.4px;
-    height: 5.4px;
+    @include block(5.4px, 5.4px);
     top: 40%;
     left: 25.4px;
     background-color: $theme6_color12;
@@ -2047,8 +1890,7 @@ progress::-moz-progress-bar {
   &::after {
     content: "";
     position: absolute;
-    width: 80px;
-    height: 40px;
+    @include block(80px, 40px);
     top: -15px;
     left: 210px;
     background-image: url(./theme06/images/arrow_down_blue.svg);
@@ -2057,14 +1899,13 @@ progress::-moz-progress-bar {
   }
 }
 
-.calendarWrapper {
+#calendarWrapper {
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    width: 80px;
-    height: 40px;
+    @include block(80px, 40px);
     top: 12px;
     left: 270px;
     background-image: url(./theme06/images/calendar_blue.svg);
@@ -2074,7 +1915,7 @@ progress::-moz-progress-bar {
 
 /* Search */
 
-.blockSearch {
+#blockSearch {
   margin-top: 40px;
 }
 
@@ -2125,8 +1966,7 @@ progress::-moz-progress-bar {
   &::after {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    @include block(15px, 15px);
     top: 12.5px;
     left: 12.5px;
     background-image: url(./theme06/images/search_lite.svg);
@@ -2162,8 +2002,7 @@ progress::-moz-progress-bar {
   &::after {
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    @include block(15px, 15px);
     top: 12.5px;
     left: 12.5px;
     background-image: url(./theme06/images/search.svg);
@@ -2173,8 +2012,7 @@ progress::-moz-progress-bar {
   &::before {
     content: "";
     position: absolute;
-    width: 8.33px;
-    height: 8.33px;
+    @include block(8.33px, 8.33px);
     top: 15.83px;
     right: 15.83px;
     background-image: url(./theme06/images/close.svg);
@@ -2250,8 +2088,7 @@ progress::-moz-progress-bar {
   &::after {
     content: "";
     position: absolute;
-    width: 8.33px;
-    height: 8.33px;
+    @include block(8.33px, 8.33px);
     top: 15.83px;
     right: 15.83px;
     background-image: url(./theme06/images/arrow_down_lite.svg);
@@ -2299,7 +2136,6 @@ progress::-moz-progress-bar {
       display: none;
     }
   }
-
 }
 
 .input {
@@ -2332,8 +2168,7 @@ progress::-moz-progress-bar {
 
     &:not(:first-child)::before {
       content: "";
-      width: 12px;
-      height: 7px;
+      @include block(12px, 7px);
       top: 42px;
       right: 15px;
       position: absolute;
@@ -2355,8 +2190,7 @@ progress::-moz-progress-bar {
 
   &::before {
     content: "";
-    width: 15px;
-    height: 16.67px;
+    @include block(15px, 16.67px);
     top: 37px;
     right: 10px;
     position: absolute;
@@ -2421,8 +2255,7 @@ progress::-moz-progress-bar {
 
 .icon_close::after {
   content: "";
-  width: 10px;
-  height: 10px;
+  @include block(10px, 10px);
   top: 40px;
   right: 10px;
   position: absolute;
@@ -2432,8 +2265,7 @@ progress::-moz-progress-bar {
 
 .icon_big::after {
   content: "";
-  width: 15px;
-  height: 11.42px;
+  @include block(15px, 11.42px);
   top: 40px;
   right: 10px;
   position: absolute;
@@ -2567,8 +2399,7 @@ progress::-moz-progress-bar {
 }
 
 .slider {
-  width: 100%;
-  height: 4px;
+  @include block(50%, 4px);
   background: #F2F3F8;
   position: relative;
   -webkit-appearance: none;
@@ -2578,8 +2409,7 @@ progress::-moz-progress-bar {
   &::before {
     position: absolute;
     content: "";
-    width: 50%;
-    height: 4px;
+    @include block(50%, 4px);
     top: 0;
     left: 0;
     background: $theme6_color3;
@@ -2601,8 +2431,7 @@ progress::-moz-progress-bar {
   /* Ползунок */
 
   &::-webkit-slider-thumb {
-    width: 16px;
-    height: 16px;
+    @include block(16px, 16px);
     -webkit-appearance: none;
     background-color: $theme6_color6;
     border: 2px solid $theme6_color3;
@@ -2610,8 +2439,7 @@ progress::-moz-progress-bar {
   }
 
   &::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
+    @include block(16px, 16px);
     -webkit-appearance: none;
     background-color: $theme6_color6;
     border: 2px solid $theme6_color3;
@@ -2619,8 +2447,7 @@ progress::-moz-progress-bar {
   }
 
   &::-ms-thumb {
-    width: 16px;
-    height: 16px;
+    @include block(16px, 16px);
     -webkit-appearance: none;
     background-color: $theme6_color6;
     border: 2px solid $theme6_color3;
@@ -2647,8 +2474,7 @@ progress::-moz-progress-bar {
       display: $show_hand;
       position: absolute;
       content: "";
-      width: 26px;
-      height: 26px;
+      @include block(26px, 26px);
       top: 0;
       left: calc(50% - 10px);
       background-image: url(./theme06/images/hand.svg);
@@ -2753,8 +2579,7 @@ progress::-moz-progress-bar {
 
   &::after {
     content: "";
-    width: 12px;
-    height: 7px;
+    @include block(12px, 7px);
     top: 21px;
     right: 13px;
     position: absolute;
@@ -2767,8 +2592,7 @@ progress::-moz-progress-bar {
     position: absolute;
     top: 0;
     right: 0px;
-    width: 42px;
-    height: 42px;
+    @include block(42px, 42px);
     border: 1px solid $theme6_color13;
     border-radius: 0 5px 5px 0;
     background-color: white;
@@ -2780,8 +2604,7 @@ progress::-moz-progress-bar {
 
   &::after {
     content: "";
-    width: 8.33px;
-    height: 8.33px;
+    @include block(8.33px, 8.33px);
     position: absolute;
     top: -5px;
     left: 15px;
@@ -2822,8 +2645,7 @@ progress::-moz-progress-bar {
 
   &::after {
     content: "";
-    width: 8.33px;
-    height: 8.33px;
+    @include block(8.33px, 8.33px);
     position: absolute;
     top: 10.83px;
     right: 8.33px;
@@ -2837,8 +2659,7 @@ progress::-moz-progress-bar {
     display: $show_hand;
     position: absolute;
     content: "";
-    width: 26px;
-    height: 26px;
+    @include block(26px, 26px);
     top: 7px;
     left: 40px;
     background-image: url(./theme06/images/hand.svg);
@@ -2859,7 +2680,7 @@ progress::-moz-progress-bar {
 
 /* sidebar */
 
-.sidebar {
+#sidebar {
   @include wrap;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -2896,8 +2717,7 @@ progress::-moz-progress-bar {
 }
 
 .sidebar_arrow {
-  width: 15px;
-  height: 15px;
+  @include block(15px, 15px);
   background-image: url(./theme06/images/arrow_down_blue.svg);
   background-repeat: no-repeat;
   transform: rotate(90deg);
@@ -2919,8 +2739,7 @@ progress::-moz-progress-bar {
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  @include block(20px, 20px);
   background-repeat: no-repeat;
 }
 
@@ -2997,14 +2816,13 @@ progress::-moz-progress-bar {
 
   &::marker {
     color: #C2CFE0;
-    width: 6px;
-    height: 6px;
+    @include block(6px, 6px);
   }
 }
 
 /* header */
 
-.header_block {
+#header_block {
   max-width: 1184px;
   height: 64px;
   @include center;
@@ -3043,13 +2861,12 @@ progress::-moz-progress-bar {
   }
 }
 
-.header_icons {
+#header_icons {
   display: flex;
 }
 
 .header_icon {
-  width: 24px;
-  height: 24px;
+  @include block(24px, 24px);
   background-repeat: no-repeat;
   margin-right: 23px;
 }
@@ -3064,19 +2881,21 @@ progress::-moz-progress-bar {
 
 /* Icon */
 
-.icon_items {
-  @include wrap;
+#icon_active {
+  margin-right: 80px;
+  margin-bottom: 20px;
 
-  .subtitle {
+  .subtitle{
     margin-bottom: 20px;
   }
 }
 
-.icon_active {
-  margin-right: 80px;
-}
+#icon_inactive {
 
-.icon_inactive {
+  .subtitle{
+    margin-bottom: 20px;
+  }
+
   .icon_item {
     .icon {
       margin-right: 24px;
@@ -3090,15 +2909,13 @@ progress::-moz-progress-bar {
   .icon {
     margin-right: 40px;
     margin-bottom: 25px;
-    width: 24px;
-    height: 24px;
+    @include block(24px, 24px);
     background-position: center;
   }
 }
 
 .icon_rhombus {
-  width: 7.2px;
-  height: 7.2px;
+  @include block(7.2px, 7.2px);
   margin: 6.91px 6.62px 6.91px 7.2px;
   background-color: $theme6_color12;
   transform: rotate(45deg);
@@ -3212,8 +3029,7 @@ progress::-moz-progress-bar {
 }
 
 .popup {
-  width: 100%;
-  height: 100%;
+  @include block(100%, 100%);
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -3242,7 +3058,7 @@ progress::-moz-progress-bar {
   border-radius: 4px;
 }
 
-.popup_section {
+#popup_section {
   margin: 50px;
 
   h2 {
@@ -3258,8 +3074,7 @@ progress::-moz-progress-bar {
   span {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
+    @include block(20px, 20px);
     right: 20px;
     top: 20px;
     background-image: url(./theme06/images/close_light.svg);
@@ -3268,8 +3083,7 @@ progress::-moz-progress-bar {
 }
 
 .popup_accept {
-  width: 87px;
-  height: 32px;
+  @include block(87px, 32px);
   border: 0;
   background-color: $theme6_color3;
   color: $theme6_color6;
@@ -3277,12 +3091,10 @@ progress::-moz-progress-bar {
 }
 
 .popup_cancel {
-  width: 87px;
-  height: 32px;
+  @include block(87px, 32px);
   border: 1px solid $theme6_color3;
   background-color: $theme6_color6;
   color: $theme6_color3;
   border-radius: 6px;
-
   margin-right: 20px;
 }

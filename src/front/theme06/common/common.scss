@@ -41,6 +41,14 @@ $gray_dark: $theme6_color1; // #6C7293
 
 /* Миксины */
 
+@mixin font_style($font-style, $font-weight, $font_size, $line-height, $color) {
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font_size;
+  line-height: $line-height;
+  color: $color;
+}
+
 @mixin text($font-size, $line-height, $font-weight) {
   font-size: $font-size;
   line-height: $line-height;
@@ -50,6 +58,11 @@ $gray_dark: $theme6_color1; // #6C7293
 @mixin width($max-width, $width) {
   max-width: $max-width;
   width: $width;
+}
+
+@mixin block($width, $height) {
+  width: $width;
+  height: $height;
 }
 
 @mixin wrap {
@@ -67,4 +80,66 @@ $gray_dark: $theme6_color1; // #6C7293
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
+}
+
+/* Общие классы*/
+
+* {
+  font-family: $font_family;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+body {
+  @media (max-width: 400px) {
+    overflow-x: hidden;
+  }
+}
+
+.section {
+  border-bottom: solid 1px #EBEFF2;
+  padding: 50px 0px 50px 0px;
+}
+
+#fullContainer {
+  @include width(1580px, 100%);
+  margin: 0 auto;
+}
+
+.adaptive_block{
+  @include wrap;
+}
+
+::-webkit-scrollbar {
+  @include block(8px, 8px);
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d3cbcf;
+  border-radius: 3em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+.flex {
+  display: flex;
+}
+
+.mtb_30 {
+  margin: 30px 0;
+}
+
+.items_center {
+  @include center;
+}
+
+.dark {
+  color: $dark;
+}
+
+.gray_dark {
+  color: $gray_dark;
 }
