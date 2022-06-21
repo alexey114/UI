@@ -1,0 +1,153 @@
+#section_menu {
+  @include wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#menuWrapper {
+  width: 80%;
+
+  h2 {
+    @include text($font_size_base*1.25, 28px, 700);
+    color: $gray_dark;
+  }
+
+  @media (max-width: 782px) {
+    order: 2;
+  }
+}
+
+#container_theme {
+
+  .regular_12pt:first-child {
+    display: $theme_display;
+  }
+
+  @include width(120px, 19%);
+  margin-left: 98px;
+  margin-bottom: 25px;
+
+  @media (max-width: 1120px) {
+    margin-left: 30px;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  @include block(60px, 34px);
+  height: 34px;
+  margin: 10px;
+}
+
+.switch input {
+  display: none;
+}
+
+.theme_slider {
+  @include block(40px, 20px);
+  border-radius: 10px;
+  background-color: $theme6_color3;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $theme6_color3;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.theme_slider:before {
+  content: "";
+  position: absolute;
+  @include block(16px, 16px);
+  left: 2px;
+  top: 2px;
+  border-radius: 16px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked+.theme_slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Navigation */
+
+#menu {
+  @include center;
+  flex-wrap: wrap;
+
+  .menuLink {
+    margin: 0px 15px 15px 0px;
+    padding: 5px 12px 5px 12px;
+    text-decoration: none;
+    color: $gray_dark;
+    border-radius: 4px;
+    background-color: $theme6_color2;
+
+    &:last-child {
+      margin-right: 25px;
+    }
+  }
+}
+
+/* theme_switcher*/
+
+#theme_switcher {
+  @include block(118px, 40px);
+  display: $theme_display;
+  position: relative;
+}
+
+#theme_switcher::before,
+#theme_switcher::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  @include block(20px, 20px);
+  background-repeat: no-repeat;
+}
+
+#theme_switcher::before {
+  left: 0;
+  background-image: url(./theme06/images/light_theme.svg);
+}
+
+#theme_switcher::after {
+  right: 10px;
+  background-image: url(./theme06/images/dark_theme.svg);
+}
+
+.switch {
+  position: absolute;
+  margin: 0px;
+  left: 35px;
+  top: 0px;
+}
+
+/* Font */
+
+.text_items {
+
+  margin: 0;
+  color: $gray_dark;
+  font-size: 40px;
+
+  :last-child {
+    margin-right: 0px;
+  }
+}
+
+.text_item {
+  margin-right: 90px;
+
+  & p:first-child {
+    margin: 7px 0 30px 0;
+  }
+}
