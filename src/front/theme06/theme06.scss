@@ -893,8 +893,7 @@ input {
 
 .checkbox {
 
-  &_unmarked:checked:before,
-  &_marked:checked:before,
+  &_standart:checked:before,
   &_two:checked:before {
     content: "";
     width: 16px;
@@ -909,8 +908,7 @@ input {
 
 .checkbox {
 
-  &_unmarked:checked:after,
-  &_marked:checked:after {
+  &_standart:checked:after {
     content: "";
     width: 10px;
     height: 10px;
@@ -979,8 +977,7 @@ input {
 input {
   &.radio {
 
-    &.radio_marked:checked,
-    &.radio_unmarked:checked {
+    &_standart:checked {
       border: 1px solid #109CF1;
 
       &:before {
@@ -1191,26 +1188,26 @@ h1 {
   margin: 20px 20px 20px 0;
 }
 
-.foto.avatar_edit {
+.photo.avatar_edit {
   background-image: url(./theme06/images/user_avatar.svg);
 }
 
-.foto.avatar_done {
+.photo.avatar_done {
   background-image: url(./theme06/images/user_avatar_done.svg);
 }
 
-.foto.avatar_hover {
+.photo.avatar_hover {
   background-image: url(./theme06/images/user_avatar_hover.svg);
 }
 
-.foto.profile {
+.photo.profile {
   width: 46px;
   height: 46px;
   background-image: url(./theme06/images/profile_photo.svg);
   background-repeat: no-repeat;
 }
 
-.foto.profile_active {
+.photo.profile_active {
   width: 55px;
   height: 55px;
   background-image: url(./theme06/images/profile_photo-active.svg);
