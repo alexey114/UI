@@ -185,12 +185,21 @@ input:checked.switcher:before {
 
 /* Font */
 
-.text_header {
-  @include font_style(normal, 500, 14px, 17px, $theme6_color17);
-  margin: 20px 0;
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: $theme6_color17;
+
+  @media (max-width: 1120px) {
+    font-size: 20px;
+  }
 }
 
-.text_montserrat {
+h4 {
+  font-weight: 400;
+}
+
+.big_font {
   @include font_style(normal, 600, 50px, 60.95px, $theme6_color1);
   margin-right: 150px;
 
@@ -212,41 +221,41 @@ input:checked.switcher:before {
   line-height: 20.8px;
 }
 
-.regular_14pt {
+.definition_text {
   font-size: 14px;
   line-height: 16.8px;
 }
 
-.regular_12pt {
+.universal_text {
   font-size: 12px;
   line-height: 15.6px;
 }
 
-.medium_11pt {
+.status_text {
   font-size: 11px;
   font-weight: 500;
   line-height: 13.41px;
 }
 
-.medium_12pt {
+.name_text {
   font-size: 12px;
   font-weight: 500;
   line-height: 13.2px;
 }
 
-.semibold_18pt {
+.sidebar_text {
   font-size: 18px;
   font-weight: 600;
   line-height: 25.2px;
 }
 
-.semibold_14pt {
+.button_text {
   font-size: 14px;
   font-weight: 600;
   line-height: 18.2px;
 }
 
-.bold_20pt {
+.header_modal {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
@@ -419,8 +428,6 @@ button {
 
   &_active {
     color: #109CF1;
-    font-weight: 600;
-    line-height: 18.2px;
     cursor: pointer;
 
     &.button_border {
@@ -431,8 +438,6 @@ button {
   &_guidance,
   &_active:hover {
     color: #34AFF9;
-    font-weight: 600;
-    line-height: 18.2px;
 
     &.button_border {
       border: solid 1px #34AFF9;
@@ -442,8 +447,6 @@ button {
   &_pressing,
   &_active:active {
     color: #098EDF;
-    font-weight: 600;
-    line-height: 18.2px;
 
     &.button_border {
       border: solid 1px #098EDF;
@@ -452,8 +455,6 @@ button {
 
   &_disabled {
     color: #C2CFE0;
-    font-weight: 600;
-    line-height: 18.2px;
 
     &.button_border {
       border: solid 1px #C2CFE0;
@@ -760,8 +761,6 @@ input {
 
 .status {
   margin-right: 20px;
-  font-size: 11px;
-  font-weight: 500;
   @include block(84px, 22px);
   border: none;
   border-radius: 4px;
@@ -824,20 +823,6 @@ input {
 
 .theme6_color5 {
   border: 1px solid #F0F0F0;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: 500;
-  color: $theme6_color17;
-
-  @media (max-width: 1120px) {
-    font-size: 20px;
-  }
-}
-
-h4 {
-  font-weight: 400;
 }
 
 .theme6_color1 {
@@ -911,7 +896,6 @@ h4 {
 .theme6_color18 {
   background-color: $theme6_color18;
 }
-
 
 .vsb-menu .multi li:not(.grouped-option)::before {
   background-image: url(./theme01/images/multiempty.svg);
@@ -1108,8 +1092,6 @@ progress::-moz-progress-bar {
 
 .tooltipe_button {
   position: absolute;
-  font-weight: 600;
-  font-size: 14px;
   @include block(104px, 32px);
   color: $theme6_color6;
   background-color: $theme6_color3;
@@ -1316,7 +1298,7 @@ progress::-moz-progress-bar {
     position: absolute;
     top: 155px;
 
-    .regular_14pt {
+    .definition_text {
       color: $theme6_color5;
       margin-right: 70px;
 
@@ -1505,8 +1487,7 @@ progress::-moz-progress-bar {
 }
 
 .image {
-  width: 140px;
-  height: 140px;
+  @include block(140px, 140px);
   background-image: url(./theme06/images/images.svg);
   background-repeat: no-repeat;
 }
@@ -2251,7 +2232,7 @@ progress::-moz-progress-bar {
 }
 
 .slider {
-  @include block(50%, 4px);
+  @include block(100%, 4px);
   background: #F2F3F8;
   position: relative;
   -webkit-appearance: none;
@@ -2562,9 +2543,6 @@ progress::-moz-progress-bar {
 }
 
 .sidebar_name {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
   color: $theme6_color12;
 }
 

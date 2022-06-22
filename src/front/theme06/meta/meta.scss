@@ -19,7 +19,7 @@
 
 #container_theme {
 
-  .regular_12pt:first-child {
+  .universal_text:first-child {
     display: $theme_display;
   }
 
@@ -150,4 +150,42 @@ input:checked+.theme_slider:before {
   & p:first-child {
     margin: 7px 0 30px 0;
   }
+}
+
+/* FONT */
+
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: $theme6_color17;
+
+  @media (max-width: 1120px) {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-weight: 400;
+}
+
+.big_font {
+  @include font_style(normal, 600, 50px, 60.95px, $theme6_color1);
+  margin-right: 150px;
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.regular_16pt {
+  font-size: 16px;
+  line-height: 20.8px;
 }
