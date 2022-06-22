@@ -1,3 +1,30 @@
+/* ALL */
+
+
+.border {
+  border: 1px dashed $theme6_color7;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 20px 20px 0;
+}
+
+.icon_hand {
+  position: relative;
+
+  &:after {
+    display: $show_hand;
+    position: absolute;
+    @include block(26px, 26px);
+    content: "";
+    left: 75px;
+    top: 0;
+    background-image: url(./theme06/images/hand.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+/* MENU */
+
 #section_menu {
   @include wrap;
   width: 100%;
@@ -249,3 +276,425 @@ h4 {
   margin-top: 17px;
 }
 
+#buttons_mini {
+  display: flex;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+
+    .button_mini:last-child {
+      width: 400px;
+      margin-right: 40px;
+    }
+  }
+}
+
+.button_mini {
+  width: 204px;
+  margin-right: 40px;
+}
+
+/* CHECKBOX */
+
+#subsection {
+  margin-left: 120px;
+
+  @media (max-width: 1350px) {
+    @include wrap;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+}
+
+.blockWrapper {
+  display: inline-block;
+  width: auto;
+  margin-bottom: 40px;
+}
+
+.buttonsStatus {
+  @include wrap;
+  @include width(332px, auto);
+}
+
+.blockWrapper {
+  &.status-items {
+    margin-left: 20px;
+  }
+}
+
+/* COLOR */
+
+.color {
+  @include block(230px, 60px);
+  border: none;
+  border-radius: 4px;
+  margin-right: 40px;
+  box-shadow: none;
+}
+
+/*AVATAR*/
+
+.avatar_item {
+  margin-right: 120px;
+}
+
+/* PRELOADER and PROGRESSBAR */
+
+#preloaders {
+  @include wrap;
+  padding-top: 20px;
+
+  .border{
+    @include wrap;
+
+    @media (max-width: 400px) {
+      .ellipse,
+      .ellipse_second{
+        padding-right: 50px;
+      }
+    }
+  }
+}
+
+#progressBar {
+  margin-left: 50px;
+  max-width: 450px;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+}
+
+.progress {
+  margin-top: 29px;
+}
+
+/* TOOLTIP */
+
+#tooltipe {
+  padding-top: 20px;
+
+  .subtitle {
+    margin-bottom: 10px;
+  }
+}
+
+.tooltipe_item {
+  position: relative;
+  display: inline-flex;
+
+  @media (max-width: 1407px) {
+    margin-bottom: 50px;
+  }
+}
+
+.tooltipe_items {
+  margin-bottom: 61px;
+
+  &.textWithHeading {
+    margin-bottom: 120px;
+  }
+}
+
+.tooltipe_item {
+  @include block(270px, 115px);
+  margin-right: 40px;
+}
+
+.side {
+  width: 400px;
+}
+
+/* IMAGES */
+
+.images div {
+  .subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+#imagesWrapper {
+  div {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-right: 50px;
+    }
+  }
+}
+
+/* INPUT_FIELDS */
+
+.inputBlock {
+  display: flex;
+
+  .border {
+    @include wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+
+    @media (max-width: 800px) {
+      gap: 10px;
+    }
+  }
+
+  .subtitle {
+    width: 340px;
+
+    @media (max-width: 1400px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1120px) {
+    display: block;
+  }
+}
+
+.input_header {
+  color: $theme6_color5;
+  width: 320px;
+  padding-top: 60px;
+}
+
+/* CALENDAR */
+
+#section_select {
+  margin-top: 30px;
+}
+
+#calendar {
+  margin-right: 60px;
+}
+
+.calendar_item {
+  margin: 5px;
+}
+
+/* SELECT */
+
+#select {
+  max-width: 680px;
+}
+
+.select_two {
+  .select_item {
+    height: 180px;
+    margin-top: 40px;
+  }
+}
+
+.select_one {
+  margin-top: 40px;
+
+  .select_item {
+    height: 225px;
+  }
+
+  #select_calendar {
+    margin-top: 40px;
+  }
+}
+
+/* SEARCH */
+
+#blockSearch {
+  margin-top: 40px;
+}
+
+.search {
+  display: inline-flex;
+  margin-bottom: 20px;
+
+  @media (max-width: 940px) {
+    @include wrap;
+    width: min-content;
+    gap: 20px;
+  }
+}
+
+.statusText {
+  margin-right: 11px;
+}
+
+/*INPUT FIELDS NAME*/
+
+#section_input {
+  margin-top: 50px;
+}
+
+.inputs {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: 1060px) {
+    @include wrap;
+    justify-content: space-around;
+    gap: 10px
+  }
+
+  .subtitle,
+  .input {
+    margin-right: 42px;
+    width: 300px;
+
+    @media (max-width: 1400px) {
+      width: 250px;
+    }
+
+    @media (max-width: 1220px) {
+      width: 218px;
+    }
+
+    @media (max-width: 1060px) {
+      margin-right: 0px;
+    }
+  }
+
+  .subtitle {
+    @media (max-width: 1060px) {
+      display: none;
+    }
+  }
+}
+
+.input {
+  margin-right: 42px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.text_none {
+  @media (max-width: 1240px) {
+    display: none;
+  }
+}
+
+.input_name {
+  color: $theme6_color5;
+  margin-bottom: 11px;
+}
+
+.blue_header {
+  color: $theme6_color3;
+}
+
+.inputs_text {
+  @include wrap;
+  margin-top: 49px;
+
+  @media (max-width: 890px) {
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+/* SLIDER */
+
+#section_slider {
+  margin-top: 69px;
+}
+
+.slider_status {
+  max-width: 340px;
+  width: 100%;
+}
+
+.slider_items {
+  display: inline-flex;
+
+  .slider_item {
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    @include wrap;
+    justify-content: center;
+
+    .slider_item {
+      margin: 20px 0;
+    }
+  }
+}
+
+.slider_names {
+  display: inline-flex;
+  margin: 20px 0 20px 20px;
+  max-width: 1000px;
+  width: 100%;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
+}
+
+/* COMBOBOX */
+
+.combobox_disabled {
+  margin-top: 20px;
+
+  .subtitle {
+    padding-left: 20px;
+  }
+}
+
+.combobox_title {
+  margin-top: 20px;
+  display: inline-flex;
+  max-width: 1300px;
+  width: 100%;
+  margin-left: 20px;
+
+  @media (max-width: 1400px) {
+    max-width: 1100px;
+  }
+
+  @media (max-width: 1220px) {
+    max-width: 950px;
+  }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.combobox_blocks {
+  display: inline-flex;
+  margin-top: 20px;
+
+  @media (max-width: 1000px) {
+    @include wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
+
+.combobox_status {
+  width: 340px;
+}
+
+/* SIDEBAR */
+
+#sidebar {
+  @include wrap;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* POPUP */
+
+#section_popup {
+  .active {
+    margin-top: 30px;
+    background-color: $theme6_color3;
+  }
+}
