@@ -185,42 +185,6 @@ input:checked.switcher:before {
 
 /* Font */
 
-h1 {
-  font-size: 30px;
-  font-weight: 500;
-  color: $theme6_color17;
-
-  @media (max-width: 1120px) {
-    font-size: 20px;
-  }
-}
-
-h4 {
-  font-weight: 400;
-}
-
-.big_font {
-  @include font_style(normal, 600, 50px, 60.95px, $theme6_color1);
-  margin-right: 150px;
-
-  p {
-    margin-top: 5px;
-  }
-}
-
-.medium {
-  font-weight: 500;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-.regular_16pt {
-  font-size: 16px;
-  line-height: 20.8px;
-}
-
 .definition_text {
   font-size: 14px;
   line-height: 16.8px;
@@ -263,44 +227,6 @@ h4 {
 
 /* Button */
 
-.button_headers {
-  padding-left: 20px;
-  display: flex;
-  justify-content: space-between;
-  max-width: 790px;
-
-  @media (max-width: 850px) {
-    display: none;
-  }
-}
-
-#section-inner {
-  display: flex;
-
-  @media (max-width: 1350px) {
-    flex-wrap: wrap;
-  }
-}
-
-.buttons {
-  display: flex;
-  max-width: 790px;
-  border: 1px dashed #885AF8;
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 20px;
-
-  @media (max-width: 850px) {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 10px;
-  }
-}
-
-.subtitle {
-  @include font_style(normal, 500, 18px, 21.94px, $theme6_color4);
-}
-
 button {
   color: $theme6_color6;
 }
@@ -328,10 +254,14 @@ button {
 
 .btn_small {
   @include block(143px, 32px);
-  margin-right: 67px;
+  margin-right: 73px;
 
   @media (max-width: 850px) {
-    margin-right: 0;
+    margin-right: 23px;
+  }
+
+  @media (max-width: 755px) {
+    margin-right: 0px;
   }
 }
 
@@ -364,7 +294,6 @@ button {
     }
   }
 }
-
 
 .add {
 
@@ -467,15 +396,17 @@ button {
 
   @media (max-width: 600px) {
     flex-wrap: wrap;
+
+    .button_mini:last-child {
+      width: 400px;
+      margin-right: 40px;
+    }
   }
 }
 
 .button_mini {
-  width: 250px;
-
-  @media (max-width: 600px) {
-    width: 300px;
-  }
+  width: 204px;
+  margin-right: 40px;
 }
 
 .btn_mini {
@@ -510,65 +441,49 @@ button {
   }
 }
 
-.button_options {
-  margin-top: 23px;
-  margin-left: 63px;
+.back {
+  @include block(117px, 32px);
+  margin-bottom: 30px;
+  margin-right: 30px;
 
-  @media (max-width: 600px) {
-    margin-left: 20px;
+  .icon_back {
+    @include block(18px, 18px);
+    background-image: url(./theme06/images/back.svg);
+    background-repeat: no-repeat;
+    padding-right: 7px;
+    padding-top: 3px;
   }
 }
 
-.btns_opt {
-  width: 400px;
-  @include wrap;
-  margin-top: 17px;
+.back_second {
+  @include block(117px, 42px);
 
-  .back {
-    @include block(117px, 32px);
-    margin-bottom: 30px;
-    margin-right: 30px;
-
-    .icon_back {
-      @include block(18px, 18px);
-      background-image: url(./theme06/images/back.svg);
-      background-repeat: no-repeat;
-      padding-right: 7px;
-      padding-top: 3px;
-    }
+  .icon_back {
+    @include block(18px, 18px);
+    background-image: url(./theme06/images/back.svg);
+    background-repeat: no-repeat;
+    padding-right: 7px;
+    padding-top: 3px;
   }
+}
 
-  .back_second {
-    @include block(117px, 42px);
+.exit {
+  display: flex;
+  justify-items: center;
+  @include block(119px, 32px);
+  margin-right: 30px;
 
-    .icon_back {
-      @include block(18px, 18px);
-      background-image: url(./theme06/images/back.svg);
-      background-repeat: no-repeat;
-      padding-right: 7px;
-      padding-top: 3px;
-    }
+  .icon_exit {
+    @include block(18px, 18px);
+    background-image: url(./theme06/images/exit.svg);
+    background-repeat: no-repeat;
+    padding-right: 7px;
+    padding-top: 3px;
   }
+}
 
-  .exit {
-    display: flex;
-    justify-items: center;
-    @include block(119px, 32px);
-    margin-right: 30px;
-
-    .icon_exit {
-      @include block(18px, 18px);
-      background-image: url(./theme06/images/exit.svg);
-      background-repeat: no-repeat;
-      padding-right: 7px;
-      padding-top: 3px;
-    }
-
-  }
-
-  .exit_second {
-    @include block(97px, 32px);
-  }
+.exit_second {
+  @include block(97px, 32px);
 }
 
 /* Checkbox */
@@ -584,10 +499,6 @@ button {
   }
 }
 
-.buttons.test_checkbox {
-  width: 100px;
-}
-
 .blockWrapper {
   display: inline-block;
   width: auto;
@@ -599,10 +510,10 @@ button {
   @include wrap;
   @include width(332px, auto);
 
-  @media (max-width: 400px) {
-    justify-content: center;
-    max-width: 150px;
-  }
+  // @media (max-width: 400px) {
+  //   justify-content: center;
+  //   max-width: 130px;
+  // }
 }
 
 .display_item {
@@ -953,6 +864,19 @@ input {
 #preloaders {
   @include wrap;
   padding-top: 20px;
+
+  .border{
+    @include wrap;
+
+    @media (max-width: 400px) {
+      .ellipse,
+      .ellipse_second{
+        padding-right: 50px;
+      }
+    }
+
+
+  }
 }
 
 #progressBar {
@@ -1050,8 +974,6 @@ progress::-moz-progress-bar {
   @include center;
   justify-content: center;
   color: #192A3E;
-  font-weight: 400;
-  font-size: 12px;
   line-height: 15.6px;
   position: absolute;
   @include block(260px, 68px);
@@ -1556,8 +1478,6 @@ progress::-moz-progress-bar {
 }
 
 .border {
-  display: flex;
-  width: fit-content;
   border: 1px dashed $theme6_color7;
   border-radius: 5px;
   padding: 20px;

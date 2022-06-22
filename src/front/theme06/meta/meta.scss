@@ -189,3 +189,63 @@ h4 {
   font-size: 16px;
   line-height: 20.8px;
 }
+
+/* BUTTON */
+
+#section-inner {
+  display: flex;
+  width: 100%;
+
+  @media (max-width: 1350px) {
+    flex-wrap: wrap;
+  }
+}
+
+.button_headers {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 790px;
+
+  @media (max-width: 850px) {
+    display: none;
+  }
+}
+
+.buttons {
+  display: flex;
+  max-width: 790px;
+  width: 100%;
+
+  @media (max-width: 850px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+}
+
+.subsection_buttons{
+  @include wrap;
+  max-width: 790px;
+  width: 100%;
+}
+
+.subtitle {
+  @include font_style(normal, 500, 18px, 21.94px, $theme6_color4);
+}
+
+.button_options {
+  width: 400px;
+  margin-top: 23px;
+  margin-left: 63px;
+
+  @media (max-width: 600px) {
+    margin-left: 20px;
+  }
+}
+
+.btns_opt {
+  @include wrap;
+  margin-top: 17px;
+}
+
