@@ -1,6 +1,6 @@
 /* ALL */
 
-.border {
+.block {
   border: 1px dashed $theme6_color7;
   border-radius: 5px;
   padding: 20px;
@@ -220,7 +220,7 @@ h4 {
 
 /* BUTTON */
 
-#section-inner {
+#sectionInner {
   display: flex;
   width: 100%;
 
@@ -229,7 +229,7 @@ h4 {
   }
 }
 
-.button_headers {
+.headers_button {
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
@@ -241,7 +241,7 @@ h4 {
   }
 }
 
-.buttons {
+.block_buttons {
   display: flex;
   max-width: 790px;
   width: 100%;
@@ -253,7 +253,7 @@ h4 {
   }
 }
 
-.subsection_buttons{
+#subsection_buttons{
   @include wrap;
   max-width: 790px;
   width: 100%;
@@ -298,7 +298,7 @@ h4 {
 
 /* CHECKBOX */
 
-#subsection {
+#subsection_checkbox {
   margin-left: 120px;
 
   display: flex;
@@ -350,12 +350,12 @@ h4 {
   @include wrap;
   padding-top: 20px;
 
-  .border{
+  .block{
     @include wrap;
 
     @media (max-width: 400px) {
-      .ellipse,
-      .ellipse_second{
+      .preloader_ellipse,
+      .preloader_ellipse_second{
         padding-right: 50px;
       }
     }
@@ -436,7 +436,7 @@ h4 {
 .inputBlock {
   display: flex;
 
-  .border {
+  .block {
     @include wrap;
     justify-content: space-around;
     margin-top: 30px;

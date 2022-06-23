@@ -197,23 +197,23 @@
 
       <h1>Кнопки и другие активные элементы</h1>
 
-      <div id="section-inner">
+      <div id="sectionInner">
 
-        <div class="subsection_buttons">
+        <div class="subsection" id="subsection_buttons">
 
-          <div class="button_headers subtitle">
+          <div class="headers_button subtitle">
             <div>Стандартное</div>
             <div>При наведении</div>
             <div>При нажатии</div>
             <div>Не активная</div>
           </div>
 
-          <div class="buttons border">
-            <button class="button add_active">
+          <div class="block_buttons block">
+            <button class="button add">
               <span class="icon_plus">+</span>
               Добавить
             </button>
-            <button class="button add_guidance">
+            <button class="button add_hover">
               <span class="icon_plus">+</span>
               <p class="icon_hand">Добавить</p>
             </button>
@@ -227,12 +227,12 @@
             </button>
           </div>
 
-          <div class="buttons border">
-            <button class="button load_active">
+          <div class="block_buttons block">
+            <button class="button load">
               <span class="icon_attach"></span>
               Загрузить
             </button>
-            <button class="button load_guidance">
+            <button class="button load_hover">
               <span class="icon_attach"></span>
               <p class="icon_hand">Загрузить</p>
             </button>
@@ -246,9 +246,9 @@
             </button>
           </div>
 
-          <div class="buttons border">
-            <button class="button cancel_active button_text button_border">Отмена</button>
-            <button class="button cancel_guidance button_text button_border">
+          <div class="block_buttons block">
+            <button class="button cancel button_text button_border">Отмена</button>
+            <button class="button cancel_hover button_text button_border">
               <p class="icon_hand">Отмена</p>
             </button>
             <button class="button cancel_pressing button_text button_border">
@@ -257,9 +257,9 @@
             <button class="button cancel_disabled button_text button_border">Отмена</button>
           </div>
 
-          <div class="buttons border">
-            <button class="button button_text cancel_active">Отмена</button>
-            <button class="button button_text cancel_guidance">
+          <div class="block_buttons block">
+            <button class="button button_text cancel">Отмена</button>
+            <button class="button button_text cancel_hover">
               <p class="icon_hand">Отмена</p>
             </button>
             <button class="button button_text cancel_pressing">
@@ -268,9 +268,12 @@
             <button class="button button_text cancel_disabled">Отмена</button>
           </div>
 
-          <div class="buttons border">
-            <button class="button btn_small add_active"><span class="icon_plus">+</span>Добавить</button>
-            <button class="button btn_small add_guidance"><span class="icon_plus">+</span>
+          <div class="block_buttons block">
+            <button class="button btn_small add">
+              <span class="icon_plus">+</span>
+              Добавить
+            </button>
+            <button class="button btn_small add_hover"><span class="icon_plus">+</span>
               <p class="icon_hand">Добавить</p>
             </button>
             <button class="button btn_small add_pressing"><span class="icon_plus">+</span>
@@ -281,11 +284,11 @@
 
           <div id="buttons_mini">
             <div class="button_mini">
-              <div class="buttons border btns_mini">
-                <button class="button btn_mini add_active">
+              <div class="block_buttons block btns_mini">
+                <button class="button btn_mini add">
                   <span class="icon_save"></span>
                 </button>
-                <button class="button btn_mini add_guidance">
+                <button class="button btn_mini add_hover">
                   <span class="icon_save icon_hand"></span>
                 </button>
                 <button class="button btn_mini add_pressing">
@@ -296,11 +299,11 @@
                 </button>
               </div>
 
-              <div class="buttons border btns_mini">
-                <button class="button btn_mini add_active">
+              <div class="block_buttons block btns_mini">
+                <button class="button btn_mini add">
                   <span class="icon_exit"></span>
                 </button>
-                <button class="button btn_mini add_guidance">
+                <button class="button btn_mini add_hover">
                   <span class="icon_exit icon_hand"></span>
                 </button>
                 <button class="button btn_mini add_pressing">
@@ -316,10 +319,10 @@
               <div class="button_options">
                 <div class="subtitle">Варианты кнопок</div>
                 <div class="btns_opt">
-                  <button class="button back add_active"><span class="icon_back"></span>Назад</button>
-                  <button class="button back_second add_active"><span class="icon_back"></span>Назад</button>
-                  <button class="button exit add_active"><span class="icon_exit"></span>Выход</button>
-                  <button class="button exit_second add_active">Выход</button>
+                  <button class="button back add"><span class="icon_back"></span>Назад</button>
+                  <button class="button back_second add"><span class="icon_back"></span>Назад</button>
+                  <button class="button exit add"><span class="icon_exit"></span>Выход</button>
+                  <button class="button exit_second add">Выход</button>
                 </div>
               </div>
             </div>
@@ -327,10 +330,10 @@
 
         </div>
 
-        <div id="subsection">
+        <div class="subsection" id="subsection_checkbox">
           <div class="blockWrapper">
             <div class="subtitle">Checkbox</div>
-            <div class="border flex">
+            <div class="block flex">
               <input class="checkbox checkbox_standart" type="checkbox">
               <input class="checkbox checkbox_standart" type="checkbox" checked>
               <input class="checkbox checkbox_two" type="checkbox" checked>
@@ -341,7 +344,7 @@
           </div>
           <div class="blockWrapper">
             <div class="subtitle">Radio</div>
-            <div class="border flex">
+            <div class="block flex">
               <input class="radio radio_standart" type="radio">
               <input class="radio radio_standart" type="radio" checked>
               <input class="radio radio_alert" type="radio" checked>
@@ -352,7 +355,7 @@
           <div class="blockWrapper">
 
             <div class="subtitle">Статусы элементов</div>
-            <div class="border">
+            <div class="block">
               <button class="status status_text active">Активен</button>
               <button class="status status_text disabled">Не активен</button>
               <button class="status status_text off">Отключён</button>
@@ -364,7 +367,7 @@
 
             <div class="subtitle">Switcher</div>
 
-            <div class="border flex">
+            <div class="block flex">
               <div class="adaptive_block">
                 <div class="switch_item">
                   <input class="switcher active" type="checkbox" checked />
@@ -446,12 +449,12 @@
       <div id="preloaders">
         <div>
           <div class="subtitle">Стандартный</div>
-          <div class="border">
-            <div class="preloader ellipse">
+          <div class="block">
+            <div class="preloader preloader_ellipse">
             </div>
-            <div class="preloader ellipse_second">
+            <div class="preloader preloader_ellipse_second">
             </div>
-            <div class="preloader polygon">
+            <div class="preloader preloader_polygon">
             </div>
           </div>
         </div>
@@ -734,7 +737,7 @@
 
           <div class="inputBlock">
             <div class="input_header definition_text">Текстовое поле</div>
-            <div class="border">
+            <div class="block">
               <input class="input_field fieldNew" type="text" value="Вспомогательный текст">
               <input class="input_field fieldStandart" type="text" value="Вспомогательный текст">
               <input class="input_field fieldEditing" type="text" value="Вспомогательный текст">
@@ -743,7 +746,7 @@
 
           <div class="inputBlock">
             <div class="input_header definition_text">Выпадающий список</div>
-            <div class="border">
+            <div class="block">
               <div class="__select" data-state="">
                 <div class="__select__title input_select fieldNew" data-default="Option 0">
                   Вспомогательный текст
@@ -790,7 +793,7 @@
 
           <div class="inputBlock">
             <div class="input_header definition_text">Выбор даты</div>
-            <div class="border">
+            <div class="block">
               <input class="input_date fieldNew" type="date">
               <input class="input_date fieldStandart" type="date">
               <input class="input_date fieldEditing" type="date">
@@ -868,7 +871,7 @@
       <div>
         <h1>Поля для поиска и фильтрации</h1>
         <div id="blockSearch">
-          <div class="search border">
+          <div class="search block">
             <div class="search_disabled">
               <input type="search" placeholder="Поиск">
             </div>
@@ -876,7 +879,7 @@
               <input type="search" placeholder="Поиск">
             </div>
           </div>
-          <div class="search border">
+          <div class="search block">
             <div class="search_disabled search_disabled_add">
               <input type="search" placeholder="Поиск">
             </div>
@@ -906,7 +909,7 @@
             <div class="subtitle">Стандартное состояние</div>
             <div class="subtitle">При редактировании</div>
           </div>
-          <div class="inputs border">
+          <div class="inputs block">
             <div class="input">
               <div class="input_name name_text">Название</div>
               <div class="definition_text">Вспомогательный текст</div>
@@ -925,7 +928,7 @@
             </div>
           </div>
 
-          <div class="inputs arrow_design border">
+          <div class="inputs arrow_design block">
             <div class="input">
               <div class="input_name name_text">Название</div>
               <div class="definition_text">Вспомогательный текст</div>
@@ -944,7 +947,7 @@
             </div>
           </div>
 
-          <div class="inputs calendar_design border">
+          <div class="inputs calendar_design block">
             <div class="input">
               <div class="input_name calendar_grey_light name_text">Название</div>
               <div class="definition_text">Вспомогательный <span class="text_none">текст</span></div>
@@ -1023,7 +1026,7 @@
         <div class="subtitle slider_status">При наведении</div>
         <div class="subtitle slider_status">Отключён</div>
       </div>
-      <div class="slider_items border">
+      <div class="slider_items block">
         <div class="slider_item">
           <div class="slider_name">Название параметра</div>
           <input type="range" min="1" max="100" value="50" class="slider slider_standart">
@@ -1052,7 +1055,7 @@
               <div class="subtitle combobox_status">При наведении</div>
               <div class="subtitle combobox_status">При редактировании</div>
             </div>
-            <div class="combobox_blocks border">
+            <div class="combobox_blocks block">
               <div class="combobox_block">
                 <input class="input_field fieldNew combobox_input" type="text" value="Вспомогательный текст">
               </div>
@@ -1068,7 +1071,7 @@
                 <input class="input_field fieldNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
-                  <div class="point combobox_none combobox_guidance">Пункт 1</div>
+                  <div class="point combobox_none combobox_hover">Пункт 1</div>
                   <div class="combobox_close"></div>
                 </div>
               </div>
@@ -1084,7 +1087,7 @@
           </div>
           <div class="combobox_disabled">
             <div class="subtitle">Отключён</div>
-            <div class="combobox_blocks border">
+            <div class="combobox_blocks block">
               <div class="combobox_block">
                 <input class="input_field fieldNew combobox_input combobox_inactive" type="text"
                   value="Вспомогательный текст">
@@ -1108,7 +1111,7 @@
               <div class="subtitle combobox_status">При наведении</div>
               <div class="subtitle combobox_status">При редактировании</div>
             </div>
-            <div class="combobox_blocks border">
+            <div class="combobox_blocks block">
               <div class="combobox_standart">
                 <input class="input_field fieldNew combobox_input" type="text" value="Вспомогательный текст">
               </div>
@@ -1123,7 +1126,7 @@
                 <input class="input_field fieldNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
-                  <div class="point combobox_guidance combobox_none">Пункт 1</div>
+                  <div class="point combobox_hover combobox_none">Пункт 1</div>
                 </div>
               </div>
               <div class="combobox_standart">
@@ -1137,7 +1140,7 @@
           </div>
           <div class="combobox_disabled">
             <div class="subtitle">Отключён</div>
-            <div class="combobox_blocks border">
+            <div class="combobox_blocks block">
               <div class="combobox_standart">
                 <input class="input_field fieldNew combobox_input combobox_inactive" type="text"
                   value="Вспомогательный текст">

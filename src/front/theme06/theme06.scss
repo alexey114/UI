@@ -281,19 +281,16 @@ button {
 }
 
 .add {
-
-  &_active {
     background-color: $theme6_color3;
     cursor: pointer;
-  }
 
-  &_guidance,
-  &_active:hover {
+  &_hover,
+  &:hover {
     background-color: #34AFF9;
   }
 
   &_pressing,
-  &_active:active {
+  &:active {
     background-color: #098EDF;
   }
 
@@ -304,8 +301,8 @@ button {
 
 .load {
 
-  &_active .icon_attach,
-  &_guidance .icon_attach,
+  & .icon_attach,
+  &_hover .icon_attach,
   &_pressing .icon_attach,
   &_disabled .icon_attach {
     @include block(18px, 18px);
@@ -314,20 +311,20 @@ button {
     background-repeat: no-repeat;
   }
 
-  &_active {
+  & {
     color: $theme6_color5;
     background-color: $theme6_color14;
     cursor: pointer;
   }
 
-  &_guidance,
-  &_active:hover {
+  &_hover,
+  &:hover {
     color: #A7ABC3;
     background-color: #E5E6ED;
   }
 
   &_pressing,
-  &_active:active {
+  &:active {
     color: $gray_dark;
     background-color: #D7D9E4;
   }
@@ -340,17 +337,15 @@ button {
 
 .cancel {
 
-  &_active {
-    color: #109CF1;
-    cursor: pointer;
+  color: #109CF1;
+  cursor: pointer;
 
-    &.button_border {
-      border: solid 1px #109CF1;
-    }
+  &.button_border {
+    border: solid 1px #109CF1;
   }
 
-  &_guidance,
-  &_active:hover {
+  &_hover,
+  &:hover {
     color: #34AFF9;
 
     &.button_border {
@@ -359,7 +354,7 @@ button {
   }
 
   &_pressing,
-  &_active:active {
+  &:active {
     color: #098EDF;
 
     &.button_border {
@@ -773,7 +768,7 @@ input {
   animation: moving 3s infinite linear;
 }
 
-.ellipse {
+.preloader_ellipse {
   @include block(36px, 36px);
   background-image: url(./theme06/images/ellipse.svg);
   background-repeat: no-repeat;
@@ -781,7 +776,7 @@ input {
   transform-origin: 18px 18px;
 }
 
-.ellipse_second {
+.preloader_ellipse_second {
   @include block(18px, 18px);
   background-image: url(./theme06/images/ellipse2.svg);
   background-repeat: no-repeat;
@@ -789,7 +784,7 @@ input {
   transform-origin: 9px 9px;
 }
 
-.polygon {
+.preloader_polygon {
   @include block(34.34px, 34.34px);
   background-image: url(./theme06/images/polygon.svg);
   background-repeat: no-repeat;
@@ -1976,7 +1971,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.combobox_guidance {
+.combobox_hover {
   &::before {
     display: $show_hand;
     position: absolute;
