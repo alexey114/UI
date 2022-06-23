@@ -1,6 +1,5 @@
 /* ALL */
 
-
 .border {
   border: 1px dashed $theme6_color7;
   border-radius: 5px;
@@ -21,6 +20,10 @@
     background-image: url(./theme06/images/hand.svg);
     background-repeat: no-repeat;
   }
+}
+
+.mtb_30 {
+  margin: 30px;
 }
 
 /* MENU */
@@ -104,7 +107,7 @@ input:checked+.theme_slider:before {
   transform: translateX(20px);
 }
 
-/* Navigation */
+/* NAVIGATION */
 
 #menu {
   @include center;
@@ -124,7 +127,7 @@ input:checked+.theme_slider:before {
   }
 }
 
-/* theme_switcher*/
+/* THEME_SWITCHER*/
 
 #theme_switcher {
   @include block(118px, 40px);
@@ -158,7 +161,7 @@ input:checked+.theme_slider:before {
   top: 0px;
 }
 
-/* Font */
+/* FONT */
 
 .text_items {
 
@@ -178,8 +181,6 @@ input:checked+.theme_slider:before {
     margin: 7px 0 30px 0;
   }
 }
-
-/* FONT */
 
 h1 {
   font-size: 30px;
@@ -233,6 +234,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   max-width: 790px;
+  width: 100%;
 
   @media (max-width: 850px) {
     display: none;
@@ -299,8 +301,12 @@ h4 {
 #subsection {
   margin-left: 120px;
 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+
   @media (max-width: 1350px) {
-    @include wrap;
     align-items: center;
     margin-left: 0px;
     margin-top: 50px;
@@ -308,8 +314,6 @@ h4 {
 }
 
 .blockWrapper {
-  display: inline-block;
-  width: auto;
   margin-bottom: 40px;
 }
 

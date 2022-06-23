@@ -275,6 +275,10 @@
 
 /* footer table */
 
+.items_center {
+  @include center;
+}
+
 .footer_item {
   padding-right: 30px;
 
