@@ -185,35 +185,35 @@ input:checked.switcher:before {
 
 /* Font */
 
-.definition_text {
+.text_definition {
   font-size: 14px;
   line-height: 16.8px;
 }
 
-.universal_text {
+.text_universal {
   font-size: 12px;
   line-height: 15.6px;
 }
 
-.status_text {
+.text_status {
   font-size: 11px;
   font-weight: 500;
   line-height: 13.41px;
 }
 
-.name_text {
+.text_name {
   font-size: 12px;
   font-weight: 500;
   line-height: 13.2px;
 }
 
-.sidebar_text {
+.text_sidebar {
   font-size: 18px;
   font-weight: 600;
   line-height: 25.2px;
 }
 
-.button_text {
+.text_button {
   font-size: 14px;
   font-weight: 600;
   line-height: 18.2px;
@@ -252,7 +252,7 @@ button {
   }
 }
 
-.btn_small {
+.button_lowMiddle {
   @include block(143px, 32px);
   margin-right: 73px;
 
@@ -269,15 +269,6 @@ button {
   padding-right: 8px;
   font-size: 1.75 * $font_size_base;
   line-height: 1.75 * $font_size_base;
-}
-
-.btn_small {
-  .icon_hand {
-    &:after {
-      top: 10px;
-      left: 65px;
-    }
-  }
 }
 
 .add {
@@ -371,7 +362,7 @@ button {
   }
 }
 
-.btn_mini {
+.button_small {
   @include block(36px, 32px);
   margin-right: 20px;
 
@@ -393,13 +384,6 @@ button {
     @include block(24px, 24px);
     background-image: url(./theme06/images/exit.svg);
     background-repeat: no-repeat;
-  }
-
-  .icon_hand {
-    &:after {
-      top: 15px;
-      left: 10px;
-    }
   }
 }
 
@@ -750,7 +734,7 @@ input {
   background-repeat: no-repeat;
 }
 
-.mini_avatar {
+.small_avatar {
   @include block(24px, 24px);
   background-image: url(./theme06/images/associated_photo.svg);
   background-repeat: no-repeat;
@@ -815,7 +799,7 @@ progress::-moz-progress-bar {
 
 /* TOOLTIP */
 
-.tooltipe_text {
+.text_tooltip {
   @include center;
   justify-content: center;
   color: #192A3E;
@@ -827,7 +811,7 @@ progress::-moz-progress-bar {
   -moz-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
   box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
 
-  &.text_mini {
+  &.text_small {
     @media (max-width: 400px) {
       width: 170px;
       font-size: 8px;
@@ -835,8 +819,8 @@ progress::-moz-progress-bar {
   }
 }
 
-.tooltipe_up {
-  .tooltipe_text::after {
+.tooltip_up {
+  .text_tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -848,7 +832,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.tooltipe_button {
+.button_tooltip {
   position: absolute;
   @include block(104px, 32px);
   color: $theme6_color6;
@@ -857,22 +841,22 @@ progress::-moz-progress-bar {
   border-radius: 6px;
 }
 
-.tooltipe_up {
-  .tooltipe_button {
+.tooltip_up {
+  .button_tooltip {
     top: 90px;
     left: 70px;
   }
 }
 
-.tooltipe_up_right {
-  .tooltipe_button {
+.tooltip_up_right {
+  .button_tooltip {
     top: 90px;
     left: 160px;
   }
 }
 
-.tooltipe_up_right {
-  .tooltipe_text::after {
+.tooltip_up_right {
+  .text_tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -884,18 +868,18 @@ progress::-moz-progress-bar {
   }
 }
 
-.tooltipe_bottom {
+.tooltip_bottom {
 
-  .tooltipe_button {
+  .button_tooltip {
     left: 155px;
   }
 
-  .tooltipe_text {
+  .text_tooltip {
     top: 55px;
     left: 0px;
   }
 
-  .tooltipe_text::after {
+  .text_tooltip::after {
     content: "";
     position: absolute;
     top: -11px;
@@ -907,13 +891,13 @@ progress::-moz-progress-bar {
   }
 }
 
-.tooltipe_right {
-  .tooltipe_text {
+.tooltip_right {
+  .text_tooltip {
     top: -20px;
     left: 120px;
   }
 
-  .tooltipe_text::after {
+  .text_tooltip::after {
     content: "";
     position: absolute;
     top: 30px;
@@ -925,11 +909,11 @@ progress::-moz-progress-bar {
   }
 }
 
-.tooltipe_left {
+.tooltip_left {
   position: absolute;
   top: 55px;
 
-  .tooltipe_button {
+  .button_tooltip {
     top: 20px;
     left: 280px;
 
@@ -938,7 +922,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  .tooltipe_text::after {
+  .text_tooltip::after {
     content: "";
     position: absolute;
     top: 30px;
@@ -952,23 +936,23 @@ progress::-moz-progress-bar {
 
 .textWithHeading {
 
-  .tooltipe_text {
+  .text_tooltip {
     height: 89px;
   }
 
-  .tooltipe_left {
+  .tooltip_left {
     top: 80px;
   }
 
-  .tooltipe_up,
-  .tooltipe_up_right {
-    .tooltipe_button {
+  .tooltip_up,
+  .tooltip_up_right {
+    .button_tooltip {
       top: 110px;
     }
   }
 }
 
-.tooltipe_header {
+.tooltip_header {
   font-weight: 600;
   top: 10px;
   left: 12px;
@@ -994,12 +978,12 @@ progress::-moz-progress-bar {
   }
 }
 
-.text_button {
+.tooltipInner {
 
   @include wrap;
   position: relative;
 
-  .tooltipe_item {
+  .tooltip {
     width: 480px;
     margin-top: 50px;
 
@@ -1008,13 +992,13 @@ progress::-moz-progress-bar {
     }
   }
 
-  .tooltipe_up_right {
-    .tooltipe_button {
+  .tooltip_up_right {
+    .button_tooltip {
       top: 97px;
     }
   }
 
-  .tooltipe_text {
+  .text_tooltip {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1052,7 +1036,7 @@ progress::-moz-progress-bar {
     position: absolute;
     top: 155px;
 
-    .definition_text {
+    .text_definition {
       color: $theme6_color5;
       margin-right: 70px;
 
@@ -1075,7 +1059,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  .tooltipe_right {
+  .tooltip_right {
 
     @media (max-width: 780px) {
       display: none;
@@ -1085,12 +1069,12 @@ progress::-moz-progress-bar {
       top: 20px;
     }
 
-    .tooltipe_text {
+    .text_tooltip {
       left: 500px;
     }
 
 
-    .tooltipe_text::after {
+    .text_tooltip::after {
       top: 60px;
     }
 
@@ -1162,19 +1146,19 @@ progress::-moz-progress-bar {
 
 /* ACCORDION */
 
-#accordions {
+#accordion {
   margin-top: 20px;
   color: #6C7293;
 }
 
-.accordion {
+.accordionItem {
   display: flex;
   justify-content: space-between;
   margin-top: 14px;
   @include block(240px, 20px);
 }
 
-.accordion_arrow {
+.accordionArrow {
   position: relative;
 }
 
@@ -1207,7 +1191,7 @@ progress::-moz-progress-bar {
   padding-left: 20px;
 }
 
-.btn_exit {
+.button_exit {
   @include block(97px, 32px);
   background-color: $theme6_color3;
 }
@@ -1218,7 +1202,7 @@ progress::-moz-progress-bar {
 
 /* IMAGES */
 
-.image_disabled {
+.image_empty {
   @include block(140px, 140px);
   background-image: url(./theme06/images/no_images.svg);
   background-repeat: no-repeat;
@@ -1837,18 +1821,6 @@ progress::-moz-progress-bar {
     &::-ms-thumb {
       border: 2px solid #34AFF9;
     }
-
-    &::after {
-      display: $show_hand;
-      position: absolute;
-      content: "";
-      @include block(26px, 26px);
-      top: 0;
-      left: calc(50% - 10px);
-      background-image: url(./theme06/images/hand.svg);
-      background-repeat: no-repeat;
-      border-radius: 4px;
-    }
   }
 
   &.slider_off {
@@ -1971,18 +1943,8 @@ progress::-moz-progress-bar {
   }
 }
 
-.combobox_hover {
-  &::before {
-    display: $show_hand;
-    position: absolute;
-    content: "";
-    @include block(26px, 26px);
-    top: 7px;
-    left: 40px;
-    background-image: url(./theme06/images/hand.svg);
-    background-repeat: no-repeat;
-    border-radius: 4px;
-  }
+.block_hover {
+  cursor: pointer;
 }
 
 .combobox_inactive {

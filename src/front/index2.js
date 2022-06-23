@@ -94,16 +94,3 @@ for(let anchor of anchors){
     })
   })
 }
-
-// Reset title - мешает работе popup!!!
-const reset = document.querySelector(".reset");
-reset.addEventListener("click", () => {
-  selectSingle_title.textContent =
-    selectSingle_title.getAttribute("data-default");
-});
-
-// checkBox  - мешает работе popup!!!
-let checkBoxButton = document.querySelector(".checkbox_big");
-checkBoxButton.addEventListener("click", () => {
-  checkBoxButton.classList.toggle("checkbox_big_inactive");
-});

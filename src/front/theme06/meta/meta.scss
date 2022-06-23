@@ -7,21 +7,6 @@
   margin: 20px 20px 20px 0;
 }
 
-.icon_hand {
-  position: relative;
-
-  &:after {
-    display: $show_hand;
-    position: absolute;
-    @include block(26px, 26px);
-    content: "";
-    left: 75px;
-    top: 0;
-    background-image: url(./theme06/images/hand.svg);
-    background-repeat: no-repeat;
-  }
-}
-
 .mtb_30 {
   margin: 30px;
 }
@@ -49,7 +34,7 @@
 
 #container_theme {
 
-  .universal_text:first-child {
+  .text_universal:first-child {
     display: $theme_display;
   }
 
@@ -273,25 +258,25 @@ h4 {
   }
 }
 
-.btns_opt {
+.buttons_opt {
   @include wrap;
   margin-top: 17px;
 }
 
-#buttons_mini {
+#buttons_small {
   display: flex;
 
   @media (max-width: 600px) {
     flex-wrap: wrap;
 
-    .button_mini:last-child {
+    .blockWrapper_buttonSmall:last-child {
       width: 400px;
       margin-right: 40px;
     }
   }
 }
 
-.button_mini {
+.blockWrapper_buttonSmall {
   width: 204px;
   margin-right: 40px;
 }
@@ -340,7 +325,7 @@ h4 {
 
 /*AVATAR*/
 
-.avatar_item {
+.blockWrapperAvatar {
   margin-right: 120px;
 }
 
@@ -379,7 +364,7 @@ h4 {
 
 /* TOOLTIP */
 
-#tooltipe {
+#tooltip {
   padding-top: 20px;
 
   .subtitle {
@@ -387,7 +372,7 @@ h4 {
   }
 }
 
-.tooltipe_item {
+.tooltip {
   position: relative;
   display: inline-flex;
 
@@ -396,7 +381,7 @@ h4 {
   }
 }
 
-.tooltipe_items {
+.block_tooltip {
   margin-bottom: 61px;
 
   &.textWithHeading {
@@ -404,7 +389,7 @@ h4 {
   }
 }
 
-.tooltipe_item {
+.tooltip {
   @include block(270px, 115px);
   margin-right: 40px;
 }
