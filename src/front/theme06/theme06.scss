@@ -1218,7 +1218,7 @@ progress::-moz-progress-bar {
 
 /* INPUT_FIELDS */
 
-.input_field {
+.field-input {
   height: 42px;
   margin-right: 32px;
 
@@ -1694,11 +1694,11 @@ progress::-moz-progress-bar {
     justify-content: center;
   }
 
-  .input_field {
+  .field-input {
     margin-right: 0px;
   }
 
-  .input_header {
+  .field-input_name {
     width: 130px;
     padding: 0 50px 0 20px;
     display: block;
