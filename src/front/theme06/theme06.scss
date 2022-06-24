@@ -1617,6 +1617,7 @@ progress::-moz-progress-bar {
 .input_status {
 
   margin-left: 20px;
+  align-items: start !important;
 
   @media (max-width: 750px) {
     margin-left: 0px;
@@ -1632,7 +1633,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  .input_first {
+  .field-inputFirst {
     width: 238px;
     padding: 12px 50px 13px 12px;
     border-radius: 5px;
@@ -1647,8 +1648,13 @@ progress::-moz-progress-bar {
   }
 }
 
-.not_true {
+.field-messageError {
+  display: none;
   color: $theme6_color9;
+}
+
+.error_active{
+  display: flex;
 }
 
 .icon_close::after {
@@ -1679,7 +1685,7 @@ progress::-moz-progress-bar {
   border: 1px solid $theme6_color9;
 }
 
-.input_text {
+.field-input_blockText {
   @include center;
   position: relative;
   margin-right: 80px;
@@ -1738,7 +1744,7 @@ progress::-moz-progress-bar {
 
 /* SLIDER */
 
-.slider_item {
+.block_slider {
   @include wrap;
   align-items: center;
   max-width: 320px;

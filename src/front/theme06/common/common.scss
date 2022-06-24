@@ -113,6 +113,11 @@ body {
   @include wrap;
 }
 
+.block_column{
+  display: flex;
+  flex-direction: column;
+}
+
 ::-webkit-scrollbar {
   @include block(8px, 8px);
   background-color: white;
