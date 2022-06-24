@@ -1092,7 +1092,7 @@ progress::-moz-progress-bar {
 
 /* PAGINATION*/
 
-#paginations {
+#paging {
   margin-top: 20px;
   padding: 20px;
   list-style-type: none;
@@ -1108,12 +1108,14 @@ progress::-moz-progress-bar {
   }
 }
 
-.pagination {
+.paging-page,
+.paging-toBack,
+.paging-toForward {
   display: inline;
   padding: 3px 9px;
   position: relative;
 
-  &.active {
+  &.page_active {
     text-align: center;
     background-color: $theme6_color15;
     @include block(24px, 24px);
@@ -1183,7 +1185,7 @@ progress::-moz-progress-bar {
   transform: rotate(180deg);
 }
 
-.subpoint {
+.accordionSubitem {
   display: flex;
   justify-content: space-between;
   margin-top: 15.5px;
