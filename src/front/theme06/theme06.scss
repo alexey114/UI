@@ -116,7 +116,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 22px;
     right: 10px;
     display: block;
     @include block(8px, 2px);
@@ -1226,7 +1226,7 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  &:last-child {
+  &.field-inputEditing {
     margin-right: 0px;
   }
 
@@ -1247,19 +1247,11 @@ progress::-moz-progress-bar {
   }
 }
 
-.input_date {
+.field-input_date {
   @include block(281px, 42px);
   margin-right: 32px;
 
-  @media (max-width: 1400px) {
-    width: 231px;
-  }
-
-  @media (max-width: 1220px) {
-    width: 199px;
-  }
-
-  &:last-child {
+  &.field-inputEditing {
     margin-right: 0px;
   }
 
@@ -1270,19 +1262,28 @@ progress::-moz-progress-bar {
   @media (max-width: 800px) {
     margin-right: 0px;
   }
+
+
+  @media (max-width: 1400px) {
+    width: 231px;
+  }
+
+  @media (max-width: 1220px) {
+    width: 199px;
+  }
 }
 
-.fieldNew {
+.field-inputNew {
   color: #A7ABC3;
   border: 1px solid #D3D8DD;
 }
 
-.fieldStandart {
+.field-inputStandart {
   color: #192A3E;
   border: 1px solid #D3D8DD;
 }
 
-.fieldEditing {
+.field-inputEditing {
   color: #192A3E;
   border: 1px solid $theme6_color3;
 }
@@ -1311,7 +1312,7 @@ progress::-moz-progress-bar {
   -moz-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
   box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
 
-  .fieldEditing {
+  .field-inputEditing {
     padding-right: 200px;
   }
 }
@@ -1323,18 +1324,7 @@ progress::-moz-progress-bar {
 .active_option {
   position: relative;
   background-color: $theme6_color3;
-
-
-  &::before {
-    display: $show_hand;
-    content: "";
-    @include block(26px, 26px);
-    position: absolute;
-    top: 15px;
-    left: 260px;
-    background-image: url(./theme06/images/hand.svg);
-    background-repeat: no-repeat;
-  }
+  cursor: pointer;
 }
 
 .optionCircle {
@@ -1558,10 +1548,15 @@ progress::-moz-progress-bar {
   }
 }
 
+.field-messageContainer{
+  display: $show_error;
+  flex-direction: column;
+}
+
 /*INPUT FIELDS NAME*/
 
 .arrow_design {
-  .input {
+  .field-inputBlock {
 
     position: relative;
 
@@ -1581,6 +1576,13 @@ progress::-moz-progress-bar {
     }
   }
 }
+
+
+.field-input_withName {
+  color: $theme6_color5;
+  margin-bottom: 11px;
+}
+
 
 .calendar_grey_light,
 .calendar_grey,
@@ -1621,7 +1623,7 @@ progress::-moz-progress-bar {
     gap: 30px !important;
   }
 
-  .input {
+  .field-inputBlock {
     margin-right: 42px;
     position: relative;
 
@@ -1646,9 +1648,6 @@ progress::-moz-progress-bar {
 }
 
 .not_true {
-  position: absolute;
-  top: 70px;
-  left: 1px;
   color: $theme6_color9;
 }
 
@@ -1732,7 +1731,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  .fieldNew {
+  .field-inputNew {
     color: $theme6_color4;
   }
 }

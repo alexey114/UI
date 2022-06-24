@@ -731,9 +731,27 @@
           <div class="field-inputWrapper">
             <div class="field-input_name text_definition">Текстовое поле</div>
             <div class="block">
-              <input class="field-input fieldNew" type="text" value="Вспомогательный текст">
-              <input class="field-input fieldStandart" type="text" value="Вспомогательный текст">
-              <input class="field-input fieldEditing" type="text" value="Вспомогательный текст">
+              <div>
+                <input class="field-input field-inputNew" type="text" value="Вспомогательный текст">
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
+              </div>
+              <div>
+                <input class="field-input field-inputStandart" type="text" value="Вспомогательный текст">
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
+              </div>
+              <div>
+                <input class="field-input field-inputEditing" type="text" value="Вспомогательный текст">
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -741,7 +759,7 @@
             <div class="field-input_name text_definition">Выпадающий список</div>
             <div class="block">
               <div class="__select" data-state="">
-                <div class="__select__title input_select fieldNew" data-default="Option 0">
+                <div class="__select__title field-inputNew" data-default="Option 0">
                   Вспомогательный текст
                 </div>
                 <div class="__select__content">
@@ -752,10 +770,14 @@
                   <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect3" class="__select__label">Вспомогательный текст #3</label>
                 </div>
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
               </div>
 
               <div class="__select" data-state="">
-                <div class="__select__title input_select fieldStandart" data-default="Option 0">
+                <div class="__select__title field-inputStandart" data-default="Option 0">
                   Вспомогательный текст
                 </div>
                 <div class="__select__content content_standart">
@@ -766,10 +788,14 @@
                   <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect6" class="__select__label">Вспомогательный текст #3</label>
                 </div>
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
               </div>
 
               <div class="__select" data-state="">
-                <div class="__select__title input_select fieldEditing" data-default="Option 0">
+                <div class="__select__title field-inputEditing" data-default="Option 0">
                   Вспомогательный текст
                 </div>
                 <div class="__select__content content_standart">
@@ -780,6 +806,10 @@
                   <input id="singleSelect9" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect9" class="__select__label label_editing">Вспомогательный текст #3</label>
                 </div>
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
               </div>
             </div>
           </div>
@@ -787,9 +817,27 @@
           <div class="field-inputWrapper">
             <div class="field-input_name text_definition">Выбор даты</div>
             <div class="block">
-              <input class="input_date fieldNew" type="date">
-              <input class="input_date fieldStandart" type="date">
-              <input class="input_date fieldEditing" type="date">
+              <div>
+                <input class="field-input_date field-inputNew" type="date">
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
+              </div>
+              <div>
+                <input class="field-input_date field-inputStandart" type="date">
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
+              </div>
+              <div>
+                <input class="field-input_date field-inputEditing" type="date">
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -801,10 +849,10 @@
       <div>
         <h1>Календарь</h1>
         <div id="calendar" class="block_adaptive">
-          <div class="calendar_item">
+          <div class="calendar">
             <div class="calendar_day"></div>
           </div>
-          <div class="calendar_item">
+          <div class="calendar">
             <div class="calendar_range"></div>
           </div>
         </div>
@@ -852,7 +900,7 @@
                 <div id="calendarWrapper">
                   <input class="select_value" type="text" value="17 января 2020 г">
                 </div>
-                <div class="calendar_item">
+                <div class="calendar">
                   <div class="calendar_day"></div>
                 </div>
               </div>
@@ -867,23 +915,43 @@
           <div class="search block">
             <div class="search_disabled">
               <input type="search" placeholder="Поиск">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
             <div class="search_active">
               <input type="search" placeholder="Поиск">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
           </div>
           <div class="search block">
             <div class="search_disabled search_disabled_add">
               <input type="search" placeholder="Поиск">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
             <div class="search_active search_small">
               <input type="search" placeholder="Поиск">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
           </div>
           <div class="search_status">
             <div class="statusText">Статус</div>
             <div class="statusInput">
               <input type="search" placeholder="Текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
           </div>
         </div>
@@ -894,116 +962,198 @@
     <div id="section_input">
       <h1>Поля ввода с названием сверху поля</h1>
 
-      <div>
+      <div class="field-container">
         <div>
-          <div class="inputs">
+          <div class="field-inputWrapper_withName">
             <div class="subtitle">Отображение</div>
             <div class="subtitle">Новое поле</div>
             <div class="subtitle">Стандартное состояние</div>
             <div class="subtitle">При редактировании</div>
           </div>
-          <div class="inputs block">
-            <div class="input">
-              <div class="input_name text_name">Название</div>
+          <div class="field-inputWrapper_withName block">
+            <div class="field-inputBlock">
+              <div class="field-input_withName text_name">Название</div>
               <div class="text_definition">Вспомогательный текст</div>
-            </div>
-            <div class="input">
-              <div class="input_name text_name">Название</div>
-              <input class="field-input fieldNew" type="text" value="Вспомогательный текст">
-            </div>
-            <div class="input">
-              <div class="input_name text_name">Название</div>
-              <input class="field-input fieldStandart" type="text" value="Вспомогательный текст">
-            </div>
-            <div class="input">
-              <div class="input_name blue_header text_name">Название</div>
-              <input class="field-input fieldStandart" type="text" value="Вспомогательный те|">
-            </div>
-          </div>
-
-          <div class="inputs arrow_design block">
-            <div class="input">
-              <div class="input_name text_name">Название</div>
-              <div class="text_definition">Вспомогательный текст</div>
-            </div>
-            <div class="input">
-              <div class="input_name text_name">Название</div>
-              <input class="field-input fieldNew" type="text" value="Вспомогательный текст">
-            </div>
-            <div class="input">
-              <div class="input_name text_name">Название</div>
-              <input class="field-input fieldStandart" type="text" value="Вспомогательный текст">
-            </div>
-            <div class="input">
-              <div class="input_name blue_header text_name">Название</div>
-              <input class="field-input fieldStandart" type="text" value="Вспомогательный те|">
-            </div>
-          </div>
-
-          <div class="inputs calendar_design block">
-            <div class="input">
-              <div class="input_name calendar_grey_light text_name">Название</div>
-              <div class="text_definition">Вспомогательный <span class="text_none">текст</span></div>
-            </div>
-            <div class="input">
-              <div class="input_name calendar_grey text_name">Название</div>
-              <input class="field-input fieldNew" type="text" value="Вспомогательный текст">
-            </div>
-            <div class="input">
-              <div class="input_name calendar_grey text_name">Название</div>
-              <input class="field-input fieldStandart" type="text" value="Вспомогательный текст">
-            </div>
-            <div class="input">
-              <div class="input_name calendar_blue blue_header text_name">Название
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
               </div>
-              <input class="field-input fieldEditing" type="text" value="Вспомогательный те|">
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName text_name">Название</div>
+              <input class="field-input field-inputNew" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName text_name">Название</div>
+              <input class="field-input field-inputStandart" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName blue_header text_name">Название</div>
+              <input class="field-input field-inputStandart" type="text" value="Вспомогательный те|">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
           </div>
 
-          <div class="inputs input_status">
-            <div class="input">
-              <div class="input_name icon_close text_name">Название</div>
-              <input class="input_first red_border fieldStandart" type="text" value="Вспомогательный текст">
+          <div class="field-inputWrapper_withName arrow_design block">
+            <div class="field-inputBlock">
+              <div class="field-input_withName text_name">Название</div>
+              <div class="text_definition">Вспомогательный текст</div>
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName text_name">Название</div>
+              <input class="field-input field-inputNew" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName text_name">Название</div>
+              <input class="field-input field-inputStandart" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName blue_header text_name">Название</div>
+              <input class="field-input field-inputStandart" type="text" value="Вспомогательный те|">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-inputWrapper_withName calendar_design block">
+            <div class="field-inputBlock">
+              <div class="field-input_withName calendar_grey_light text_name">Название</div>
+              <div class="text_definition">Вспомогательный <span class="text_none">текст</span></div>
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName calendar_grey text_name">Название</div>
+              <input class="field-input field-inputNew" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName calendar_grey text_name">Название</div>
+              <input class="field-input field-inputStandart" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+            <div class="field-inputBlock">
+              <div class="field-input_withName calendar_blue blue_header text_name">Название
+              </div>
+              <input class="field-input field-inputEditing" type="text" value="Вспомогательный те|">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-inputWrapper_withName input_status">
+            <div class="field-inputBlock">
+              <div class="field-input_withName icon_close text_name">Название</div>
+              <input class="input_first red_border field-inputStandart" type="text" value="Вспомогательный текст">
               <div class="not_true text_universal">Поле заполнено не верно</div>
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
-            <div class="input">
-              <div class="input_name icon_big text_name">Название</div>
-              <input class="field-input green_border fieldStandart" type="text" value="Вспомогательный текст">
+            <div class="field-inputBlock">
+              <div class="field-input_withName icon_big text_name">Название</div>
+              <input class="field-input green_border field-inputStandart" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
-            <div class="input">
-              <div class="input_name text_name">Название</div>
-              <input class="field-input red_border fieldStandart" type="text" value="Вспомогательный текст">
+            <div class="field-inputBlock">
+              <div class="field-input_withName text_name">Название</div>
+              <input class="field-input red_border field-inputStandart" type="text" value="Вспомогательный текст">
               <div class="not_true text_universal">Поле заполнено не верно</div>
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
-            <div class="input">
-              <div class="input_name text_name">Название</div>
-              <input class="field-input green_border fieldStandart" type="text" value="Вспомогательный текст">
+            <div class="field-inputBlock">
+              <div class="field-input_withName text_name">Название</div>
+              <input class="field-input green_border field-inputStandart" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
           </div>
 
           <div class="inputs_text">
             <div class="input_text">
               <div class="field-input_name text_definition">Текстовое поле</div>
-              <input class="field-input fieldNew red_border" type="text" value="Вспомогательный текст">
+              <input class="field-input field-inputNew red_border" type="text" value="Вспомогательный текст">
               <div class="not_true text_universal">Поле заполнено не верно</div>
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
 
             <div class="input_text">
               <div class="field-input_name icon_close text_definition">Текстовое поле</div>
-              <input class="field-input fieldNew red_border" type="text" value="Вспомогательный текст">
-              <div class="not_true text_universal">Поле заполнено не верно</div>
+              <div class="flex">
+                <input class="field-input field-inputNew red_border" type="text" value="Вспомогательный текст">
+                <div class="not_true text_universal">Поле заполнено не верно</div>
+                <div class="field-messageContainer">
+                  <div class="field-message error">Значение не может быть пустым</div>
+                  <div class="field-message error">Еще какое-то сообщение</div>
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="inputs_text">
             <div class="input_text">
               <div class="field-input_name text_definition">Текстовое поле</div>
-              <input class="field-input fieldNew green_border" type="text" value="Вспомогательный текст">
+              <input class="field-input field-inputNew green_border" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
 
             <div class="input_text">
               <div class="field-input_name icon_big text_definition">Текстовое поле</div>
-              <input class="field-input fieldNew green_border" type="text" value="Вспомогательный текст">
+              <input class="field-input field-inputNew green_border" type="text" value="Вспомогательный текст">
+              <div class="field-messageContainer">
+                <div class="field-message error">Значение не может быть пустым</div>
+                <div class="field-message error">Еще какое-то сообщение</div>
+              </div>
             </div>
           </div>
 
@@ -1050,10 +1200,10 @@
             </div>
             <div class="combobox_blocks block">
               <div class="combobox_block">
-                <input class="field-input fieldNew combobox_input" type="text" value="Вспомогательный текст">
+                <input class="field-input field-inputNew combobox_input" type="text" value="Вспомогательный текст">
               </div>
               <div class="combobox_block">
-                <input class="field-input fieldNew combobox_input" type="text">
+                <input class="field-input field-inputNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div class="point combobox_none">Пункт 1</div>
@@ -1061,7 +1211,7 @@
                 </div>
               </div>
               <div class="combobox_block block_hover">
-                <input class="field-input fieldNew combobox_input" type="text">
+                <input class="field-input field-inputNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div class="point combobox_none">Пункт 1</div>
@@ -1069,7 +1219,7 @@
                 </div>
               </div>
               <div class="combobox_block">
-                <input class="field-input fieldNew combobox_input" type="text">
+                <input class="field-input field-inputNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div>|</div>
@@ -1082,11 +1232,11 @@
             <div class="subtitle">Отключён</div>
             <div class="combobox_blocks block">
               <div class="combobox_block">
-                <input class="field-input fieldNew combobox_input combobox_inactive" type="text"
+                <input class="field-input field-inputNew combobox_input combobox_inactive" type="text"
                   value="Вспомогательный текст">
               </div>
               <div class="combobox_block">
-                <input class="field-input fieldNew combobox_input combobox_inactive" type="text">
+                <input class="field-input field-inputNew combobox_input combobox_inactive" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div class="point combobox_none">Пункт 1</div>
@@ -1106,24 +1256,24 @@
             </div>
             <div class="combobox_blocks block">
               <div class="combobox_standart">
-                <input class="field-input fieldNew combobox_input" type="text" value="Вспомогательный текст">
+                <input class="field-input field-inputNew combobox_input" type="text" value="Вспомогательный текст">
               </div>
               <div class="combobox_standart">
-                <input class="field-input fieldNew combobox_input" type="text">
+                <input class="field-input field-inputNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div class="point combobox_none">Пункт 1</div>
                 </div>
               </div>
               <div class="combobox_standart block_hover ">
-                <input class="field-input fieldNew combobox_input" type="text">
+                <input class="field-input field-inputNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div class="point combobox_none">Пункт 1</div>
                 </div>
               </div>
               <div class="combobox_standart">
-                <input class="field-input fieldNew combobox_input" type="text">
+                <input class="field-input field-inputNew combobox_input" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div>|</div>
@@ -1135,11 +1285,11 @@
             <div class="subtitle">Отключён</div>
             <div class="combobox_blocks block">
               <div class="combobox_standart">
-                <input class="field-input fieldNew combobox_input combobox_inactive" type="text"
+                <input class="field-input field-inputNew combobox_input combobox_inactive" type="text"
                   value="Вспомогательный текст">
               </div>
               <div class="combobox_standart">
-                <input class="field-input fieldNew combobox_input combobox_inactive" type="text">
+                <input class="field-input field-inputNew combobox_input combobox_inactive" type="text">
                 <div class="points">
                   <div class="point">Пункт 1</div>
                   <div class="point combobox_none">Пункт 1</div>
