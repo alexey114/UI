@@ -406,7 +406,7 @@ h4 {
   }
 }
 
-#imagesWrapper {
+#blockWrapperImages {
   div {
     margin-top: 30px;
 
@@ -470,14 +470,14 @@ h4 {
   max-width: 680px;
 }
 
-.select_two {
+#select_twoBlocks {
   .select_item {
     height: 180px;
     margin-top: 40px;
   }
 }
 
-.select_one {
+.select_oneBlock {
   margin-top: 40px;
 
   .select_item {
@@ -651,7 +651,7 @@ h4 {
   }
 }
 
-.combobox_blocks {
+.blockWrapperCombobox {
   display: inline-flex;
   margin-top: 20px;
 

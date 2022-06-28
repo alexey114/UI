@@ -1387,7 +1387,7 @@ progress::-moz-progress-bar {
   }
 }
 
-#calendarWrapper {
+#blockWrapperCalendar {
   position: relative;
 
   &::after {
@@ -1890,18 +1890,18 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  .points{
+  .combobox_blockPoints{
     color: $theme6_color1;
   }
 }
 
 .combobox_disabled{
-  .points{
+  .combobox_blockPoints{
     color:$theme6_color5;
   }
 }
 
-.combobox_block {
+.combobox {
 
   position: relative;
   margin-right: 20px;
@@ -1947,7 +1947,7 @@ progress::-moz-progress-bar {
     background-color: $theme6_color13;
   }
 
-  .points{
+  .combobox_blockPoints{
     color: $theme6_color1
   }
 }
@@ -1982,14 +1982,14 @@ progress::-moz-progress-bar {
   }
 }
 
-.points {
+.combobox_blockPoints {
   @include center;
   position: absolute;
   top: 7px;
   left: 7px;
 }
 
-.point {
+.combobox_point {
   background: $theme6_color2;
   padding: 5px 34px 6px 12px;
   margin-right: 4px;
@@ -2023,7 +2023,7 @@ progress::-moz-progress-bar {
 
 /* SIDEBAR */
 
-.sidebar_items {
+.blockWrapperSidebar {
   height: 910px;
   display: flex;
   flex-direction: column;
