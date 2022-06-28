@@ -310,7 +310,7 @@ button {
 
   &_hover,
   &:hover {
-    color: #A7ABC3;
+    color: $theme6_color5;
     background-color: #E5E6ED;
   }
 
@@ -328,11 +328,11 @@ button {
 
 .cancel {
 
-  color: #109CF1;
+  color: $theme6_color3;
   cursor: pointer;
 
   &.button_border {
-    border: solid 1px #109CF1;
+    border: solid 1px $theme6_color3;
   }
 
   &_hover,
@@ -354,10 +354,10 @@ button {
   }
 
   &_disabled {
-    color: #C2CFE0;
+    color: $theme6_color12;
 
     &.button_border {
-      border: solid 1px #C2CFE0;
+      border: solid 1px $theme6_color12;
     }
   }
 }
@@ -505,7 +505,7 @@ input {
 
 input {
   &.checkbox_light {
-    border: 1px solid #C2CFE0;
+    border: 1px solid $theme6_color12;
 
     &:checked:after {
       content: "";
@@ -518,7 +518,7 @@ input {
   }
 
   &.checkbox_green {
-    border: 1px solid #2ED47A;
+    border: 1px solid $theme6_color11;
 
     &:checked:after {
       content: "";
@@ -548,13 +548,13 @@ input {
   &.radio {
 
     &_standart:checked {
-      border: 1px solid #109CF1;
+      border: 1px solid $theme6_color3;
 
       &:before {
         content: "";
         @include block(10px, 10px);
         border-radius: 50%;
-        background-color: #109CF1;
+        background-color: $theme6_color3;
       }
     }
 
@@ -592,7 +592,7 @@ input {
   }
 
   &.off {
-    background-color: #FFB946;
+    background-color: $theme6_color8;
   }
 
   @media (max-width: 400px) {
@@ -778,22 +778,22 @@ input {
 progress {
   max-width: 450px;
   @include block(100%, 6px);
-  background-color: #F2F3F8;
+  background-color: $theme6_color14;
   border: 0;
 }
 
 progress::-webkit-progress-bar {
-  background-color: #F2F3F8;
+  background-color: $theme6_color14;
   border-radius: 4px;
 }
 
 progress::-webkit-progress-value {
-  background-color: #A7ABC3;
+  background-color: $theme6_color5;
   border-radius: 4px;
 }
 
 progress::-moz-progress-bar {
-  background-color: #A7ABC3;
+  background-color: $theme6_color5;
   border-radius: 4px;
 }
 
@@ -802,7 +802,7 @@ progress::-moz-progress-bar {
 .text_tooltip {
   @include center;
   justify-content: center;
-  color: #192A3E;
+  color: $theme6_color4;
   line-height: 15.6px;
   position: absolute;
   @include block(260px, 68px);
@@ -1050,9 +1050,9 @@ progress::-moz-progress-bar {
     padding: 0px 111px 0px 12px;
     height: 42px;
     outline: none;
-    border: 1px solid #D3D8DD;
+    border: 1px solid $theme6_color13;
     border-radius: 5px;
-    color: #192A3E;
+    color: $theme6_color4;
 
     @media (max-width: 550px) {
       padding: 0px 12px 0px 12px;
@@ -1150,7 +1150,7 @@ progress::-moz-progress-bar {
 
 #accordion {
   margin-top: 20px;
-  color: #6C7293;
+  color: $theme6_color1;
 }
 
 .accordionItem {
@@ -1236,19 +1236,19 @@ progress::-moz-progress-bar {
 
   &.combobox_standart{
     &:hover{
-      border: 1px solid #A7ABC3;
+      border: 1px solid $theme6_color5;
     }
     &:active{
-      border: 1px solid #109CF1;
+      border: 1px solid $theme6_color3;
     }
   }
 
   &.combobox_hover{
-    border: 1px solid #A7ABC3;
+    border: 1px solid $theme6_color5;
   }
   
   &.combobox_editing{
-    border: 1px solid #109CF1;
+    border: 1px solid $theme6_color3;
   }
 
   @media (max-width: 1400px) {
@@ -1291,17 +1291,17 @@ progress::-moz-progress-bar {
 }
 
 .field-inputNew {
-  color: #A7ABC3;
-  border: 1px solid #D3D8DD;
+  color: $theme6_color5;
+  border: 1px solid $theme6_color13;
 }
 
 .field-inputStandart {
-  color: #192A3E;
-  border: 1px solid #D3D8DD;
+  color: $theme6_color4;
+  border: 1px solid $theme6_color13;
 }
 
 .field-inputEditing {
-  color: #192A3E;
+  color: $theme6_color4;
   border: 1px solid $theme6_color3;
 }
 
@@ -1695,7 +1695,7 @@ progress::-moz-progress-bar {
 }
 
 .green_border {
-  border: 1px solid #2ED47A;
+  border: 1px solid $theme6_color11;
 }
 
 .red_border {
@@ -1776,7 +1776,7 @@ progress::-moz-progress-bar {
 
 .slider {
   @include block(100%, 4px);
-  background: #F2F3F8;
+  background: $theme6_color14;
   position: relative;
   -webkit-appearance: none;
   margin: 0;
