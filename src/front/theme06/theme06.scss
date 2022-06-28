@@ -2037,11 +2037,11 @@ progress::-moz-progress-bar {
   }
 }
 
-.sidebar_item {
+.block_sidebar {
   padding: 19px 25px 20px 24px;
 }
 
-.sidebar_block {
+.sidebar_header {
   @include center;
   justify-content: space-between;
 }
@@ -2155,7 +2155,7 @@ progress::-moz-progress-bar {
 
 /* header */
 
-#header_block {
+#block_header {
   max-width: 1184px;
   height: 64px;
   @include center;
