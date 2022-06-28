@@ -76,7 +76,7 @@
   display: none;
   flex-direction: column;
   width: calc(100% - 6px);
-  background-color: #ffffff;
+  background-color: $theme6_color6;
   border: 1px solid #c7ccd1;
   border: none;
   border-bottom-left-radius: 5px;
@@ -286,7 +286,7 @@ button {
   }
 
   &_disabled {
-    background-color: #C2CFE0;
+    background-color: $theme6_color12;
   }
 }
 
