@@ -1092,13 +1092,14 @@ progress::-moz-progress-bar {
 
 /* PAGINATION*/
 
-#paging {
+.paging {
   margin-top: 20px;
   padding: 20px;
   list-style-type: none;
 
   a {
     text-decoration: none;
+    color: $theme6_color4;
   }
 
   @media (max-width: 480px) {
