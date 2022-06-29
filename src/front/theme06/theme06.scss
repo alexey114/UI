@@ -1571,9 +1571,10 @@ progress::-moz-progress-bar {
   }
 }
 
-.field-messageContainer{
-  display: $show_error;
-  flex-direction: column;
+.field-messageError{
+  color: $theme6_color9;
+  font-size: 12px;
+  line-height: 15.6px;
 }
 
 /*INPUT FIELDS NAME*/
@@ -1669,15 +1670,6 @@ progress::-moz-progress-bar {
       width: 156px;
     }
   }
-}
-
-.field-messageError {
-  display: none;
-  color: $theme6_color9;
-}
-
-.error_active{
-  display: flex;
 }
 
 .icon_close::after {
