@@ -93,12 +93,6 @@ input {
   appearance: none;
 }
 
-body {
-  @media (max-width: 1300px) {
-    overflow-x: hidden;
-  }
-}
-
 .section {
   border-bottom: solid 1px #EBEFF2;
   padding: 50px 0px 50px 0px;

@@ -597,20 +597,20 @@
     <div id="section_pagination" class="section">
       <h1>Пагинация</h1>
 
-          <ul id="paging" class="text_universal">
-            <li class="paging-toBack"><a class="icon_left" href="#">Назад</a></li>
-            <li class="paging-page page_active"><a href="#">1</a></li>
-            <li class="paging-page"><a href="#">2</a></li>
-            <li class="paging-page"><a href="#">3</a></li>
-            <li class="paging-page"><a href="#">4</a></li>
-            <li class="paging-page"><a href="#">5</a></li>
-            <li class="paging-page"><a href="#">6</a></li>
-            <li class="paging-page"><a href="#">7</a></li>
-            <li class="paging-page"><a href="#">8</a></li>
-            <li class="paging-page"><a href="#">9</a></li>
-            <li class="paging-page"><a href="#">10</a></li>
-            <li class="paging-toForward"><a class="icon_right" href="#">Вперёд</a></li>
-          </ul>
+          <div class="paging text_universal">
+            <div class="paging-toBack"><a class="icon_left" href="#">Назад</a></div>
+            <div class="paging-page page_active"><a href="#">1</a></div>
+            <div class="paging-page"><a href="#">2</a></div>
+            <div class="paging-page"><a href="#">3</a></div>
+            <div class="paging-page"><a href="#">4</a></div>
+            <div class="paging-page"><a href="#">5</a></div>
+            <div class="paging-page"><a href="#">6</a></div>
+            <div class="paging-page"><a href="#">7</a></div>
+            <div class="paging-page"><a href="#">8</a></div>
+            <div class="paging-page"><a href="#">9</a></div>
+            <div class="paging-page"><a href="#">10</a></div>
+            <div class="paging-toForward"><a class="icon_right" href="#">Вперёд</a></div>
+          </div>
 
     </div>
 
@@ -702,7 +702,7 @@
     <div id="section_images" class="section">
       <h1>Изображения</h1>
 
-      <div id="imagesWrapper" class="block_adaptive">
+      <div id="blockWrapperImages" class="block_adaptive">
 
         <div>
           <div class="subtitle">Не загружено</div>
@@ -720,7 +720,7 @@
       <h1>Поля ввода</h1>
 
 
-        <div class="field-container">
+        <div>
           <div class="field-inputWrapper field-name">
             <div class="subtitle">Название поля</div>
             <div class="subtitle">Новое поле</div>
@@ -731,21 +731,21 @@
           <div class="field-inputWrapper">
             <div class="field-input_name text_definition">Текстовое поле</div>
             <div class="block">
-              <div>
+              <div class="field-container">
                 <input class="field-input field-inputNew" type="text" value="Вспомогательный текст">
                 <div class="field-messageContainer text_universal">
                   <div class="field-messageError">Значение не может быть пустым</div>
                   <div class="field-messageError">Еще какое-то сообщение</div>
                 </div>
               </div>
-              <div>
+              <div class="field-container">
                 <input class="field-input field-inputStandart" type="text" value="Вспомогательный текст">
                 <div class="field-messageContainer text_universal">
                   <div class="field-messageError">Значение не может быть пустым</div>
                   <div class="field-messageError">Еще какое-то сообщение</div>
                 </div>
               </div>
-              <div>
+              <div class="field-container">
                 <input class="field-input field-inputEditing" type="text" value="Вспомогательный текст">
                 <div class="field-messageContainer text_universal">
                   <div class="field-messageError">Значение не может быть пустым</div>
@@ -758,7 +758,7 @@
           <div class="field-inputWrapper">
             <div class="field-input_name text_definition">Выпадающий список</div>
             <div class="block">
-              <div class="__select" data-state="">
+              <div class="field-container __select" data-state="">
                 <div class="__select__title field-inputNew" data-default="Option 0">
                   Вспомогательный текст
                 </div>
@@ -776,7 +776,7 @@
                 </div>
               </div>
 
-              <div class="__select" data-state="">
+              <div class="field-container __select" data-state="">
                 <div class="__select__title field-inputStandart" data-default="Option 0">
                   Вспомогательный текст
                 </div>
@@ -794,7 +794,7 @@
                 </div>
               </div>
 
-              <div class="__select" data-state="">
+              <div class="field-container __select" data-state="">
                 <div class="__select__title field-inputEditing" data-default="Option 0">
                   Вспомогательный текст
                 </div>
@@ -817,21 +817,21 @@
           <div class="field-inputWrapper">
             <div class="field-input_name text_definition">Выбор даты</div>
             <div class="block">
-              <div>
+              <div class="field-container">
                 <input class="field-input_date field-inputNew" type="date">
                 <div class="field-messageContainer text_universal">
                   <div class="field-messageError">Значение не может быть пустым</div>
                   <div class="field-messageError">Еще какое-то сообщение</div>
                 </div>
               </div>
-              <div>
+              <div class="field-container">
                 <input class="field-input_date field-inputStandart" type="date">
                 <div class="field-messageContainer text_universal">
                   <div class="field-messageError">Значение не может быть пустым</div>
                   <div class="field-messageError">Еще какое-то сообщение</div>
                 </div>
               </div>
-              <div>
+              <div class="field-container">
                 <input class="field-input_date field-inputEditing" type="date">
                 <div class="field-messageContainer text_universal">
                   <div class="field-messageError">Значение не может быть пустым</div>
@@ -861,9 +861,9 @@
       <div>
         <h1>Выпадающий список</h1>
         <div id="select" class="block_adaptive">
-          <div class="block_adaptive">
 
-            <div class="select_two block_adaptive">
+
+            <div id="select_twoBlocks" class="block_adaptive">
               <div class="select_item">
                 <div class="select_option">Вариант 1</div>
                 <div class="select_option active_option">Вариант 2</div>
@@ -883,7 +883,7 @@
               </div>
             </div>
 
-            <div class="select_one block_adaptive">
+            <div id="select_oneBlock" class="block_adaptive">
               <div class="select_item">
                 <div class="select_block">
                   <input class="select_value" type="text" value="Вариант 1">
@@ -896,16 +896,18 @@
                 <div class="select_option">Вариант 6</div>
               </div>
 
-              <div id="select_calendar">
-                <div id="calendarWrapper">
-                  <input class="select_value" type="text" value="17 января 2020 г">
-                </div>
-                <div class="calendar">
-                  <div class="calendar_day"></div>
+              <div id="select_calendar" >
+                <div class="block_adaptive">
+                  <div id="blockWrapperCalendar">
+                    <input class="select_value" type="text" value="17 января 2020 г">
+                  </div>
+                  <div class="calendar">
+                    <div class="calendar_day"></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+
         </div>
       </div>
 
@@ -1204,30 +1206,30 @@
               <div class="subtitle combobox_status">При наведении</div>
               <div class="subtitle combobox_status">При редактировании</div>
             </div>
-            <div class="combobox_blocks block">
-              <div class="combobox_block">
-                <input class="field-input field-inputNew combobox_input" type="text" value="Вспомогательный текст">
+            <div class="blockWrapperCombobox block">
+              <div class="combobox">
+                <input class="field-input field-inputNew combobox_input combobox_standart" type="text" placeholder="Вспомогательный текст">
               </div>
-              <div class="combobox_block">
+              <div class="combobox">
                 <input class="field-input field-inputNew combobox_input" type="text">
-                <div class="points">
-                  <div class="point">Пункт 1</div>
-                  <div class="point combobox_none">Пункт 1</div>
+                <div class="combobox_blockPoints">
+                  <div class="combobox_point">Пункт 1</div>
+                  <div class="combobox_point combobox_none">Пункт 1</div>
                   <div class="combobox_close"></div>
                 </div>
               </div>
-              <div class="combobox_block block_hover">
-                <input class="field-input field-inputNew combobox_input" type="text">
-                <div class="points">
-                  <div class="point">Пункт 1</div>
-                  <div class="point combobox_none">Пункт 1</div>
+              <div class="combobox block_hover">
+                <input class="field-input field-inputNew combobox_input combobox_hover" type="text">
+                <div class="combobox_blockPoints">
+                  <div class="combobox_point">Пункт 1</div>
+                  <div class="combobox_point combobox_none">Пункт 1</div>
                   <div class="combobox_close"></div>
                 </div>
               </div>
-              <div class="combobox_block">
-                <input class="field-input field-inputNew combobox_input" type="text">
-                <div class="points">
-                  <div class="point">Пункт 1</div>
+              <div class="combobox">
+                <input class="field-input field-inputNew combobox_input combobox_editing" type="text">
+                <div class="combobox_blockPoints">
+                  <div class="combobox_point">Пункт 1</div>
                   <div>|</div>
                   <div class="combobox_close close_end"></div>
                 </div>
@@ -1236,16 +1238,16 @@
           </div>
           <div class="combobox_disabled">
             <div class="subtitle">Отключён</div>
-            <div class="combobox_blocks block">
-              <div class="combobox_block">
+            <div class="blockWrapperCombobox block">
+              <div class="combobox">
                 <input class="field-input field-inputNew combobox_input combobox_inactive" type="text"
                   value="Вспомогательный текст">
               </div>
-              <div class="combobox_block">
+              <div class="combobox">
                 <input class="field-input field-inputNew combobox_input combobox_inactive" type="text">
-                <div class="points">
-                  <div class="point">Пункт 1</div>
-                  <div class="point combobox_none">Пункт 1</div>
+                <div class="combobox_blockPoints">
+                  <div class="combobox_point">Пункт 1</div>
+                  <div class="combobox_point combobox_none">Пункт 1</div>
                 </div>
               </div>
             </div>
@@ -1260,28 +1262,28 @@
               <div class="subtitle combobox_status">При наведении</div>
               <div class="subtitle combobox_status">При редактировании</div>
             </div>
-            <div class="combobox_blocks block">
-              <div class="combobox_standart">
-                <input class="field-input field-inputNew combobox_input" type="text" value="Вспомогательный текст">
+            <div class="blockWrapperCombobox block">
+              <div class="combobox_light">
+                <input class="field-input field-inputNew combobox_input combobox_standart" type="text" placeholder="Вспомогательный текст">
               </div>
-              <div class="combobox_standart">
+              <div class="combobox_light">
                 <input class="field-input field-inputNew combobox_input" type="text">
-                <div class="points">
-                  <div class="point">Пункт 1</div>
-                  <div class="point combobox_none">Пункт 1</div>
+                <div class="combobox_blockPoints">
+                  <div class="combobox_point">Пункт 1</div>
+                  <div class="combobox_point combobox_none">Пункт 1</div>
                 </div>
               </div>
-              <div class="combobox_standart block_hover ">
-                <input class="field-input field-inputNew combobox_input" type="text">
-                <div class="points">
-                  <div class="point">Пункт 1</div>
-                  <div class="point combobox_none">Пункт 1</div>
+              <div class="combobox_light block_hover ">
+                <input class="field-input field-inputNew combobox_input combobox_hover" type="text">
+                <div class="combobox_blockPoints">
+                  <div class="combobox_point">Пункт 1</div>
+                  <div class="combobox_point combobox_none">Пункт 1</div>
                 </div>
               </div>
-              <div class="combobox_standart">
-                <input class="field-input field-inputNew combobox_input" type="text">
-                <div class="points">
-                  <div class="point">Пункт 1</div>
+              <div class="combobox_light">
+                <input class="field-input field-inputNew combobox_input combobox_editing" type="text">
+                <div class="combobox_blockPoints">
+                  <div class="combobox_point">Пункт 1</div>
                   <div>|</div>
                 </div>
               </div>
@@ -1289,16 +1291,16 @@
           </div>
           <div class="combobox_disabled">
             <div class="subtitle">Отключён</div>
-            <div class="combobox_blocks block">
-              <div class="combobox_standart">
+            <div class="blockWrapperCombobox block">
+              <div class="combobox_light">
                 <input class="field-input field-inputNew combobox_input combobox_inactive" type="text"
                   value="Вспомогательный текст">
               </div>
-              <div class="combobox_standart">
+              <div class="combobox_light">
                 <input class="field-input field-inputNew combobox_input combobox_inactive" type="text">
-                <div class="points">
-                  <div class="point">Пункт 1</div>
-                  <div class="point combobox_none">Пункт 1</div>
+                <div class="combobox_blockPoints">
+                  <div class="combobox_point">Пункт 1</div>
+                  <div class="combobox_point combobox_none">Пункт 1</div>
                 </div>
               </div>
             </div>
@@ -1311,10 +1313,10 @@
       <h1>Боковое меню</h1>
 
       <div id="sidebar">
-        <div class="sidebar_items">
-          <div class="sidebar_item">
+        <div class="blockWrapperSidebar">
+          <div class="block_sidebar">
 
-            <div class="sidebar_block">
+            <div class="sidebar_header">
               <div class="sidebar_name text_sidebar">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
@@ -1349,7 +1351,7 @@
               <div class="sidebar_point">Настройки</div>
             </div>
           </div>
-          <div class="sidebar_item">
+          <div class="block_sidebar">
             <div class="sidebar_menu">
               <div class="icon icon_logout"></div>
               <div class="sidebar_point">Выйти</div>
@@ -1357,10 +1359,10 @@
           </div>
         </div>
 
-        <div class="sidebar_items no_footer">
-          <div class="sidebar_item">
+        <div class="blockWrapperSidebar no_footer">
+          <div class="block_sidebar">
 
-            <div class="sidebar_block">
+            <div class="sidebar_header">
               <div class="sidebar_name text_sidebar">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
@@ -1404,10 +1406,10 @@
           </div>
         </div>
 
-        <div class="sidebar_items">
-          <div class="sidebar_item">
+        <div class="blockWrapperSidebar">
+          <div class="block_sidebar">
 
-            <div class="sidebar_block">
+            <div class="sidebar_header">
               <div class="sidebar_name text_sidebar">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
@@ -1449,7 +1451,7 @@
             </div>
 
           </div>
-          <div class="sidebar_item">
+          <div class="block_sidebar">
 
             <div class="sidebar_menu">
               <div class="icon icon_settings"></div>
@@ -1458,10 +1460,10 @@
           </div>
         </div>
 
-        <div class="sidebar_items no_footer">
-          <div class="sidebar_item">
+        <div class="blockWrapperSidebar no_footer">
+          <div class="block_sidebar">
 
-            <div class="sidebar_block">
+            <div class="sidebar_header">
               <div class="sidebar_name text_sidebar">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
@@ -1503,10 +1505,10 @@
           </div>
         </div>
 
-        <div class="sidebar_items no_footer">
-          <div class="sidebar_item">
+        <div class="blockWrapperSidebar no_footer">
+          <div class="block_sidebar">
 
-            <div class="sidebar_block">
+            <div class="sidebar_header">
               <div class="sidebar_name text_sidebar">Название</div>
               <div class="sidebar_arrow"></div>
             </div>
@@ -1551,7 +1553,7 @@
     <div id="section_header" class="section">
       <h1>Верхнее меню (шапка)</h1>
 
-      <div id="header_block">
+      <div id="block_header">
         <div class="search_disabled">
           <input type="search" placeholder="Поиск">
         </div>

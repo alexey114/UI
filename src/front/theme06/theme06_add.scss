@@ -3,6 +3,13 @@
 @import "./theme06.scss";
 @import "./meta/meta.scss";
 
+
+body {
+  @media (max-width: 1000px) {
+    overflow-x: visible;
+  }
+}
+
 /* sidebar */
 
 .selectTheme {
@@ -16,6 +23,7 @@
   height: 993px;
   max-width: 256px;
   width: 100%;
+  margin-right: 0;
 }
 
 .block_sidebar {
