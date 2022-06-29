@@ -55,6 +55,12 @@ $gray_dark: $theme6_color1; // #6C7293
   font-weight: $font-weight;
 }
 
+@mixin text_name{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13.2px;
+}
+
 @mixin width($max-width, $width) {
   max-width: $max-width;
   width: $width;
@@ -105,11 +111,6 @@ input {
 
 .block_adaptive{
   @include wrap;
-}
-
-.block_column{
-  display: flex;
-  flex-direction: column;
 }
 
 ::-webkit-scrollbar {

@@ -1227,7 +1227,7 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  &.field-inputEditing {
+  &.field-input_editing {
     margin-right: 0px;
   }
 
@@ -1269,7 +1269,7 @@ progress::-moz-progress-bar {
   @include block(281px, 42px);
   margin-right: 32px;
 
-  &.field-inputEditing {
+  &.field-input_editing {
     margin-right: 0px;
   }
 
@@ -1291,17 +1291,17 @@ progress::-moz-progress-bar {
   }
 }
 
-.field-inputNew {
+.field-input_new {
   color: $theme6_color5;
   border: 1px solid $theme6_color13;
 }
 
-.field-inputStandart {
+.field-input_standart {
   color: $theme6_color4;
   border: 1px solid $theme6_color13;
 }
 
-.field-inputEditing {
+.field-input_editing {
   color: $theme6_color4;
   border: 1px solid $theme6_color3;
 }
@@ -1330,7 +1330,7 @@ progress::-moz-progress-bar {
   -moz-box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
   box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
 
-  .field-inputEditing {
+  .field-input_editing {
     padding-right: 200px;
   }
 }
@@ -1571,7 +1571,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.field-messageError{
+.field-messageContainer{
   color: $theme6_color9;
   font-size: 12px;
   line-height: 15.6px;
@@ -1580,7 +1580,7 @@ progress::-moz-progress-bar {
 /*INPUT FIELDS NAME*/
 
 .arrow_design {
-  .field-inputBlock {
+  .field-container {
 
     position: relative;
 
@@ -1602,15 +1602,37 @@ progress::-moz-progress-bar {
 }
 
 
-.field-input_withName {
+.field-input_name {
   color: $theme6_color5;
   margin-bottom: 11px;
+  @include text_name;
+}
+
+.field-input_name_blue {
+  color: $theme6_color3;
+}
+
+.field-container_adaptive {
+  margin-right: 42px;
+  width: 300px;
+
+  @media (max-width: 1400px) {
+    width: 250px;
+  }
+
+  @media (max-width: 1220px) {
+    width: 218px;
+  }
+
+  @media (max-width: 1060px) {
+    margin-right: 0px;
+  }
 }
 
 
 .calendar_grey_light,
 .calendar_grey,
-.calendar_blue {
+.field-input_icon_blueCalendar {
   position: relative;
 
   &::before {
@@ -1634,7 +1656,7 @@ progress::-moz-progress-bar {
   background-image: url(./theme06/images/calendar_grey.svg);
 }
 
-.calendar_blue::before {
+.field-input_icon_blueCalendar::before {
   background-image: url(./theme06/images/calendar_blue.svg);
 }
 
@@ -1648,7 +1670,7 @@ progress::-moz-progress-bar {
     gap: 30px !important;
   }
 
-  .field-inputBlock {
+  .field-container {
     margin-right: 42px;
     position: relative;
 
@@ -1672,6 +1694,12 @@ progress::-moz-progress-bar {
   }
 }
 
+
+.field-сontainer_column{
+  display: flex;
+  flex-direction: column;
+}
+
 .icon_close::after {
   content: "";
   @include block(10px, 10px);
@@ -1692,15 +1720,15 @@ progress::-moz-progress-bar {
   background-repeat: no-repeat;
 }
 
-.green_border {
+.field-input_border_green {
   border: 1px solid $theme6_color11;
 }
 
-.red_border {
+.field-input_border_red {
   border: 1px solid $theme6_color9;
 }
 
-.field-input_blockText {
+.blockInnerInputText {
   @include center;
   position: relative;
   margin-right: 80px;
@@ -1718,7 +1746,7 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  .field-input_name {
+  .inputName {
     width: 130px;
     padding: 0 50px 0 20px;
     display: block;
@@ -1752,7 +1780,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  .field-inputNew {
+  .field-input_new {
     color: $theme6_color4;
   }
 }

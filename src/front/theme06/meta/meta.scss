@@ -418,7 +418,7 @@ h4 {
 
 /* INPUT_FIELDS */
 
-.field-inputWrapper {
+.blockWrapperForms {
   display: flex;
 
   .block {
@@ -444,7 +444,7 @@ h4 {
   }
 }
 
-.field-input_name {
+.inputName {
   color: $theme6_color5;
   width: 320px;
   padding-top: 60px;
@@ -522,7 +522,7 @@ h4 {
   margin-top: 50px;
 }
 
-.field-inputWrapper_withName {
+.blockWrapperInput_withName {
   display: inline-flex;
   align-items: center;
   margin-bottom: 20px;
@@ -533,8 +533,7 @@ h4 {
     gap: 10px
   }
 
-  .subtitle,
-  .field-inputBlock {
+  .subtitle {
     margin-right: 42px;
     width: 300px;
 
@@ -558,7 +557,7 @@ h4 {
   }
 }
 
-.field-inputBlock {
+.field-container_adaptive {
   margin-right: 42px;
 
   &:last-child {
@@ -572,11 +571,7 @@ h4 {
   }
 }
 
-.blue_header {
-  color: $theme6_color3;
-}
-
-.field-inputWrapper_blockText {
+.blockWrapperInputText {
   @include wrap;
   margin-top: 49px;
 
