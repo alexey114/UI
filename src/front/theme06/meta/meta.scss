@@ -464,6 +464,12 @@ h4 {
   margin: 5px;
 }
 
+#select_calendar{
+  .block_adaptive{
+    width: 300px;
+  }
+}
+
 /* SELECT */
 
 #select {
@@ -477,14 +483,14 @@ h4 {
   }
 }
 
-.select_oneBlock {
-  margin-top: 40px;
+#select_oneBlock {
 
   .select_item {
+    margin-top: 40px;
     height: 225px;
   }
 
-  #select_calendar {
+  #select_calendar{
     margin-top: 40px;
   }
 }

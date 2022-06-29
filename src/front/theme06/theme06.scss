@@ -1340,7 +1340,6 @@ progress::-moz-progress-bar {
 }
 
 .active_option {
-  position: relative;
   background-color: $theme6_color3;
   cursor: pointer;
 }
@@ -1367,7 +1366,7 @@ progress::-moz-progress-bar {
 .select_value {
   height: 42px;
   margin-right: 32px;
-  padding: 0px 115px 0px 12px;
+  padding: 0px 117px 0px 12px;
   outline: none;
   border-radius: 5px;
   border: 1px solid $theme6_color3;
@@ -1399,6 +1398,12 @@ progress::-moz-progress-bar {
     left: 270px;
     background-image: url(./theme06/images/calendar_blue.svg);
     background-repeat: no-repeat;
+  }
+}
+
+.calendar{
+  .calendar_day{
+    margin-left: -10px;
   }
 }
 
