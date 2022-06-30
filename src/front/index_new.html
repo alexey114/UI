@@ -36,10 +36,10 @@
 
       <div id="container_theme">
         <p class="text_universal">Дневная тема</p>
-        <div id="theme_switcher">
+        <div id="switcher_theme">
           <label class="switch">
             <input type="checkbox" />
-            <div class="theme_slider"></div>
+            <div class="slider_theme"></div>
           </label>
         </div>
         <p class="text_universal">Выбор дизайна</p>
@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <div id="section_color" class="section common_color">
+    <div id="section_color" class="section color_common">
 
       <h1>Цвета</h1>
 
@@ -148,7 +148,7 @@
       </div>
     </div>
 
-    <div id="section_text" class="section common_color block_adaptive">
+    <div id="section_text" class="section color_common block_adaptive">
 
       <h1>Типографика</h1>
 
@@ -156,34 +156,34 @@
 
         <div>
           <div>
-            <h5 class="text_definition medium">Шрифт</h5>
-            <div class="big_font">
+            <h5 class="text_definition text_medium">Шрифт</h5>
+            <div class="text_big">
               <p>Montserrat</p>
             </div>
           </div>
         </div>
 
         <div>
-          <h5 class="text_definition medium">Размеры</h5>
-          <div class="text_items block_adaptive">
+          <h5 class="text_definition text_medium">Размеры</h5>
+          <div class="blockWrapper_text block_adaptive">
             <div class="text_item">
               <p>Regular</p>
-              <p class="regular_16pt">Paragraph – 16 pt</p>
+              <p class="text_regular">Paragraph – 16 pt</p>
               <p class="text_definition">Notice – 14 pt</p>
               <p class="text_universal">Description – 12 pt</p>
             </div>
             <div class="text_item">
-              <p class="medium">Medium</p>
+              <p class="text_medium">Medium</p>
               <p class="text_status">Tag status text – 11 pt</p>
               <p class="text_name">Text field title text – 12 pt</p>
             </div>
             <div class="text_item">
-              <p class="bold">Semibold</p>
+              <p class="text_bold">Semibold</p>
               <p class="text_sidebar">Header 2 text – 18 pt</p>
               <p class="text_button">Button text – 14 pt</p>
             </div>
             <div class="text_item">
-              <p class="bold">Bold</p>
+              <p class="text_bold">Bold</p>
               <p class="header_modal">Header 1 text – 20 pt</p>
             </div>
           </div>
@@ -201,7 +201,7 @@
 
         <div class="subsection" id="subsection_buttons">
 
-          <div class="headers_button subtitle">
+          <div class="headersButton subtitle">
             <div>Стандартное</div>
             <div>При наведении</div>
             <div>При нажатии</div>
@@ -316,7 +316,7 @@
             </div>
 
             <div class="blockWrapper_buttonSmall">
-              <div class="button_options">
+              <div class="blockInner_buttonSmall">
                 <div class="subtitle">Варианты кнопок</div>
                 <div class="buttons_opt">
                   <button class="button back add"><span class="icon_back"></span>Назад</button>
@@ -383,14 +383,9 @@
                 </div>
               </div>
             </div>
-
-
           </div>
-
         </div>
-
       </div>
-
     </div>
 
     <div id="section_avatar" class="section">
@@ -398,7 +393,7 @@
 
       <div class="block_adaptive">
 
-        <div class="blockWrapperAvatar">
+        <div class="blockWrapper_avatar">
 
           <div class="subtitle">Аватар пользователя</div>
           <h4 class="text_definition">104 x 104</h4>
@@ -414,7 +409,7 @@
 
         </div>
 
-        <div class="blockWrapperAvatar">
+        <div class="blockWrapper_avatar">
 
           <div class="subtitle">Аватар пользователя<br> на боковой панели</div>
           <h4 class="text_definition">46 x 46</h4>
@@ -428,13 +423,13 @@
 
         </div>
 
-        <div class="blockWrapperAvatar">
+        <div class="blockWrapper_avatar">
 
           <div class="subtitle">Связанный аватар<br> пользователя</div>
           <h4 class="text_definition">24 x 24</h4>
 
           <div class="block_adaptive">
-            <div class="small_avatar">
+            <div class="avatar_small">
             </div>
           </div>
 
@@ -446,7 +441,7 @@
     <div id="section_preloader" class="section">
       <h1>Прелоадеры</h1>
 
-      <div id="preloaders">
+      <div id="blockWrapper_preloaders">
         <div>
           <div class="subtitle">Стандартный</div>
           <div class="block">
@@ -512,7 +507,7 @@
 
         <div class="subtitle">Текст с заголовком</div>
 
-        <div class="block_tooltip textWithHeading">
+        <div class="block_tooltip block_tooltipWithHeading">
           <div class="tooltip tooltip_up">
             <span class="text_tooltip text_universal"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
               с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
@@ -625,7 +620,7 @@
               Пункт меню 1
             </div>
             <div class="accordionArrow">
-              <input class="accordion_checkbox" type="checkbox">
+              <input class="accordionCheckbox" type="checkbox">
             </div>
           </div>
           <div class="accordionItem">
@@ -633,7 +628,7 @@
               Пункт меню 2
             </div>
             <div class="accordionArrow">
-              <input class="accordion_checkbox" type="checkbox">
+              <input class="accordionCheckbox" type="checkbox">
             </div>
           </div>
           <div class="accordionItem">
@@ -641,7 +636,7 @@
               Пункт меню 3
             </div>
             <div class="accordionArrow">
-              <input class="accordion_checkbox" type="checkbox">
+              <input class="accordionCheckbox" type="checkbox">
             </div>
           </div>
           <div class="accordionItem">
@@ -649,7 +644,7 @@
               Пункт меню 4
             </div>
             <div class="accordionArrow">
-              <input class="accordion_checkbox" type="checkbox">
+              <input class="accordionCheckbox" type="checkbox">
             </div>
           </div>
           <div class="accordionItem">
@@ -657,7 +652,7 @@
               Пункт меню 5
             </div>
             <div class="accordionArrow">
-              <input class="accordion_checkbox" type="checkbox">
+              <input class="accordionCheckbox" type="checkbox">
             </div>
           </div>
           <div class="accordionItem">
@@ -665,7 +660,7 @@
               Пункт меню 6
             </div>
             <div class="accordionArrow">
-              <input class="accordion_checkbox" type="checkbox" checked>
+              <input class="accordionCheckbox" type="checkbox" checked>
             </div>
           </div>
           <div class="accordionSubitem text_universal">
@@ -696,13 +691,13 @@
           </div>
       </div>
 
-      <button class="button button_exit accordion_button">Выход</button>
+      <button class="button button_exit accordionButton">Выход</button>
     </div>
 
     <div id="section_images" class="section">
       <h1>Изображения</h1>
 
-      <div id="blockWrapperImages" class="block_adaptive">
+      <div id="blockWrapper_images" class="block_adaptive">
 
         <div>
           <div class="subtitle">Не загружено</div>

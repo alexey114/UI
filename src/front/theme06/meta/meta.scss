@@ -59,7 +59,7 @@
   display: none;
 }
 
-.theme_slider {
+.slider_theme {
   @include block(40px, 20px);
   border-radius: 10px;
   background-color: $theme6_color3;
@@ -74,7 +74,7 @@
   transition: 0.4s;
 }
 
-.theme_slider:before {
+.slider_theme:before {
   content: "";
   position: absolute;
   @include block(16px, 16px);
@@ -86,7 +86,7 @@
   transition: 0.4s;
 }
 
-input:checked+.theme_slider:before {
+input:checked+.slider_theme:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
@@ -112,16 +112,16 @@ input:checked+.theme_slider:before {
   }
 }
 
-/* THEME_SWITCHER*/
+/* SWITCHER_THEME */
 
-#theme_switcher {
+#switcher_theme {
   @include block(118px, 40px);
   display: $theme_display;
   position: relative;
 }
 
-#theme_switcher::before,
-#theme_switcher::after {
+#switcher_theme::before,
+#switcher_theme::after {
   content: " ";
   position: absolute;
   top: 0;
@@ -129,12 +129,12 @@ input:checked+.theme_slider:before {
   background-repeat: no-repeat;
 }
 
-#theme_switcher::before {
+#switcher_theme::before {
   left: 0;
   background-image: url(./theme06/images/light_theme.svg);
 }
 
-#theme_switcher::after {
+#switcher_theme::after {
   right: 10px;
   background-image: url(./theme06/images/dark_theme.svg);
 }
@@ -148,7 +148,7 @@ input:checked+.theme_slider:before {
 
 /* FONT */
 
-.text_items {
+.blockWrapper_text {
 
   margin: 0;
   color: $gray_dark;
@@ -181,7 +181,7 @@ h4 {
   font-weight: 400;
 }
 
-.big_font {
+.text_big {
   @include font_style(normal, 600, 50px, 60.95px, $theme6_color1);
   margin-right: 150px;
 
@@ -190,15 +190,15 @@ h4 {
   }
 }
 
-.medium {
+.text_medium {
   font-weight: 500;
 }
 
-.bold {
+.text_bold {
   font-weight: 600;
 }
 
-.regular_16pt {
+.text_regular {
   font-size: 16px;
   line-height: 20.8px;
 }
@@ -214,7 +214,7 @@ h4 {
   }
 }
 
-.headers_button {
+.headersButton {
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
@@ -248,7 +248,7 @@ h4 {
   @include font_style(normal, 500, 18px, 21.94px, $theme6_color4);
 }
 
-.button_options {
+.blockInner_buttonSmall {
   width: 400px;
   margin-top: 23px;
   margin-left: 63px;
@@ -325,13 +325,13 @@ h4 {
 
 /*AVATAR*/
 
-.blockWrapperAvatar {
+.blockWrapper_avatar {
   margin-right: 120px;
 }
 
 /* PRELOADER and PROGRESSBAR */
 
-#preloaders {
+#blockWrapper_preloaders {
   @include wrap;
   padding-top: 20px;
 
@@ -384,7 +384,7 @@ h4 {
 .block_tooltip {
   margin-bottom: 61px;
 
-  &.textWithHeading {
+  &.block_tooltipWithHeading {
     margin-bottom: 120px;
   }
 }
@@ -406,7 +406,7 @@ h4 {
   }
 }
 
-#blockWrapperImages {
+#blockWrapper_images {
   div {
     margin-top: 30px;
 
