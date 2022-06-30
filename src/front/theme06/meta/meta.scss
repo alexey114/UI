@@ -148,7 +148,7 @@ input:checked+.slider_theme:before {
 
 /* FONT */
 
-.blockWrapper_text {
+.blockWrapperText {
 
   margin: 0;
   color: $gray_dark;
@@ -269,14 +269,14 @@ h4 {
   @media (max-width: 600px) {
     flex-wrap: wrap;
 
-    .blockWrapper_buttonSmall:last-child {
+    .blockWrapperButtonSmall:last-child {
       width: 400px;
       margin-right: 40px;
     }
   }
 }
 
-.blockWrapper_buttonSmall {
+.blockWrapperButtonSmall {
   width: 204px;
   margin-right: 40px;
 }
@@ -325,13 +325,13 @@ h4 {
 
 /*AVATAR*/
 
-.blockWrapper_avatar {
+.blockWrapperAvatar {
   margin-right: 120px;
 }
 
 /* PRELOADER and PROGRESSBAR */
 
-#blockWrapper_preloaders {
+#blockWrapperPreloaders {
   @include wrap;
   padding-top: 20px;
 
@@ -406,7 +406,7 @@ h4 {
   }
 }
 
-#blockWrapper_images {
+#blockWrapperImages {
   div {
     margin-top: 30px;
 
