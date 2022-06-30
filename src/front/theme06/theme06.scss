@@ -1146,7 +1146,7 @@ progress::-moz-progress-bar {
 
 /* ACCORDION */
 
-#accordion {
+.accordion {
   margin-top: 20px;
   color: $theme6_color1;
 }
@@ -1380,7 +1380,7 @@ progress::-moz-progress-bar {
   }
 }
 
-#blockWrapperCalendar {
+.blockWrapperCalendar {
   position: relative;
 
   &::after {
@@ -2210,7 +2210,7 @@ progress::-moz-progress-bar {
 
 /* header */
 
-#block_header {
+.block_header {
   max-width: 1184px;
   height: 64px;
   @include center;
@@ -2249,7 +2249,7 @@ progress::-moz-progress-bar {
   }
 }
 
-#header_icons {
+.header_icons {
   display: flex;
 }
 
