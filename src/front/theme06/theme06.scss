@@ -2096,33 +2096,33 @@ progress::-moz-progress-bar {
   padding: 19px 25px 20px 24px;
 }
 
-.sidebar_header {
+.sidebarHeader {
   @include center;
   justify-content: space-between;
 }
 
-.sidebar_name {
+.sidebarName {
   color: $theme6_color12;
 }
 
-.sidebar_arrow {
+.sidebarArrow {
   @include block(15px, 15px);
   background-image: url(./theme06/images/arrow_down_blue.svg);
   background-repeat: no-repeat;
   transform: rotate(90deg);
 }
 
-.sidebar_information {
+.sidebarInformation {
   @include center;
   justify-content: center;
   margin: 40px 0;
 }
 
-.sidebar_mail {
+.sidebarMail {
   color: $theme6_color5;
 }
 
-.sidebar_menu {
+.sidebarMenu {
   @include center;
   margin-bottom: 20px;
 }
@@ -2132,7 +2132,7 @@ progress::-moz-progress-bar {
   background-repeat: no-repeat;
 }
 
-.sidebar_point {
+.sidebarPoint {
   padding-left: 14px;
   color: $gray_dark;
   font-weight: 500;
