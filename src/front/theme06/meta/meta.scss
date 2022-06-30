@@ -557,14 +557,6 @@ h4 {
   }
 }
 
-.field-container_adaptive {
-  margin-right: 42px;
-
-  &:last-child {
-    margin-right: 0px;
-  }
-}
-
 .text_none {
   @media (max-width: 1240px) {
     display: none;

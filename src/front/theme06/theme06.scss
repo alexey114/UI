@@ -1220,7 +1220,7 @@ progress::-moz-progress-bar {
   height: 42px;
   margin-right: 32px;
 
-  &.combobox_input {
+  &.field-input_combobox {
     margin-right: 0px;
   }
 
@@ -1232,7 +1232,7 @@ progress::-moz-progress-bar {
   outline: none;
   border-radius: 5px;
 
-  &.combobox_standart{
+  &.field-input_combobox_standart{
     &:hover{
       border: 1px solid $theme6_color5;
     }
@@ -1240,12 +1240,8 @@ progress::-moz-progress-bar {
       border: 1px solid $theme6_color3;
     }
   }
-
-  &.combobox_hover{
-    border: 1px solid $theme6_color5;
-  }
   
-  &.combobox_editing{
+  &.field-input_combobox_editing{
     border: 1px solid $theme6_color3;
   }
 
@@ -1617,6 +1613,10 @@ progress::-moz-progress-bar {
   margin-right: 42px;
   width: 300px;
 
+  &:last-child {
+    margin-right: 0px;
+  }
+
   @media (max-width: 1400px) {
     width: 250px;
   }
@@ -1911,7 +1911,7 @@ progress::-moz-progress-bar {
 
 /* COMBOBOX */
 
-.combobox_light {
+.field-container_combobox_light {
   position: relative;
   margin-right: 20px;
 
@@ -1937,18 +1937,26 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  .combobox_blockPoints{
+  .field-combobox_blockPoints{
     color: $theme6_color1;
   }
 }
 
 .combobox_disabled{
-  .combobox_blockPoints{
+  .field-combobox_blockPoints{
     color:$theme6_color5;
   }
 }
 
-.combobox {
+.field-container_hover{
+  cursor: pointer;
+
+  .field-input_combobox{
+    border: 1px solid $theme6_color5;
+  }
+}
+
+.field-container_combobox {
 
   position: relative;
   margin-right: 20px;
@@ -1994,12 +2002,12 @@ progress::-moz-progress-bar {
     background-color: $theme6_color13;
   }
 
-  .combobox_blockPoints{
+  .field-combobox_blockPoints{
     color: $theme6_color1
   }
 }
 
-.combobox_close {
+.field-combobox_close {
   position: relative;
 
   &::after {
@@ -2020,7 +2028,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  &.close_end {
+  &.field-combobox_close_end {
     left: 105px;
 
     @media (max-width: 1400px) {
@@ -2029,14 +2037,14 @@ progress::-moz-progress-bar {
   }
 }
 
-.combobox_blockPoints {
+.field-combobox_blockPoints {
   @include center;
   position: absolute;
   top: 7px;
   left: 7px;
 }
 
-.combobox_point {
+.field-combobox_point {
   background: $theme6_color2;
   padding: 5px 34px 6px 12px;
   margin-right: 4px;
@@ -2058,11 +2066,11 @@ progress::-moz-progress-bar {
   cursor: pointer;
 }
 
-.combobox_inactive {
+.field-input_combobox_inactive {
   background-color: $theme6_color16;
 }
 
-.combobox_none {
+.field-combobox_point_hide {
   @media (max-width: 1400px) {
     display: none;
   }
