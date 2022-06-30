@@ -762,7 +762,7 @@
                   <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect3" class="__select__label">Вспомогательный текст #3</label>
                 </div>
-                <div class="field-messageContainerl">
+                <div class="field-messageContainer">
                 </div>
               </div>
 
@@ -771,7 +771,7 @@
                 <div class="__select__title field-input_standart" data-default="Option 0">
                   Вспомогательный текст
                 </div>
-                <div class="__select__content content_standart">
+                <div class="__select__content __select__content_standart">
                   <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect4" class="__select__label">Вспомогательный текст</label>
                   <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
@@ -788,7 +788,7 @@
                 <div class="__select__title field-input_editing" data-default="Option 0">
                   Вспомогательный текст
                 </div>
-                <div class="__select__content content_standart">
+                <div class="__select__content __select__content_standart">
                   <input id="singleSelect7" class="__select__input" type="radio" name="singleSelect" />
                   <label for="singleSelect7" class="__select__label label_editing">Вспомогательный текст</label>
                   <input id="singleSelect8" class="__select__input" type="radio" name="singleSelect" />
@@ -845,7 +845,7 @@
         <div id="select" class="block_adaptive">
 
 
-            <div id="select_twoBlocks" class="block_adaptive">
+            <div id="select_twoSelect" class="block_adaptive">
               <div class="select_item">
                 <div class="select_option">Вариант 1</div>
                 <div class="select_option active_option">Вариант 2</div>
@@ -865,7 +865,7 @@
               </div>
             </div>
 
-            <div id="select_oneBlock" class="block_adaptive">
+            <div id="select_oneSelect" class="block_adaptive">
               <div class="select_item">
                 <div class="select_block">
                   <input class="select_value" type="text" value="Вариант 1">
@@ -897,32 +897,32 @@
         <h1>Поля для поиска и фильтрации</h1>
         <div id="blockWrapperSearch">
           <div class="search block">
-            <div class="search_disabled">
+            <div class="field-search_disabled">
               <input type="search" placeholder="Поиск">
               <div class="field-messageContainer">
               </div>
             </div>
-            <div class="search_active">
+            <div class="field-search_active">
               <input type="search" placeholder="Поиск">
               <div class="field-messageContainer">
               </div>
             </div>
           </div>
           <div class="search block">
-            <div class="search_disabled search_disabled_add">
+            <div class="field-search_disabled field-search_disabled_add">
               <input type="search" placeholder="Поиск">
               <div class="field-messageContainer">
               </div>
             </div>
-            <div class="search_active search_small">
+            <div class="field-search_active field-search_small">
               <input type="search" placeholder="Поиск">
               <div class="field-messageContainer">
               </div>
             </div>
           </div>
           <div class="search_status">
-            <div class="statusText">Статус</div>
-            <div class="statusInput">
+            <div class="search_statusText">Статус</div>
+            <div class="field-search_statusInput">
               <input type="search" placeholder="Текст">
               <div class="field-messageContainer">
               </div>
@@ -947,7 +947,7 @@
           <div class="blockWrapperInput_withName block">
             <div class="field-container field-container_adaptive">
               <div class="field-input_name">Название</div>
-              <div class="text_definition">Вспомогательный текст</div>
+              <div class="field-input_text">Вспомогательный текст</div>
               <div class="field-messageContainer">
               </div>
             </div>
@@ -974,7 +974,7 @@
           <div class="blockWrapperInput_withName arrow_design block">
             <div class="field-container field-container_adaptive">
               <div class="field-input_name">Название</div>
-              <div class="text_definition">Вспомогательный текст</div>
+              <div class="field-input_text">Вспомогательный текст</div>
               <div class="field-messageContainer">
               </div>
             </div>
@@ -1000,25 +1000,25 @@
 
           <div class="blockWrapperInput_withName calendar_design block">
             <div class="field-container field-container_adaptive">
-              <div class="field-input_name calendar_grey_light">Название</div>
-              <div class="text_definition">Вспомогательный <span class="text_none">текст</span></div>
+              <div class="field-input_name field-input_icon_greyLightCalendar">Название</div>
+              <div class="field-input_text">Вспомогательный <span class="text_none">текст</span></div>
               <div class="field-messageContainer">
               </div>
             </div>
             <div class="field-container field-container_adaptive">
-              <div class="field-input_name calendar_grey">Название</div>
+              <div class="field-input_name field-input_icon_greyCalendar">Название</div>
               <input class="field-input field-input_new" type="text" value="Вспомогательный текст">
               <div class="field-messageContainer">
               </div>
             </div>
             <div class="field-container field-container_adaptive">
-              <div class="field-input_name calendar_grey">Название</div>
+              <div class="field-input_name field-input_icon_greyCalendar">Название</div>
               <input class="field-input field-input_standart" type="text" value="Вспомогательный текст">
               <div class="field-messageContainer">
               </div>
             </div>
             <div class="field-container field-container_adaptive">
-              <div class="field-input_name field-input_icon_blueCalendar field-input_name_blue text_name">Название
+              <div class="field-input_name field-input_icon_blueCalendar field-input_name_blue">Название
               </div>
               <input class="field-input field-input_editing" type="text" value="Вспомогательный те|">
               <div class="field-messageContainer">
@@ -1028,14 +1028,14 @@
 
           <div class="blockWrapperInput_withName input_status">
             <div class="field-container field-container_adaptive">
-              <div class="field-input_name icon_close">Название</div>
+              <div class="field-input_name field-input_icon_close">Название</div>
               <input class="field-inputFirst field-input_border_red field-input_standart" type="text" value="Вспомогательный текст">
               <div class="field-messageContainer">
                 <div class="field-messageError">Поле заполнено не верно</div>
               </div>
             </div>
             <div class="field-container field-container_adaptive">
-              <div class="field-input_name icon_big">Название</div>
+              <div class="field-input_name field-input_icon_bigCheck">Название</div>
               <input class="field-input field-input_border_green field-input_standart" type="text" value="Вспомогательный текст">
               <div class="field-messageContainer">
               </div>
@@ -1088,7 +1088,7 @@
             </div>
 
             <div class="blockInnerInputText">
-              <div class="inputName icon_big text_definition">Текстовое поле</div>
+              <div class="inputName icon_big_check text_definition">Текстовое поле</div>
               <div class="field-сontainer field-сontainer_column">
                 <input class="field-input field-input_new field-input_border_green" type="text" value="Вспомогательный текст">
                 <div class="field-messageContainer">
@@ -1486,7 +1486,7 @@
       <h1>Верхнее меню (шапка)</h1>
 
       <div id="block_header">
-        <div class="search_disabled">
+        <div class="field-search_disabled">
           <input type="search" placeholder="Поиск">
         </div>
         <div id="header_icons">

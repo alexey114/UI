@@ -86,7 +86,7 @@
   margin-top: 24px;
 }
 
-.content_standart {
+.__select__content_standart {
   color: $theme6_color4;
 }
 
@@ -186,8 +186,7 @@ input:checked.switcher:before {
 /* Font */
 
 .text_definition {
-  font-size: 14px;
-  line-height: 16.8px;
+  @include text_definition;
 }
 
 .text_universal {
@@ -202,9 +201,7 @@ input:checked.switcher:before {
 }
 
 .text_name {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 13.2px;
+  @include text_name;
 }
 
 .text_sidebar {
@@ -1409,7 +1406,7 @@ progress::-moz-progress-bar {
 
 /* SEARCH */
 
-.search_disabled {
+.field-search_disabled {
 
   position: relative;
   margin-right: 30px;
@@ -1453,7 +1450,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.search_active {
+.field-search_active {
   position: relative;
 
   input {
@@ -1499,7 +1496,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.search_disabled_add {
+.field-search_disabled_add {
 
   color: $theme6_color5;
 
@@ -1514,7 +1511,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.search_small {
+.field-search_small {
   input {
     padding: 12px 161px 11px 38px;
 
@@ -1534,7 +1531,7 @@ progress::-moz-progress-bar {
   margin-top: 30px;
 }
 
-.statusInput {
+.field-search_statusInput {
 
   position: relative;
 
@@ -1612,6 +1609,10 @@ progress::-moz-progress-bar {
   color: $theme6_color3;
 }
 
+.field-input_text{
+  @include text_definition;
+}
+
 .field-container_adaptive {
   margin-right: 42px;
   width: 300px;
@@ -1630,8 +1631,8 @@ progress::-moz-progress-bar {
 }
 
 
-.calendar_grey_light,
-.calendar_grey,
+.field-input_icon_greyLightCalendar,
+.field-input_icon_greyCalendar,
 .field-input_icon_blueCalendar {
   position: relative;
 
@@ -1645,19 +1646,39 @@ progress::-moz-progress-bar {
   }
 }
 
-.calendar_grey_light::before {
+.field-input_icon_close::after {
+    content: "";
+    @include block(10px, 10px);
+    top: 40px;
+    right: 10px;
+    position: absolute;
+    background-image: url(./theme06/images/close_red.svg);
+    background-repeat: no-repeat;
+  }
+
+.field-input_icon_greyLightCalendar::before {
   top: 25px;
   right: 10px;
   background-color: white;
   background-image: url(./theme06/images/calendar_grey_light.svg);
 }
 
-.calendar_grey::before {
+.field-input_icon_greyCalendar::before {
   background-image: url(./theme06/images/calendar_grey.svg);
 }
 
 .field-input_icon_blueCalendar::before {
   background-image: url(./theme06/images/calendar_blue.svg);
+}
+
+.field-input_icon_bigCheck::before {
+  content: "";
+  @include block(15px, 11.42px);
+  top: 40px;
+  right: 10px;
+  position: absolute;
+  background-image: url(./theme06/images/check_green_big.svg);
+  background-repeat: no-repeat;
 }
 
 .input_status {
@@ -1710,7 +1731,7 @@ progress::-moz-progress-bar {
   background-repeat: no-repeat;
 }
 
-.icon_big::after {
+.icon_big_check::after {
   content: "";
   @include block(15px, 11.42px);
   top: 40px;
@@ -1771,7 +1792,7 @@ progress::-moz-progress-bar {
     }
   }
 
-  .icon_big::after {
+  .icon_big_check::after {
     top: 18px;
 
     @media (max-width: 420px) {
@@ -2189,7 +2210,7 @@ progress::-moz-progress-bar {
   box-shadow: 0px 6px 35px -13px rgba(0, 0, 0, 0.06);
   margin-top: 40px;
 
-  .search_disabled {
+  .field-search_disabled {
     & input {
       margin-left: 30px;
     }
@@ -2200,7 +2221,7 @@ progress::-moz-progress-bar {
   }
 
   @media (max-width: 420px) {
-    .search_disabled {
+    .field-search_disabled {
       & input {
         margin-left: 10px;
       }
@@ -2213,7 +2234,7 @@ progress::-moz-progress-bar {
 }
 
 @media (max-width: 420px) {
-  .search_disabled {
+  .field-search_disabled {
     & input {
       padding: 12px 12px 11px 38px;
     }

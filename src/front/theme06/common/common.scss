@@ -61,6 +61,11 @@ $gray_dark: $theme6_color1; // #6C7293
   line-height: 13.2px;
 }
 
+@mixin text_definition {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
 @mixin width($max-width, $width) {
   max-width: $max-width;
   width: $width;
