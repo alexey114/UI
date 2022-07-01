@@ -1,4 +1,4 @@
-/* Шрифты */
+/* FONT */
 
 @font-face {
   font-family: "Montserrat";
@@ -24,7 +24,7 @@
   font-weight: 600;
 }
 
-/* Переменные */
+/* VARIABLES */
 
 $font_family: Montserrat;
 $font_size_base: 16px;
@@ -39,7 +39,9 @@ $gray_light: $theme6_color15; // #F1F5FB
 $gray_dark: $theme6_color1; // #6C7293
 
 
-/* Миксины */
+/* MIXIN */
+
+  /* MIXIN_TEXT */
 
 @mixin font_style($font-style, $font-weight, $font_size, $line-height, $color) {
   font-style: $font-style;
@@ -65,6 +67,31 @@ $gray_dark: $theme6_color1; // #6C7293
   font-size: 14px;
   line-height: 16.8px;
 }
+
+@mixin text_universal {
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+@mixin text_status {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13.41px;
+}
+
+@mixin text_sidebar {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+}
+
+@mixin text_button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+}
+
+  /* MIXIN_BLOCK */
 
 @mixin width($max-width, $width) {
   max-width: $max-width;
@@ -93,7 +120,7 @@ $gray_dark: $theme6_color1; // #6C7293
   background-repeat: no-repeat;
 }
 
-/* Общие классы*/
+/* GENERAL CLASSES */
 
 * {
   font-family: $font_family;
