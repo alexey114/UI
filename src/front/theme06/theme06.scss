@@ -116,7 +116,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 47px;
+    top: 22px;
     right: 10px;
     display: block;
     @include block(8px, 2px);
@@ -1506,6 +1506,7 @@ progress::-moz-progress-bar {
       padding: 12px 10px 11px 38px;
     }
   }
+
 }
 
 .field-search_small {
@@ -1576,6 +1577,13 @@ progress::-moz-progress-bar {
 .arrow_design{
   .__select{
     box-shadow: none;
+  }
+
+  .__select__title {
+    &::after,
+    &::before{
+      top: 47px;
+    }
   }
 
   .field-container{
