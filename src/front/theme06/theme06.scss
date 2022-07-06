@@ -221,13 +221,11 @@ input:checked.switcher:before {
 
 /* Button */
 
-button {
-  color: $theme6_color6;
-}
 
 .button {
   @include center;
   justify-content: center;
+  color: $theme6_color6;
   font-size: 14px;
   border-radius: 6px;
   padding: 11.5px, 34px;
@@ -570,6 +568,7 @@ input {
 .status {
   margin-right: 20px;
   @include block(84px, 22px);
+  color: $theme6_color6;
   border: none;
   border-radius: 4px;
 
