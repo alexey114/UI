@@ -8,7 +8,7 @@
   font-size: 13.333333px;
   font-style: normal;
   font-weight: normal;
-  color: $theme6_color5;
+  color: $theme_color5;
   box-sizing: border-box;
   box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.04);
   border-radius: 10px;
@@ -76,8 +76,8 @@
   display: none;
   flex-direction: column;
   width: calc(100% - 6px);
-  background-color: $theme6_color6;
-  border: 1px solid #c7ccd1;
+  background-color: $theme_color6;
+  border: 1px solid $theme_color21;
   border: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -87,7 +87,7 @@
 }
 
 .__select__content_standart {
-  color: $theme6_color4;
+  color: $theme_color4;
 }
 
 .__select__input {
@@ -100,12 +100,12 @@
   padding-left: 16px;
 
   &+input+& {
-    border-top: 0 solid #c7ccd160;
+    border-top: 0 solid $theme_color21;
   }
 
   &.label_editing {
     &+input+& {
-      border-top: 0 solid $theme6_color3;
+      border-top: 0 solid $theme_color3;
     }
   }
 }
@@ -121,7 +121,7 @@
     display: block;
     @include block(8px, 2px);
     transition: all 0.3s ease-out;
-    background-color: $theme6_color5;
+    background-color: $theme_color5;
     transform: translate(-2px, -50%) rotate(45deg);
   }
 
@@ -143,19 +143,19 @@
 .switcher {
   @include block(40px, 20px);
   border-radius: 10px;
-  background-color: $theme6_color3;
+  background-color: $theme_color3;
 
   &.disabled {
-    background-color: $theme6_color5;
+    background-color: $theme_color5;
   }
 
   &.activeLight {
-    background-color: $theme6_color3;
+    background-color: $theme_color3;
     opacity: 0.4;
   }
 
   &.disabledLight {
-    background-color: $theme6_color13;
+    background-color: $theme_color13;
   }
 }
 
@@ -225,7 +225,7 @@ input:checked.switcher:before {
 .button {
   @include center;
   justify-content: center;
-  color: $theme6_color6;
+  color: $theme_color6;
   font-size: 14px;
   border-radius: 6px;
   padding: 11.5px, 34px;
@@ -237,7 +237,7 @@ input:checked.switcher:before {
 
   @include block(160px, 42px);
   border: none;
-  background-color: $theme6_color6;
+  background-color: $theme_color6;
 
   @media (max-width: 850px) {
     margin-right: 0;
@@ -264,21 +264,21 @@ input:checked.switcher:before {
 }
 
 .add {
-    background-color: $theme6_color3;
+    background-color: $theme_color3;
     cursor: pointer;
 
   &_hover,
   &:hover {
-    background-color: #34AFF9;
+    background-color: $theme_color19;
   }
 
   &_pressing,
   &:active {
-    background-color: #098EDF;
+    background-color: $theme_color20;
   }
 
   &_disabled {
-    background-color: $theme6_color12;
+    background-color: $theme_color12;
   }
 }
 
@@ -295,14 +295,14 @@ input:checked.switcher:before {
   }
 
   & {
-    color: $theme6_color5;
-    background-color: $theme6_color14;
+    color: $theme_color5;
+    background-color: $theme_color14;
     cursor: pointer;
   }
 
   &_hover,
   &:hover {
-    color: $theme6_color5;
+    color: $theme_color5;
     background-color: #E5E6ED;
   }
 
@@ -313,43 +313,43 @@ input:checked.switcher:before {
   }
 
   &_disabled {
-    color: $theme6_color6;
-    background-color: $theme6_color12;
+    color: $theme_color6;
+    background-color: $theme_color12;
   }
 }
 
 .cancel {
 
-  color: $theme6_color3;
+  color: $theme_color3;
   cursor: pointer;
 
   &.button_border {
-    border: solid 1px $theme6_color3;
+    border: solid 1px $theme_color3;
   }
 
   &_hover,
   &:hover {
-    color: #34AFF9;
+    color: $theme_color19;
 
     &.button_border {
-      border: solid 1px #34AFF9;
+      border: solid 1px $theme_color19;
     }
   }
 
   &_pressing,
   &:active {
-    color: #098EDF;
+    color: $theme_color20;
 
     &.button_border {
-      border: solid 1px #098EDF;
+      border: solid 1px $theme_color20;
     }
   }
 
   &_disabled {
-    color: $theme6_color12;
+    color: $theme_color12;
 
     &.button_border {
-      border: solid 1px $theme6_color12;
+      border: solid 1px $theme_color12;
     }
   }
 }
@@ -466,7 +466,7 @@ input {
     content: "";
     @include block(16px, 16px);
     border-radius: 4px;
-    background-color: #098EDF;
+    background-color: $theme_color20;
     position: absolute;
     top: -1px;
     left: -1px;
@@ -497,7 +497,7 @@ input {
 
 input {
   &.checkbox_light {
-    border: 1px solid $theme6_color12;
+    border: 1px solid $theme_color12;
 
     &:checked:after {
       content: "";
@@ -510,7 +510,7 @@ input {
   }
 
   &.checkbox_green {
-    border: 1px solid $theme6_color11;
+    border: 1px solid $theme_color11;
 
     &:checked:after {
       content: "";
@@ -540,13 +540,13 @@ input {
   &.radio {
 
     &_standart:checked {
-      border: 1px solid $theme6_color3;
+      border: 1px solid $theme_color3;
 
       &:before {
         content: "";
         @include block(10px, 10px);
         border-radius: 50%;
-        background-color: $theme6_color3;
+        background-color: $theme_color3;
       }
     }
 
@@ -568,7 +568,7 @@ input {
 .status {
   margin-right: 20px;
   @include block(84px, 22px);
-  color: $theme6_color6;
+  color: $theme_color6;
   border: none;
   border-radius: 4px;
 
@@ -577,15 +577,15 @@ input {
   }
 
   &.active {
-    background-color: $theme6_color11;
+    background-color: $theme_color11;
   }
 
   &.disabled {
-    background-color: $theme6_color9;
+    background-color: $theme_color9;
   }
 
   &.off {
-    background-color: $theme6_color8;
+    background-color: $theme_color8;
   }
 
   @media (max-width: 400px) {
@@ -625,11 +625,11 @@ input {
 }
 
 .theme6_color1 {
-  background-color: $theme6_color3;
+  background-color: $theme_color3;
 }
 
 .theme6_color2 {
-  background-color: $theme6_color4;
+  background-color: $theme_color4;
 }
 
 .theme6_color3 {
@@ -637,63 +637,63 @@ input {
 }
 
 .theme6_color4 {
-  background-color: $theme6_color5;
+  background-color: $theme_color5;
 }
 
 .theme6_color5 {
-  background-color: $theme6_color6;
+  background-color: $theme_color6;
 }
 
 .theme6_color6 {
-  background-color: $theme6_color7;
+  background-color: $theme_color7;
 }
 
 .theme6_color7 {
-  background-color: $theme6_color8;
+  background-color: $theme_color8;
 }
 
 .theme6_color8 {
-  background-color: $theme6_color9;
+  background-color: $theme_color9;
 }
 
 .theme6_color9 {
-  background-color: $theme6_color10;
+  background-color: $theme_color10;
 }
 
 .theme6_color10 {
-  background-color: $theme6_color11;
+  background-color: $theme_color11;
 }
 
 .theme6_color11 {
-  background-color: $theme6_color12;
+  background-color: $theme_color12;
 }
 
 .theme6_color12 {
-  background-color: $theme6_color13;
+  background-color: $theme_color13;
 }
 
 .theme6_color13 {
-  background-color: $theme6_color2;
+  background-color: $theme_color2;
 }
 
 .theme6_color14 {
-  background-color: $theme6_color14;
+  background-color: $theme_color14;
 }
 
 .theme6_color15 {
-  background-color: $theme6_color15;
+  background-color: $theme_color15;
 }
 
 .theme6_color16 {
-  background-color: $theme6_color16;
+  background-color: $theme_color16;
 }
 
 .theme6_color17 {
-  background-color: $theme6_color17;
+  background-color: $theme_color17;
 }
 
 .theme6_color18 {
-  background-color: $theme6_color18;
+  background-color: $theme_color18;
 }
 
 /*AVATAR*/
@@ -771,22 +771,22 @@ input {
 progress {
   max-width: 450px;
   @include block(100%, 6px);
-  background-color: $theme6_color14;
+  background-color: $theme_color14;
   border: 0;
 }
 
 progress::-webkit-progress-bar {
-  background-color: $theme6_color14;
+  background-color: $theme_color14;
   border-radius: 4px;
 }
 
 progress::-webkit-progress-value {
-  background-color: $theme6_color5;
+  background-color: $theme_color5;
   border-radius: 4px;
 }
 
 progress::-moz-progress-bar {
-  background-color: $theme6_color5;
+  background-color: $theme_color5;
   border-radius: 4px;
 }
 
@@ -795,7 +795,7 @@ progress::-moz-progress-bar {
 .text_tooltip {
   @include center;
   justify-content: center;
-  color: $theme6_color4;
+  color: $theme_color4;
   line-height: 15.6px;
   position: absolute;
   @include block(260px, 68px);
@@ -821,15 +821,15 @@ progress::-moz-progress-bar {
     margin-left: -12px;
     border-width: 6px;
     border-style: solid;
-    border-color: $theme6_color6 transparent transparent transparent;
+    border-color: $theme_color6 transparent transparent transparent;
   }
 }
 
 .button_tooltip {
   position: absolute;
   @include block(104px, 32px);
-  color: $theme6_color6;
-  background-color: $theme6_color3;
+  color: $theme_color6;
+  background-color: $theme_color3;
   border: 0;
   border-radius: 6px;
 }
@@ -857,7 +857,7 @@ progress::-moz-progress-bar {
     margin-left: -12px;
     border-width: 6px;
     border-style: solid;
-    border-color: $theme6_color6 transparent transparent transparent;
+    border-color: $theme_color6 transparent transparent transparent;
   }
 }
 
@@ -880,7 +880,7 @@ progress::-moz-progress-bar {
     margin-left: -12px;
     border-width: 6px;
     border-style: solid;
-    border-color: transparent transparent $theme6_color6 transparent;
+    border-color: transparent transparent $theme_color6 transparent;
   }
 }
 
@@ -898,7 +898,7 @@ progress::-moz-progress-bar {
     margin-left: -12px;
     border-width: 6px;
     border-style: solid;
-    border-color: transparent $theme6_color6 transparent transparent;
+    border-color: transparent $theme_color6 transparent transparent;
   }
 }
 
@@ -923,7 +923,7 @@ progress::-moz-progress-bar {
     margin-left: -12px;
     border-width: 6px;
     border-style: solid;
-    border-color: transparent transparent transparent $theme6_color6;
+    border-color: transparent transparent transparent $theme_color6;
   }
 }
 
@@ -1011,16 +1011,16 @@ progress::-moz-progress-bar {
   .button_accept {
     @include block(87px, 32px);
     border: 0;
-    background-color: $theme6_color3;
-    color: $theme6_color6;
+    background-color: $theme_color3;
+    color: $theme_color6;
     border-radius: 6px;
   }
 
   .button_cancel {
     @include block(87px, 32px);
-    border: 1px solid $theme6_color3;
-    background-color: $theme6_color6;
-    color: $theme6_color3;
+    border: 1px solid $theme_color3;
+    background-color: $theme_color6;
+    color: $theme_color3;
     border-radius: 6px;
   }
 
@@ -1030,7 +1030,7 @@ progress::-moz-progress-bar {
     top: 155px;
 
     .text_definition {
-      color: $theme6_color5;
+      color: $theme_color5;
       margin-right: 70px;
 
       @media (max-width: 550px) {
@@ -1043,9 +1043,9 @@ progress::-moz-progress-bar {
     padding: 0px 111px 0px 12px;
     height: 42px;
     outline: none;
-    border: 1px solid $theme6_color13;
+    border: 1px solid $theme_color13;
     border-radius: 5px;
-    color: $theme6_color4;
+    color: $theme_color4;
 
     @media (max-width: 550px) {
       padding: 0px 12px 0px 12px;
@@ -1092,7 +1092,7 @@ progress::-moz-progress-bar {
 
   a {
     text-decoration: none;
-    color: $theme6_color4;
+    color: $theme_color4;
   }
 
   @media (max-width: 480px) {
@@ -1111,7 +1111,7 @@ progress::-moz-progress-bar {
 
   &.page_active {
     text-align: center;
-    background-color: $theme6_color15;
+    background-color: $theme_color15;
     @include block(24px, 24px);
     border-radius: 4px;
   }
@@ -1144,7 +1144,7 @@ progress::-moz-progress-bar {
 
 .accordion {
   margin-top: 20px;
-  color: $theme6_color1;
+  color: $theme_color1;
 }
 
 .accordionItem {
@@ -1189,7 +1189,7 @@ progress::-moz-progress-bar {
 
 .button_exit {
   @include block(97px, 32px);
-  background-color: $theme6_color3;
+  background-color: $theme_color3;
 }
 
 .accordionButton {
@@ -1230,15 +1230,15 @@ progress::-moz-progress-bar {
 
   &.field-input_combobox_standart{
     &:hover{
-      border: 1px solid $theme6_color5;
+      border: 1px solid $theme_color5;
     }
     &:active{
-      border: 1px solid $theme6_color3;
+      border: 1px solid $theme_color3;
     }
   }
   
   &.field-input_combobox_editing{
-    border: 1px solid $theme6_color3;
+    border: 1px solid $theme_color3;
   }
 
   @media (max-width: 1400px) {
@@ -1281,13 +1281,13 @@ progress::-moz-progress-bar {
 }
 
 .field-input_new {
-  color: $theme6_color5;
-  border: 1px solid $theme6_color13;
+  color: $theme_color5;
+  border: 1px solid $theme_color13;
 }
 
 .field-input_standart {
-  color: $theme6_color4;
-  border: 1px solid $theme6_color13;
+  color: $theme_color4;
+  border: 1px solid $theme_color13;
 
   &.field-input_noBorder{
     border: none !important;
@@ -1295,8 +1295,8 @@ progress::-moz-progress-bar {
 }
 
 .field-input_editing {
-  color: $theme6_color4;
-  border: 1px solid $theme6_color3;
+  color: $theme_color4;
+  border: 1px solid $theme_color3;
 }
 
 /* CALENDAR */
@@ -1333,7 +1333,7 @@ progress::-moz-progress-bar {
 }
 
 .active_option {
-  background-color: $theme6_color3;
+  background-color: $theme_color3;
   cursor: pointer;
 }
 
@@ -1347,12 +1347,12 @@ progress::-moz-progress-bar {
     @include block(5.4px, 5.4px);
     top: 40%;
     left: 25.4px;
-    background-color: $theme6_color12;
+    background-color: $theme_color12;
     border-radius: 50%;
   }
 
   &.active_option::after {
-    background-color: $theme6_color6;
+    background-color: $theme_color6;
   }
 }
 
@@ -1362,7 +1362,7 @@ progress::-moz-progress-bar {
   padding: 0px 117px 0px 12px;
   outline: none;
   border-radius: 5px;
-  border: 1px solid $theme6_color3;
+  border: 1px solid $theme_color3;
 }
 
 .select_block {
@@ -1406,7 +1406,7 @@ progress::-moz-progress-bar {
 
   position: relative;
   margin-right: 30px;
-  color: $theme6_color13;
+  color: $theme_color13;
 
   @media (max-width: 940px) {
     margin-right: 0px;
@@ -1414,7 +1414,7 @@ progress::-moz-progress-bar {
 
   input {
     padding: 12px 215px 11px 38px;
-    background-color: $theme6_color16;
+    background-color: $theme_color16;
     border-radius: 5px;
     border: none;
 
@@ -1423,15 +1423,15 @@ progress::-moz-progress-bar {
     }
 
     &::-webkit-input-placeholder {
-      color: $theme6_color13;
+      color: $theme_color13;
     }
 
     &::-moz-placeholder {
-      color: $theme6_color13;
+      color: $theme_color13;
     }
 
     &::-ms-input-placeholder {
-      color: $theme6_color13;
+      color: $theme_color13;
     }
   }
 
@@ -1452,22 +1452,22 @@ progress::-moz-progress-bar {
   input {
     padding: 12px 215px 11px 38px;
     border-radius: 5px;
-    border: 1px solid $theme6_color13;
+    border: 1px solid $theme_color13;
 
     @media (max-width: 490px) {
       padding: 12px 50px 11px 38px;
     }
 
     &::-webkit-input-placeholder {
-      color: $theme6_color4;
+      color: $theme_color4;
     }
 
     &::-moz-placeholder {
-      color: $theme6_color4;
+      color: $theme_color4;
     }
 
     &::-ms-input-placeholder {
-      color: $theme6_color4;
+      color: $theme_color4;
     }
   }
 
@@ -1494,12 +1494,12 @@ progress::-moz-progress-bar {
 
 .field-search_disabled_add {
 
-  color: $theme6_color5;
+  color: $theme_color5;
 
   input {
     padding: 12px 161px 11px 38px;
-    background-color: $theme6_color6;
-    border: 1px solid $theme6_color13;
+    background-color: $theme_color6;
+    border: 1px solid $theme_color13;
 
     @media (max-width: 490px) {
       padding: 12px 10px 11px 38px;
@@ -1524,7 +1524,7 @@ progress::-moz-progress-bar {
 
 .search_status {
   @include center;
-  color: $theme6_color5;
+  color: $theme_color5;
   margin-top: 30px;
 }
 
@@ -1535,22 +1535,22 @@ progress::-moz-progress-bar {
   input {
     padding: 9px 151px 10px 10px;
     border-radius: 5px;
-    border: 1px solid $theme6_color13;
+    border: 1px solid $theme_color13;
 
     @media (max-width: 490px) {
       padding: 9px 60px 10px 10px;
     }
 
     &::-webkit-input-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
 
     &::-moz-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
 
     &::-ms-input-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
   }
 
@@ -1566,7 +1566,7 @@ progress::-moz-progress-bar {
 }
 
 .field-messageContainer{
-  color: $theme6_color9;
+  color: $theme_color9;
   font-size: 12px;
   line-height: 15.6px;
 }
@@ -1595,13 +1595,13 @@ progress::-moz-progress-bar {
 }
 
 .field-input_name {
-  color: $theme6_color5;
+  color: $theme_color5;
   margin-bottom: 11px;
   @include text_name;
 }
 
 .field-input_name_blue {
-  color: $theme6_color3;
+  color: $theme_color3;
 }
 
 .field-input_text{
@@ -1740,11 +1740,11 @@ progress::-moz-progress-bar {
 }
 
 .field-input_border_green {
-  border: 1px solid $theme6_color11;
+  border: 1px solid $theme_color11;
 }
 
 .field-input_border_red {
-  border: 1px solid $theme6_color9;
+  border: 1px solid $theme_color9;
 }
 
 .blockInnerInputText {
@@ -1800,7 +1800,7 @@ progress::-moz-progress-bar {
   }
 
   .field-input_new {
-    color: $theme6_color4;
+    color: $theme_color4;
   }
 }
 
@@ -1821,7 +1821,7 @@ progress::-moz-progress-bar {
 
 .slider {
   @include block(100%, 4px);
-  background: $theme6_color14;
+  background: $theme_color14;
   position: relative;
   -webkit-appearance: none;
   margin: 0;
@@ -1833,17 +1833,17 @@ progress::-moz-progress-bar {
     @include block(50%, 4px);
     top: 0;
     left: 0;
-    background: $theme6_color3;
+    background: $theme_color3;
     border-radius: 4px;
     z-index: -1;
   }
 
   &.slider_active::before {
-    background: #34AFF9;
+    background: $theme_color19;
   }
 
   &.slider_off::before {
-    background: $theme6_color12;
+    background: $theme_color12;
   }
 }
 
@@ -1854,24 +1854,24 @@ progress::-moz-progress-bar {
   &::-webkit-slider-thumb {
     @include block(16px, 16px);
     -webkit-appearance: none;
-    background-color: $theme6_color6;
-    border: 2px solid $theme6_color3;
+    background-color: $theme_color6;
+    border: 2px solid $theme_color3;
     border-radius: 50%;
   }
 
   &::-moz-range-thumb {
     @include block(16px, 16px);
     -webkit-appearance: none;
-    background-color: $theme6_color6;
-    border: 2px solid $theme6_color3;
+    background-color: $theme_color6;
+    border: 2px solid $theme_color3;
     border-radius: 50%;
   }
 
   &::-ms-thumb {
     @include block(16px, 16px);
     -webkit-appearance: none;
-    background-color: $theme6_color6;
-    border: 2px solid $theme6_color3;
+    background-color: $theme_color6;
+    border: 2px solid $theme_color3;
     border-radius: 50%;
   }
 
@@ -1880,29 +1880,29 @@ progress::-moz-progress-bar {
     position: relative;
 
     &::-webkit-slider-thumb {
-      border: 2px solid #34AFF9;
+      border: 2px solid $theme_color19;
     }
 
     &::-moz-range-thumb {
-      border: 2px solid #34AFF9;
+      border: 2px solid $theme_color19;
     }
 
     &::-ms-thumb {
-      border: 2px solid #34AFF9;
+      border: 2px solid $theme_color19;
     }
   }
 
   &.slider_off {
     &::-webkit-slider-thumb {
-      border: 2px solid $theme6_color12;
+      border: 2px solid $theme_color12;
     }
 
     &::-moz-range-thumb {
-      border: 2px solid $theme6_color12;
+      border: 2px solid $theme_color12;
     }
 
     &::-ms-thumb {
-      border: 2px solid $theme6_color12;
+      border: 2px solid $theme_color12;
     }
   }
 }
@@ -1915,15 +1915,15 @@ progress::-moz-progress-bar {
 
   input {
     &::-webkit-input-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
 
     &::-moz-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
 
     &::-ms-input-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
   }
 
@@ -1936,13 +1936,13 @@ progress::-moz-progress-bar {
   }
 
   .field-combobox_blockPoints{
-    color: $theme6_color1;
+    color: $theme_color1;
   }
 }
 
 .combobox_disabled{
   .field-combobox_blockPoints{
-    color:$theme6_color5;
+    color:$theme_color5;
   }
 }
 
@@ -1950,7 +1950,7 @@ progress::-moz-progress-bar {
   cursor: pointer;
 
   .field-input_combobox{
-    border: 1px solid $theme6_color5;
+    border: 1px solid $theme_color5;
   }
 }
 
@@ -1965,15 +1965,15 @@ progress::-moz-progress-bar {
 
   input {
     &::-webkit-input-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
 
     &::-moz-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
 
     &::-ms-input-placeholder {
-      color: $theme6_color5;
+      color: $theme_color5;
     }
   }
 
@@ -1997,11 +1997,11 @@ progress::-moz-progress-bar {
     top: 0;
     right: 42px;
     @include block(1px, 42px);
-    background-color: $theme6_color13;
+    background-color: $theme_color13;
   }
 
   .field-combobox_blockPoints{
-    color: $theme6_color1
+    color: $theme_color1
   }
 }
 
@@ -2043,7 +2043,7 @@ progress::-moz-progress-bar {
 }
 
 .field-combobox_point {
-  background: $theme6_color2;
+  background: $theme_color2;
   padding: 5px 34px 6px 12px;
   margin-right: 4px;
   border-radius: 4px;
@@ -2065,7 +2065,7 @@ progress::-moz-progress-bar {
 }
 
 .field-input_combobox_inactive {
-  background-color: $theme6_color16;
+  background-color: $theme_color16;
 }
 
 .field-combobox_point_hide {
@@ -2100,7 +2100,7 @@ progress::-moz-progress-bar {
 }
 
 .sidebarName {
-  color: $theme6_color12;
+  color: $theme_color12;
 }
 
 .sidebarArrow {
@@ -2117,7 +2117,7 @@ progress::-moz-progress-bar {
 }
 
 .sidebarMail {
-  color: $theme6_color5;
+  color: $theme_color5;
 }
 
 .sidebarMenu {
@@ -2137,7 +2137,7 @@ progress::-moz-progress-bar {
   font-size: 14px;
 
   &.active {
-    color: $theme6_color3;
+    color: $theme_color3;
   }
 }
 
@@ -2193,7 +2193,7 @@ progress::-moz-progress-bar {
   height: 1px;
   margin-left: -20px;
   width: 122%;
-  background-color: $theme6_color2;
+  background-color: $theme_color2;
 }
 
 .menu_element {
@@ -2302,11 +2302,11 @@ progress::-moz-progress-bar {
 .icon_rhombus {
   @include block(7.2px, 7.2px);
   margin: 6.91px 6.62px 6.91px 7.2px;
-  background-color: $theme6_color12;
+  background-color: $theme_color12;
   transform: rotate(45deg);
 
   &.rhombus_active {
-    background-color: $theme6_color3;
+    background-color: $theme_color3;
   }
 }
 
@@ -2441,12 +2441,12 @@ progress::-moz-progress-bar {
 
   h2 {
     margin-top: 0;
-    color: $theme6_color1;
+    color: $theme_color1;
   }
 
   p {
     margin: 20px 0 30px 0;
-    color: $theme6_color5;
+    color: $theme_color5;
   }
 
   span {
@@ -2463,16 +2463,16 @@ progress::-moz-progress-bar {
 .popup_accept {
   @include block(87px, 32px);
   border: 0;
-  background-color: $theme6_color3;
-  color: $theme6_color6;
+  background-color: $theme_color3;
+  color: $theme_color6;
   border-radius: 6px;
 }
 
 .popup_cancel {
   @include block(87px, 32px);
-  border: 1px solid $theme6_color3;
-  background-color: $theme6_color6;
-  color: $theme6_color3;
+  border: 1px solid $theme_color3;
+  background-color: $theme_color6;
+  color: $theme_color3;
   border-radius: 6px;
   margin-right: 20px;
 }

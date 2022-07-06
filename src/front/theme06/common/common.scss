@@ -31,12 +31,12 @@ $font_size_base: 16px;
 $theme_display: flex;
 $show_error: flex;
 
-$dark: $theme6_color4; // #192A3E
-$dark_light: $theme6_color18; // #6A707E
+$dark: $theme_color4; // #192A3E
+$dark_light: $theme_color18; // #6A707E
 
-$gray: $theme6_color17; // #90A0B7
-$gray_light: $theme6_color15; // #F1F5FB
-$gray_dark: $theme6_color1; // #6C7293
+$gray: $theme_color17; // #90A0B7
+$gray_light: $theme_color15; // #F1F5FB
+$gray_dark: $theme_color1; // #6C7293
 
 
 /* MIXIN */

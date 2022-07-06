@@ -42,7 +42,7 @@ body {
   flex-wrap: wrap;
   align-content: flex-start;
   width: 100%;
-  background-color: $theme6_color14;
+  background-color: $theme_color14;
 
   @media (max-width: 1150px) {
     width: calc(100vw - 300px);
@@ -54,7 +54,7 @@ body {
 .block_header {
   max-width: 2400px;
   width: 100%;
-  background-color: $theme6_color6;
+  background-color: $theme_color6;
   margin-top: 0;
 
   .field-search_disabled {
@@ -121,7 +121,7 @@ body {
   width: 120px;
   height: 120px;
   border-radius: 4px;
-  background-color: $theme6_color6;
+  background-color: $theme_color6;
   margin-right: 24px;
 }
 
@@ -156,7 +156,7 @@ body {
 }
 
 .boxText {
-  color: $theme6_color5;
+  color: $theme_color5;
   width: 100px;
   text-align: center;
   margin-top: -25px;
@@ -167,11 +167,11 @@ body {
 }
 
 .text_white {
-  color: $theme6_color6;
+  color: $theme_color6;
 }
 
 .background_blue {
-  background-color: $theme6_color3;
+  background-color: $theme_color3;
 }
 
 /* table */
@@ -181,13 +181,13 @@ body {
   width: 100%;
   margin: 0 30px;
   padding: 47px 30px;
-  background-color: $theme6_color6;
+  background-color: $theme_color6;
 }
 
 .table {
   width: 100%;
   font-weight: 400;
-  color: $theme6_color5;
+  color: $theme_color5;
 
   & th,
   & td {
@@ -206,7 +206,7 @@ body {
 
   & td {
     font-size: 16px;
-    border-top: solid 1px $theme6_color2;
+    border-top: solid 1px $theme_color2;
   }
 }
 

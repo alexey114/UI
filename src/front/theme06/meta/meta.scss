@@ -1,7 +1,7 @@
 /* ALL */
 
 .block {
-  border: 1px dashed $theme6_color7;
+  border: 1px dashed $theme_color7;
   border-radius: 5px;
   padding: 20px;
   margin: 20px 20px 20px 0;
@@ -62,14 +62,14 @@
 .slider_theme {
   @include block(40px, 20px);
   border-radius: 10px;
-  background-color: $theme6_color3;
+  background-color: $theme_color3;
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $theme6_color3;
+  background-color: $theme_color3;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -104,7 +104,7 @@ input:checked+.slider_theme:before {
     text-decoration: none;
     color: $gray_dark;
     border-radius: 4px;
-    background-color: $theme6_color2;
+    background-color: $theme_color2;
 
     &:last-child {
       margin-right: 25px;
@@ -170,7 +170,7 @@ input:checked+.slider_theme:before {
 h1 {
   font-size: 30px;
   font-weight: 500;
-  color: $theme6_color17;
+  color: $theme_color17;
 
   @media (max-width: 1120px) {
     font-size: 20px;
@@ -182,7 +182,7 @@ h4 {
 }
 
 .text_big {
-  @include font_style(normal, 600, 50px, 60.95px, $theme6_color1);
+  @include font_style(normal, 600, 50px, 60.95px, $theme_color1);
   margin-right: 150px;
 
   p {
@@ -245,7 +245,7 @@ h4 {
 }
 
 .subtitle {
-  @include font_style(normal, 500, 18px, 21.94px, $theme6_color4);
+  @include font_style(normal, 500, 18px, 21.94px, $theme_color4);
 }
 
 .blockInner_buttonSmall {
@@ -445,7 +445,7 @@ h4 {
 }
 
 .inputName {
-  color: $theme6_color5;
+  color: $theme_color5;
   width: 320px;
   padding-top: 60px;
 }
@@ -672,6 +672,6 @@ h4 {
 #section_popup {
   .active {
     margin-top: 30px;
-    background-color: $theme6_color3;
+    background-color: $theme_color3;
   }
 }
