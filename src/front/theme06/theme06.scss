@@ -177,16 +177,6 @@ input:checked.switcher:before {
   transform: translateX(20px);
 }
 
-.switch_item {
-  margin: 0 20px 0 0;
-  @include block(40px, 20px);
-
-  &:last-child {
-    margin: 0 5px 0 0;
-    ;
-  }
-}
-
 /* Font */
 
 .text_definition {
@@ -915,24 +905,6 @@ progress::-moz-progress-bar {
     border-width: 6px;
     border-style: solid;
     border-color: transparent transparent transparent $theme_color6;
-  }
-}
-
-.block_tooltipWithHeading {
-
-  .text_tooltip {
-    height: 89px;
-  }
-
-  .tooltip_left {
-    top: 80px;
-  }
-
-  .tooltip_up,
-  .tooltip_up_right {
-    .button_tooltip {
-      top: 110px;
-    }
   }
 }
 
@@ -1755,12 +1727,6 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  .inputName {
-    width: 130px;
-    padding: 0 50px 0 20px;
-    display: block;
-  }
-
   .not_true {
     top: 45px;
     left: 200px;
@@ -2256,27 +2222,6 @@ progress::-moz-progress-bar {
 }
 
 /* Icon */
-
-#icon_active {
-  margin-right: 80px;
-  margin-bottom: 20px;
-
-  .subtitle{
-    margin-bottom: 20px;
-  }
-}
-
-#icon_inactive {
-  .subtitle{
-    margin-bottom: 20px;
-  }
-
-  .icon_item {
-    .icon {
-      margin-right: 24px;
-    }
-  }
-}
 
 .icon_item {
   @include wrap;

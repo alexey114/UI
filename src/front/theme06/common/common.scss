@@ -38,6 +38,7 @@ $gray: $theme_color17; // #90A0B7
 $gray_light: $theme_color15; // #F1F5FB
 $gray_dark: $theme_color1; // #6C7293
 
+$metaPrefix: 'demo--';
 
 /* MIXIN */
 
@@ -131,7 +132,7 @@ input {
   appearance: none;
 }
 
-.section {
+.demo--section {
   border-bottom: solid 1px #EBEFF2;
   padding: 50px 0px 50px 0px;
 }
@@ -141,7 +142,7 @@ input {
   margin: 0 auto;
 }
 
-.block_adaptive{
+.demo--block_adaptive{
   @include wrap;
 }
 
