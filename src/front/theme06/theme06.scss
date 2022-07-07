@@ -1787,6 +1787,10 @@ progress::-moz-progress-bar {
   &:first-child {
     margin-left: 0px;
   }
+
+  @media (max-width: 650px) {
+    margin-left: 0px;
+  }
 }
 
 .slider_name {
