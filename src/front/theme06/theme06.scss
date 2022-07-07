@@ -804,6 +804,21 @@ progress::-moz-progress-bar {
   }
 }
 
+.side {
+  width: 400px;
+}
+
+.tooltip {
+  @include block(270px, 115px);
+  margin-right: 40px;
+  position: relative;
+  display: inline-flex;
+
+  @media (max-width: 1407px) {
+    margin-bottom: 50px;
+  }
+}
+
 .tooltip_up {
   .text_tooltip::after {
     content: "";
@@ -1547,9 +1562,6 @@ progress::-moz-progress-bar {
 /*INPUT FIELDS NAME*/
 
 .field-container_arrow{
-  &.__select{
-    box-shadow: none;
-  }
 
   .__select__title {
     &::after,
@@ -1656,17 +1668,9 @@ progress::-moz-progress-bar {
   background-repeat: no-repeat;
 }
 
-.input_status {
+.field-container_status{
 
-  margin-left: 20px;
-  align-items: start !important;
-
-  @media (max-width: 750px) {
-    margin-left: 0px;
-    gap: 30px !important;
-  }
-
-  .field-container {
+  &.field-container {
     margin-right: 42px;
     position: relative;
 
@@ -1690,16 +1694,10 @@ progress::-moz-progress-bar {
   }
 }
 
-
-.field-сontainer_column{
-  display: flex;
-  flex-direction: column;
-}
-
 .icon_close::after {
   content: "";
   @include block(10px, 10px);
-  top: 40px;
+  top: 17px;
   right: 10px;
   position: absolute;
   background-image: url(./theme06/images/close_red.svg);
@@ -1709,7 +1707,7 @@ progress::-moz-progress-bar {
 .icon_big_check::after {
   content: "";
   @include block(15px, 11.42px);
-  top: 40px;
+  top: 17px;
   right: 10px;
   position: absolute;
   background-image: url(./theme06/images/check_green_big.svg);
@@ -1724,10 +1722,12 @@ progress::-moz-progress-bar {
   border: 1px solid $theme_color9;
 }
 
-.blockInnerInputText {
+.field-сontainer_column {
   @include center;
   position: relative;
   margin-right: 80px;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 1090px) {
     margin-right: 10px;
@@ -1783,6 +1783,10 @@ progress::-moz-progress-bar {
   max-width: 320px;
   width: 100%;
   margin-left: 20px;
+    
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 
 .slider_name {
@@ -1911,11 +1915,9 @@ progress::-moz-progress-bar {
   }
 }
 
-.combobox_disabled{
-  .field-combobox_blockPoints{
+.field-combobox_blockPoints_disabled{
     color:$theme_color5;
   }
-}
 
 .field-container_hover{
   cursor: pointer;
@@ -2028,6 +2030,12 @@ progress::-moz-progress-bar {
     right: 8.33px;
     background-image: url(./theme06/images/close.svg);
     background-repeat: no-repeat;
+  }
+}
+
+.text_none {
+  @media (max-width: 1240px) {
+    display: none;
   }
 }
 
@@ -2249,6 +2257,12 @@ progress::-moz-progress-bar {
   }
 }
 
+#icon_inactive {
+    .icon {
+      margin-right: 24px;
+    }  
+}
+
 .icon_rhombus {
   @include block(7.2px, 7.2px);
   margin: 6.91px 6.62px 6.91px 7.2px;
@@ -2355,6 +2369,13 @@ progress::-moz-progress-bar {
 }
 
 /* POPUP */
+
+#section_popup {
+  .active {
+    margin-top: 30px;
+    background-color: $theme_color3;
+  }
+}
 
 .popup {
   @include block(100%, 100%);

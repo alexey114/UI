@@ -1,14 +1,10 @@
 /* ALL */
 
-.demo--block {
+.#{$metaPrefix}block {
   border: 1px dashed $theme_color7;
   border-radius: 5px;
   padding: 20px;
   margin: 20px 20px 20px 0;
-}
-
-.mtb_30 {
-  margin: 30px;
 }
 
 /* MENU */
@@ -60,7 +56,7 @@
 }
 
 
-.demo--switch_item {
+.#{$metaPrefix}switch_item {
   margin: 0 20px 0 0;
   @include block(40px, 20px);
 
@@ -70,7 +66,7 @@
   }
 }
 
-.demo--slider_theme {
+.#{$metaPrefix}slider_theme {
   @include block(40px, 20px);
   border-radius: 10px;
   background-color: $theme_color3;
@@ -85,7 +81,7 @@
   transition: 0.4s;
 }
 
-.demo--slider_theme:before {
+.#{$metaPrefix}slider_theme:before {
   content: "";
   position: absolute;
   @include block(16px, 16px);
@@ -97,7 +93,7 @@
   transition: 0.4s;
 }
 
-input:checked+.demo--slider_theme:before {
+input:checked+.#{$metaPrefix}slider_theme:before {
   -webkit-transform: translateX(20px);
   -ms-transform: translateX(20px);
   transform: translateX(20px);
@@ -109,7 +105,7 @@ input:checked+.demo--slider_theme:before {
   @include center;
   flex-wrap: wrap;
 
-  .demo--menuLink {
+  .#{$metaPrefix}menuLink {
     margin: 0px 15px 15px 0px;
     padding: 5px 12px 5px 12px;
     text-decoration: none;
@@ -159,7 +155,7 @@ input:checked+.demo--slider_theme:before {
 
 /* FONT */
 
-.blockWrapperText {
+.#{$metaPrefix}blockWrapperText {
 
   margin: 0;
   color: $gray_dark;
@@ -170,7 +166,7 @@ input:checked+.demo--slider_theme:before {
   }
 }
 
-.text_item {
+.#{$metaPrefix}text_item {
   margin-right: 90px;
 
   & p:first-child {
@@ -192,7 +188,7 @@ h4 {
   font-weight: 400;
 }
 
-.text_big {
+.#{$metaPrefix}text_big {
   @include font_style(normal, 600, 50px, 60.95px, $theme_color1);
   margin-right: 150px;
 
@@ -201,15 +197,15 @@ h4 {
   }
 }
 
-.text_medium {
+.#{$metaPrefix}text_medium {
   font-weight: 500;
 }
 
-.text_bold {
+.#{$metaPrefix}text_bold {
   font-weight: 600;
 }
 
-.text_regular {
+.#{$metaPrefix}text_regular {
   font-size: 16px;
   line-height: 20.8px;
 }
@@ -225,7 +221,7 @@ h4 {
   }
 }
 
-.demo--headersButton {
+.#{$metaPrefix}headersButton {
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
@@ -237,7 +233,7 @@ h4 {
   }
 }
 
-.demo--block_buttons {
+.#{$metaPrefix}block_buttons {
   display: flex;
   max-width: 790px;
   width: 100%;
@@ -255,11 +251,11 @@ h4 {
   width: 100%;
 }
 
-.demo--subtitle {
+.#{$metaPrefix}subtitle {
   @include font_style(normal, 500, 18px, 21.94px, $theme_color4);
 }
 
-.demo--blockInner_buttonSmall {
+.#{$metaPrefix}blockInner_buttonSmall {
   width: 400px;
   margin-top: 23px;
   margin-left: 63px;
@@ -269,7 +265,7 @@ h4 {
   }
 }
 
-.demo--buttons_opt {
+.#{$metaPrefix}buttons_opt {
   @include wrap;
   margin-top: 17px;
 }
@@ -280,14 +276,14 @@ h4 {
   @media (max-width: 600px) {
     flex-wrap: wrap;
 
-    .demo--blockWrapperButtonSmall:last-child {
+    .#{$metaPrefix}blockWrapperButtonSmall:last-child {
       width: 400px;
       margin-right: 40px;
     }
   }
 }
 
-.demo--blockWrapperButtonSmall {
+.#{$metaPrefix}blockWrapperButtonSmall {
   width: 204px;
   margin-right: 40px;
 }
@@ -309,16 +305,11 @@ h4 {
   }
 }
 
-.demo--blockWrapper {
+.#{$metaPrefix}blockWrapper {
   margin-bottom: 40px;
 }
 
-.buttonsStatus {
-  @include wrap;
-  @include width(332px, auto);
-}
-
-.demo--blockWrapper {
+.#{$metaPrefix}blockWrapper {
   &.status-items {
     margin-left: 20px;
   }
@@ -326,7 +317,7 @@ h4 {
 
 /* COLOR */
 
-.demo--color {
+.#{$metaPrefix}color {
   @include block(230px, 60px);
   border: none;
   border-radius: 4px;
@@ -336,7 +327,7 @@ h4 {
 
 /*AVATAR*/
 
-.demo--blockWrapperAvatar {
+.#{$metaPrefix}blockWrapperAvatar {
   margin-right: 120px;
 }
 
@@ -346,7 +337,7 @@ h4 {
   @include wrap;
   padding-top: 20px;
 
-  .demo--block{
+  .#{$metaPrefix}block{
     @include wrap;
 
     @media (max-width: 400px) {
@@ -369,7 +360,7 @@ h4 {
   }
 }
 
-.progress {
+.#{$metaPrefix}progress {
   margin-top: 29px;
 }
 
@@ -378,30 +369,20 @@ h4 {
 #tooltip {
   padding-top: 20px;
 
-  .demo--subtitle {
+  .#{$metaPrefix}subtitle {
     margin-bottom: 10px;
   }
 }
 
-.tooltip {
-  position: relative;
-  display: inline-flex;
-
-  @media (max-width: 1407px) {
-    margin-bottom: 50px;
-  }
-}
-
-.demo--block_tooltip {
+.#{$metaPrefix}block_tooltip {
   margin-bottom: 61px;
 
-  &.demo--block_tooltipWithHeading {
+  &.#{$metaPrefix}block_tooltipWithHeading {
     margin-bottom: 120px;
   }
 }
 
-
-.demo--block_tooltipWithHeading {
+.#{$metaPrefix}block_tooltipWithHeading {
 
   .text_tooltip {
     height: 89px;
@@ -419,26 +400,11 @@ h4 {
   }
 }
 
-.tooltip {
-  @include block(270px, 115px);
-  margin-right: 40px;
-}
-
-.side {
-  width: 400px;
-}
-
 /* IMAGES */
-
-.images div {
-  .demo--subtitle {
-    margin-bottom: 20px;
-  }
-}
 
 #blockWrapperImages {
   div {
-    margin-top: 30px;
+    margin-top: 20px;
 
     &:first-child {
       margin-right: 50px;
@@ -448,10 +414,10 @@ h4 {
 
 /* INPUT_FIELDS */
 
-.demo--blockWrapperForms {
+.#{$metaPrefix}blockWrapperForms {
   display: flex;
 
-  .demo--block {
+  .#{$metaPrefix}block {
     @include wrap;
     justify-content: space-around;
     margin-top: 30px;
@@ -461,7 +427,7 @@ h4 {
     }
   }
 
-  .demo--subtitle {
+  .#{$metaPrefix}subtitle {
     width: 340px;
 
     @media (max-width: 1400px) {
@@ -474,14 +440,16 @@ h4 {
   }
 }
 
-.demo--inputName {
+.#{$metaPrefix}inputName {
   color: $theme_color5;
   width: 320px;
   padding-top: 60px;
 }
 
-.blockInnerInputText {
-  .demo--inputName {
+.#{$metaPrefix}blockInnerInputText {
+  display: flex;
+  align-items: center;
+  .#{$metaPrefix}inputName {
     width: 130px;
     padding: 0 50px 0 20px;
     display: block;
@@ -503,7 +471,7 @@ h4 {
 }
 
 #select_calendar{
-  .demo--block_adaptive{
+  .#{$metaPrefix}block_adaptive{
     width: 300px;
   }
 }
@@ -539,7 +507,7 @@ h4 {
   margin-top: 40px;
 }
 
-.demo--search {
+.#{$metaPrefix}search {
   display: inline-flex;
   margin-bottom: 20px;
 
@@ -560,7 +528,7 @@ h4 {
   margin-top: 50px;
 }
 
-.demo--blockWrapperInput_withName {
+.#{$metaPrefix}blockWrapperInput_withName {
   display: inline-flex;
   align-items: center;
   margin-bottom: 20px;
@@ -571,7 +539,7 @@ h4 {
     gap: 10px
   }
 
-  .demo--subtitle {
+  .#{$metaPrefix}subtitle {
     margin-right: 42px;
     width: 300px;
 
@@ -588,20 +556,25 @@ h4 {
     }
   }
 
-  .demo--subtitle {
+  .#{$metaPrefix}subtitle {
     @media (max-width: 1060px) {
       display: none;
     }
   }
 }
 
-.text_none {
-  @media (max-width: 1240px) {
-    display: none;
+.#{$metaPrefix}input_status {
+
+  margin-left: 20px;
+  align-items: start !important;
+
+  @media (max-width: 750px) {
+    margin-left: 0px;
+    gap: 30px !important;
   }
 }
 
-.blockWrapperInputText {
+.#{$metaPrefix}blockWrapperInputText {
   @include wrap;
   margin-top: 49px;
 
@@ -617,31 +590,21 @@ h4 {
   margin-top: 69px;
 }
 
-.slider_status {
+.#{$metaPrefix}slider_status {
   max-width: 340px;
   width: 100%;
 }
 
-.blockWrapperSlider {
+.#{$metaPrefix}blockWrapperSlider {
   display: inline-flex;
-
-  .block_slider {
-    &:first-child {
-      margin-left: 0px;
-    }
-  }
 
   @media (max-width: 550px) {
     @include wrap;
     justify-content: center;
-
-    .block_slider {
-      margin: 20px 0;
-    }
   }
 }
 
-.slider_names {
+.#{$metaPrefix}slider_names {
   display: inline-flex;
   margin: 20px 0 20px 20px;
   max-width: 1000px;
@@ -654,15 +617,15 @@ h4 {
 
 /* COMBOBOX */
 
-.combobox_disabled {
+.#{$metaPrefix}combobox_disabled {
   margin-top: 20px;
 
-  .demo--subtitle {
+  .#{$metaPrefix}subtitle {
     padding-left: 20px;
   }
 }
 
-.combobox_title {
+.#{$metaPrefix}combobox_title {
   margin-top: 20px;
   display: inline-flex;
   max-width: 1300px;
@@ -682,7 +645,7 @@ h4 {
   }
 }
 
-.blockWrapperCombobox {
+.#{$metaPrefix}blockWrapperCombobox {
   display: inline-flex;
   margin-top: 20px;
 
@@ -693,7 +656,7 @@ h4 {
   }
 }
 
-.combobox_status {
+.#{$metaPrefix}combobox_status {
   width: 340px;
 }
 
@@ -705,34 +668,23 @@ h4 {
   margin-bottom: 20px;
 }
 
-/* POPUP */
-
-#section_popup {
-  .active {
-    margin-top: 30px;
-    background-color: $theme_color3;
-  }
-}
-
 /* Icon */
 
 #icon_active {
   margin-right: 80px;
   margin-bottom: 20px;
 
-  .demo--subtitle{
+  .#{$metaPrefix}subtitle{
     margin-bottom: 20px;
   }
 }
 
 #icon_inactive {
-  .demo--subtitle{
+  .#{$metaPrefix}subtitle{
     margin-bottom: 20px;
   }
 
-  .icon_item {
-    .icon {
-      margin-right: 24px;
-    }
+  .#{$metaPrefix}icon_item {
+      @include wrap;
   }
 }
