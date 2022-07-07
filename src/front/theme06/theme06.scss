@@ -1101,6 +1101,10 @@ progress::-moz-progress-bar {
   display: inline;
   padding: 3px 9px;
   position: relative;
+  
+  @media (max-width: 480px) {
+    padding: 3px 4px;
+  }
 
   &.page_active {
     text-align: center;
@@ -1109,8 +1113,10 @@ progress::-moz-progress-bar {
     border-radius: 4px;
   }
 
-  @media (max-width: 480px) {
-    padding: 3px 4px;
+  &.page_hide{
+    @media (max-width: 380px) {
+      display: none;
+    }
   }
 }
 
