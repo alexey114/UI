@@ -453,6 +453,9 @@ h4 {
 .#{$metaPrefix}blockInnerInputText {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
   .#{$metaPrefix}inputName {
     width: 130px;
     padding: 0 50px 0 20px;
