@@ -179,6 +179,10 @@ h1 {
   font-weight: 500;
   color: $theme_color17;
 
+  @media (max-width: 1350px) {
+    text-align: center;
+  }
+
   @media (max-width: 1120px) {
     font-size: 20px;
   }
@@ -218,6 +222,7 @@ h4 {
 
   @media (max-width: 1350px) {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -247,7 +252,7 @@ h4 {
 
 #subsection_buttons{
   @include wrap;
-  max-width: 790px;
+  max-width: 860px;
   width: 100%;
 }
 
