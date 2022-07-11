@@ -210,8 +210,8 @@ input:checked.switcher:before {
   @include text_sidebar;
 }
 
-.text_button {
-  @include text_button;
+.text_button_bold {
+  @include text_button_bold;
 }
 
 .header_modal {
@@ -231,6 +231,7 @@ input:checked.switcher:before {
   border-radius: 6px;
   padding: 11.5px, 34px;
   margin-right: 50px;
+  background-color: $theme_color3;
 
   &:last-child {
     margin-right: 0px;
@@ -238,14 +239,12 @@ input:checked.switcher:before {
 
   @include block(160px, 42px);
   border: none;
-  background-color: $theme_color6;
 
   @media (max-width: 850px) {
     margin-right: 0;
   }
 
   &_bright {
-    background-color: $theme_color3;
     cursor: pointer;
 
   &_hover,
@@ -262,6 +261,18 @@ input:checked.switcher:before {
 
   &_disabled {
     background-color: $theme_color12;
+  }
+
+  &,
+  &_hover,
+  &_pressing,
+  &_disabled {
+    .icon_save {
+      @include block(24px, 24px);
+      padding-right: 5px;
+      background-image: url(./theme06/images/save.svg);
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -310,11 +321,13 @@ input:checked.switcher:before {
   color: $theme_color3;
   cursor: pointer;
   border: solid 1px $theme_color3;
+  background-color: $theme_color6;
 
   &_hover,
   &:hover {
     color: #34AFF9;
     border: solid 1px #34AFF9;
+    background-color: $theme_color6;
     cursor: pointer;
   }
 
@@ -322,12 +335,14 @@ input:checked.switcher:before {
   &:active {
     color: #098EDF;
     border: solid 1px #098EDF;
+    background-color: $theme_color6;
     cursor: pointer;
   }
 
   &_disabled {
     color: $theme_color12;
     border: solid 1px $theme_color12;
+    background-color: $theme_color6;
   }
 
   &_unbordered {
