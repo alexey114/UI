@@ -127,9 +127,14 @@ $metaPrefix: 'demo--';
   font-family: $font_family;
 }
 
+a{
+  text-decoration: none;
+}
+
 input {
   -webkit-appearance: none;
   appearance: none;
+  outline:none;
 }
 
 .demo--section {
@@ -140,6 +145,10 @@ input {
 #fullContainer {
   @include width(1580px, 100%);
   margin: 0 auto;
+
+  @media (max-width: 1670px) {
+    margin: 0 25px;
+  }
 }
 
 .demo--block_adaptive{
