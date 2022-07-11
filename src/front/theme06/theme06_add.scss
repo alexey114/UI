@@ -1,7 +1,18 @@
 @import "../base_style/theme_colors.scss";
 @import "./common/common.scss";
 @import "./theme06.scss";
-@import "./meta/meta.scss";
+@import "./demo/demo.scss";
+
+
+body {
+  @media (max-width: 1000px) {
+    overflow-x: visible;
+  }
+}
+
+.mtb_30 {
+  margin: 30px;
+}
 
 /* sidebar */
 
@@ -12,13 +23,14 @@
 
 /* sidebar */
 
-.sidebar_items {
+.blockWrapperSidebar {
   height: 993px;
   max-width: 256px;
   width: 100%;
+  margin-right: 0;
 }
 
-.sidebar_item {
+.block_sidebar {
   width: auto;
 }
 
@@ -34,7 +46,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
   width: 100%;
-  background-color: $theme6_color14;
+  background-color: $theme_color14;
 
   @media (max-width: 1150px) {
     width: calc(100vw - 300px);
@@ -43,13 +55,13 @@
 
 /* header */
 
-#header_block {
+.block_header {
   max-width: 2400px;
   width: 100%;
-  background-color: $theme6_color6;
+  background-color: $theme_color6;
   margin-top: 0;
 
-  .search_disabled {
+  .field-search_disabled {
 
     @media (max-width: 600px) {
       & input {
@@ -93,9 +105,9 @@
   }
 }
 
-/* box_menu */
+/* box menu */
 
-.box_menu {
+.boxMenu {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -113,42 +125,42 @@
   width: 120px;
   height: 120px;
   border-radius: 4px;
-  background-color: $theme6_color6;
+  background-color: $theme_color6;
   margin-right: 24px;
 }
 
-.box_desktop {
+.boxDesktop {
   @include center;
   @include img;
   background-image: url(./theme06/images/desktop_big.svg);
 }
 
-.box_portfolio {
+.boxPortfolio {
   @include center;
   @include img;
   background-image: url(./theme06/images/portfolio_big.svg);
 }
 
-.box_folder {
+.boxFolder {
   @include center;
   @include img;
   background-image: url(./theme06/images/folder_big.svg);
 }
 
-.box_graph {
+.boxGraph {
   @include center;
   @include img;
   background-image: url(./theme06/images/graph_big.svg);
 }
 
-.box_settings {
+.boxSettings {
   @include center;
   @include img;
   background-image: url(./theme06/images/settings_big.svg);
 }
 
-.box_text {
-  color: $theme6_color5;
+.boxText {
+  color: $theme_color5;
   width: 100px;
   text-align: center;
   margin-top: -25px;
@@ -158,12 +170,12 @@
   font-style: normal;
 }
 
-.white_text {
-  color: $theme6_color6;
+.text_white {
+  color: $theme_color6;
 }
 
 .background_blue {
-  background-color: $theme6_color3;
+  background-color: $theme_color3;
 }
 
 /* table */
@@ -173,13 +185,13 @@
   width: 100%;
   margin: 0 30px;
   padding: 47px 30px;
-  background-color: $theme6_color6;
+  background-color: $theme_color6;
 }
 
 .table {
   width: 100%;
   font-weight: 400;
-  color: $theme6_color5;
+  color: $theme_color5;
 
   & th,
   & td {
@@ -198,7 +210,7 @@
 
   & td {
     font-size: 16px;
-    border-top: solid 1px $theme6_color2;
+    border-top: solid 1px $theme_color2;
   }
 }
 
@@ -275,11 +287,11 @@
 
 /* footer table */
 
-.items_center {
+.blockInnerFooter {
   @include center;
 }
 
-.footer_item {
+.footerItem {
   padding-right: 30px;
 
   p {

@@ -1,4 +1,4 @@
-/* Шрифты */
+/* FONT */
 
 @font-face {
   font-family: "Montserrat";
@@ -24,22 +24,25 @@
   font-weight: 600;
 }
 
-/* Переменные */
+/* VARIABLES */
 
 $font_family: Montserrat;
 $font_size_base: 16px;
 $theme_display: flex;
 $show_error: flex;
 
-$dark: $theme6_color4; // #192A3E
-$dark_light: $theme6_color18; // #6A707E
+$dark: $theme_color4; // #192A3E
+$dark_light: $theme_color18; // #6A707E
 
-$gray: $theme6_color17; // #90A0B7
-$gray_light: $theme6_color15; // #F1F5FB
-$gray_dark: $theme6_color1; // #6C7293
+$gray: $theme_color17; // #90A0B7
+$gray_light: $theme_color15; // #F1F5FB
+$gray_dark: $theme_color1; // #6C7293
 
+$metaPrefix: 'demo--';
 
-/* Миксины */
+/* MIXIN */
+
+  /* MIXIN_TEXT */
 
 @mixin font_style($font-style, $font-weight, $font_size, $line-height, $color) {
   font-style: $font-style;
@@ -54,6 +57,42 @@ $gray_dark: $theme6_color1; // #6C7293
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
+@mixin text_name{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13.2px;
+}
+
+@mixin text_definition {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+@mixin text_universal {
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+@mixin text_status {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13.41px;
+}
+
+@mixin text_sidebar {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+}
+
+@mixin text_button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.2px;
+}
+
+  /* MIXIN_BLOCK */
 
 @mixin width($max-width, $width) {
   max-width: $max-width;
@@ -82,7 +121,7 @@ $gray_dark: $theme6_color1; // #6C7293
   background-repeat: no-repeat;
 }
 
-/* Общие классы*/
+/* GENERAL CLASSES */
 
 * {
   font-family: $font_family;
@@ -93,13 +132,7 @@ input {
   appearance: none;
 }
 
-body {
-  @media (max-width: 1300px) {
-    overflow-x: hidden;
-  }
-}
-
-.section {
+.demo--section {
   border-bottom: solid 1px #EBEFF2;
   padding: 50px 0px 50px 0px;
 }
@@ -109,13 +142,8 @@ body {
   margin: 0 auto;
 }
 
-.block_adaptive{
+.demo--block_adaptive{
   @include wrap;
-}
-
-.block_column{
-  display: flex;
-  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
@@ -129,7 +157,7 @@ body {
   box-shadow: inset 1px 1px 10px #f3faf7;
 }
 
-.flex {
+.block_flex {
   display: flex;
 }
 
