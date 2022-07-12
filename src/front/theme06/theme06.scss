@@ -1433,6 +1433,10 @@ progress::-moz-progress-bar {
 
 /* SEARCH */
 
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 .field-search_disabled {
 
   position: relative;
