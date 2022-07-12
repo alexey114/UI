@@ -109,41 +109,41 @@
   }
 }
 
-.__select__title {
+// .__select__title {
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 22px;
-    right: 10px;
-    display: block;
-    @include block(8px, 2px);
-    transition: all 0.3s ease-out;
-    background-color: $theme_color5;
-    transform: translate(-2px, -50%) rotate(45deg);
-  }
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 22px;
+//     right: 75px;
+//     display: block;
+//     @include block(8px, 2px);
+//     transition: all 0.3s ease-out;
+//     background-color: $theme_color5;
+//     transform: translate(-2px, -50%) rotate(45deg);
+//   }
 
-  &::after {
-    transform: translate(2px, -50%) rotate(-45deg);
-  }
+//   &::after {
+//     transform: translate(2px, -50%) rotate(-45deg);
+//   }
 
-  &.field-input_noBorder{
-    padding: 0px 132px 0px 0px;
+//   &.field-input_noBorder{
+//     padding: 0px 132px 0px 0px;
 
-    @media (max-width: 1400px) {
-      padding: 0px 70px 0px 12px;
-    }
+//     @media (max-width: 1400px) {
+//       padding: 0px 70px 0px 12px;
+//     }
 
-    @media (max-width: 1220px) {
-      padding: 0px 38px 0px 12px;
-    }
+//     @media (max-width: 1220px) {
+//       padding: 0px 38px 0px 12px;
+//     }
 
-    @media (max-width: 800px) {
-      margin-right: 0px;
-    }
-  }
-}
+//     @media (max-width: 800px) {
+//       margin-right: 0px;
+//     }
+//   }
+// }
 
 /* switcher */
 
@@ -1247,6 +1247,10 @@ progress::-moz-progress-bar {
   color: $theme_color4;
   border: 1px solid $theme_color13;
 
+  &:hover{
+    border: 1px solid $theme_color3;
+  }
+
   &.field-input_combobox {
     margin-right: 0px;
   }
@@ -1601,25 +1605,24 @@ progress::-moz-progress-bar {
 /*INPUT FIELDS NAME*/
 
 .field-container_arrow{
+  flex-direction: row;
+  margin: 25px 0;
 
-  .__select__title {
-    &::after,
-    &::before{
-      top: 47px;
-    }
+  .field-input_name{
+    padding: 0 15px;
   }
 
-  &.field-container{
-    margin-right: 42px;
-
-    &:last-child{
-      margin-right: 0px;
-    }
-
-    @media (max-width: 1060px) {
-      margin-right: 0px;
-    }
+  .__select__title{
+    width: 170px;
   }
+
+
+  // .__select__title {
+  //   &::after,
+  //   &::before{
+  //     top: 23px;
+  //   }
+  // }
 }
 
 .field-input_name {
@@ -1761,25 +1764,11 @@ progress::-moz-progress-bar {
   border: 1px solid $theme_color9;
 }
 
-.field-сontainer_column {
+.field-сontainer_row {
   @include center;
   position: relative;
-  margin-right: 80px;
   display: flex;
-  flex-direction: column;
-
-  @media (max-width: 1090px) {
-    margin-right: 10px;
-  }
-
-  @media (max-width: 420px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .field-input {
-    margin-right: 0px;
-  }
+  flex-direction: row;
 
   .not_true {
     top: 45px;

@@ -591,6 +591,26 @@ h4 {
   }
 }
 
+.#{$metaPrefix}blockWrapperInput_arrow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1328px;
+  width: 100%;
+
+  @media (max-width: 1400px) {
+    max-width: 1127px;
+  }
+
+  @media (max-width: 1220px) {
+    max-width: 1000px;
+  }
+
+  @media (max-width: 1060px) {
+    max-width: 970px;
+  }
+}
+
 .#{$metaPrefix}input_status {
 
   margin-left: 20px;
