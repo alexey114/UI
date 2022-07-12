@@ -579,6 +579,10 @@ input {
   border: none;
   border-radius: 4px;
 
+  @media (max-width: 400px) {
+    text-align: center;
+  }
+
   &:last-child {
     margin-right: 0px;
   }
@@ -595,7 +599,7 @@ input {
     background-color: $theme_color8;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     margin-right: 0px;
     margin: 10px;
 
@@ -1143,7 +1147,7 @@ progress::-moz-progress-bar {
   }
 
   &.page_hide{
-    @media (max-width: 380px) {
+    @media (max-width: 530px) {
       display: none;
     }
   }
@@ -1453,7 +1457,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 5px;
     border: none;
 
-    @media (max-width: 490px) {
+    @media (max-width: 210px) {
       padding: 12px 50px 11px 38px;
     }
 
@@ -1489,8 +1493,8 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 5px;
     border: 1px solid $theme_color13;
 
-    @media (max-width: 490px) {
-      padding: 12px 50px 11px 38px;
+    @media (max-width: 560px) {
+      padding: 12px 12px 11px 38px;
     }
 
     &::-webkit-input-placeholder {
@@ -1773,6 +1777,11 @@ input[type="search"]::-webkit-search-cancel-button {
   position: relative;
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 440px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   .not_true {
     top: 45px;
@@ -2266,7 +2275,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 560px) {
   .field-search_disabled {
     & input {
       padding: 12px 12px 11px 38px;
@@ -2282,6 +2291,10 @@ input[type="search"]::-webkit-search-cancel-button {
   @include block(24px, 24px);
   background-repeat: no-repeat;
   margin-right: 23px;
+
+  @media (max-width: 340px) {
+    margin-right: 7px;
+  }
 }
 
 .icon_notifications {
