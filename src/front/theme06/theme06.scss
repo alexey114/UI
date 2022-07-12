@@ -1803,7 +1803,11 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 
   .field-input_new {
-    color: $theme_color4;
+    color: $theme_color5;
+
+    &:hover{
+      border-color: $theme_color3;
+    }
   }
 }
 
