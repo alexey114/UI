@@ -2098,7 +2098,7 @@ progress::-moz-progress-bar {
 
 /* SIDEBAR */
 
-.blockWrapperSidebar {
+.sidebarWrapper {
   height: 910px;
   display: flex;
   flex-direction: column;
@@ -2112,7 +2112,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.block_sidebar {
+.sidebarBlock {
   padding: 19px 25px 20px 24px;
 }
 
@@ -2145,6 +2145,11 @@ progress::-moz-progress-bar {
 .sidebarMenu {
   @include center;
   margin-bottom: 20px;
+  color: $gray_dark;
+
+  &.active {
+    color: $theme_color3;
+  }
 }
 
 .icon {
@@ -2152,15 +2157,10 @@ progress::-moz-progress-bar {
   background-repeat: no-repeat;
 }
 
-.sidebarPoint {
+.sidebarMenuItemText {
   padding-left: 14px;
-  color: $gray_dark;
   font-weight: 500;
   font-size: 14px;
-
-  &.active {
-    color: $theme_color3;
-  }
 }
 
 .icon_desktop {
@@ -2218,9 +2218,16 @@ progress::-moz-progress-bar {
   background-color: $theme_color2;
 }
 
-.menu_element {
+.sidebarMenuSubitem {
   color: #6C7293;
   padding-bottom: 13px;
+  padding-left: 25px;
+
+  .submenu_icon{
+    padding-right: 10px;
+    transform: rotate(45deg);
+    color:#C2CFE0;
+  }
 
   &::marker {
     color: #C2CFE0;
