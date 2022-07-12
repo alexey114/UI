@@ -1241,6 +1241,11 @@ progress::-moz-progress-bar {
 .field-input {
   height: 42px;
   margin-right: 32px;
+  padding: 0px 120px 0px 12px;
+  outline: none;
+  border-radius: 5px;
+  color: $theme_color4;
+  border: 1px solid $theme_color13;
 
   &.field-input_combobox {
     margin-right: 0px;
@@ -1249,10 +1254,6 @@ progress::-moz-progress-bar {
   &.field-input_editing {
     margin-right: 0px;
   }
-
-  padding: 0px 120px 0px 12px;
-  outline: none;
-  border-radius: 5px;
 
   &.field-input_combobox_standart{
     &:hover{
