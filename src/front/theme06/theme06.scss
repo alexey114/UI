@@ -1334,6 +1334,14 @@ progress::-moz-progress-bar {
   border: 1px solid $theme_color3;
 }
 
+.field-input_disabled{
+  border: 1px solid $theme_color13;
+
+  &:hover{
+    border: 1px solid $theme_color13;
+  }
+}
+
 /* CALENDAR */
 
 .calendar_day {
