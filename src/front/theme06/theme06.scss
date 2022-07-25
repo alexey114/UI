@@ -109,41 +109,41 @@
   }
 }
 
-.__select__title {
+// .__select__title {
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 22px;
-    right: 10px;
-    display: block;
-    @include block(8px, 2px);
-    transition: all 0.3s ease-out;
-    background-color: $theme_color5;
-    transform: translate(-2px, -50%) rotate(45deg);
-  }
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 22px;
+//     right: 75px;
+//     display: block;
+//     @include block(8px, 2px);
+//     transition: all 0.3s ease-out;
+//     background-color: $theme_color5;
+//     transform: translate(-2px, -50%) rotate(45deg);
+//   }
 
-  &::after {
-    transform: translate(2px, -50%) rotate(-45deg);
-  }
+//   &::after {
+//     transform: translate(2px, -50%) rotate(-45deg);
+//   }
 
-  &.field-input_noBorder{
-    padding: 0px 132px 0px 0px;
+//   &.field-input_noBorder{
+//     padding: 0px 132px 0px 0px;
 
-    @media (max-width: 1400px) {
-      padding: 0px 70px 0px 12px;
-    }
-  
-    @media (max-width: 1220px) {
-      padding: 0px 38px 0px 12px;
-    }
-  
-    @media (max-width: 800px) {
-      margin-right: 0px;
-    }
-  }
-}
+//     @media (max-width: 1400px) {
+//       padding: 0px 70px 0px 12px;
+//     }
+
+//     @media (max-width: 1220px) {
+//       padding: 0px 38px 0px 12px;
+//     }
+
+//     @media (max-width: 800px) {
+//       margin-right: 0px;
+//     }
+//   }
+// }
 
 /* switcher */
 
@@ -210,8 +210,8 @@ input:checked.switcher:before {
   @include text_sidebar;
 }
 
-.text_button {
-  @include text_button;
+.text_button_bold {
+  @include text_button_bold;
 }
 
 .header_modal {
@@ -231,6 +231,7 @@ input:checked.switcher:before {
   border-radius: 6px;
   padding: 11.5px, 34px;
   margin-right: 50px;
+  background-color: $theme_color3;
 
   &:last-child {
     margin-right: 0px;
@@ -238,32 +239,49 @@ input:checked.switcher:before {
 
   @include block(160px, 42px);
   border: none;
-  background-color: $theme_color6;
 
   @media (max-width: 850px) {
     margin-right: 0;
   }
 
   &_bright {
-    background-color: $theme_color3;
     cursor: pointer;
 
   &_hover,
   &:hover {
     background-color: $theme_color19;
+    cursor: pointer;
   }
 
   &_pressing,
   &:active {
     background-color: $theme_color20;
+    cursor: pointer;
   }
 
   &_disabled {
     background-color: $theme_color12;
   }
+
+  &,
+  &_hover,
+  &_pressing,
+  &_disabled {
+    .icon_save {
+      @include block(24px, 24px);
+      padding-right: 5px;
+      background-image: url(./theme06/images/save.svg);
+      background-repeat: no-repeat;
+    }
+  }
 }
 
   &_dim {
+
+    &_hover,
+    &_pressing{
+      cursor: pointer;
+    }
 
     & .icon_attach,
     &_hover .icon_attach,
@@ -303,22 +321,28 @@ input:checked.switcher:before {
   color: $theme_color3;
   cursor: pointer;
   border: solid 1px $theme_color3;
+  background-color: $theme_color6;
 
   &_hover,
   &:hover {
     color: #34AFF9;
     border: solid 1px #34AFF9;
+    background-color: $theme_color6;
+    cursor: pointer;
   }
 
   &_pressing,
   &:active {
     color: #098EDF;
     border: solid 1px #098EDF;
+    background-color: $theme_color6;
+    cursor: pointer;
   }
 
   &_disabled {
     color: $theme_color12;
     border: solid 1px $theme_color12;
+    background-color: $theme_color6;
   }
 
   &_unbordered {
@@ -328,35 +352,26 @@ input:checked.switcher:before {
 
   &_narrow {
     @include block(143px, 32px);
-    margin-right: 73px;
-
-    @media (max-width: 850px) {
-      margin-right: 23px;
-    }
-
-    @media (max-width: 755px) {
-      margin-right: 0px;
-    }
   }
 
   &_tiny {
     @include block(36px, 32px);
     margin-right: 20px;
-  
+
     &:last-child {
       margin-right: 0px;
     }
-  
+
     @media (max-width: 850px) {
       margin-right: 0px;
     }
-  
+
     .icon_save {
       @include block(24px, 24px);
       background-image: url(./theme06/images/save.svg);
       background-repeat: no-repeat;
     }
-  
+
     .icon_exit {
       @include block(24px, 24px);
       background-image: url(./theme06/images/exit.svg);
@@ -368,7 +383,7 @@ input:checked.switcher:before {
     @include block(117px, 32px);
     margin-bottom: 30px;
     margin-right: 30px;
-  
+
     .icon_back {
       @include block(18px, 18px);
       background-image: url(./theme06/images/back.svg);
@@ -380,7 +395,7 @@ input:checked.switcher:before {
 
   &_small {
     @include block(117px, 42px);
-  
+
     .icon_back {
       @include block(18px, 18px);
       background-image: url(./theme06/images/back.svg);
@@ -395,7 +410,7 @@ input:checked.switcher:before {
     justify-items: center;
     @include block(119px, 32px);
     margin-right: 30px;
-  
+
     .icon_exit {
       @include block(18px, 18px);
       background-image: url(./theme06/images/exit.svg);
@@ -564,6 +579,10 @@ input {
   border: none;
   border-radius: 4px;
 
+  @media (max-width: 400px) {
+    text-align: center;
+  }
+
   &:last-child {
     margin-right: 0px;
   }
@@ -580,7 +599,7 @@ input {
     background-color: $theme_color8;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
     margin-right: 0px;
     margin: 10px;
 
@@ -797,7 +816,7 @@ progress::-moz-progress-bar {
   box-shadow: 0px 6px 8px 6px rgba(126, 157, 182, 0.18);
 
   &.text_small {
-    @media (max-width: 400px) {
+    @media (max-width: 460px) {
       width: 170px;
       font-size: 8px;
     }
@@ -814,7 +833,13 @@ progress::-moz-progress-bar {
   position: relative;
   display: inline-flex;
 
-  @media (max-width: 1407px) {
+  @media (max-width: 1410px) {
+    width: 30%;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 850px) {
+    width: 50%;
     margin-bottom: 50px;
   }
 }
@@ -832,26 +857,21 @@ progress::-moz-progress-bar {
   }
 }
 
-.button_tooltip {
+.demo--button_tooltip {
   position: absolute;
-  @include block(104px, 32px);
-  color: $theme_color6;
-  background-color: $theme_color3;
-  border: 0;
-  border-radius: 6px;
 }
 
 .tooltip_up {
-  .button_tooltip {
+  .demo--button_tooltip {
     top: 90px;
-    left: 70px;
+    left: 42px;
   }
 }
 
 .tooltip_up_right {
-  .button_tooltip {
+  .demo--button_tooltip {
     top: 90px;
-    left: 160px;
+    left: 101px;
   }
 }
 
@@ -870,8 +890,8 @@ progress::-moz-progress-bar {
 
 .tooltip_bottom {
 
-  .button_tooltip {
-    left: 155px;
+  .demo--button_tooltip {
+    left: 101px;
   }
 
   .text_tooltip {
@@ -892,9 +912,20 @@ progress::-moz-progress-bar {
 }
 
 .tooltip_right {
+
+  .button{
+    @media (max-width: 370px) {
+      width: 104px;
+    }
+  }
+
   .text_tooltip {
     top: -20px;
-    left: 120px;
+    left: 179px;
+
+    @media (max-width: 370px) {
+      left: 123px;
+    }
   }
 
   .text_tooltip::after {
@@ -913,11 +944,17 @@ progress::-moz-progress-bar {
   position: absolute;
   top: 55px;
 
-  .button_tooltip {
+  .button{
+    @media (max-width: 370px) {
+      width: 104px !important;
+    }
+  }
+
+  .demo--button_tooltip {
     top: 20px;
     left: 280px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 460px) {
       left: 190px;
     }
   }
@@ -939,14 +976,6 @@ progress::-moz-progress-bar {
   top: 10px;
   left: 12px;
   position: absolute;
-}
-
-.button_void {
-  left: 330px;
-
-  @media (max-width: 550px) {
-    left: 120px;
-  }
 }
 
 .tooltipInner {
@@ -975,11 +1004,15 @@ progress::-moz-progress-bar {
 
     .button_void{
       left: 330px;
+
+      @media (max-width: 550px) {
+        left: 120px;
+      }
     }
   }
 
   .tooltip_up_right {
-    .button_tooltip {
+    .demo--button_tooltip {
       top: 97px;
     }
   }
@@ -1101,7 +1134,7 @@ progress::-moz-progress-bar {
   display: inline;
   padding: 3px 9px;
   position: relative;
-  
+
   @media (max-width: 480px) {
     padding: 3px 4px;
   }
@@ -1114,7 +1147,7 @@ progress::-moz-progress-bar {
   }
 
   &.page_hide{
-    @media (max-width: 380px) {
+    @media (max-width: 530px) {
       display: none;
     }
   }
@@ -1183,6 +1216,7 @@ progress::-moz-progress-bar {
   justify-content: space-between;
   margin-top: 15.5px;
   @include block(220px, 17px);
+  @include text_universal;
   padding-left: 20px;
 }
 
@@ -1199,9 +1233,11 @@ progress::-moz-progress-bar {
 }
 
 .image {
-  @include block(140px, 140px);
-  background-image: url(./theme06/images/images.svg);
-  background-repeat: no-repeat;
+  & img{
+    @include block(140px, 140px);
+    background-repeat: no-repeat;
+  }
+
 }
 
 /* INPUT_FIELDS */
@@ -1209,6 +1245,15 @@ progress::-moz-progress-bar {
 .field-input {
   height: 42px;
   margin-right: 32px;
+  padding: 0px 120px 0px 12px;
+  outline: none;
+  border-radius: 5px;
+  color: $theme_color4;
+  border: 1px solid $theme_color13;
+
+  &:hover{
+    border: 1px solid $theme_color3;
+  }
 
   &.field-input_combobox {
     margin-right: 0px;
@@ -1218,10 +1263,6 @@ progress::-moz-progress-bar {
     margin-right: 0px;
   }
 
-  padding: 0px 120px 0px 12px;
-  outline: none;
-  border-radius: 5px;
-
   &.field-input_combobox_standart{
     &:hover{
       border: 1px solid $theme_color5;
@@ -1230,7 +1271,7 @@ progress::-moz-progress-bar {
       border: 1px solid $theme_color3;
     }
   }
-  
+
   &.field-input_combobox_editing{
     border: 1px solid $theme_color3;
   }
@@ -1396,6 +1437,10 @@ progress::-moz-progress-bar {
 
 /* SEARCH */
 
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 .field-search_disabled {
 
   position: relative;
@@ -1412,7 +1457,7 @@ progress::-moz-progress-bar {
     border-radius: 5px;
     border: none;
 
-    @media (max-width: 490px) {
+    @media (max-width: 210px) {
       padding: 12px 50px 11px 38px;
     }
 
@@ -1448,8 +1493,8 @@ progress::-moz-progress-bar {
     border-radius: 5px;
     border: 1px solid $theme_color13;
 
-    @media (max-width: 490px) {
-      padding: 12px 50px 11px 38px;
+    @media (max-width: 560px) {
+      padding: 12px 12px 11px 38px;
     }
 
     &::-webkit-input-placeholder {
@@ -1568,25 +1613,24 @@ progress::-moz-progress-bar {
 /*INPUT FIELDS NAME*/
 
 .field-container_arrow{
+  flex-direction: row;
+  margin: 25px 0;
 
-  .__select__title {
-    &::after,
-    &::before{
-      top: 47px;
-    }
+  .field-input_name{
+    padding: 0 15px;
   }
 
-  &.field-container{
-    margin-right: 42px;
-
-    &:last-child{
-      margin-right: 0px;
-    }
-
-    @media (max-width: 1060px) {
-      margin-right: 0px;
-    }
+  .__select__title{
+    width: 170px;
   }
+
+
+  // .__select__title {
+  //   &::after,
+  //   &::before{
+  //     top: 23px;
+  //   }
+  // }
 }
 
 .field-input_name {
@@ -1728,24 +1772,15 @@ progress::-moz-progress-bar {
   border: 1px solid $theme_color9;
 }
 
-.field-сontainer_column {
+.field-сontainer_row {
   @include center;
   position: relative;
-  margin-right: 80px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
-  @media (max-width: 1090px) {
-    margin-right: 10px;
-  }
-
-  @media (max-width: 420px) {
+  @media (max-width: 440px) {
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .field-input {
-    margin-right: 0px;
   }
 
   .not_true {
@@ -1777,7 +1812,11 @@ progress::-moz-progress-bar {
   }
 
   .field-input_new {
-    color: $theme_color4;
+    color: $theme_color5;
+
+    &:hover{
+      border-color: $theme_color3;
+    }
   }
 }
 
@@ -1789,7 +1828,7 @@ progress::-moz-progress-bar {
   max-width: 320px;
   width: 100%;
   margin-left: 20px;
-    
+
   &:first-child {
     margin-left: 0px;
   }
@@ -1823,8 +1862,13 @@ progress::-moz-progress-bar {
     z-index: -1;
   }
 
+  &_standart{
+    cursor: pointer;
+  }
+
   &.slider_active::before {
     background: $theme_color19;
+    cursor: pointer;
   }
 
   &.slider_off::before {
@@ -2049,10 +2093,6 @@ progress::-moz-progress-bar {
   }
 }
 
-.block_hover {
-  cursor: pointer;
-}
-
 .field-input_combobox_inactive {
   background-color: $theme_color16;
 }
@@ -2065,7 +2105,7 @@ progress::-moz-progress-bar {
 
 /* SIDEBAR */
 
-.blockWrapperSidebar {
+.sidebarWrapper {
   height: 910px;
   display: flex;
   flex-direction: column;
@@ -2079,7 +2119,7 @@ progress::-moz-progress-bar {
   }
 }
 
-.block_sidebar {
+.sidebarBlock {
   padding: 19px 25px 20px 24px;
 }
 
@@ -2112,6 +2152,11 @@ progress::-moz-progress-bar {
 .sidebarMenu {
   @include center;
   margin-bottom: 20px;
+  color: $gray_dark;
+
+  &.active {
+    color: $theme_color3;
+  }
 }
 
 .icon {
@@ -2119,15 +2164,10 @@ progress::-moz-progress-bar {
   background-repeat: no-repeat;
 }
 
-.sidebarPoint {
+.sidebarMenuItemText {
   padding-left: 14px;
-  color: $gray_dark;
   font-weight: 500;
   font-size: 14px;
-
-  &.active {
-    color: $theme_color3;
-  }
 }
 
 .icon_desktop {
@@ -2185,9 +2225,16 @@ progress::-moz-progress-bar {
   background-color: $theme_color2;
 }
 
-.menu_element {
+.sidebarMenuSubitem {
   color: #6C7293;
   padding-bottom: 13px;
+  padding-left: 25px;
+
+  .submenu_icon{
+    padding-right: 10px;
+    transform: rotate(45deg);
+    color:#C2CFE0;
+  }
 
   &::marker {
     color: #C2CFE0;
@@ -2228,7 +2275,7 @@ progress::-moz-progress-bar {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 560px) {
   .field-search_disabled {
     & input {
       padding: 12px 12px 11px 38px;
@@ -2244,6 +2291,10 @@ progress::-moz-progress-bar {
   @include block(24px, 24px);
   background-repeat: no-repeat;
   margin-right: 23px;
+
+  @media (max-width: 340px) {
+    margin-right: 7px;
+  }
 }
 
 .icon_notifications {
@@ -2270,7 +2321,7 @@ progress::-moz-progress-bar {
 #icon_inactive {
     .icon {
       margin-right: 24px;
-    }  
+    }
 }
 
 .icon_rhombus {

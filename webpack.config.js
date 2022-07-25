@@ -124,7 +124,8 @@ module.exports = {
                 { from: "front/fitness_app/*.html", context: path.resolve(__dirname, "src"), to: path.resolve(__dirname, "dest") },
                 { from: "front/*.js", context: path.resolve(__dirname, "src"), to: path.resolve(__dirname, "dest") },
                 { from: "front/images/image_1.jpg", context: path.resolve(__dirname, "src"), to: path.resolve(__dirname, "dest/front/images") },
-                { from: "front/images/imagess.png", context: path.resolve(__dirname, "src"), to: path.resolve(__dirname, "dest/front/images") }
+                { from: "front/images/imagess.png", context: path.resolve(__dirname, "src"), to: path.resolve(__dirname, "dest/front/images") },
+                { from: "front/theme06/images/image.png", context: path.resolve(__dirname, "src"), to: path.resolve(__dirname, "dest/front/images") }
             ],
         }),
         new MiniCssExtractPlugin({

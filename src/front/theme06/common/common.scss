@@ -86,7 +86,7 @@ $metaPrefix: 'demo--';
   line-height: 25.2px;
 }
 
-@mixin text_button {
+@mixin text_button_bold {
   font-size: 14px;
   font-weight: 600;
   line-height: 18.2px;
@@ -127,9 +127,14 @@ $metaPrefix: 'demo--';
   font-family: $font_family;
 }
 
+a{
+  text-decoration: none;
+}
+
 input {
   -webkit-appearance: none;
   appearance: none;
+  outline:none;
 }
 
 .demo--section {
@@ -140,6 +145,18 @@ input {
 #fullContainer {
   @include width(1580px, 100%);
   margin: 0 auto;
+
+  @media (max-width: 1670px) {
+    margin: 0 25px;
+  }
+
+  @media (max-width: 900px) {
+    width: 90%;
+  }
+
+  @media (max-width: 400px) {
+    margin: 0 10px;;
+  }
 }
 
 .demo--block_adaptive{

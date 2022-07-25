@@ -180,7 +180,7 @@
             <div class="demo--text_item">
               <p class="demo--text_bold">Semibold</p>
               <p class="text_sidebar">Header 2 text – 18 pt</p>
-              <p class="text_button">Button text – 14 pt</p>
+              <p class="text_button_bold">Button text – 14 pt</p>
             </div>
             <div class="demo--text_item">
               <p class="demo--text_bold">Bold</p>
@@ -210,20 +210,20 @@
 
           <div class="demo--block_buttons demo--block">
             <button class="button button_bright">
-              <span class="icon_plus">+</span>
-              Добавить
+              <div class="icon_save"></div>
+              Сохранить
             </button>
-            <button class="button button_bright_hover block_hover">
-              <span class="icon_plus">+</span>
-              <p>Добавить</p>
+            <button class="button button_bright_hover">
+              <span class="icon_save"></span>
+              <p>Сохранить</p>
             </button>
-            <button class="button button_bright_pressing block_hover">
-              <span class="icon_plus">+</span>
-              <p>Добавить</p>
+            <button class="button button_bright_pressing">
+              <span class="icon_save"></span>
+              <p>Сохранить</p>
             </button>
             <button class="button button_bright_disabled">
-              <span class="icon_plus">+</span>
-              Добавить
+              <span class="icon_save"></span>
+              Сохранить
             </button>
           </div>
 
@@ -232,11 +232,11 @@
               <span class="icon_attach"></span>
               Загрузить
             </button>
-            <button class="button button_dim_hover block_hover">
+            <button class="button button_dim_hover">
               <span class="icon_attach"></span>
               <p>Загрузить</p>
             </button>
-            <button class="button button_dim_pressing block_hover">
+            <button class="button button_dim_pressing">
               <span class="icon_attach"></span>
               <p>Загрузить</p>
             </button>
@@ -247,39 +247,47 @@
           </div>
 
           <div class="demo--block_buttons demo--block">
-            <button class="button button_void text_button">Отмена</button>
-            <button class="button button_void_hover text_button block_hover">
+            <button class="button button_void text_button_bold">Отмена</button>
+            <button class="button button_void_hover text_button_bold">
               <p>Отмена</p>
             </button>
-            <button class="button button_void_pressing text_button block_hover">
+            <button class="button button_void_pressing text_button_bold">
               <p>Отмена</p>
             </button>
-            <button class="button button_void_disabled text_button">Отмена</button>
+            <button class="button button_void_disabled text_button_bold">Отмена</button>
           </div>
 
           <div class="demo--block_buttons demo--block">
-            <button class="button text_button button_void button_void_unbordered ">Отмена</button>
-            <button class="button text_button button_void_hover button_void_unbordered block_hover">
+            <button class="button text_button_bold button_void button_void_unbordered ">Отмена</button>
+            <button class="button text_button_bold button_void_hover button_void_unbordered">
               <p>Отмена</p>
             </button>
-            <button class="button text_button button_void_pressing button_void_unbordered block_hover">
+            <button class="button text_button_bold button_void_pressing button_void_unbordered">
               <p>Отмена</p>
             </button>
-            <button class="button text_button button_void_disabled button_void_unbordered ">Отмена</button>
+            <button class="button text_button_bold button_void_disabled button_void_unbordered ">Отмена</button>
           </div>
 
           <div class="demo--block_buttons demo--block">
-            <button class="button button_narrow button_bright">
-              <span class="icon_plus">+</span>
-              Добавить
-            </button>
-            <button class="button button_narrow button_bright_hover block_hover"><span class="icon_plus">+</span>
-              <p>Добавить</p>
-            </button>
-            <button class="button button_narrow button_bright_pressing block_hover"><span class="icon_plus">+</span>
-              <p>Добавить</p>
-            </button>
-            <button class="button button_narrow button_bright_disabled"><span class="icon_plus">+</span>Добавить</button>
+            <a class="demo--button_link" href="#">
+              <button class="button button_narrow button_bright">
+                <span class="icon_plus">+</span>
+                Добавить
+              </button>
+            </a>
+            <a class="demo--button_link" href="#">
+              <button class="button button_narrow button_bright_hover"><span class="icon_plus">+</span>
+                <p>Добавить</p>
+              </button>
+            </a>
+            <a class="demo--button_link" href="#">
+              <button class="button button_narrow button_bright_pressing"><span class="icon_plus">+</span>
+                <p>Добавить</p>
+              </button>
+            </a>
+            <a class="demo--button_link" href="#">
+              <button class="button button_narrow button_bright_disabled"><span class="icon_plus">+</span>Добавить</button>
+            </a>
           </div>
 
           <div id="buttons_small">
@@ -288,10 +296,10 @@
                 <button class="button button_tiny button_bright">
                   <span class="icon_save"></span>
                 </button>
-                <button class="button button_tiny button_bright_hover block_hover">
+                <button class="button button_tiny button_bright_hover">
                   <span class="icon_save"></span>
                 </button>
-                <button class="button button_tiny button_bright_pressing block_hover">
+                <button class="button button_tiny button_bright_pressing">
                   <span class="icon_save"></span>
                 </button>
                 <button class="button button_tiny button_bright_disabled">
@@ -303,10 +311,10 @@
                 <button class="button button_tiny button_bright">
                   <span class="icon_exit"></span>
                 </button>
-                <button class="button button_tiny button_bright_hover block_hover">
+                <button class="button button_tiny button_bright_hover">
                   <span class="icon_exit"></span>
                 </button>
-                <button class="button button_tiny button_bright_pressing block_hover">
+                <button class="button button_tiny button_bright_pressing">
                   <span class="icon_exit"></span>
                 </button>
                 <button class="button button_tiny button_bright_disabled">
@@ -473,22 +481,22 @@
           <div class="tooltip tooltip_up">
             <span class="text_tooltip text_universal">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
               основного контента на странице</span>
-            <button class="button_tooltip text_button">Кнопка</button>
+            <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
           </div>
           <div class="tooltip tooltip_up_right">
             <span class="text_tooltip text_universal">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
               основного контента на странице</span>
-            <button class="button_tooltip text_button">Кнопка</button>
+            <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
           </div>
           <div class="tooltip tooltip_bottom">
-            <button class="button_tooltip text_button">Кнопка</button>
+            <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
             <span class="text_tooltip text_universal">Всплывающая подсказка с текстовым <br /> наполнением, показывается поверх <br />
               основного контента на странице</span>
           </div>
           <div class="tooltip side">
             <div>
               <div class="tooltip_right">
-                <button class="button_tooltip text_button">Кнопка</button>
+                <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
                 <span class="text_tooltip text_universal text_small">Всплывающая подсказка с текстовым <br /> наполнением, показывается
                   поверх
                   <br /> основного контента на странице</span>
@@ -497,7 +505,7 @@
                 <span class="text_tooltip text_universal text_small">Всплывающая подсказка с текстовым <br /> наполнением, показывается
                   поверх
                   <br /> основного контента на странице</span>
-                <button class="button_tooltip text_button">Кнопка</button>
+                <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
               </div>
 
             </div>
@@ -511,22 +519,22 @@
           <div class="tooltip tooltip_up">
             <span class="text_tooltip text_universal"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
               с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
-            <button class="button_tooltip text_button">Кнопка</button>
+            <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
           </div>
           <div class="tooltip tooltip_up_right">
             <span class="text_tooltip text_universal"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
               с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
-            <button class="button_tooltip text_button">Кнопка</button>
+            <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
           </div>
           <div class="tooltip tooltip_bottom">
-            <button class="button_tooltip text_button">Кнопка</button>
+            <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
             <span class="text_tooltip text_universal"><span class="tooltip_header">Заголовок</span><br />Всплывающая подсказка
               с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
           </div>
           <div class="tooltip side">
             <div>
               <div class="tooltip_right">
-                <button class="button_tooltip text_button">Кнопка</button>
+                <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
                 <span class="text_tooltip text_universal text_small"><span class="tooltip_header">Заголовок</span><br />Всплывающая
                   подсказка
                   с текстовым <br /> наполнением, показывается поверх <br /> основного контента на странице</span>
@@ -537,7 +545,7 @@
                   наполнением,
                   показывается поверх <br /> основного контента на странице
                 </span>
-                <button class="button_tooltip text_button">Кнопка</button>
+                <button class="button demo--button_tooltip text_button_bold">Кнопка</button>
               </div>
             </div>
           </div>
@@ -661,7 +669,7 @@
               <input class="accordionCheckbox" type="checkbox" checked>
             </div>
           </div>
-          <div class="accordionSubitem text_universal">
+          <div class="accordionSubitem">
             <div>
               Подпункт меню 1
             </div>
@@ -670,7 +678,7 @@
             </div>
           </div>
 
-          <div class="accordionSubitem text_universal">
+          <div class="accordionSubitem">
             <div>
               Подпункт меню 2
             </div>
@@ -679,7 +687,7 @@
             </div>
           </div>
 
-          <div class="accordionSubitem text_universal">
+          <div class="accordionSubitem">
             <div>
               Подпункт меню 3
             </div>
@@ -704,7 +712,9 @@
 
         <div>
           <div class="demo--subtitle">Загружено</div>
-          <div class="image"></div>
+          <div  class="image">
+            <img src="images/image.png" alt="Load image">
+          </div>
         </div>
       </div>
     </div>
@@ -714,142 +724,21 @@
         <div>
           <div class="demo--blockWrapperForms">
             <div class="demo--subtitle">Название поля</div>
-            <div class="demo--subtitle">Новое поле</div>
-            <div class="demo--subtitle">Стандартное состояние</div>
-            <div class="demo--subtitle">При редактировании</div>
+            <div class="demo--subtitle">Стандартное</div>
+            <div class="demo--subtitle">При наведении</div>
           </div>
 
           <div class="demo--blockWrapperForms">
             <div class="demo--inputName text_definition">Текстовое поле</div>
             <div class="demo--block">
               <div class="field-container">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <input class="field-input field-input_new" type="text" value="Вспомогательный текст">
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer">
-                  </div>
-                </div>
+                <input class="field-input" type="text" value="">
               </div>
               <div class="field-container">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <input class="field-input field-input_normal" type="text" value="Вспомогательный текст">
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer">
-                  </div>
-                </div>
-              </div>
-              <div class="field-container">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <input class="field-input field-input_editing" type="text" value="Вспомогательный текст">
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer">
-                  </div>
-                </div>
+                <input class="field-input field-input_editing" type="text" value="">
               </div>
             </div>
           </div>
-
-          <div class="demo--blockWrapperForms">
-            <div class="demo--inputName text_definition">Выпадающий список</div>
-            <div class="demo--block">
-              <div class="field-container __select" data-state="">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <div class="__select__title field-input_new" data-default="Option 0">
-                    Вспомогательный текст
-                  </div>
-                  <div class="__select__content">
-                    <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect1" class="__select__label">Вспомогательный текст</label>
-                    <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect2" class="__select__label">Вспомогательный текст #2</label>
-                    <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect3" class="__select__label">Вспомогательный текст #3</label>
-                  </div>
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer">
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="field-container __select" data-state="">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <div class="__select__title field-input_normal" data-default="Option 0">
-                    Вспомогательный текст
-                  </div>
-                  <div class="__select__content __select__content_standart">
-                    <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect4" class="__select__label">Вспомогательный текст</label>
-                    <input id="singleSelect5" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect5" class="__select__label">Вспомогательный текст #2</label>
-                    <input id="singleSelect6" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect6" class="__select__label">Вспомогательный текст #3</label>
-                  </div>
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer">
-                  </div>
-                </div>
-              </div>
-
-              <div class="field-container __select" data-state="">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <div class="__select__title field-input_editing" data-default="Option 0">
-                    Вспомогательный текст
-                  </div>
-                  <div class="__select__content __select__content_standart">
-                    <input id="singleSelect7" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect7" class="__select__label label_editing">Вспомогательный текст</label>
-                    <input id="singleSelect8" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect8" class="__select__label label_editing">Вспомогательный текст #2</label>
-                    <input id="singleSelect9" class="__select__input" type="radio" name="singleSelect" />
-                    <label for="singleSelect9" class="__select__label label_editing">Вспомогательный текст #3</label>
-                  </div>
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="demo--blockWrapperForms">
-            <div class="demo--inputName text_definition">Выбор даты</div>
-            <div class="demo--block">
-              <div class="field-container">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <input class="field-input_date field-input_new" type="date">
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer">
-                  </div>
-                </div>
-              </div>
-              <div class="field-container">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <input class="field-input_date field-input_normal" type="date">
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer">
-                  </div>
-                </div>
-              </div>
-              <div class="field-container">
-                <div class="field-hint_above"></div>
-                <div class="field-inputwrapper">
-                  <input class="field-input_date field-input_editing" type="date">
-                  <div class="field-hint_below"></div>
-                  <div class="field-messageContainer"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
     </div>
@@ -934,26 +823,6 @@
               </div>
             </div>
           </div>
-          <div class="demo--search demo--block">
-            <div class="field-search_disabled field-search_disabled_add">
-              <input type="search" placeholder="Поиск">
-              <div class="field-messageContainer">
-              </div>
-            </div>
-            <div class="field-search_active field-search_small">
-              <input type="search" placeholder="Поиск">
-              <div class="field-messageContainer">
-              </div>
-            </div>
-          </div>
-          <div class="search_status">
-            <div class="search_statusText">Статус</div>
-            <div class="field-search_statusInput">
-              <input type="search" placeholder="Текст">
-              <div class="field-messageContainer">
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -964,13 +833,43 @@
 
       <div>
         <div>
-          <div class="demo--blockWrapperInput_withName">
-            <div class="demo--subtitle">Отображение</div>
+          <div class="demo--blockWrapperInput_withName">            
             <div class="demo--subtitle">Новое поле</div>
             <div class="demo--subtitle">Стандартное состояние</div>
             <div class="demo--subtitle">При редактировании</div>
+            <div class="demo--subtitle">Отображение</div>
           </div>
           <div class="demo--blockWrapperInput_withName demo--block">
+            <div class="field-container field-container_adaptive">
+              <div class="field-input_name">Название</div>
+              <div class="field-hint_above"></div>
+              <div class="field-inputwrapper">
+                <input class="field-input field-input_new" type="text" value="Вспомогательный текст">
+                <div class="field-hint_below"></div>
+                <div class="field-messageContainer">
+                </div>
+              </div>
+            </div>
+            <div class="field-container field-container_adaptive">
+              <div class="field-input_name">Название</div>
+              <div class="field-hint_above"></div>
+              <div class="field-inputwrapper">
+                <input class="field-input" type="text" value="Вспомогательный текст">
+                <div class="field-hint_below"></div>
+                <div class="field-messageContainer">
+                </div>
+              </div>
+            </div>
+            <div class="field-container field-container_adaptive">
+              <div class="field-input_name field-input_name_blue">Название</div>
+              <div class="field-hint_above"></div>
+              <div class="field-inputwrapper">
+                <input class="field-input" type="text" value="Вспомогательный те|">
+                <div class="field-hint_below"></div>
+                <div class="field-messageContainer">
+                </div>
+              </div>
+            </div>
             <div class="field-container field-container_adaptive">
               <div class="field-input_name">Название</div>
               <div class="field-hint_above"></div>
@@ -981,136 +880,97 @@
                   </div>
                 </div>
             </div>
-            <div class="field-container field-container_adaptive">
-              <div class="field-input_name">Название</div>
-              <div class="field-hint_above"></div>
-              <div class="field-inputwrapper">
-                <input class="field-input field-input_new" type="text" value="Вспомогательный текст">
-                <div class="field-hint_below"></div>
-                <div class="field-messageContainer">
-                </div>
-              </div>
-            </div>
-            <div class="field-container field-container_adaptive">
-              <div class="field-input_name">Название</div>
-              <div class="field-hint_above"></div>
-              <div class="field-inputwrapper">
-                <input class="field-input field-input_normal" type="text" value="Вспомогательный текст">
-                <div class="field-hint_below"></div>
-                <div class="field-messageContainer">
-                </div>
-              </div>
-            </div>
-            <div class="field-container field-container_adaptive">
-              <div class="field-input_name field-input_name_blue">Название</div>
-              <div class="field-hint_above"></div>
-              <div class="field-inputwrapper">
-                <input class="field-input field-input_normal" type="text" value="Вспомогательный те|">
-                <div class="field-hint_below"></div>
-                <div class="field-messageContainer">
-                </div>
-              </div>
-            </div>
           </div>
 
-          <div class="demo--blockWrapperInput_withName demo--block">
+          <div class="demo--blockWrapperInput_withName demo--blockWrapperInput_arrow demo--block">
 
-            <div class="field-container field-container_arrow __select" data-state="">
-              <div class="field-input_name">Название</div>
-              <div class="__select__title field-input_normal field-input_noBorder" data-default="Option 0">
-                Вспомогательный текст
-              </div>
-              <div class="field-hint_above"></div>
-              <div class="field-inputwrapper">
-                <div class="__select__content __select__content_standart">
-                  <input id="singleSelect19" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect19" class="__select__label">Вспомогательный текст</label>
-                  <input id="singleSelect20" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect20" class="__select__label">Вспомогательный текст #2</label>
-                  <input id="singleSelect21" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect21" class="__select__label">Вспомогательный текст #3</label>
-                </div>
-                <div class="field-hint_below"></div>
-                <div class="field-messageContainer">
-                </div>
-              </div>
-            </div>
-
-            <div class="field-container field-container_arrow __select" data-state="">
-              <div class="field-input_name">Название</div>
-              <div class="__select__title field-input_new" data-default="Option 0">
-                Вспомогательный текст
-              </div>
-              <div class="field-hint_above"></div>
-              <div class="field-inputwrapper">
-                <div class="__select__content">
-                  <input id="singleSelect10" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect10" class="__select__label">Вспомогательный текст</label>
-                  <input id="singleSelect11" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect11" class="__select__label">Вспомогательный текст #2</label>
-                  <input id="singleSelect12" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect12" class="__select__label">Вспомогательный текст #3</label>
-                </div>
-                <div class="field-hint_below"></div>
-                <div class="field-messageContainer">
-                </div>
-              </div>
-            </div>
-
-
-            <div class="field-container field-container_arrow __select" data-state="">
-              <div class="field-input_name">Название</div>
-              <div class="__select__title field-input_normal" data-default="Option 0">
-                Вспомогательный текст
-              </div>
-              <div class="field-hint_above"></div>
-              <div class="field-inputwrapper">
-                <div class="__select__content __select__content_standart">
-                  <input id="singleSelect13" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect13" class="__select__label">Вспомогательный текст</label>
-                  <input id="singleSelect14" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect14" class="__select__label">Вспомогательный текст #2</label>
-                  <input id="singleSelect15" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect15" class="__select__label">Вспомогательный текст #3</label>
-                </div>
-                <div class="field-hint_below"></div>
-                <div class="field-messageContainer"></div>
-              </div>
-            </div>
-
-            <div class="field-container field-container_arrow __select" data-state="">
-              <div class="field-input_name field-input_name_blue">Название</div>
-              <div class="field-hint_above"></div>
-              <div class="field-inputwrapper">
-                <div class="__select__title field-input_editing" data-default="Option 0">
+              <div class="field-container field-container_arrow field-сontainer_row __select" data-state="">
+                <div class="field-input_name">Название</div>
+                <div class="__select__title field-input_new" data-default="Option 0">
                   Вспомогательный текст
                 </div>
-                <div class="__select__content __select__content_standart">
-                  <input id="singleSelect16" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect16" class="__select__label label_editing">Вспомогательный текст</label>
-                  <input id="singleSelect17" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect17" class="__select__label label_editing">Вспомогательный текст #2</label>
-                  <input id="singleSelect18" class="__select__input" type="radio" name="singleSelect" />
-                  <label for="singleSelect18" class="__select__label label_editing">Вспомогательный текст #3</label>
-                </div>
-                <div class="field-hint_below"></div>
-                <div class="field-messageContainer">
+                <div class="field-hint_above"></div>
+                <div class="field-inputwrapper">
+                  <div class="__select__content">
+                    <input id="singleSelect10" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect10" class="__select__label">Вспомогательный текст</label>
+                    <input id="singleSelect11" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect11" class="__select__label">Вспомогательный текст #2</label>
+                    <input id="singleSelect12" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect12" class="__select__label">Вспомогательный текст #3</label>
+                  </div>
+                  <div class="field-hint_below"></div>
+                  <div class="field-messageContainer">
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div class="field-container field-container_arrow field-сontainer_row __select" data-state="">
+                <div class="field-input_name">Название</div>
+                <div class="__select__title field-input_normal" data-default="Option 0">
+                  Вспомогательный текст
+                </div>
+                <div class="field-hint_above"></div>
+                <div class="field-inputwrapper">
+                  <div class="__select__content __select__content_standart">
+                    <input id="singleSelect13" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect13" class="__select__label">Вспомогательный текст</label>
+                    <input id="singleSelect14" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect14" class="__select__label">Вспомогательный текст #2</label>
+                    <input id="singleSelect15" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect15" class="__select__label">Вспомогательный текст #3</label>
+                  </div>
+                  <div class="field-hint_below"></div>
+                  <div class="field-messageContainer"></div>
+                </div>
+              </div>
+
+              <div class="field-container field-container_arrow field-сontainer_row __select" data-state="">
+                <div class="field-input_name field-input_name_blue">Название</div>
+                <div class="field-hint_above"></div>
+                <div class="field-inputwrapper">
+                  <div class="__select__title field-input_editing" data-default="Option 0">
+                    Вспомогательный текст
+                  </div>
+                  <div class="__select__content __select__content_standart">
+                    <input id="singleSelect16" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect16" class="__select__label label_editing">Вспомогательный текст</label>
+                    <input id="singleSelect17" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect17" class="__select__label label_editing">Вспомогательный текст #2</label>
+                    <input id="singleSelect18" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect18" class="__select__label label_editing">Вспомогательный текст #3</label>
+                  </div>
+                  <div class="field-hint_below"></div>
+                  <div class="field-messageContainer">
+                  </div>
+                </div>
+              </div>
+
+              <div class="field-container field-container_arrow field-сontainer_row __select" data-state="">
+                <div class="field-input_name">Название</div>
+                <div class="__select__title field-input_normal field-input_noBorder" data-default="Option 0">
+                  Вспомогательный текст
+                </div>
+                <div class="field-hint_above"></div>
+                <div class="field-inputwrapper">
+                  <div class="__select__content __select__content_standart">
+                    <input id="singleSelect19" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect19" class="__select__label">Вспомогательный текст</label>
+                    <input id="singleSelect20" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect20" class="__select__label">Вспомогательный текст #2</label>
+                    <input id="singleSelect21" class="__select__input" type="radio" name="singleSelect" />
+                    <label for="singleSelect21" class="__select__label">Вспомогательный текст #3</label>
+                  </div>
+                  <div class="field-hint_below"></div>
+                  <div class="field-messageContainer">
+                  </div>
+                </div>
+              </div>
+
           </div>
 
           <div class="demo--blockWrapperInput_withName demo--block">
-            <div class="field-container field-container_adaptive">
-              <div class="field-input_name field-input_icon_greyLightCalendar">Название</div>
-              <div class="field-hint_above"></div>
-              <div class="field-inputwrapper">
-                <div class="field-input_text">Вспомогательный <span class="text_none">текст</span></div>
-                <div class="field-hint_below"></div>
-                <div class="field-messageContainer">
-                </div>
-              </div>
-            </div>
+            
             <div class="field-container field-container_adaptive">
               <div class="field-input_name field-input_icon_greyCalendar">Название</div>
               <div class="field-hint_above"></div>
@@ -1125,7 +985,7 @@
               <div class="field-input_name field-input_icon_greyCalendar">Название</div>
               <div class="field-hint_above"></div>
               <div class="field-inputwrapper">
-                <input class="field-input field-input_normal" type="text" value="Вспомогательный текст">
+                <input class="field-input" type="text" value="Вспомогательный текст">
                 <div class="field-hint_below"></div>
                 <div class="field-messageContainer">
                 </div>
@@ -1141,6 +1001,16 @@
                 </div>
               </div>
             </div>
+            <div class="field-container field-container_adaptive">
+              <div class="field-input_name field-input_icon_greyLightCalendar">Название</div>
+              <div class="field-hint_above"></div>
+              <div class="field-inputwrapper">
+                <div class="field-input_text">Вспомогательный <span class="text_none">текст</span></div>
+                <div class="field-hint_below"></div>
+                <div class="field-messageContainer">
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="demo--blockWrapperInput_withName demo--input_status">
@@ -1148,7 +1018,7 @@
               <div class="field-input_name field-input_icon_close">Название</div>
               <div class="field-hint_above"></div>
               <div class="field-inputwrapper">
-                <input class="field-inputFirst field-input_border_red field-input_normal" type="text" value="Вспомогательный текст">
+                <input class="field-inputFirst field-input_border_red" type="text" value="Вспомогательный текст">
                 <div class="field-hint_below"></div>
                 <div class="field-messageContainer">
                   <div class="field-messageError">Поле заполнено не верно</div>
@@ -1159,7 +1029,7 @@
               <div class="field-input_name field-input_icon_bigCheck">Название</div>
               <div class="field-hint_above"></div>
               <div class="field-inputwrapper">
-                <input class="field-input field-input_border_green field-input_normal" type="text" value="Вспомогательный текст">
+                <input class="field-input field-input_border_green" type="text" value="Вспомогательный текст">
                 <div class="field-hint_below"></div>
                 <div class="field-messageContainer">
                 </div>
@@ -1169,7 +1039,7 @@
               <div class="field-input_name">Название</div>
               <div class="field-hint_above"></div>
               <div class="field-inputwrapper">
-                <input class="field-input field-input_border_red field-input_normal" type="text" value="Вспомогательный текст">
+                <input class="field-input field-input_border_red" type="text" value="Вспомогательный текст">
                 <div class="field-hint_below"></div>
                 <div class="field-messageContainer">
                   <div class="field-messageError">Поле заполнено не верно</div>
@@ -1180,72 +1050,13 @@
               <div class="field-input_name">Название</div>
               <div class="field-hint_above"></div>
               <div class="field-inputwrapper">
-                <input class="field-input field-input_border_green field-input_normal" type="text" value="Вспомогательный текст">
+                <input class="field-input field-input_border_green" type="text" value="Вспомогательный текст">
                 <div class="field-hint_below"></div>
                 <div class="field-messageContainer">
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="demo--blockWrapperInputText">
-            <div class="demo--blockInnerInputText">
-              <div class="demo--inputName text_definition">Текстовое поле</div>
-                <div class="field-сontainer field-сontainer_column">
-                  <div class="field-hint_above"></div>
-                  <div class="field-inputwrapper">
-                    <input class="field-input field-input_new field-input_border_red" type="text" value="Вспомогательный текст">
-                    <div class="field-hint_below"></div>
-                    <div class="field-messageContainer">
-                      <div class="field-messageError">Поле заполнено не верно</div>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="demo--blockInnerInputText">
-              <div class="demo--inputName text_definition">Текстовое поле</div>
-                <div class="field-сontainer field-сontainer_column icon_close">
-                  <div class="field-hint_above"></div>
-                  <div class="field-inputwrapper">
-                    <input class="field-input field-input_new field-input_border_red" type="text" value="Вспомогательный текст">
-                    <div class="field-hint_below"></div>
-                    <div class="field-messageContainer">
-                      <div class="field-messageError">Поле заполнено не верно</div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="demo--blockWrapperInputText">
-            <div class="demo--blockInnerInputText">
-              <div class="demo--inputName text_definition">Текстовое поле</div>
-                <div class="field-сontainer field-сontainer_column">
-                  <div class="field-hint_above"></div>
-                  <div class="field-inputwrapper">
-                    <input class="field-input field-input_new field-input_border_green" type="text" value="Вспомогательный текст">
-                    <div class="field-hint_below"></div>
-                    <div class="field-messageContainer">
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="demo--blockInnerInputText">
-              <div class="demo--inputName text_definition">Текстовое поле</div>
-                <div class="field-сontainer field-сontainer_column icon_big_check">
-                  <div class="field-hint_above"></div>
-                  <div class="field-inputwrapper">
-                    <input class="field-input field-input_new field-input_border_green" type="text" value="Вспомогательный текст">
-                    <div class="field-hint_below"></div>
-                    <div class="field-messageContainer">
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -1261,11 +1072,11 @@
       <div class="demo--blockWrapperSlider demo--block">
         <div class="block_slider">
           <div class="slider_name">Название параметра</div>
-          <input type="range" min="1" max="100" value="50" class="slider slider_standart block_hover">
+          <input type="range" min="1" max="100" value="50" class="slider slider_standart">
         </div>
         <div class="block_slider">
           <div class="slider_name">Название параметра</div>
-          <input type="range" min="1" max="100" value="50" class="slider slider_active block_hover">
+          <input type="range" min="1" max="100" value="50" class="slider slider_active">
         </div>
         <div class="block_slider">
           <div class="slider_name">Название параметра</div>
@@ -1394,8 +1205,8 @@
       <h1>Боковое меню</h1>
 
       <div id="sidebar">
-        <div class="blockWrapperSidebar">
-          <div class="block_sidebar">
+        <div class="sidebarWrapper">
+          <div class="sidebarBlock">
 
             <div class="sidebarHeader">
               <div class="sidebarName text_sidebar">Название</div>
@@ -1405,43 +1216,43 @@
             <div class="sidebarInformation">
               <div class="photo profile"></div>
               <div>
-                <div class="sidebarSurname text_button">Денис Смирнов</div>
+                <div class="sidebarSurname text_button_bold">Денис Смирнов</div>
                 <div class="sidebarMail text_name">d.smirnov@gmail.com</div>
               </div>
             </div>
 
-            <div class="sidebarMenu">
+            <div class="sidebarMenu active">
               <div class="icon desktop_active"></div>
-              <div class="sidebarPoint active">Рабочий стол</div>
+              <div class="sidebarMenuItemText">Рабочий стол</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_official"></div>
-              <div class="sidebarPoint">Служебные</div>
+              <div class="sidebarMenuItemText">Служебные</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_content"></div>
-              <div class="sidebarPoint">Контент</div>
+              <div class="sidebarMenuItemText">Контент</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_control"></div>
-              <div class="sidebarPoint">Управление сайтом</div>
+              <div class="sidebarMenuItemText">Управление сайтом</div>
             </div>
             <div class="sidebarMenu line_gray"></div>
             <div class="sidebarMenu">
               <div class="icon icon_settings"></div>
-              <div class="sidebarPoint">Настройки</div>
+              <div class="sidebarMenuItemText">Настройки</div>
             </div>
           </div>
-          <div class="block_sidebar">
+          <div class="sidebarBlock">
             <div class="sidebarMenu">
               <div class="icon icon_logout"></div>
-              <div class="sidebarPoint">Выйти</div>
+              <div class="sidebarMenuItemText">Выйти</div>
             </div>
           </div>
         </div>
 
-        <div class="blockWrapperSidebar no_footer">
-          <div class="block_sidebar">
+        <div class="sidebarWrapper no_footer">
+          <div class="sidebarBlock">
 
             <div class="sidebarHeader">
               <div class="sidebarName text_sidebar">Название</div>
@@ -1451,44 +1262,42 @@
             <div class="sidebarInformation">
               <div class="photo profile"></div>
               <div>
-                <div class="sidebarSurname text_button">Денис Смирнов</div>
+                <div class="sidebarSurname text_button_bold">Денис Смирнов</div>
                 <div class="sidebarMail text_name">d.smirnov@gmail.com</div>
               </div>
             </div>
 
             <div class="sidebarMenu">
               <div class="icon icon_desktop"></div>
-              <div class="sidebarPoint">Рабочий стол</div>
+              <div class="sidebarMenuItemText">Рабочий стол</div>
             </div>
-            <div class="sidebarMenu">
+            <div class="sidebarMenu active">
               <div class="icon official_active"></div>
-              <div class="sidebarPoint active">Служебные</div>
+              <div class="sidebarMenuItemText">Служебные</div>
             </div>
             <div class="menu_elements text_name">
-              <ul>
-                <li class="menu_element">Элементы простые 1</li>
-                <li class="menu_element">Элементы простые 2</li>
-                <li class="menu_element">Элементы с картинками</li>
-              </ul>
+              <div class="sidebarMenuSubitem"><span class="submenu_icon">&#9632;</span>Элементы простые 1</div>
+              <div class="sidebarMenuSubitem"><span class="submenu_icon">&#9632;</span>Элементы простые 2</div>
+              <div class="sidebarMenuSubitem"><span class="submenu_icon">&#9632;</span>Элементы с картинками</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_content"></div>
-              <div class="sidebarPoint">Контент</div>
+              <div class="sidebarMenuItemText">Контент</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_control"></div>
-              <div class="sidebarPoint">Управление сайтом</div>
+              <div class="sidebarMenuItemText">Управление сайтом</div>
             </div>
             <div class="sidebarMenu line_gray"></div>
             <div class="sidebarMenu">
               <div class="icon icon_settings"></div>
-              <div class="sidebarPoint">Настройки</div>
+              <div class="sidebarMenuItemText">Настройки</div>
             </div>
           </div>
         </div>
 
-        <div class="blockWrapperSidebar">
-          <div class="block_sidebar">
+        <div class="sidebarWrapper">
+          <div class="sidebarBlock">
 
             <div class="sidebarHeader">
               <div class="sidebarName text_sidebar">Название</div>
@@ -1498,51 +1307,49 @@
             <div class="sidebarInformation">
               <div class="photo profile"></div>
               <div>
-                <div class="sidebarSurname text_button">Денис Смирнов</div>
+                <div class="sidebarSurname text_button_bold">Денис Смирнов</div>
                 <div class="sidebarMail text_name">d.smirnov@gmail.com</div>
               </div>
             </div>
 
             <div class="sidebarMenu">
               <div class="icon icon_desktop"></div>
-              <div class="sidebarPoint">Рабочий стол</div>
+              <div class="sidebarMenuItemText">Рабочий стол</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_official"></div>
-              <div class="sidebarPoint">Служебные</div>
+              <div class="sidebarMenuItemText">Служебные</div>
             </div>
-            <div class="sidebarMenu">
+            <div class="sidebarMenu active">
               <div class="icon content_active"></div>
-              <div class="sidebarPoint active">Контент</div>
+              <div class="sidebarMenuItemText">Контент</div>
             </div>
             <div class="menu_elements text_name">
-              <ul>
-                <li class="menu_element">Отдельные фрагменты</li>
-                <li class="menu_element">Новости</li>
-              </ul>
+                <div class="sidebarMenuSubitem"><span class="submenu_icon">&#9632;</span>Отдельные фрагменты</div>
+                <div class="sidebarMenuSubitem"><span class="submenu_icon">&#9632;</span>Новости</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_control"></div>
-              <div class="sidebarPoint">Управление сайтом</div>
+              <div class="sidebarMenuItemText">Управление сайтом</div>
             </div>
             <div class="sidebarMenu line_gray"></div>
             <div class="sidebarMenu">
               <div class="icon icon_logout"></div>
-              <div class="sidebarPoint">Выйти</div>
+              <div class="sidebarMenuItemText">Выйти</div>
             </div>
 
           </div>
-          <div class="block_sidebar">
+          <div class="sidebarBlock">
 
             <div class="sidebarMenu">
               <div class="icon icon_settings"></div>
-              <div class="sidebarPoint">Настройки</div>
+              <div class="sidebarMenuItemText">Настройки</div>
             </div>
           </div>
         </div>
 
-        <div class="blockWrapperSidebar no_footer">
-          <div class="block_sidebar">
+        <div class="sidebarWrapper no_footer">
+          <div class="sidebarBlock">
 
             <div class="sidebarHeader">
               <div class="sidebarName text_sidebar">Название</div>
@@ -1552,42 +1359,40 @@
             <div class="sidebarInformation">
               <div class="photo profile"></div>
               <div>
-                <div class="sidebarSurname text_button">Денис Смирнов</div>
+                <div class="sidebarSurname text_button_bold">Денис Смирнов</div>
                 <div class="sidebarMail text_name">d.smirnov@gmail.com</div>
               </div>
             </div>
 
             <div class="sidebarMenu">
               <div class="icon icon_desktop"></div>
-              <div class="sidebarPoint">Рабочий стол</div>
+              <div class="sidebarMenuItemText">Рабочий стол</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_official"></div>
-              <div class="sidebarPoint">Служебные</div>
+              <div class="sidebarMenuItemText">Служебные</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_content"></div>
-              <div class="sidebarPoint">Контент</div>
+              <div class="sidebarMenuItemText">Контент</div>
             </div>
-            <div class="sidebarMenu">
+            <div class="sidebarMenu active">
               <div class="icon control_active"></div>
-              <div class="sidebarPoint active">Управление сайтом</div>
+              <div class="sidebarMenuItemText">Управление сайтом</div>
             </div>
             <div class="menu_elements text_name">
-              <ul>
-                <li class="menu_element">Главная</li>
-              </ul>
+              <div class="sidebarMenuSubitem"><span class="submenu_icon">&#9632;</span>Главная</div>
             </div>
             <div class="sidebarMenu line_gray"></div>
             <div class="sidebarMenu">
               <div class="icon icon_settings"></div>
-              <div class="sidebarPoint">Настройки</div>
+              <div class="sidebarMenuItemText">Настройки</div>
             </div>
           </div>
         </div>
 
-        <div class="blockWrapperSidebar no_footer">
-          <div class="block_sidebar">
+        <div class="sidebarWrapper no_footer">
+          <div class="sidebarBlock">
 
             <div class="sidebarHeader">
               <div class="sidebarName text_sidebar">Название</div>
@@ -1597,37 +1402,36 @@
             <div class="sidebarInformation">
               <div class="photo profile"></div>
               <div>
-                <div class="sidebarSurname text_button">Денис Смирнов</div>
+                <div class="sidebarSurname text_button_bold">Денис Смирнов</div>
                 <div class="sidebarMail text_name">d.smirnov@gmail.com</div>
               </div>
             </div>
 
             <div class="sidebarMenu">
               <div class="icon icon_desktop"></div>
-              <div class="sidebarPoint">Рабочий стол</div>
+              <div class="sidebarMenuItemText">Рабочий стол</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_official"></div>
-              <div class="sidebarPoint">Служебные</div>
+              <div class="sidebarMenuItemText">Служебные</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_content"></div>
-              <div class="sidebarPoint">Контент</div>
+              <div class="sidebarMenuItemText">Контент</div>
             </div>
             <div class="sidebarMenu">
               <div class="icon icon_control"></div>
-              <div class="sidebarPoint">Управление сайтом</div>
+              <div class="sidebarMenuItemText">Управление сайтом</div>
             </div>
 
             <div class="sidebarMenu line_gray"></div>
 
-            <div class="sidebarMenu">
+            <div class="sidebarMenu active">
               <div class="icon settings_active"></div>
-              <div class="sidebarPoint active">Настройки</div>
+              <div class="sidebarMenuItemText">Настройки</div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 

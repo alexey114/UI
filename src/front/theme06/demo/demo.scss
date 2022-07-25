@@ -23,7 +23,7 @@
     color: $gray_dark;
   }
 
-  @media (max-width: 782px) {
+  @media (max-width: 1215px) {
     order: 2;
   }
 }
@@ -34,7 +34,7 @@
     display: $theme_display;
   }
 
-  @include width(120px, 19%);
+  @include width(140px, 19%);
   margin-left: 98px;
   margin-bottom: 25px;
 
@@ -196,6 +196,10 @@ h4 {
   @include font_style(normal, 600, 50px, 60.95px, $theme_color1);
   margin-right: 150px;
 
+  @media (max-width: 380px) {
+    font-size: 46px;
+  }
+
   p {
     margin-top: 5px;
   }
@@ -238,6 +242,18 @@ h4 {
   }
 }
 
+.#{$metaPrefix}button_link {
+  margin-right: 73px;
+
+  @media (max-width: 900px) {
+    margin-right: 63px;
+  }
+
+  @media (max-width: 850px) {
+    margin-right: 0px;
+  }
+}
+
 .#{$metaPrefix}block_buttons {
   display: flex;
   max-width: 790px;
@@ -265,7 +281,7 @@ h4 {
   margin-top: 23px;
   margin-left: 63px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 620px) {
     margin-left: 20px;
   }
 }
@@ -278,7 +294,7 @@ h4 {
 #buttons_small {
   display: flex;
 
-  @media (max-width: 600px) {
+  @media (max-width: 620px) {
     flex-wrap: wrap;
 
     .#{$metaPrefix}blockWrapperButtonSmall:last-child {
@@ -403,7 +419,7 @@ h4 {
 
   .tooltip_up,
   .tooltip_up_right {
-    .button_tooltip {
+    .#{$metaPrefix}button_tooltip {
       top: 110px;
     }
   }
@@ -472,6 +488,10 @@ h4 {
 
 #section_select {
   margin-top: 30px;
+
+  @media (max-width: 340px) {
+    margin-left: -10px;
+  }
 }
 
 #calendar {
@@ -545,10 +565,15 @@ h4 {
   align-items: center;
   margin-bottom: 20px;
 
-  @media (max-width: 1060px) {
+  @media (max-width: 1090px) {
     @include wrap;
     justify-content: space-around;
-    gap: 10px
+    gap: 10px;
+    width: 90%;
+  }
+
+  @media (max-width: 350px) {
+    width: 87%;
   }
 
   .#{$metaPrefix}subtitle {
@@ -563,15 +588,40 @@ h4 {
       width: 218px;
     }
 
-    @media (max-width: 1060px) {
+    @media (max-width: 1090px) {
       margin-right: 0px;
     }
   }
 
   .#{$metaPrefix}subtitle {
-    @media (max-width: 1060px) {
+    @media (max-width: 1090px) {
       display: none;
     }
+  }
+}
+
+.#{$metaPrefix}blockWrapperInput_arrow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1328px;
+  width: 100%;
+
+  @media (max-width: 1400px) {
+    width: 1127px;
+  }
+
+  @media (max-width: 1220px) {
+    width: 1000px;
+  }
+
+  @media (max-width: 1090px) {
+    max-width: 970px;
+    width: 90%;
+  }
+
+  @media (max-width: 350px) {
+    width: 87%;
   }
 }
 
