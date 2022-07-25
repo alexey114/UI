@@ -1756,7 +1756,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-.input_standart{
+.field-input_icon_standart{
   position: relative;
 
   &::after {
@@ -1774,7 +1774,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-.field-input_error{
+.field-input_icon_error{
   position: relative;
 
   .field-input{
@@ -1797,7 +1797,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-.field-input_success{
+.field-input_icon_success{
   position: relative;
 
   .field-input{
