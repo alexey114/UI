@@ -23,7 +23,7 @@
     color: $gray_dark;
   }
 
-  @media (max-width: 1215px) {
+  @media (max-width: 1120px) {
     order: 2;
   }
 }
@@ -38,7 +38,7 @@
   margin-left: 98px;
   margin-bottom: 25px;
 
-  @media (max-width: 1120px) {
+  @media (max-width: 1220px) {
     margin-left: 30px;
   }
 }
@@ -62,7 +62,10 @@
 
   &:last-child {
     margin: 0 5px 0 0;
-    ;
+  }
+
+  @media (max-width: 350px) {
+    margin: 0 10px 0 0;
   }
 }
 
@@ -163,6 +166,10 @@ input:checked+.#{$metaPrefix}slider_theme:before {
 
   :last-child {
     margin-right: 0px;
+  }
+
+  @media (max-width: 1060px) {
+    width: 90%;
   }
 }
 
@@ -462,6 +469,7 @@ h4 {
 
   @media (max-width: 1120px) {
     display: block;
+    width: 95%;
   }
 }
 
