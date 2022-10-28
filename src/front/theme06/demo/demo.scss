@@ -23,7 +23,7 @@
     color: $gray_dark;
   }
 
-  @media (max-width: 1215px) {
+  @media (max-width: 1120px) {
     order: 2;
   }
 }
@@ -38,7 +38,7 @@
   margin-left: 98px;
   margin-bottom: 25px;
 
-  @media (max-width: 1120px) {
+  @media (max-width: 1220px) {
     margin-left: 30px;
   }
 }
@@ -62,7 +62,10 @@
 
   &:last-child {
     margin: 0 5px 0 0;
-    ;
+  }
+
+  @media (max-width: 350px) {
+    margin: 0 10px 0 0;
   }
 }
 
@@ -163,6 +166,10 @@ input:checked+.#{$metaPrefix}slider_theme:before {
 
   :last-child {
     margin-right: 0px;
+  }
+
+  @media (max-width: 1060px) {
+    width: 90%;
   }
 }
 
@@ -447,7 +454,7 @@ h4 {
     justify-content: space-around;
     margin-top: 30px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 1100px) {
       gap: 10px;
     }
   }
@@ -455,13 +462,20 @@ h4 {
   .#{$metaPrefix}subtitle {
     width: 340px;
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1425px) {
       display: none;
     }
   }
 
   @media (max-width: 1120px) {
     display: block;
+    width: 95%;
+  }
+
+  .field-input{
+    @media (max-width: 1100px) {
+      margin: 0;
+    }
   }
 }
 
@@ -580,7 +594,7 @@ h4 {
     margin-right: 42px;
     width: 300px;
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1425px) {
       width: 250px;
     }
 
@@ -607,7 +621,7 @@ h4 {
   max-width: 1328px;
   width: 100%;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1425px) {
     width: 1127px;
   }
 
@@ -696,7 +710,7 @@ h4 {
   width: 100%;
   margin-left: 20px;
 
-  @media (max-width: 1400px) {
+  @media (max-width: 1425px) {
     max-width: 1100px;
   }
 
@@ -713,7 +727,7 @@ h4 {
   display: inline-flex;
   margin-top: 20px;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     @include wrap;
     justify-content: space-around;
     gap: 20px;
